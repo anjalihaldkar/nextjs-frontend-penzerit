@@ -1,4 +1,6 @@
-/* eslint-disable @next/next/no-img-element, @next/next/no-html-link-for-pages, react/no-unescaped-entities */
+import { Breadcrumb } from "@/components/Breadcrumb";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -6,19 +8,7 @@ export default function Page() {
 <div className="page-wrapper bg-light">
 
               
-              <div className="loading-screen" id="loading-screen">
-                  <button className="preloader-close" type="button" aria-label="Skip preloader">Skip</button>
-                  <div className="panzer-preloader-inner" aria-live="polite">
-                      <span className="panzer-preloader-orbit one"></span>
-                      <span className="panzer-preloader-orbit two"></span>
-                      <div className="panzer-preloader-logo-wrap">
-                          <img className="panzer-preloader-logo" src="/assets/images/logo/logo.png" alt="Panzer IT logo" />
-                      </div>
-                      <div className="panzer-preloader-progress" aria-hidden="true">
-                          <span></span>
-                      </div>
-                  </div>
-              </div>
+              
 
 
               
@@ -29,10 +19,10 @@ export default function Page() {
                           <div className="row align-items-center justify-content-between">
                               <div className="col-auto logo">
                                   <div className="header-logo">
-                                      <a href="/">
-                                          <img alt="logo" src="/assets/images/logo/logo.png" />
-                                          <img alt="logo" src="/assets/images/logo/logo.png" />
-                                      </a>
+                                      <Link href="/">
+                                          <Image alt="logo" src="/assets/images/logo/logo.png"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                          <Image alt="logo" src="/assets/images/logo/logo.png"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                      </Link>
                                   </div>
                               </div>
                               <div className="col-auto nav-outer ms-auto">
@@ -40,48 +30,48 @@ export default function Page() {
                                       <nav className="main-menu d-none d-lg-inline-block">
                                           <ul className="navigation">
                                               <li>
-                                                  <a href="/">Home</a>
+                                                  <Link href="/">Home</Link>
                                               </li>
                                               <li className="menu-item-has-children">
-                                                  <a href="/solution">Solutions</a>
+                                                  <Link href="/solution">Solutions</Link>
                                                   <ul className="sub-menu solution-sub-menu">
-                                                      <li><a href="#">Scopd DLP with UEBA</a></li>
-                                                      <li><a href="#">Vulnerability Scanner, Assessment & Penetration
-                                                              Testing</a></li>
-                                                      <li><a href="#">Employee Monitoring Solution</a></li>
-                                                      <li><a href="#">Most Advance Anti-Malware</a></li>
-                                                      <li><a href="#">Backup & Disaster Recovery</a></li>
-                                                      <li><a href="#">Backup Solution</a></li>
-                                                      <li><a href="#">Data Leak Prevention – DLP</a></li>
-                                                      <li><a href="#">Advance Threat Prevention | EDR | EPS</a></li>
+                                                      <li><Link href="#">Scopd DLP with UEBA</Link></li>
+                                                      <li><Link href="#">Vulnerability Scanner, Assessment & Penetration
+                                                              Testing</Link></li>
+                                                      <li><Link href="#">Employee Monitoring Solution</Link></li>
+                                                      <li><Link href="#">Most Advance Anti-Malware</Link></li>
+                                                      <li><Link href="#">Backup & Disaster Recovery</Link></li>
+                                                      <li><Link href="#">Backup Solution</Link></li>
+                                                      <li><Link href="#">Data Leak Prevention – DLP</Link></li>
+                                                      <li><Link href="#">Advance Threat Prevention | EDR | EPS</Link></li>
                                                   </ul>
                                               </li>
                                               <li className="menu-item-has-children active">
-                                                  <a className="active" href="/brand">Brands</a>
+                                                  <Link className="active" href="/brand">Brands</Link>
                                                   <ul className="sub-menu brand-sub-menu">
-                                                      <li><a href="/brand-detail#netand">Netand IAM PAM</a></li>
-                                                      <li><a href="/brand-detail#mirobase">Mirobase Employee Monitoring</a></li>
-                                                      <li><a href="/brand-detail#falcongaze">FalconGaze SecureTower - UBA</a></li>
-                                                      <li><a href="/brand-detail#somansa">Somansa Endpoint Data Loss Prevention</a></li>
-                                                      <li><a href="/brand-detail#secpoint">SecPoint Penetrator Vulnerability Scanner &
-                                                              Assessment</a></li>
-                                                      <li><a href="/brand-detail#netop">Netop - Secure Remote Access</a></li>
-                                                      <li><a href="/brand-detail#emsisoft">Emsisoft - Advance Malware Protection</a></li>
-                                                      <li><a href="/brand-detail#vembu">Vembu BDR Suite</a></li>
-                                                      <li><a href="/brand-detail#acronis">Acronis Backup Solution</a></li>
+                                                      <li><Link href="/brand-detail#netand">Netand IAM PAM</Link></li>
+                                                      <li><Link href="/brand-detail#mirobase">Mirobase Employee Monitoring</Link></li>
+                                                      <li><Link href="/brand-detail#falcongaze">FalconGaze SecureTower - UBA</Link></li>
+                                                      <li><Link href="/brand-detail#somansa">Somansa Endpoint Data Loss Prevention</Link></li>
+                                                      <li><Link href="/brand-detail#secpoint">SecPoint Penetrator Vulnerability Scanner &
+                                                              Assessment</Link></li>
+                                                      <li><Link href="/brand-detail#netop">Netop - Secure Remote Access</Link></li>
+                                                      <li><Link href="/brand-detail#emsisoft">Emsisoft - Advance Malware Protection</Link></li>
+                                                      <li><Link href="/brand-detail#vembu">Vembu BDR Suite</Link></li>
+                                                      <li><Link href="/brand-detail#acronis">Acronis Backup Solution</Link></li>
                                                   </ul>
                                               </li>
                                               <li>
-                                                  <a href="/blog-grid">Blogs</a>
+                                                  <Link href="/blog-grid">Blogs</Link>
                                               </li>
                                               <li>
-                                                  <a href="/download">Resources</a>
+                                                  <Link href="/download">Resources</Link>
                                               </li>
                                               <li className="menu-item-has-children">
-                                                  <a href="#">Company</a>
+                                                  <Link href="#">Company</Link>
                                                   <ul className="sub-menu">
-                                                      <li><a href="/about">About Us</a></li>
-                                                      <li><a href="/contact">Contact</a></li>
+                                                      <li><Link href="/about">About Us</Link></li>
+                                                      <li><Link href="/contact">Contact</Link></li>
                                                   </ul>
                                               </li>
                                           </ul>
@@ -97,7 +87,7 @@ export default function Page() {
                               </div>
                               <div className="col-auto header-right-wrapper">
                                   <div className="outer-box">
-                                      <a href="/contact" className="panzer-header-cta">Connect with Us</a>
+                                      <Link href="/contact" className="panzer-header-cta">Connect with Us</Link>
                                   </div>
                               </div>
                           </div>
@@ -110,7 +100,7 @@ export default function Page() {
                   <div className="mobile-menu-area">
                       <button className="menu-toggle"><i className="fas fa-times"></i></button>
                       <div className="mobile-logo">
-                          <a href="/"><img alt="Pureflow" src="/assets/images/logo/logo.webp" /></a>
+                          <Link href="/"><Image alt="Pureflow" src="/assets/images/logo/logo.webp"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></Link>
                       </div>
                       <div className="mobile-menu">
                           <ul className="navigation clearfix">
@@ -123,7 +113,7 @@ export default function Page() {
                               <div className="contact-info-box">
                                   <span className="icon fa-solid fa-phone"></span>
                                   <span className="title">Call Panzer IT</span>
-                                  <a href="tel:+919004655099">+91 90046 55099</a>
+                                  <Link href="tel:+919004655099">+91 90046 55099</Link>
                               </div>
                           </li>
                           <li>
@@ -131,7 +121,7 @@ export default function Page() {
                               <div className="contact-info-box">
                                   <span className="icon fa-light fa-envelope"></span>
                                   <span className="title">Email Us</span>
-                                  <a href="mailto:Sales@PanzerIT.com">Sales@PanzerIT.com</a>
+                                  <Link href="mailto:Sales@PanzerIT.com">Sales@PanzerIT.com</Link>
                               </div>
                           </li>
                           <li>
@@ -144,10 +134,10 @@ export default function Page() {
                           </li>
                       </ul>
                       <ul className="social-links">
-                          <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-                          <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-                          <li><a href="#"><i className="fab fa-pinterest"></i></a></li>
-                          <li><a href="#"><i className="fab fa-instagram"></i></a></li>
+                          <li><Link href="#"><i className="fab fa-twitter"></i></Link></li>
+                          <li><Link href="#"><i className="fab fa-facebook-f"></i></Link></li>
+                          <li><Link href="#"><i className="fab fa-pinterest"></i></Link></li>
+                          <li><Link href="#"><i className="fab fa-instagram"></i></Link></li>
                       </ul>
                   </div>
               </div>
@@ -161,10 +151,10 @@ export default function Page() {
                           <div className="row align-items-center justify-content-between">
                               <div className="col-auto logo">
                                   <div className="header-logo">
-                                      <a href="/">
-                                          <img alt="logo" src="/assets/images/logo/logo.png" />
-                                          <img alt="logo" src="/assets/images/logo/logo.png" />
-                                      </a>
+                                      <Link href="/">
+                                          <Image alt="logo" src="/assets/images/logo/logo.png"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                          <Image alt="logo" src="/assets/images/logo/logo.png"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                      </Link>
                                   </div>
                               </div>
                               <div className="col-auto nav-menu">
@@ -216,7 +206,7 @@ export default function Page() {
                       </button>
                       <div className="sidebar-content">
                           <div className="sidebar-logo">
-                              <a className="dark-logo" href="/"><img src="/assets/images/logo/logo.png" alt="logo" /></a>
+                              <Link className="dark-logo" href="/"><Image src="/assets/images/logo/logo.png" alt="logo"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></Link>
                           </div>
                           <div className="sidebar-menu-wrap"></div>
                           <div className="sidebar-about">
@@ -228,40 +218,40 @@ export default function Page() {
                           
                           <div className="instafeed-wrapper">
                               <div className="insta-item">
-                                  <a href="https://www.instagram.com" target="_blank">
-                                      <img src="/assets/images/sidebar/sidebar1.jpeg" alt="" />
+                                  <Link href="https://www.instagram.com" target="_blank">
+                                      <Image src="/assets/images/sidebar/sidebar1.jpeg" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
                                       <span className="overlay"><i className="fa-brands fa-instagram"></i></span>
-                                  </a>
+                                  </Link>
                               </div>
                               <div className="insta-item">
-                                  <a href="https://www.instagram.com" target="_blank">
-                                      <img src="/assets/images/sidebar/sidebar-2.jpg" alt="" />
+                                  <Link href="https://www.instagram.com" target="_blank">
+                                      <Image src="/assets/images/sidebar/sidebar-2.jpg" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
                                       <span className="overlay"><i className="fa-brands fa-instagram"></i></span>
-                                  </a>
+                                  </Link>
                               </div>
                               <div className="insta-item">
-                                  <a href="https://www.instagram.com" target="_blank">
-                                      <img src="/assets/images/sidebar/sidebar-3.jpg" alt="" />
+                                  <Link href="https://www.instagram.com" target="_blank">
+                                      <Image src="/assets/images/sidebar/sidebar-3.jpg" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
                                       <span className="overlay"><i className="fa-brands fa-instagram"></i></span>
-                                  </a>
+                                  </Link>
                               </div>
                               <div className="insta-item">
-                                  <a href="https://www.instagram.com" target="_blank">
-                                      <img src="/assets/images/sidebar/sidebar-4.jpg" alt="" />
+                                  <Link href="https://www.instagram.com" target="_blank">
+                                      <Image src="/assets/images/sidebar/sidebar-4.jpg" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
                                       <span className="overlay"><i className="fa-brands fa-instagram"></i></span>
-                                  </a>
+                                  </Link>
                               </div>
                               <div className="insta-item">
-                                  <a href="https://www.instagram.com" target="_blank">
-                                      <img src="/assets/images/sidebar/sidebar-5.jpg" alt="" />
+                                  <Link href="https://www.instagram.com" target="_blank">
+                                      <Image src="/assets/images/sidebar/sidebar-5.jpg" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
                                       <span className="overlay"><i className="fa-brands fa-instagram"></i></span>
-                                  </a>
+                                  </Link>
                               </div>
                               <div className="insta-item">
-                                  <a href="https://www.instagram.com" target="_blank">
-                                      <img src="/assets/images/sidebar/sidebar-6.jpg" alt="" />
+                                  <Link href="https://www.instagram.com" target="_blank">
+                                      <Image src="/assets/images/sidebar/sidebar-6.jpg" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
                                       <span className="overlay"><i className="fa-brands fa-instagram"></i></span>
-                                  </a>
+                                  </Link>
                               </div>
                           </div>
                           
@@ -277,10 +267,10 @@ export default function Page() {
                           </form>
 
                           <ul className="sidebar-social">
-                              <li className="facebook"><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-                              <li className="instagram"><a href="#"><i className="fab fa-instagram"></i></a></li>
-                              <li className="twitter"><a href="#"><i className="fab fa-twitter"></i></a></li>
-                              <li className="g-plus"><a href="#"><i className="fab fa-google-plus"></i></a></li>
+                              <li className="facebook"><Link href="#"><i className="fab fa-facebook-f"></i></Link></li>
+                              <li className="instagram"><Link href="#"><i className="fab fa-instagram"></i></Link></li>
+                              <li className="twitter"><Link href="#"><i className="fab fa-twitter"></i></Link></li>
+                              <li className="g-plus"><Link href="#"><i className="fab fa-google-plus"></i></Link></li>
                           </ul>
                       </div>
                   </div>
@@ -293,27 +283,7 @@ export default function Page() {
 
               
               
-              <section className="tv-breadcrumb-section">
-                  <div className="tv-breadcrumb-inner mx-30 ml-mx-0 position-relative overflow-hidden br-30 ml-br-0">
-                      <div className="bg image"><img src="/assets/images/bg-img/breadcrumb.png" alt="" /></div>
-                      <div className="container">
-                          <div className="row">
-                              <div className="col-12">
-                                  <div className="title-outer">
-                                      <div className="page-title">
-                                          <h2 className="title">Brand Details</h2>
-                                          <ul className="page-breadcrumb">
-                                              <li><a href="/"><i className="fa-solid fa-house-chimney"></i>Home</a></li>
-                                              <li><span>/</span><a href="/brand"> Brands</a></li>
-                                              <li><span>/</span> Brand Details</li>
-                                          </ul>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </section>
+              <Breadcrumb title="Brand Details" paths={[{"name":"Brands","url":"/brand"},{"name":"Brand Details"}]} />
 
 
 
@@ -333,26 +303,26 @@ export default function Page() {
                                           <h4 className="sidebar-title"> Brands </h4>
                                           <div className="sidebar-service-list">
                                               <ul>
-                                                  <li className="current"><a href="#netand"> Netand IAM PAM <i className="fas fa-arrow-right"></i></a></li>
-                                                  <li><a href="#mirobase"> Mirobase Employee Monitoring <i className="fas fa-arrow-right"></i></a></li>
-                                                  <li><a href="#falcongaze"> FalconGaze SecureTower <i className="fas fa-arrow-right"></i></a></li>
-                                                  <li><a href="#somansa"> Somansa Endpoint DLP <i className="fas fa-arrow-right"></i></a></li>
-                                                  <li><a href="#secpoint"> SecPoint Penetrator <i className="fas fa-arrow-right"></i></a></li>
-                                                  <li><a href="#netop"> Netop Secure Remote Access <i className="fas fa-arrow-right"></i></a></li>
-                                                  <li><a href="#emsisoft"> Emsisoft Anti-Malware <i className="fas fa-arrow-right"></i></a></li>
-                                                  <li><a href="#vembu"> Vembu BDR Suite <i className="fas fa-arrow-right"></i></a></li>
-                                                  <li><a href="#acronis"> Acronis Backup Solution <i className="fas fa-arrow-right"></i></a></li>
+                                                  <li className="current"><Link href="#netand"> Netand IAM PAM <i className="fas fa-arrow-right"></i></Link></li>
+                                                  <li><Link href="#mirobase"> Mirobase Employee Monitoring <i className="fas fa-arrow-right"></i></Link></li>
+                                                  <li><Link href="#falcongaze"> FalconGaze SecureTower <i className="fas fa-arrow-right"></i></Link></li>
+                                                  <li><Link href="#somansa"> Somansa Endpoint DLP <i className="fas fa-arrow-right"></i></Link></li>
+                                                  <li><Link href="#secpoint"> SecPoint Penetrator <i className="fas fa-arrow-right"></i></Link></li>
+                                                  <li><Link href="#netop"> Netop Secure Remote Access <i className="fas fa-arrow-right"></i></Link></li>
+                                                  <li><Link href="#emsisoft"> Emsisoft Anti-Malware <i className="fas fa-arrow-right"></i></Link></li>
+                                                  <li><Link href="#vembu"> Vembu BDR Suite <i className="fas fa-arrow-right"></i></Link></li>
+                                                  <li><Link href="#acronis"> Acronis Backup Solution <i className="fas fa-arrow-right"></i></Link></li>
                                               </ul>
                                           </div>
                                       </div>
                                       <div className="widget-box service-details-help bg-dark">
-                                          <div className="bg image"><img src="/assets/images/service/details-bg.webp" alt="" /></div>
+                                          <div className="bg image"><Image src="/assets/images/service/details-bg.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></div>
                                           <div className="service-details-content">
-                                              <div className="icon"><img src="/assets/images/icons/contact.png" alt="" /></div>
+                                              <div className="icon"><Image src="/assets/images/icons/contact.png" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></div>
                                               <h2 className="help-title">Need Brand Guidance? <br /> Contact Us</h2>
                                               <p className="text">Talk to Panzer IT for the right security, backup and data protection brand fit.</p>
                                               <div className="help-contact">
-                                              <a href="/contact" className="theme-btn br-30">
+                                              <Link href="/contact" className="theme-btn br-30">
                                                   <span className="link-effect">
                                                       <span className="effect-1">Contact with Us</span>
                                                       <span className="effect-1">Contact with Us</span>
@@ -367,21 +337,21 @@ export default function Page() {
                                                           </svg>
                                                       </i>
                                                   </span>
-                                              </a>
+                                              </Link>
                                               </div>
                                           </div>
                                       </div>
                                       <div className="widget-box service-download-box mt-4">
                                           <h4 className="sidebar-title"> Downloads </h4>
                                           <div className="service-download-btn mb-10">
-                                              <a href="https://panzerit.com/brands/" target="_blank" className="theme-btn btn-style-1 d-grid">
-                                                  <span className="btn-title"><img className="mr-10" src="/assets/images/service/service-details-icon01.webp" alt="" />PIT_Presentation.pptx</span>
-                                              </a>
+                                              <Link href="https://panzerit.com/brands/" target="_blank" className="theme-btn btn-style-1 d-grid">
+                                                  <span className="btn-title"><Image className="mr-10" src="/assets/images/service/service-details-icon01.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />PIT_Presentation.pptx</span>
+                                              </Link>
                                           </div>
                                           <div className="service-download-btn">
-                                              <a href="/contact" className="theme-btn btn-style-2 d-grid bg-dark">
-                                                  <span className="btn-title"><img className="mr-10" src="/assets/images/service/service-details-icon02.webp" alt="" />Request Brand Consultation</span>
-                                              </a>
+                                              <Link href="/contact" className="theme-btn btn-style-2 d-grid bg-dark">
+                                                  <span className="btn-title"><Image className="mr-10" src="/assets/images/service/service-details-icon02.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />Request Brand Consultation</span>
+                                              </Link>
                                           </div>
                                       </div>
                                   </div>
@@ -392,7 +362,7 @@ export default function Page() {
                           <div className="col-xl-8 col-lg-8">
                               <div className="services-details__content">
                                   <div className="image overlay-anim1">
-                                      <img className="br-10 w-100" src="/assets/images/about/cyber.webp" alt="Panzer IT security brands" />
+                                      <Image className="br-10 w-100" src="/assets/images/about/cyber.webp" alt="Panzer IT security brands"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
                                   </div>
                                   <h3 className="title-two">Panzer IT Brand Portfolio</h3>
                                   <p>Panzer IT brings together specialist brands for identity and privileged access management, employee monitoring, data leak prevention, user behavior analytics, vulnerability assessment, secure remote access, anti-malware and backup protection.</p>
@@ -402,7 +372,7 @@ export default function Page() {
                                       <div className="col-lg-6 col-md-6">
                                           <div className="service-details-block">
                                               <div className="inner-box d-flex align-items-center">
-                                                  <div className="icon mr-20"><img src="/assets/images/service/alam.webp" alt="" /></div>
+                                                  <div className="icon mr-20"><Image src="/assets/images/service/alam.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></div>
                                                   <h5 className="title my-0">Security Brand <br />Portfolio</h5>
                                               </div>
                                           </div>
@@ -410,7 +380,7 @@ export default function Page() {
                                       <div className="col-lg-6 col-md-6">
                                           <div className="service-details-block">
                                               <div className="inner-box d-flex align-items-center">
-                                                  <div className="icon bg-dark mr-20"><img src="/assets/images/service/check.webp" alt="" /></div>
+                                                  <div className="icon bg-dark mr-20"><Image src="/assets/images/service/check.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></div>
                                                   <h5 className="title my-0">Implementation <br />& Support</h5>
                                               </div>
                                           </div>
@@ -422,18 +392,18 @@ export default function Page() {
                                       <div className="col-lg-6 col-md-6 col-sm-6">
                                           <div className="featured-list">
                                               <ul className="list-style-1">
-                                                  <li><span><img src="/assets/images/service/details-check.webp" alt="" /></span> IAM, PAM, PSM and DBAM</li>
-                                                  <li><span><img src="/assets/images/service/details-check.webp" alt="" /></span> Employee monitoring and UBA</li>
-                                                  <li><span><img src="/assets/images/service/details-check.webp" alt="" /></span> Endpoint DLP and insider threat visibility</li>
+                                                  <li><span><Image src="/assets/images/service/details-check.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></span> IAM, PAM, PSM and DBAM</li>
+                                                  <li><span><Image src="/assets/images/service/details-check.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></span> Employee monitoring and UBA</li>
+                                                  <li><span><Image src="/assets/images/service/details-check.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></span> Endpoint DLP and insider threat visibility</li>
                                               </ul>
                                           </div>
                                       </div>
                                       <div className="col-lg-6 col-md-6 col-sm-6">
                                           <div className="featured-list">
                                               <ul className="list-style-1">
-                                                  <li><span><img src="/assets/images/service/details-check.webp" alt="" /></span> VAPT and vulnerability management</li>
-                                                  <li><span><img src="/assets/images/service/details-check.webp" alt="" /></span> Secure remote access and control</li>
-                                                  <li><span><img src="/assets/images/service/details-check.webp" alt="" /></span> Anti-malware, backup and disaster recovery</li>
+                                                  <li><span><Image src="/assets/images/service/details-check.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></span> VAPT and vulnerability management</li>
+                                                  <li><span><Image src="/assets/images/service/details-check.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></span> Secure remote access and control</li>
+                                                  <li><span><Image src="/assets/images/service/details-check.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></span> Anti-malware, backup and disaster recovery</li>
                                               </ul>
                                           </div>
                                       </div>
@@ -442,7 +412,7 @@ export default function Page() {
                                       <div className="col-lg-4 col-md-6" id="netand">
                                           <div className="service-details-block h-100">
                                               <div className="inner-box d-block">
-                                                  <img src="/assets/images/brands/01.png" alt="Netand IAM PAM" className="mb-20 panzer-brand-detail-logo" />
+                                                  <Image src="/assets/images/brands/01.png" alt="Netand IAM PAM" className="mb-20 panzer-brand-detail-logo"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
                                                   <h5 className="title">Netand IAM PAM</h5>
                                                   <p className="mb-0">Integrated identity management, privileged access, session management and database access control for critical systems.</p>
                                               </div>
@@ -451,7 +421,7 @@ export default function Page() {
                                       <div className="col-lg-4 col-md-6" id="mirobase">
                                           <div className="service-details-block h-100">
                                               <div className="inner-box d-block">
-                                                  <img src="/assets/images/brands/02.png" alt="Mirobase Employee Monitoring" className="mb-20 panzer-brand-detail-logo" />
+                                                  <Image src="/assets/images/brands/02.png" alt="Mirobase Employee Monitoring" className="mb-20 panzer-brand-detail-logo"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
                                                   <h5 className="title">Mirobase Employee Monitoring</h5>
                                                   <p className="mb-0">Employee monitoring, productivity reporting and user activity visibility for insider-risk programs.</p>
                                               </div>
@@ -460,7 +430,7 @@ export default function Page() {
                                       <div className="col-lg-4 col-md-6" id="falcongaze">
                                           <div className="service-details-block h-100">
                                               <div className="inner-box d-block">
-                                                  <img src="/assets/images/brands/03.webp" alt="FalconGaze SecureTower" className="mb-20 panzer-brand-detail-logo" />
+                                                  <Image src="/assets/images/brands/03.webp" alt="FalconGaze SecureTower" className="mb-20 panzer-brand-detail-logo"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
                                                   <h5 className="title">FalconGaze SecureTower</h5>
                                                   <p className="mb-0">User behavior analytics and data security monitoring to detect policy violations and suspicious activity.</p>
                                               </div>
@@ -469,7 +439,7 @@ export default function Page() {
                                       <div className="col-lg-4 col-md-6" id="somansa">
                                           <div className="service-details-block h-100">
                                               <div className="inner-box d-block">
-                                                  <img src="/assets/images/brands/04.webp" alt="Somansa Endpoint DLP" className="mb-20 panzer-brand-detail-logo" />
+                                                  <Image src="/assets/images/brands/04.webp" alt="Somansa Endpoint DLP" className="mb-20 panzer-brand-detail-logo"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
                                                   <h5 className="title">Somansa Endpoint DLP</h5>
                                                   <p className="mb-0">Endpoint data loss prevention for monitoring, protecting and controlling sensitive business information.</p>
                                               </div>
@@ -478,7 +448,7 @@ export default function Page() {
                                       <div className="col-lg-4 col-md-6" id="secpoint">
                                           <div className="service-details-block h-100">
                                               <div className="inner-box d-block">
-                                                  <img src="/assets/images/brands/05.png" alt="SecPoint Penetrator" className="mb-20 panzer-brand-detail-logo" />
+                                                  <Image src="/assets/images/brands/05.png" alt="SecPoint Penetrator" className="mb-20 panzer-brand-detail-logo"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
                                                   <h5 className="title">SecPoint Penetrator</h5>
                                                   <p className="mb-0">Vulnerability scanning, assessment and penetration testing support for network and application risk.</p>
                                               </div>
@@ -487,7 +457,7 @@ export default function Page() {
                                       <div className="col-lg-4 col-md-6" id="netop">
                                           <div className="service-details-block h-100">
                                               <div className="inner-box d-block">
-                                                  <img src="/assets/images/brands/06.png" alt="Netop Secure Remote Access" className="mb-20 panzer-brand-detail-logo" />
+                                                  <Image src="/assets/images/brands/06.png" alt="Netop Secure Remote Access" className="mb-20 panzer-brand-detail-logo"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
                                                   <h5 className="title">Netop Secure Remote Access</h5>
                                                   <p className="mb-0">Secure remote access and remote control for support, administration and distributed IT operations.</p>
                                               </div>
@@ -496,7 +466,7 @@ export default function Page() {
                                       <div className="col-lg-4 col-md-6" id="emsisoft">
                                           <div className="service-details-block h-100">
                                               <div className="inner-box d-block">
-                                                  <img src="/assets/images/brands/07.png" alt="Emsisoft Anti-Malware" className="mb-20 panzer-brand-detail-logo" />
+                                                  <Image src="/assets/images/brands/07.png" alt="Emsisoft Anti-Malware" className="mb-20 panzer-brand-detail-logo"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
                                                   <h5 className="title">Emsisoft Anti-Malware</h5>
                                                   <p className="mb-0">Advanced anti-malware protection for endpoints, ransomware defense and modern threat prevention.</p>
                                               </div>
@@ -505,7 +475,7 @@ export default function Page() {
                                       <div className="col-lg-4 col-md-6" id="vembu">
                                           <div className="service-details-block h-100">
                                               <div className="inner-box d-block">
-                                                  <img src="/assets/images/brands/08.png" alt="Vembu BDR Suite" className="mb-20 panzer-brand-detail-logo" />
+                                                  <Image src="/assets/images/brands/08.png" alt="Vembu BDR Suite" className="mb-20 panzer-brand-detail-logo"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
                                                   <h5 className="title">Vembu BDR Suite</h5>
                                                   <p className="mb-0">Backup and disaster recovery for virtual, physical, cloud and SaaS workloads.</p>
                                               </div>
@@ -514,7 +484,7 @@ export default function Page() {
                                       <div className="col-lg-4 col-md-6" id="acronis">
                                           <div className="service-details-block h-100">
                                               <div className="inner-box d-block">
-                                                  <img src="/assets/images/brands/09.png" alt="Acronis Backup Solution" className="mb-20 panzer-brand-detail-logo" />
+                                                  <Image src="/assets/images/brands/09.png" alt="Acronis Backup Solution" className="mb-20 panzer-brand-detail-logo"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
                                                   <h5 className="title">Acronis Backup Solution</h5>
                                                   <p className="mb-0">Cyber protection, backup, disaster recovery and secure data access for business environments.</p>
                                               </div>
@@ -569,33 +539,33 @@ export default function Page() {
               </section>
 
               <footer className="footer-section panzer-compact-footer panzer-image-footer z-1 br-30 xxl-br-0 pt-75 position-relative mx-30 mb-30 xxl-m-0 overflow-hidden">
-                  <div className="bg image mbm-screen"><img src="/assets/images/footer/hm1-bg01.webp" alt="" /></div>
+                  <div className="bg image mbm-screen"><Image src="/assets/images/footer/hm1-bg01.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></div>
                   <div className="footer-top space">
                       <div className="container">
                           <div className="row">
                               <div className="col-lg-12 footer-brand">
                                   <div className="brand-info wow fadeInUp" data-wow-delay=".2s">
                                       <div className="logo">
-                                          <img src="/assets/images/logo/logo.png" alt="Panzer IT Logo" width="150" />
+                                          <Image src="/assets/images/logo/logo.png" alt="Panzer IT Logo" width="150"  height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
                                       </div>
                                       <div className="contact-info">
                                           <div className="contact-item">
                                               <h3 className="title">EMAIL</h3>
-                                              <a href="mailto:Sales@PanzerIT.com">
+                                              <Link href="mailto:Sales@PanzerIT.com">
                                                   <i className="fa-sharp fa-light fa-envelope"></i> Sales@PanzerIT.com
-                                              </a>
+                                              </Link>
                                           </div>
                                           <div className="contact-item">
                                               <h3 className="title">CALL US :</h3>
-                                              <a href="tel:+919004655099">
+                                              <Link href="tel:+919004655099">
                                                   <i className="flaticon-phone"></i> +91 90046 55099
-                                              </a>
+                                              </Link>
                                           </div>
                                           <div className="contact-item">
                                               <h3 className="title">LOCATION</h3>
-                                              <a href="/contact">
+                                              <Link href="/contact">
                                                   <i className="fa-solid fa-location-dot"></i> Navi Mumbai, Maharashtra
-                                              </a>
+                                              </Link>
                                           </div>
                                       </div>
                                       <div className="panzer-footer-newsletter">
@@ -610,10 +580,10 @@ export default function Page() {
                                           </form>
                                       </div>
                                       <div className="social-links">
-                                          <a href="#" className="social-icon"><i className="fab fa-facebook-f"></i></a>
-                                          <a href="#" className="social-icon"><i className="fab fa-x-twitter"></i></a>
-                                          <a href="#" className="social-icon"><i className="fab fa-linkedin-in"></i></a>
-                                          <a href="#" className="social-icon"><i className="fab fa-pinterest-p"></i></a>
+                                          <Link href="#" className="social-icon"><i className="fab fa-facebook-f"></i></Link>
+                                          <Link href="#" className="social-icon"><i className="fab fa-x-twitter"></i></Link>
+                                          <Link href="#" className="social-icon"><i className="fab fa-linkedin-in"></i></Link>
+                                          <Link href="#" className="social-icon"><i className="fab fa-pinterest-p"></i></Link>
                                       </div>
                                   </div>
                               </div>
@@ -632,7 +602,7 @@ export default function Page() {
                               </div>
                               <div className="col-md-6 text-md-end">
                                   <div className="footer-policy wow fadeInUp" data-wow-delay=".6s">
-                                      <a href="#">Privacy Policy</a>
+                                      <Link href="#">Privacy Policy</Link>
                                       
                                   </div>
                               </div>

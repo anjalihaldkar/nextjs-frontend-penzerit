@@ -15,17 +15,7 @@ export function RouteScripts() {
   const src = routeScripts[pathname];
 
   useEffect(() => {
-    const closePreloader = () => {
-      document.querySelectorAll(".loading-screen").forEach((element) => {
-        element.remove();
-      });
-    };
-
-    const timer = window.setTimeout(closePreloader, 700);
-
-    return () => {
-      window.clearTimeout(timer);
-    };
+    // Other route-specific cleanup can go here if needed
   }, [pathname]);
 
   if (!src) {

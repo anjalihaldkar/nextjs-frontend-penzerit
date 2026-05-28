@@ -93,7 +93,7 @@ JS TABLE OF CONTENTS
 		var $loader = $("#loading-screen");
 		var hideLoader = function () {
 			$(".loading-screen").stop(true, true).fadeOut(180, function () {
-				$(this).remove();
+				// $(this).remove(); // Removed so React can safely unmount the component
 			});
 		};
 

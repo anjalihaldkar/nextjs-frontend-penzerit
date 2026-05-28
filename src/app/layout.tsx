@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { RouteScripts } from "@/components/RouteScripts";
+import { Preloader } from "@/components/Preloader";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -41,6 +42,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="/assets/css/style.css?v=20260528" />
       </head>
       <body suppressHydrationWarning>
+        <Preloader />
         {children}
 
         {/* Template JS (kept as-is). Order matters. Vendor libraries load early, then
