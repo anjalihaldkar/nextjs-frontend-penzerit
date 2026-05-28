@@ -1,0 +1,21 @@
+"use client";
+
+import { usePathname } from "next/navigation";
+import Script from "next/script";
+
+const routeScripts: Record<string, string> = {
+  "/": "/page-scripts/home.js?v=20260528",
+  "/brand": "/page-scripts/brand.js?v=20260528",
+  "/solution": "/page-scripts/solution.js?v=20260528",
+};
+
+export function RouteScripts() {
+  const pathname = usePathname();
+  const src = routeScripts[pathname];
+
+  if (!src) {
+    return null;
+  }
+
+  return <Script key={src} src={src} strategy="afterInteractive" />;
+}
