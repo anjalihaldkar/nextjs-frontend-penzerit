@@ -574,7 +574,7 @@ export default function Page() {
                                 <div className="cta-content-wrapper">
                                    <div className="title-wrap three" data-wow-duration="1.5s" data-wow-delay=".4s">
                                         <div className="sub-title-2 text-theme"><i className="fa-solid fa-circle-check"></i>Get In Touch</div>
-                                        <h2 className="sec-title">Letâ€™s Collaborate with Us</h2>
+                                        <h2 className="sec-title">Let&apos;s Collaborate with Us</h2>
                                         <p>Collaboratively supply bricks-and-clicks metrics for maintainable users from <br /> reinvent unique value for just in time consult.</p>
                                     </div>
                                     <a href="/contact" className="theme-btn">

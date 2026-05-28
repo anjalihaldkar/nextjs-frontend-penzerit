@@ -44,7 +44,7 @@ JS TABLE OF CONTENTS
 		preLoader();
 	});
 
-	$(window).on("load", function () {
+	function initTemplateOnLoad() {
 		smoothScrolling();
 		tiltHover();
 		popupSearch();
@@ -74,8 +74,13 @@ JS TABLE OF CONTENTS
 		allSlider();
 		gsapController();
 		dataItemHover();
+	}
 
-	});
+	if (document.readyState === "complete") {
+		window.setTimeout(initTemplateOnLoad, 0);
+	} else {
+		$(window).on("load", initTemplateOnLoad);
+	}
 
 	scrollTop();
 

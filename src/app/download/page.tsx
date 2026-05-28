@@ -592,7 +592,7 @@ export default function Page() {
                                                           <option value="scopd-dlp">Scopd DLP with UEBA
                                                           </option>
                                                           <option value="backup-recovery">Backup & Disaster Recovery</option>
-                                                          <option value="dlp">Data Leak Prevention â€“ DLP</option>
+                                                          <option value="dlp">Data Leak Prevention - DLP</option>
                                                           <option value="vapt">Vulnerability Scanner, Assessment & VAPT</option>
                                                           <option value="employee-monitoring">Employee Monitoring</option>
                                                           <option value="edr">Advance Threat Prevention | EDR | EPS</option>

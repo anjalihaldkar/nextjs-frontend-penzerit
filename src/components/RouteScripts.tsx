@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Script from "next/script";
 
@@ -12,6 +13,20 @@ const routeScripts: Record<string, string> = {
 export function RouteScripts() {
   const pathname = usePathname();
   const src = routeScripts[pathname];
+
+  useEffect(() => {
+    const closePreloader = () => {
+      document.querySelectorAll(".loading-screen").forEach((element) => {
+        element.remove();
+      });
+    };
+
+    const timer = window.setTimeout(closePreloader, 700);
+
+    return () => {
+      window.clearTimeout(timer);
+    };
+  }, [pathname]);
 
   if (!src) {
     return null;

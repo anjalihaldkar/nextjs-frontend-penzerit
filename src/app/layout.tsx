@@ -43,10 +43,8 @@ export default function RootLayout({
       <body suppressHydrationWarning>
         {children}
 
-        {/* Template JS (kept as-is). Order matters.
-            IMPORTANT: many template features initialize on window "load".
-            In Next.js, if these scripts load AFTER the load event, init won't run.
-            So we load them beforeInteractive to match the old static HTML behavior. */}
+        {/* Template JS (kept as-is). Order matters. Vendor libraries load early, then
+            main.js runs after hydration so it cannot rewrite the DOM before React starts. */}
         <Script src="/assets/js/vendor/jquery-3.7.1.min.js" strategy="beforeInteractive" />
 
         <Script src="/assets/js/bootstrap.min.js" strategy="beforeInteractive" />
@@ -71,7 +69,7 @@ export default function RootLayout({
         <Script src="/assets/js/three.min.js" strategy="beforeInteractive" />
         <Script src="/assets/js/hover.js" strategy="beforeInteractive" />
 
-        <Script src="/assets/js/main.js?v=20260524" strategy="beforeInteractive" />
+        <Script src="/assets/js/main.js?v=20260528" strategy="afterInteractive" />
         <RouteScripts />
       </body>
     </html>

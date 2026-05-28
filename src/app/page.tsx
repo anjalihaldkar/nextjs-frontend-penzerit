@@ -806,7 +806,7 @@ export default function Page() {
 
 
 
-        <section className="tv-hero-section  style-4 panzer-cyber-hero">
+        <section className="tv-hero-section style-4 panzer-cyber-hero panzer-brand-partners-section">
                 <div className="panzer-cyber-brand-strip">
                         
                         <div className="tv-brands-section style-3 position-relative z-3">

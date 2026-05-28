@@ -1,4 +1,4 @@
-/* Auto-generated from solution.html. Runs after Next.js scripts load. */
+/* Solution page route adjustments. */
 (function () {
     function whenReady(fn) {
         if (document.readyState === "loading") {
@@ -9,29 +9,20 @@
     }
 
     whenReady(function () {
-            var ctaTitle = document.querySelector(".tv-cta-section .sec-title");
-            var ctaText = document.querySelector(".tv-cta-section .cta-content-wrapper p");
-            var footerCopy = document.querySelector(".footer-bottom .copyright .mb-0");
-            var menuLinks = document.querySelectorAll(".main-menu .sub-menu a");
+        var ctaTitle = document.querySelector(".tv-cta-section .sec-title");
+        var ctaText = document.querySelector(".tv-cta-section .cta-content-wrapper p");
+        var footerCopy = document.querySelector(".footer-bottom .copyright .mb-0");
 
-            if (ctaTitle) {
-                ctaTitle.textContent = "Let's Make IT Secure";
-            }
+        if (ctaTitle) {
+            ctaTitle.textContent = "Let's Make IT Secure";
+        }
 
-            if (ctaText) {
-                ctaText.textContent = "Panzer IT helps organizations achieve continuous secure data accessibility and availability with the right protection, backup and response strategy.";
-            }
+        if (ctaText) {
+            ctaText.textContent = "Panzer IT helps organizations achieve continuous secure data accessibility and availability with the right protection, backup and response strategy.";
+        }
 
-            if (footerCopy) {
-                footerCopy.textContent = "Copyright Panzer IT - Make IT Secure. All Rights Reserved.";
-            }
-
-            menuLinks.forEach(function (link) {
-                if (link.textContent.indexOf("Ã¢") !== -1) {
-                    link.textContent = link.textContent
-                        .replace("Ã¢â‚¬â€œ", "-")
-                        .replace("Ã¢â‚¬â€", "-");
-                }
-            });
-        });
+        if (footerCopy) {
+            footerCopy.textContent = "Copyright Panzer IT - Make IT Secure. All Rights Reserved.";
+        }
+    });
 })();

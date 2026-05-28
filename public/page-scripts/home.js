@@ -1,4 +1,4 @@
-/* Auto-generated from index.html. Runs after Next.js scripts load. */
+/* Home page route behavior. */
 (function () {
   // In Next.js, page scripts can load AFTER DOMContentLoaded / window.load.
   // Also, vendor scripts (Swiper) may load after this file.
@@ -194,7 +194,10 @@
       // eslint-disable-next-line no-undef
       new Swiper(".panzer-cyber-slider", {
         slidesPerView: 1,
-        loop: slideTotal > 1,
+        spaceBetween: 0,
+        centeredSlides: false,
+        loop: false,
+        rewind: slideTotal > 1,
         speed: 900,
         grabCursor: true,
         watchSlidesProgress: true,

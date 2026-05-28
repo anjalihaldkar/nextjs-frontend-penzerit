@@ -420,7 +420,7 @@ export default function Page() {
                                               <ul className="list-style-1">
                                                   <li><span><img src="/assets/images/service/details-check.webp" alt="" /></span> Completely provide access to goal </li>
                                                   <li><span><img src="/assets/images/service/details-check.webp" alt="" /></span> Globally transform competitive</li>
-                                                  <li><span><img src="/assets/images/service/details-check.webp" alt="" /></span> Monotonectally clientâ€™s focused </li>
+                                                  <li><span><img src="/assets/images/service/details-check.webp" alt="" /></span> Monotonectally client&apos;s focused </li>
                                               </ul>
                                           </div>
                                       </div>
@@ -429,7 +429,7 @@ export default function Page() {
                                               <ul className="list-style-1">
                                                   <li><span><img src="/assets/images/service/details-check.webp" alt="" /></span> Completely provide access to goal </li>
                                                   <li><span><img src="/assets/images/service/details-check.webp" alt="" /></span> Globally transform competitive</li>
-                                                  <li><span><img src="/assets/images/service/details-check.webp" alt="" /></span> Monotonectally clientâ€™s focused </li>
+                                                  <li><span><img src="/assets/images/service/details-check.webp" alt="" /></span> Monotonectally client&apos;s focused </li>
                                               </ul>
                                           </div>
                                       </div>
