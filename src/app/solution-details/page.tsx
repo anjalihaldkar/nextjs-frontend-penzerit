@@ -1,46 +1,11 @@
-import { SiteFooter } from "@/components/SiteFooter";
-import { SiteHeader } from "@/components/SiteHeader";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Page() {
   return (
-    <div className="panzer-page panzer-page-solution-details">
-<div className="page-wrapper bg-light">
-
-              
-              
-
-
-              
-               <SiteHeader />
-
-              
-              
-
-
-              
-              
-              
-
-
-              
-              
-              
-
-
-              
-              
-              
-
-
-
-
-
-              
-              
-              <Breadcrumb title="Solution Details" paths={[{"name":"Solutions","url":"/solution"},{"name":"Solution Details"}]} />
+    <>
+<Breadcrumb title="Solution Details" paths={[{"name":"Solutions","url":"/solution"},{"name":"Solution Details"}]} />
 
 
 
@@ -69,9 +34,9 @@ export default function Page() {
                                           </div>
                                       </div>
                                       <div className="widget-box service-details-help bg-dark">
-                                          <div className="bg image"><Image src="/assets/images/service/details-bg.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></div>
+                                          <div className="bg image"><Image src="/assets/images/service/details-bg.webp" alt="" width={392} height={468} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
                                           <div className="service-details-content">
-                                              <div className="icon"><Image src="/assets/images/icons/contact.png" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></div>
+                                              <div className="icon"><Image src="/assets/images/icons/contact.png" alt="" width={54} height={48} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
                                               <h2 className="help-title">Need Tech Service? <br /> Contact Us</h2>
                                               <p className="text">Professionally reintermediate technics Credibly pontificate turnkey</p>
                                               <div className="help-contact">
@@ -98,12 +63,12 @@ export default function Page() {
                                           <h4 className="sidebar-title"> Downloads </h4>
                                           <div className="service-download-btn mb-10">
                                               <Link href="#" className="theme-btn btn-style-1 d-grid">
-                                                  <span className="btn-title"><Image className="mr-10" src="/assets/images/service/service-details-icon01.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />Company Report 2025.pdf</span>
+                                                  <span className="btn-title"><Image className="mr-10" src="/assets/images/service/service-details-icon01.webp" alt="" width={18} height={24} sizes="100vw" style={{ width: "100%", height: "auto" }} />Company Report 2025.pdf</span>
                                               </Link>
                                           </div>
                                           <div className="service-download-btn">
                                               <Link href="#" className="theme-btn btn-style-2 d-grid bg-dark">
-                                                  <span className="btn-title"><Image className="mr-10" src="/assets/images/service/service-details-icon02.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />Company Brochure.doc</span>
+                                                  <span className="btn-title"><Image className="mr-10" src="/assets/images/service/service-details-icon02.webp" alt="" width={22} height={24} sizes="100vw" style={{ width: "100%", height: "auto" }} />Company Brochure.doc</span>
                                               </Link>
                                           </div>
                                       </div>
@@ -115,7 +80,7 @@ export default function Page() {
                           <div className="col-xl-8 col-lg-8">
                               <div className="services-details__content">
                                   <div className="image overlay-anim1">
-                                      <Image className="br-10 w-100" src="/assets/images/service/details-img01.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                      <Image className="br-10 w-100" src="/assets/images/service/details-img01.webp" alt="" width={872} height={500} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                   </div>
                                   <h3 className="title-two">Web and Mobile UI/UX Designing</h3>
                                   <p>Phosfluorescently parallel task intermandated functionalities with virtual synergy. Uniquely syndicate products deliverables through viral core competencies. Phosfluorescently maximize process-centric modells principles relationships. Distinctively pursue diverse resources vis-a-vis pandemic innovation. Appropriately in corporate alignments for 24/365 systems.</p>
@@ -125,7 +90,7 @@ export default function Page() {
                                       <div className="col-lg-6 col-md-6">
                                           <div className="service-details-block">
                                               <div className="inner-box d-flex align-items-center">
-                                                  <div className="icon mr-20"><Image src="/assets/images/service/alam.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></div>
+                                                  <div className="icon mr-20"><Image src="/assets/images/service/alam.webp" alt="" width={22} height={27} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
                                                   <h5 className="title my-0">Real Time Tracking <br /> Gaurantee</h5>
                                               </div>
                                           </div>
@@ -133,7 +98,7 @@ export default function Page() {
                                       <div className="col-lg-6 col-md-6">
                                           <div className="service-details-block">
                                               <div className="inner-box d-flex align-items-center">
-                                                  <div className="icon bg-dark mr-20"><Image src="/assets/images/service/check.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></div>
+                                                  <div className="icon bg-dark mr-20"><Image src="/assets/images/service/check.webp" alt="" width={22} height={23} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
                                                   <h5 className="title my-0">Security Gaurantee <br /> for Cargo Service</h5>
                                               </div>
                                           </div>
@@ -145,18 +110,18 @@ export default function Page() {
                                       <div className="col-lg-6 col-md-6 col-sm-6">
                                           <div className="featured-list">
                                               <ul className="list-style-1">
-                                                  <li><span><Image src="/assets/images/service/details-check.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></span> Completely provide access to goal </li>
-                                                  <li><span><Image src="/assets/images/service/details-check.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></span> Globally transform competitive</li>
-                                                  <li><span><Image src="/assets/images/service/details-check.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></span> Monotonectally client&apos;s focused </li>
+                                                  <li><span><Image src="/assets/images/service/details-check.webp" alt="" width={16} height={14} sizes="100vw" style={{ width: "100%", height: "auto" }} /></span> Completely provide access to goal </li>
+                                                  <li><span><Image src="/assets/images/service/details-check.webp" alt="" width={16} height={14} sizes="100vw" style={{ width: "100%", height: "auto" }} /></span> Globally transform competitive</li>
+                                                  <li><span><Image src="/assets/images/service/details-check.webp" alt="" width={16} height={14} sizes="100vw" style={{ width: "100%", height: "auto" }} /></span> Monotonectally client&apos;s focused </li>
                                               </ul>
                                           </div>
                                       </div>
                                       <div className="col-lg-6 col-md-6 col-sm-6">
                                           <div className="featured-list">
                                               <ul className="list-style-1">
-                                                  <li><span><Image src="/assets/images/service/details-check.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></span> Completely provide access to goal </li>
-                                                  <li><span><Image src="/assets/images/service/details-check.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></span> Globally transform competitive</li>
-                                                  <li><span><Image src="/assets/images/service/details-check.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></span> Monotonectally client&apos;s focused </li>
+                                                  <li><span><Image src="/assets/images/service/details-check.webp" alt="" width={16} height={14} sizes="100vw" style={{ width: "100%", height: "auto" }} /></span> Completely provide access to goal </li>
+                                                  <li><span><Image src="/assets/images/service/details-check.webp" alt="" width={16} height={14} sizes="100vw" style={{ width: "100%", height: "auto" }} /></span> Globally transform competitive</li>
+                                                  <li><span><Image src="/assets/images/service/details-check.webp" alt="" width={16} height={14} sizes="100vw" style={{ width: "100%", height: "auto" }} /></span> Monotonectally client&apos;s focused </li>
                                               </ul>
                                           </div>
                                       </div>
@@ -164,12 +129,12 @@ export default function Page() {
                                   <div className="row md-gy-30 align-items-center">
                                       <div className="col-lg-6 col-md-6 col-sm-6">
                                           <div className="details-image-box overlay-anim1">
-                                              <Image className="img1 w-100 br-10" src="/assets/images/service/details-img02.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                              <Image className="img1 w-100 br-10" src="/assets/images/service/details-img02.webp" alt="" width={424} height={300} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                           </div>
                                       </div>
                                       <div className="col-lg-6 col-md-6 col-sm-6">
                                           <div className="details-image-box overlay-anim1">
-                                              <Image className="img1 w-100 br-10" src="/assets/images/service/details-img03.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                              <Image className="img1 w-100 br-10" src="/assets/images/service/details-img03.webp" alt="" width={424} height={300} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                           </div>
                                       </div>
                                   </div>
@@ -225,14 +190,6 @@ export default function Page() {
                   </div>
                   </div>
               </section>
-
-              <SiteFooter />
-          </div>
-          
-
-
-          
-      	
-    </div>
+    </>
   );
 }

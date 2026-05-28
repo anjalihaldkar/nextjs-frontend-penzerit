@@ -32,6 +32,19 @@
     })();
   }
 
+  function whenMarqueeReady(fn) {
+    var tries = 0;
+    (function check() {
+      if (window.jQuery && window.jQuery.fn && window.jQuery.fn.marquee) {
+        fn(window.jQuery);
+        return;
+      }
+      tries += 1;
+      if (tries > 200) return; // ~10s max
+      setTimeout(check, 50);
+    })();
+  }
+
   function initBrandPartners() {
     var brandPanel = document.querySelector(".panzer-cyber-brand-panel");
     var brandSliderElement = brandPanel ? brandPanel.querySelector(".brands-slider-three") : null;
@@ -122,7 +135,9 @@
     var servicePrevButton = document.querySelector(".panzer-service-prev");
     var serviceNextButton = document.querySelector(".panzer-service-next");
 
-    if (serviceScroller && servicePrevButton && serviceNextButton) {
+    if (serviceScroller && servicePrevButton && serviceNextButton && !serviceScroller.dataset.panzerServiceReady) {
+      serviceScroller.dataset.panzerServiceReady = "true";
+
       function getServiceStep() {
         var firstSlide = serviceScroller.querySelector(".swiper-slide");
         var wrapper = serviceScroller.querySelector(".swiper-wrapper");
@@ -162,6 +177,10 @@
       if (typeof Swiper === "undefined") return;
 
       var slideTotal = sliderElement.querySelectorAll(".swiper-wrapper > .swiper-slide").length;
+
+      if (sliderElement.swiper && !sliderElement.swiper.destroyed) {
+        sliderElement.swiper.destroy(true, true);
+      }
 
       function formatSlideNumber(value) {
         return String(value).padStart(2, "0");
@@ -233,6 +252,32 @@
     });
   }
 
+  function initMarquee() {
+    var marquee = document.querySelector(".tv-marquee-section .marquee_mode");
+    if (!marquee) return;
+
+    whenMarqueeReady(function ($) {
+      var $marquee = $(marquee);
+
+      if ($marquee.find(".js-marquee-wrapper").length) {
+        $marquee.marquee("destroy");
+      }
+
+      $marquee.marquee({
+        speed: 40,
+        gap: 0,
+        delayBeforeStart: 0,
+        direction: "left",
+        duplicated: true,
+        pauseOnHover: true,
+        startVisible: true,
+      });
+    });
+  }
+
   whenWindowLoaded(initBrandPartners);
-  whenReady(initHeroAndService);
+  whenReady(function () {
+    initHeroAndService();
+    initMarquee();
+  });
 })();

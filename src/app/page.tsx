@@ -1,49 +1,16 @@
-import { SiteFooter } from "@/components/SiteFooter";
-import { SiteHeader } from "@/components/SiteHeader";
-import { Breadcrumb } from "@/components/Breadcrumb";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Page() {
   return (
     <>
-      <div className="panzer-page panzer-page-home">
-<div className="page-wrapper bg-light">
-
-                
-                
-
-
-                
-                 <SiteHeader />
-
-                
-                
-
-
-                
-                
-                
-
-
-                
-                
-                
-
-
-                
-                
-                
-
-
-                
-                <section className="tv-hero-section  style-4 panzer-cyber-hero">
+<section className="tv-hero-section  style-4 panzer-cyber-hero">
                     <div className="panzer-cyber-slider-wrap">
                         <div className="panzer-cyber-slider swiper" aria-label="Hero banner slider">
                             <div className="swiper-wrapper">
                                 <div className="swiper-slide">
                                     <div className="panzer-cyber-slide">
-                                        <Image className="panzer-cyber-image" src="/assets/images/hero/bg1.webp" alt="Cyber security operations banner"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                        <Image className="panzer-cyber-image" src="/assets/images/hero/bg1.webp" alt="Cyber security operations banner" width={612} height={367} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                         <div className="container panzer-cyber-shell">
                                             <div className="panzer-cyber-copy" data-swiper-parallax="-180">
                                                 <span className="panzer-cyber-kicker">Managed Security</span>
@@ -59,7 +26,7 @@ export default function Page() {
                                             </div>
                                             <aside className="panzer-cyber-visual" data-swiper-parallax="-90">
                                                 <div className="panzer-cyber-visual-frame">
-                                                    <Image className="panzer-cyber-visual-image" src="/assets/images/hero/banner.webp" alt="Cyber security lock on circuit board"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                                    <Image className="panzer-cyber-visual-image" src="/assets/images/hero/banner.webp" alt="Cyber security lock on circuit board" width={622} height={350} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                                 </div>
                                             </aside>
                                         </div>
@@ -67,7 +34,7 @@ export default function Page() {
                                 </div>
                                 <div className="swiper-slide">
                                     <div className="panzer-cyber-slide">
-                                        <Image className="panzer-cyber-image" src="/assets/images/hero/b2.jpg" alt="Cyber threat monitoring banner"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                        <Image className="panzer-cyber-image" src="/assets/images/hero/b2.jpg" alt="Cyber threat monitoring banner" width={427} height={240} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                         <div className="container panzer-cyber-shell">
                                             <div className="panzer-cyber-copy" data-swiper-parallax="-180">
                                                 <span className="panzer-cyber-kicker">Data Protection</span>
@@ -83,7 +50,7 @@ export default function Page() {
                                             </div>
                                             <aside className="panzer-cyber-visual" data-swiper-parallax="-90">
                                                 <div className="panzer-cyber-visual-frame">
-                                                    <Image className="panzer-cyber-visual-image" src="/assets/images/hero/banner.webp" alt="Cyber security lock on circuit board"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                                    <Image className="panzer-cyber-visual-image" src="/assets/images/hero/banner.webp" alt="Cyber security lock on circuit board" width={622} height={350} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                                 </div>
                                             </aside>
                                         </div>
@@ -91,7 +58,7 @@ export default function Page() {
                                 </div>
                                 <div className="swiper-slide">
                                     <div className="panzer-cyber-slide">
-                                        <Image className="panzer-cyber-image" src="/assets/images/hero/bg3.webp" alt="Cyber defense and data protection banner"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                        <Image className="panzer-cyber-image" src="/assets/images/hero/bg3.webp" alt="Cyber defense and data protection banner" width={612} height={245} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                         <div className="container panzer-cyber-shell">
                                             <div className="panzer-cyber-copy" data-swiper-parallax="-180">
                                                 <span className="panzer-cyber-kicker">Backup And Recovery</span>
@@ -107,7 +74,7 @@ export default function Page() {
                                             </div>
                                             <aside className="panzer-cyber-visual" data-swiper-parallax="-90">
                                                 <div className="panzer-cyber-visual-frame">
-                                                    <Image className="panzer-cyber-visual-image" src="/assets/images/hero/banner.webp" alt="Cyber security lock on circuit board"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                                    <Image className="panzer-cyber-visual-image" src="/assets/images/hero/banner.webp" alt="Cyber security lock on circuit board" width={622} height={350} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                                 </div>
                                             </aside>
                                         </div>
@@ -188,10 +155,10 @@ export default function Page() {
                                                 <div className="service-box-four">
                                                     <div className="inner">
                                                         <div className="image-box">
-                                                            <div className="thumb overlay-anim4"><Image src="/assets/images/service/malware.webp" alt="Service 01"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                                            <div className="thumb overlay-anim4"><Image src="/assets/images/service/malware.webp" alt="Service 01" width={612} height={459} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                                             </div>
                                                             <div className="service-icon">
-                                                                <img src="/assets/images/service/hm4-icon01.webp" alt="Icon" />
+                                                                <Image width={46} height={46} src="/assets/images/service/hm4-icon01.webp" alt="Icon" />
                                                             </div>
                                                         </div>
                                                         <div className="content">
@@ -209,10 +176,10 @@ export default function Page() {
                                                 <div className="service-box-four current">
                                                     <div className="inner">
                                                         <div className="image-box">
-                                                            <div className="thumb overlay-anim4"><Image src="/assets/images/service/recovery.webp" alt="Service 01"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                                            <div className="thumb overlay-anim4"><Image src="/assets/images/service/recovery.webp" alt="Service 01" width={563} height={360} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                                             </div>
                                                             <div className="service-icon">
-                                                                <img src="/assets/images/service/hm4-icon02.webp" alt="Icon" />
+                                                                <Image width={44} height={44} src="/assets/images/service/hm4-icon02.webp" alt="Icon" />
                                                             </div>
                                                         </div>
                                                         <div className="content">
@@ -230,10 +197,10 @@ export default function Page() {
                                                 <div className="service-box-four">
                                                     <div className="inner">
                                                         <div className="image-box">
-                                                            <div className="thumb overlay-anim4"><Image src="/assets/images/service/leak.webp" alt="Service 01"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                                            <div className="thumb overlay-anim4"><Image src="/assets/images/service/leak.webp" alt="Service 01" width={612} height={344} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                                             </div>
                                                             <div className="service-icon">
-                                                                <img src="/assets/images/service/hm4-icon03.webp" alt="Icon" />
+                                                                <Image width={40} height={40} src="/assets/images/service/hm4-icon03.webp" alt="Icon" />
                                                             </div>
                                                         </div>
                                                         <div className="content">
@@ -254,10 +221,10 @@ export default function Page() {
                                                 <div className="service-box-four">
                                                     <div className="inner">
                                                         <div className="image-box">
-                                                            <div className="thumb overlay-anim4"><Image src="/assets/images/service/1-3.webp" alt="Service 01"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                                            <div className="thumb overlay-anim4"><Image src="/assets/images/service/1-3.webp" alt="Service 01" width={500} height={281} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                                             </div>
                                                             <div className="service-icon">
-                                                                <img src="/assets/images/service/hm4-icon01.webp" alt="Icon" />
+                                                                <Image width={46} height={46} src="/assets/images/service/hm4-icon01.webp" alt="Icon" />
                                                             </div>
                                                         </div>
                                                         <div className="content">
@@ -275,10 +242,10 @@ export default function Page() {
                                                 <div className="service-box-four current">
                                                     <div className="inner">
                                                         <div className="image-box">
-                                                            <div className="thumb overlay-anim4"><Image src="/assets/images/service/i-1.webp" alt="Service 01"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                                            <div className="thumb overlay-anim4"><Image src="/assets/images/service/i-1.webp" alt="Service 01" width={860} height={556} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                                             </div>
                                                             <div className="service-icon">
-                                                                <img src="/assets/images/service/hm4-icon02.webp" alt="Icon" />
+                                                                <Image width={44} height={44} src="/assets/images/service/hm4-icon02.webp" alt="Icon" />
                                                             </div>
                                                         </div>
                                                         <div className="content">
@@ -296,10 +263,10 @@ export default function Page() {
                                                 <div className="service-box-four">
                                                     <div className="inner">
                                                         <div className="image-box">
-                                                            <div className="thumb overlay-anim4"><Image src="/assets/images/service/i-2.webp" alt="Service 01"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                                            <div className="thumb overlay-anim4"><Image src="/assets/images/service/i-2.webp" alt="Service 01" width={640} height={480} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                                             </div>
                                                             <div className="service-icon">
-                                                                <img src="/assets/images/service/hm4-icon03.webp" alt="Icon" />
+                                                                <Image width={40} height={40} src="/assets/images/service/hm4-icon03.webp" alt="Icon" />
                                                             </div>
                                                         </div>
                                                         <div className="content">
@@ -319,10 +286,10 @@ export default function Page() {
                                                 <div className="service-box-four">
                                                     <div className="inner">
                                                         <div className="image-box">
-                                                            <div className="thumb overlay-anim4"><Image src="/assets/images/service/sccanner.webp" alt="Service 01"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                                            <div className="thumb overlay-anim4"><Image src="/assets/images/service/sccanner.webp" alt="Service 01" width={643} height={360} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                                             </div>
                                                             <div className="service-icon">
-                                                                <img src="/assets/images/service/hm4-icon01.webp" alt="Icon" />
+                                                                <Image width={46} height={46} src="/assets/images/service/hm4-icon01.webp" alt="Icon" />
                                                             </div>
                                                         </div>
                                                         <div className="content">
@@ -340,10 +307,10 @@ export default function Page() {
                                                 <div className="service-box-four current">
                                                     <div className="inner">
                                                         <div className="image-box">
-                                                            <div className="thumb overlay-anim4"><Image src="/assets/images/service/pre.webp" alt="Service 01"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                                            <div className="thumb overlay-anim4"><Image src="/assets/images/service/pre.webp" alt="Service 01" width={860} height={401} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                                             </div>
                                                             <div className="service-icon">
-                                                                <img src="/assets/images/service/hm4-icon02.webp" alt="Icon" />
+                                                                <Image width={44} height={44} src="/assets/images/service/hm4-icon02.webp" alt="Icon" />
                                                             </div>
                                                         </div>
                                                         <div className="content">
@@ -361,10 +328,10 @@ export default function Page() {
                                                 <div className="service-box-four">
                                                     <div className="inner">
                                                         <div className="image-box">
-                                                            <div className="thumb overlay-anim4"><Image src="/assets/images/service/1-3.webp" alt="Service 01"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                                            <div className="thumb overlay-anim4"><Image src="/assets/images/service/1-3.webp" alt="Service 01" width={500} height={281} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                                             </div>
                                                             <div className="service-icon">
-                                                                <img src="/assets/images/service/hm4-icon03.webp" alt="Icon" />
+                                                                <Image width={40} height={40} src="/assets/images/service/hm4-icon03.webp" alt="Icon" />
                                                             </div>
                                                         </div>
                                                         <div className="content">
@@ -404,7 +371,7 @@ export default function Page() {
                                     <div className="main-image-box">
                                         
                                         <div className="image-group panzer-about-single-image">
-                                            <div className="image1  for-sat-image" data-wow-delay="0.2s"><Image className="br-30 mw-inherit" src="/assets/images/about/cc.webp" alt="People discussing"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></div>
+                                            <div className="image1  for-sat-image" data-wow-delay="0.2s"><Image className="br-30 mw-inherit" src="/assets/images/about/cc.webp" alt="People discussing" width={612} height={344} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
                                         </div>
                                     </div>
                                 </div>
@@ -483,7 +450,7 @@ export default function Page() {
                                         </div>
                                         <div className="inner-contact">
                                             <div className="icon">
-                                                <Image src="/assets/images/callus/call-iocn.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                                <Image src="/assets/images/callus/call-iocn.webp" alt="" width={40} height={40} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                             </div>
                                             <div className="content">
                                                 <h6 className="call-text">Contact Us</h6>
@@ -517,7 +484,7 @@ export default function Page() {
                                                 </g>outer-box
                                             </svg>
                                         </div>
-                                        <div className="thumb img-anim-right"><Image src="/assets/images/achivement/man.png" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></div>
+                                        <div className="thumb img-anim-right"><Image src="/assets/images/achivement/man.png" alt="" width={587} height={704} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
                                     </div>
                                 </div>
                                 <div className="col-lg-3 col-xxl-3">
@@ -528,7 +495,7 @@ export default function Page() {
                                         </div>
                                         <div className="counter-box bg-light">
                                             <div className="counter-inner">
-                                                <div className="icon"><Image src="/assets/images/achivement/hm2-icon01.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                                <div className="icon"><Image src="/assets/images/achivement/hm2-icon01.webp" alt="" width={29} height={29} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                                 </div>
                                                 <div className="count"><span className="count-number odometer" data-count="11">0</span><span className="plus">+</span></div>
                                             </div>
@@ -536,7 +503,7 @@ export default function Page() {
                                         </div>
                                         <div className="counter-box bg-light">
                                             <div className="counter-inner">
-                                                <div className="icon"><Image src="/assets/images/achivement/hm2-icon02.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                                <div className="icon"><Image src="/assets/images/achivement/hm2-icon02.webp" alt="" width={30} height={25} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                                 </div>
                                                 <div className="count"><span className="count-number odometer" data-count="360">0</span><span className="plus">&deg;</span></div>
                                             </div>
@@ -569,48 +536,48 @@ export default function Page() {
                                                     <div className="swiper-slide">
                                                         <div className="brand-item">
                                                             <Link className="image" href="#">
-                                                                <Image src="/assets/images/brands/01.png" alt="Brand 01"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
-                                                                <Image src="/assets/images/brands/01.png" alt="Brand 01"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                                                <Image src="/assets/images/brands/01.png" alt="Brand 01" width={190} height={40} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                                <Image src="/assets/images/brands/01.png" alt="Brand 01" width={190} height={40} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                                             </Link>
                                                         </div>
                                                     </div>
                                                     <div className="swiper-slide">
                                                         <div className="brand-item">
                                                             <Link className="image" href="#">
-                                                                <Image src="/assets/images/brands/02.png" alt="Brand 02"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
-                                                                <Image src="/assets/images/brands/02.png" alt="Brand 02"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                                                <Image src="/assets/images/brands/02.png" alt="Brand 02" width={300} height={81} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                                <Image src="/assets/images/brands/02.png" alt="Brand 02" width={300} height={81} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                                             </Link>
                                                         </div>
                                                     </div>
                                                     <div className="swiper-slide">
                                                         <div className="brand-item">
                                                             <Link className="image" href="#">
-                                                                <Image src="/assets/images/brands/03.webp" alt="Brand  03"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
-                                                                <Image src="/assets/images/brands/03.webp" alt="Brand  03"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                                                <Image src="/assets/images/brands/03.webp" alt="Brand 03" width={258} height={45} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                                <Image src="/assets/images/brands/03.webp" alt="Brand 03" width={258} height={45} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                                             </Link>
                                                         </div>
                                                     </div>
                                                     <div className="swiper-slide">
                                                         <div className="brand-item">
                                                             <Link className="image" href="#">
-                                                                <Image src="/assets/images/brands/04.webp" alt="Brand 04"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
-                                                                <Image src="/assets/images/brands/04.webp" alt="Brand 04"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                                                <Image src="/assets/images/brands/04.webp" alt="Brand 04" width={300} height={63} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                                <Image src="/assets/images/brands/04.webp" alt="Brand 04" width={300} height={63} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                                             </Link>
                                                         </div>
                                                     </div>
                                                     <div className="swiper-slide">
                                                         <div className="brand-item">
                                                             <Link className="image" href="#">
-                                                                <Image src="/assets/images/brands/05.png" alt="Brand 05"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
-                                                                <Image src="/assets/images/brands/05.png" alt="Brand 05"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                                                <Image src="/assets/images/brands/05.png" alt="Brand 05" width={200} height={35} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                                <Image src="/assets/images/brands/05.png" alt="Brand 05" width={200} height={35} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                                             </Link>
                                                         </div>
                                                     </div>
                                                     <div className="swiper-slide">
                                                         <div className="brand-item">
                                                             <Link className="image" href="#">
-                                                                <Image src="/assets/images/brands/06.png" alt="Brand 06"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
-                                                                <Image src="/assets/images/brands/06.png" alt="Brand 06"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                                                <Image src="/assets/images/brands/06.png" alt="Brand 06" width={159} height={104} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                                <Image src="/assets/images/brands/06.png" alt="Brand 06" width={159} height={104} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                                             </Link>
                                                         </div>
                                                     </div>
@@ -618,40 +585,40 @@ export default function Page() {
                                                     <div className="swiper-slide">
                                                         <div className="brand-item">
                                                             <Link className="image" href="#">
-                                                                <Image src="/assets/images/brands/07.png" alt="Brand 02"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
-                                                                <Image src="/assets/images/brands/07.png" alt="Brand 02"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                                                <Image src="/assets/images/brands/07.png" alt="Brand 02" width={301} height={89} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                                <Image src="/assets/images/brands/07.png" alt="Brand 02" width={301} height={89} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                                             </Link>
                                                         </div>
                                                     </div>
                                                     <div className="swiper-slide">
                                                         <div className="brand-item">
                                                             <Link className="image" href="#">
-                                                                <Image src="/assets/images/brands/08.png" alt="Brand  03"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
-                                                                <Image src="/assets/images/brands/08.png" alt="Brand  03"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                                                <Image src="/assets/images/brands/08.png" alt="Brand 03" width={300} height={64} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                                <Image src="/assets/images/brands/08.png" alt="Brand 03" width={300} height={64} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                                             </Link>
                                                         </div>
                                                     </div>
                                                     <div className="swiper-slide">
                                                         <div className="brand-item">
                                                             <Link className="image" href="#">
-                                                                <Image src="/assets/images/brands/09.png" alt="Brand  03"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
-                                                                <Image src="/assets/images/brands/09.png" alt="Brand  03"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                                                <Image src="/assets/images/brands/09.png" alt="Brand 03" width={190} height={36} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                                <Image src="/assets/images/brands/09.png" alt="Brand 03" width={190} height={36} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                                             </Link>
                                                         </div>
                                                     </div>
                                                     <div className="swiper-slide">
                                                         <div className="brand-item">
                                                             <Link className="image" href="#">
-                                                                <Image src="/assets/images/brands/10.png" alt="Brand  03"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
-                                                                <Image src="/assets/images/brands/10.png" alt="Brand  03"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                                                <Image src="/assets/images/brands/10.png" alt="Brand 03" width={300} height={105} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                                <Image src="/assets/images/brands/10.png" alt="Brand 03" width={300} height={105} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                                             </Link>
                                                         </div>
                                                     </div>
                                                     <div className="swiper-slide">
                                                         <div className="brand-item">
                                                             <Link className="image" href="#">
-                                                                <Image src="/assets/images/brands/11.png" alt="Brand  03"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
-                                                                <Image src="/assets/images/brands/11.png" alt="Brand  03"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                                                <Image src="/assets/images/brands/11.png" alt="Brand 03" width={150} height={40} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                                <Image src="/assets/images/brands/11.png" alt="Brand 03" width={150} height={40} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                                             </Link>
                                                         </div>
                                                     </div>
@@ -726,7 +693,7 @@ export default function Page() {
                                 <div className="col-lg-6">
                                     <div className="contact-left-thumb wow img-anim-right data-item-hover overflow-hidden">
                                         <figure className="panzer-static-img" data-style="01" data-intensity="0.2" data-speedin="1" data-speedout="1">
-                                            <Image src="/assets/images/contact/hm4-img011.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                            <Image src="/assets/images/contact/hm4-img011.webp" alt="" width={648} height={625} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                         </figure>
                                     </div>
                                 </div>
@@ -743,18 +710,32 @@ export default function Page() {
                     <div className="tv-marquee-inner mx-20 ml-mx-0 position-relative">
                         <div className="container-fluid p-0 overflow-hidden">
                             <div className="slider__marquee clearfix br-0 marquee-wrap style-2">
-                                <ul className="marquee_mode marquee__group">
-                                    <li className="item m-item"><img className="icon" src="/assets/images/icons/icone2.png" alt="" />
+                                <div className="panzer-next-marquee-track">
+                                <ul className="marquee__group">
+                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
                                         Endpoint Security</li>
-                                    <li className="item m-item"><img className="icon" src="/assets/images/icons/icone2.png" alt="" />
+                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
                                         Backup & Disaster Recovery</li>
-                                    <li className="item m-item"><img className="icon" src="/assets/images/icons/icone2.png" alt="" />
+                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
                                         Data Loss Prevention (DLP)</li>
-                                    <li className="item m-item"><img className="icon" src="/assets/images/icons/icone2.png" alt="" />
+                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
                                         Vulnerability Assessment & VAPT</li>
-                                    <li className="item m-item"><img className="icon" src="/assets/images/icons/icone2.png" alt="" />
+                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
                                         IAM, PAM & Network Security</li>
                                 </ul>
+                                <ul className="marquee__group" aria-hidden="true">
+                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
+                                        Endpoint Security</li>
+                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
+                                        Backup & Disaster Recovery</li>
+                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
+                                        Data Loss Prevention (DLP)</li>
+                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
+                                        Vulnerability Assessment & VAPT</li>
+                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
+                                        IAM, PAM & Network Security</li>
+                                </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -782,7 +763,7 @@ export default function Page() {
                                 <article className="blog-single-box">
                                     <div className="inner-box">
                                         <div className="blog-image">
-                                            <Image src="/assets/images/blog/blog01.webp" alt="Blog Image"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                            <Image src="/assets/images/blog/blog01.webp" alt="Blog Image" width={392} height={284} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                             <div className="category-tag"><span></span>Write-up</div>
                                         </div>
                                         <div className="blog-content">
@@ -802,7 +783,7 @@ export default function Page() {
                                 <article className="blog-single-box">
                                     <div className="inner-box">
                                         <div className="blog-image">
-                                            <Image src="/assets/images/blog/blog02.webp" alt="Blog Image"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                            <Image src="/assets/images/blog/blog02.webp" alt="Blog Image" width={392} height={284} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                             <div className="category-tag"><span></span>Tech Stuff</div>
                                         </div>
                                         <div className="blog-content">
@@ -822,7 +803,7 @@ export default function Page() {
                                 <article className="blog-single-box">
                                     <div className="inner-box">
                                         <div className="blog-image">
-                                            <Image src="/assets/images/blog/blog03.webp" alt="Blog Image"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                            <Image src="/assets/images/blog/blog03.webp" alt="Blog Image" width={392} height={284} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                             <div className="category-tag"><span></span>Compliance</div>
                                         </div>
                                         <div className="blog-content">
@@ -841,19 +822,6 @@ export default function Page() {
                         </div>
                     </div>
                 </section>
-
-
-
-                
-                <SiteFooter />
-
-            </div>
-            
-
-
-            
-            
-      </div>
     </>
   );
 }

@@ -1,43 +1,10 @@
-import { SiteFooter } from "@/components/SiteFooter";
-import { SiteHeader } from "@/components/SiteHeader";
 import { Breadcrumb } from "@/components/Breadcrumb";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Page() {
   return (
-    <div className="panzer-page panzer-page-contact">
-<div className="page-wrapper bg-light">
-
-              
-              
-
-
-              
-               <SiteHeader />
-
-              
-              
-
-
-              
-              
-              
-
-
-              
-              
-              
-
-
-              
-              
-              
-
-
-              
-              
-              <Breadcrumb title="Contact Us" paths={[{"name":"Contact Us"}]} />
+    <>
+<Breadcrumb title="Contact Us" paths={[{"name":"Contact Us"}]} />
 
 
 
@@ -240,15 +207,6 @@ export default function Page() {
                       </div>
                   </div>
               </section>
-
-              <SiteFooter />
-
-          </div>
-          
-
-
-          
-      	
-    </div>
+    </>
   );
 }

@@ -1,43 +1,11 @@
-import { SiteFooter } from "@/components/SiteFooter";
-import { SiteHeader } from "@/components/SiteHeader";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Page() {
   return (
-    <div className="panzer-page panzer-page-blog-details">
-<div className="page-wrapper bg-light">
-
-              
-              
-
-
-              
-               <SiteHeader />
-
-              
-              
-
-
-              
-              
-              
-
-
-              
-              
-              
-
-
-              
-              
-              
-
-
-              
-              
-              <Breadcrumb title="Blog List" paths={[{"name":"Blog List","url":"/"},{"name":"Blog Details"}]} />
+    <>
+<Breadcrumb title="Blog List" paths={[{"name":"Blog List","url":"/"},{"name":"Blog Details"}]} />
 
 
 
@@ -52,14 +20,14 @@ export default function Page() {
                               <div className="blog-details-left">
                                   <div className="blog-list-card style-2">
                                       <div className="image overlay-anim1">
-                                          <Image src="/assets/images/blog/blog-thumb05.webp" alt="Meeting Image"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                          <Image src="/assets/images/blog/blog-thumb05.webp" alt="Meeting Image" width={832} height={500} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                       </div>
                                       <div className="card-content">
                                           <span className="category">Marketing</span>
                                           <h3 className="title">10 Free SEO Marketing Tools Growing Business</h3>
                                           <div className="author-info">
                                               <div className="author">
-                                                  <Image src="/assets/images/blog/social-pr01.jpg" alt="Author Image"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                                  <Image src="/assets/images/blog/social-pr01.jpg" alt="Author Image" width={36} height={36} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                                   <span className="name"><span>By</span> Robert Aguilar</span>
                                               </div>
                                               <span className="date"><i className="icon-calender"></i> August 18, 2025</span>
@@ -73,7 +41,7 @@ export default function Page() {
                                               leadership skills. Continually reinvent strategic leadership via resource sucking</p>
                                           <h3 className="title mt-45 mb-10"><Link href="/blog-details">Paid Marketing Campaigns</Link></h3>
                                           <p className="mb-35">Credibly myocardinate multidisciplinary supply chains for low-risk high-yield catalysts for change main
-                                              leverage other's technically sound leadership vis-a-vis business deliverables. Progressively formulate
+                                              leverage other&apos;s technically sound leadership vis-a-vis business deliverables. Progressively formulate
                                               models before synergistic processes. Interactively restore equity</p>
                                           <div className="blogs-quote">
                                               <p>Completely optimize standards compliant vortals for compelling portals engineer
@@ -81,11 +49,11 @@ export default function Page() {
                                               <span className="name">Linda F. Collins</span>
                                           </div>
                                           <div className="image overlay-anim1">
-                                              <Image src="/assets/images/blog/blog-thumb06.webp" alt="Meeting Image"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                              <Image src="/assets/images/blog/blog-thumb06.webp" alt="Meeting Image" width={792} height={460} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                           </div>
                                           <h3 className="title mt-30 mb-20"><Link href="/blog-details">3 Most Popular Marketing Tips</Link></h3>
                                           <p className="mb-25">Credibly myocardinate multidisciplinary supply chains for low-risk high-yield catalysts for change main
-                                              leverage other's technically sound leadership vis-a-vis business deliverables. Progressively formulate
+                                              leverage other&apos;s technically sound leadership vis-a-vis business deliverables. Progressively formulate
                                               models before synergistic processes. Interactively restore equity</p>
                                           <div className="featured-list-box">
                                               <div className="featured-list">
@@ -117,7 +85,7 @@ export default function Page() {
                                   <div className="comment-one">
                                       <h3 className="comment-one__title">1 Comment</h3>
                                       <div className="comment-one__single">
-                                          <div className="comment-one__image"> <Image src="/assets/images/blog/comment-1.png" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /> </div>
+                                          <div className="comment-one__image"> <Image src="/assets/images/blog/comment-1.png" alt="" width={80} height={80} sizes="100vw" style={{ width: "100%", height: "auto" }} /> </div>
                                           <div className="comment-one__content">
                                               <div className="title"><h5>James Noel</h5><span>August 18, 2025</span></div>
                                               <p>Globally supply resource maximizing total linkage whereas seamless experiences
@@ -191,21 +159,21 @@ export default function Page() {
                                       <div className="widget-box">
                                           <div className="latest-posts">
                                               <div className="post">
-                                                  <Link href="#"><Image src="/assets/images/blog/latest-details01.webp" alt="Post Image"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></Link>
+                                                  <Link href="#"><Image src="/assets/images/blog/latest-details01.webp" alt="Post Image" width={88} height={88} sizes="100vw" style={{ width: "100%", height: "auto" }} /></Link>
                                                   <div className="post-content">
                                                       <Link href="#">How to Install Droip into Local WP Server?</Link>
                                                       <p>August 17, 2025</p>
                                                   </div>
                                               </div>
                                               <div className="post">
-                                                  <Link href="#"><Image src="/assets/images/blog/latest-details02.webp" alt="Post Image"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></Link>
+                                                  <Link href="#"><Image src="/assets/images/blog/latest-details02.webp" alt="Post Image" width={88} height={88} sizes="100vw" style={{ width: "100%", height: "auto" }} /></Link>
                                                   <div className="post-content">
                                                       <Link href="#">10 Free SEO Marketing tools Growing Business</Link>
                                                       <p>August 18, 2025</p>
                                                   </div>
                                               </div>
                                               <div className="post">
-                                                  <Link href="#"><Image src="/assets/images/blog/latest-details03.webp" alt="Post Image"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></Link>
+                                                  <Link href="#"><Image src="/assets/images/blog/latest-details03.webp" alt="Post Image" width={88} height={88} sizes="100vw" style={{ width: "100%", height: "auto" }} /></Link>
                                                   <div className="post-content">
                                                       <Link href="#">Most popular Promt for Sales Growth in 2025</Link>
                                                       <p>August 19, 2025</p>
@@ -249,15 +217,6 @@ export default function Page() {
                       </div>
                   </div>
               </section>
-
-              <SiteFooter />
-
-          </div>
-          
-
-
-          
-      	
-    </div>
+    </>
   );
 }

@@ -1,39 +1,11 @@
-import { SiteFooter } from "@/components/SiteFooter";
-import { SiteHeader } from "@/components/SiteHeader";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Page() {
   return (
-    <div className="panzer-page panzer-page-download">
-      <div className="download-page solution-page">
-<div className="page-wrapper bg-light">
-
-              
-
-
-              
-               <SiteHeader />
-
-              
-              
-
-
-              
-              
-              
-
-
-              
-
-              
-
-             
-
-      		 
-              
-              <Breadcrumb title="Resources" paths={[{"name":"Downloads"}]} />
+    <>
+<Breadcrumb title="Resources" paths={[{"name":"Downloads"}]} />
 
 
       		
@@ -61,7 +33,7 @@ export default function Page() {
                                       </div>
                                   </div>
                                   <div className="service-top">
-                                      <div className="logo"><Image src="/assets/images/service/hm5-icon01.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></div>
+                                      <div className="logo"><Image src="/assets/images/service/hm5-icon01.webp" alt="" width={46} height={46} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
                                       <h4>Panzer IT Product <br /> Presentation</h4>
                                   </div>
                                   <p>Company overview, mission statement, solution portfolio and associate brand highlights from Panzer IT.</p>
@@ -91,7 +63,7 @@ export default function Page() {
                                       </div>
                                   </div>
                                   <div className="service-top">
-                                      <div className="logo"><Image src="/assets/images/service/hm5-icon02.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></div>
+                                      <div className="logo"><Image src="/assets/images/service/hm5-icon02.webp" alt="" width={46} height={46} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
                                       <h4>Falcongaze SecureTower <br /> Presentation</h4>
                                   </div>
                                   <p>Workflow control, insider threat protection and data leak prevention presentation from Falcongaze SecureTower.</p>
@@ -121,7 +93,7 @@ export default function Page() {
                                       </div>
                                   </div>
                                   <div className="service-top">
-                                      <div className="logo"><Image src="/assets/images/service/hm5-icon03.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></div>
+                                      <div className="logo"><Image src="/assets/images/service/hm5-icon03.webp" alt="" width={43} height={43} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
                                       <h4>Netop Remote Control <br /> Overview</h4>
                                   </div>
                                   <p>General presentation for secure remote access, remote support and cross-platform device connectivity.</p>
@@ -151,7 +123,7 @@ export default function Page() {
                                       </div>
                                   </div>
                                   <div className="service-top">
-                                      <div className="logo"><Image src="/assets/images/service/hm5-icon04.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></div>
+                                      <div className="logo"><Image src="/assets/images/service/hm5-icon04.webp" alt="" width={45} height={45} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
                                       <h4>Heimdal Product <br /> Presentation</h4>
                                   </div>
                                   <p>Advance persistent threat prevention, patch management and real-time cloud protection overview.</p>
@@ -181,7 +153,7 @@ export default function Page() {
                                       </div>
                                   </div>
                                   <div className="service-top">
-                                      <div className="logo"><Image src="/assets/images/service/hm5-icon05.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></div>
+                                      <div className="logo"><Image src="/assets/images/service/hm5-icon05.webp" alt="" width={44} height={45} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
                                       <h4>Scopd Manual <br /> v10.60</h4>
                                   </div>
                                   <p>Technical manual covering search, indexing, audit options, reporting and management functions.</p>
@@ -211,7 +183,7 @@ export default function Page() {
                                       </div>
                                   </div>
                                   <div className="service-top">
-                                      <div className="logo"><Image src="/assets/images/service/hm5-icon06.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></div>
+                                      <div className="logo"><Image src="/assets/images/service/hm5-icon06.webp" alt="" width={46} height={46} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
                                       <h4>Emsisoft Anti-Malware <br /> Free Trial</h4>
                                   </div>
                                   <p>30-day free trial resources with 32-bit MSI, 64-bit MSI and combined EXE options listed by Panzer IT.</p>
@@ -240,7 +212,7 @@ export default function Page() {
 
       		
               <section className="tv-choose-section style-6 space bg-dark position-relative download-page-choose">
-                  <div className="bg image"><Image src="/assets/images/choose/hm8-bg01.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></div>
+                  <div className="bg image"><Image src="/assets/images/choose/hm8-bg01.webp" alt="" width={1920} height={886} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
                   <div className="container">
                       
                       <div className="title-wrap text-center three">
@@ -252,15 +224,15 @@ export default function Page() {
                           <div className="col-lg-4 col-md-6 col-sm-6">
                               <div className="choose-left">
                                   <div className="choose-box mb-40">
-                                      <div className="icon"><Image src="/assets/images/choose/hm8-icon01.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></div>
+                                      <div className="icon"><Image src="/assets/images/choose/hm8-icon01.webp" alt="" width={32} height={44} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
                                       <div className="text"><h6>Scopd DLP <br /> with UEBA</h6></div>
                                   </div>
                                   <div className="choose-box mb-40">
-                                      <div className="icon"><Image src="/assets/images/choose/hm8-icon02.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></div>
+                                      <div className="icon"><Image src="/assets/images/choose/hm8-icon02.webp" alt="" width={45} height={39} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
                                       <div className="text"><h6>Falcongaze <br /> SecureTower</h6></div>
                                   </div>
                                   <div className="choose-box">
-                                      <div className="icon"><Image src="/assets/images/choose/hm8-icon03.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></div>
+                                      <div className="icon"><Image src="/assets/images/choose/hm8-icon03.webp" alt="" width={42} height={35} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
                                       <div className="text"><h6>Netop Remote <br /> Control</h6></div>
                                   </div>
                               </div>
@@ -268,7 +240,7 @@ export default function Page() {
                           <div className="col-lg-4 col-md-6 d-none d-lg-block">
                               <div className="choose-middle">
                                   <div className="ai-box">
-                                      <Image className="spin2" src="/assets/images/choose/hm8-ai.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                      <Image className="spin2" src="/assets/images/choose/hm8-ai.webp" alt="" width={424} height={424} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                       <div className="circle"><h1>360°</h1></div>
                                   </div>                                                      
                               </div>
@@ -276,15 +248,15 @@ export default function Page() {
                           <div className="col-lg-4 col-md-6 col-sm-6">
                               <div className="choose-right">
                                   <div className="choose-box mb-40">
-                                      <div className="icon"><Image src="/assets/images/choose/hm8-icon01.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></div>
+                                      <div className="icon"><Image src="/assets/images/choose/hm8-icon01.webp" alt="" width={32} height={44} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
                                       <div className="text"><h6>Heimdal <br /> Security</h6></div>
                                   </div>
                                   <div className="choose-box mb-40">
-                                      <div className="icon"><Image src="/assets/images/choose/hm8-icon02.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></div>
+                                      <div className="icon"><Image src="/assets/images/choose/hm8-icon02.webp" alt="" width={45} height={39} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
                                       <div className="text"><h6>Emsisoft <br /> Anti-Malware</h6></div>
                                   </div>
                                   <div className="choose-box">
-                                      <div className="icon"><Image src="/assets/images/choose/hm8-icon03.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></div>
+                                      <div className="icon"><Image src="/assets/images/choose/hm8-icon03.webp" alt="" width={42} height={35} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
                                       <div className="text"><h6>Vembu BDR <br /> Suite</h6></div>
                                   </div>
                               </div>
@@ -343,7 +315,7 @@ export default function Page() {
                               <div className="col-lg-6">
                                   <div className="contact-left-thumb wow img-anim-right overflow-hidden">
                                       <figure>
-                                          <Image src="/assets/images/contact/hm4-img011.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                          <Image src="/assets/images/contact/hm4-img011.webp" alt="" width={648} height={625} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                       </figure>
                                   </div>
                               </div>
@@ -351,13 +323,6 @@ export default function Page() {
                       </div>
                   </div>
               </section>
-
-              <SiteFooter />
-
-          </div>
-
-          
-      </div>
-    </div>
+    </>
   );
 }

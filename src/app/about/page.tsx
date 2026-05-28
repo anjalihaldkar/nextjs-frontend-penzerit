@@ -1,43 +1,10 @@
-import { SiteFooter } from "@/components/SiteFooter";
-import { SiteHeader } from "@/components/SiteHeader";
-import { Breadcrumb } from "@/components/Breadcrumb";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Page() {
   return (
-    <div className="panzer-page panzer-page-about">
-<div className="page-wrapper bg-light">
-
-              
-              
-
-
-              
-               <SiteHeader />
-
-              
-              
-
-
-              
-              
-              
-
-
-              
-              
-              
-
-
-              
-              
-           
-
-
-
-                 
-              <section className="tv-choose-section space bg-light">
+    <>
+<section className="tv-choose-section space bg-light">
                   <div className="container">
                       <div className="row gy-30">
                           <div className="col-lg-12 col-xl-6">
@@ -51,7 +18,7 @@ export default function Page() {
                                   <div className="tv-choose-boxs">
                                       <div className="tv-choose-single-box two wow fadeInLeft" data-wow-delay=".3s">
                                           <div className="box-top-content mb-20">
-                                              <div className="icon-top"><Image src="/assets/images/choose/hm1-icon01.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></div>
+                                              <div className="icon-top"><Image src="/assets/images/choose/hm1-icon01.webp" alt="" width={43} height={43} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
                                               <h4 className="title">Secure Your DATA</h4>
                                           </div>
                                           <p>Data is targeted on mobile, endpoint, server, cloud, data center and NAS environments, so every entry point must be protected.</p>
@@ -73,7 +40,7 @@ export default function Page() {
                                       </div>
                                       <div className="tv-choose-single-box wow fadeInRight" data-wow-delay=".5s">
                                           <div className="box-top-content mb-20">
-                                              <div className="icon-top"><Image src="/assets/images/choose/hm1-icon02.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></div>
+                                              <div className="icon-top"><Image src="/assets/images/choose/hm1-icon02.webp" alt="" width={50} height={54} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
                                               <h4 className="title">360 Degree IT Solutions</h4>
                                           </div>
                                           <p>Endpoint security, firewall, backup, disaster recovery, NAS, SAN, cloud storage, virtualization, DLP, monitoring, VAPT, APT and EDR.</p>
@@ -96,8 +63,8 @@ export default function Page() {
                                   </div>
                                   <Link href="/contact" className="theme-btn mt-40 panzer-static-about-btn">
                                       <span className="link-effect">
-                                          <span className="effect-1">Let's Make IT Secure</span>
-                                          <span className="effect-1">Let's Make IT Secure</span>
+                                          <span className="effect-1">Let&apos;s Make IT Secure</span>
+                                          <span className="effect-1">Let&apos;s Make IT Secure</span>
                                       </span>
                                       <span className="arrow-all">
                                           <i>
@@ -116,7 +83,7 @@ export default function Page() {
                              <div className="tv-choose-right-box panzer-about-data-wheel">
                                   <div className="data-item-hover">
                                       <figure className="image_right">
-                                          <Image src="/assets/images/choose/about-1.webp" alt="Agency Image"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                          <Image src="/assets/images/choose/about-1.webp" alt="Agency Image" width={612} height={408} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                       </figure>
                                   </div>
 
@@ -124,7 +91,7 @@ export default function Page() {
       								<div className="content">
       									
       									<h3 className="title">Secure Data <br />Access</h3>
-      									<div className="arrow"><Image src="/assets/images/choose/arrow.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></div>
+      									<div className="arrow"><Image src="/assets/images/choose/arrow.webp" alt="" width={58} height={159} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
       									<span className="year">Available</span>
       								</div>
       							</div>
@@ -133,7 +100,7 @@ export default function Page() {
                           </div>
                       </div>
                   </div>
-                  <div className="p-bottom-left wow slideInUp"><Image src="/assets/images/choose/hm1-shape01.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized /></div>
+                  <div className="p-bottom-left wow slideInUp"><Image src="/assets/images/choose/hm1-shape01.webp" alt="" width={375} height={514} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
               </section>
 
                
@@ -161,7 +128,7 @@ export default function Page() {
                                           </i>
                                       </div>
                                   </div>
-                                  <div className="logo mb-40"><img src="/assets/images/feature/hm1-icon01.webp" alt="" /></div>
+                                  <div className="logo mb-40"><Image width={62} height={62} src="/assets/images/feature/hm1-icon01.webp" alt="" /></div>
                                   <h2>150+ Man-Years <br /> of Security Experience</h2>
                                   <p>Over 150 man-years of IT security solutions experience supporting data protection, availability and cyber defense programs.</p>
                               </div>
@@ -180,7 +147,7 @@ export default function Page() {
                                           </i>
                                       </div>
                                   </div>
-                                  <div className="logo mb-40"><img src="/assets/images/feature/hm1-icon01.webp" alt="" /></div>
+                                  <div className="logo mb-40"><Image width={62} height={62} src="/assets/images/feature/hm1-icon01.webp" alt="" /></div>
                                   <h2>Channel Partners <br /> Across India</h2>
                                   <p>Security software and services delivered through channel partners and associates across India.</p>
                               </div>
@@ -199,7 +166,7 @@ export default function Page() {
                                       </i>
                                   </div>
                               </div>
-                              <div className="logo mb-40"><img src="/assets/images/feature/hm1-icon02.webp" alt="" /></div>
+                              <div className="logo mb-40"><Image width={54} height={60} src="/assets/images/feature/hm1-icon02.webp" alt="" /></div>
                               <h2>Enterprise, Government, <br /> SMB and SOHO Focus</h2>
                               <p>Best security software and services for enterprises, government, SMB and SOHO organizations.</p>
                               </div>
@@ -258,7 +225,7 @@ export default function Page() {
                           <div className="col-lg-5 col-md-12">
                               <div className="about-left">
                                   <div className="about-thumb">
-                                      <Image className="br-20" src="/assets/images/about/cyber.webp" alt=""  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                      <Image className="br-20" src="/assets/images/about/cyber.webp" alt="" width={612} height={408} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                   </div>
                                   <div className="pt-50 pb-30 md-d-none">
                                       <div className="border"></div>
@@ -415,19 +382,6 @@ export default function Page() {
                       </div>
                   </div>
               </section>
-
-
-
-              
-
-              <SiteFooter />
-
-          </div>
-          
-
-
-          
-      	
-    </div>
+    </>
   );
 }

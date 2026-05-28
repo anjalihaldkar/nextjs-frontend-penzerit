@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { RouteScripts } from "@/components/RouteScripts";
 import { Preloader } from "@/components/Preloader";
+import { SiteChrome } from "@/components/SiteChrome";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -33,45 +34,35 @@ export default function RootLayout({
         <link rel="stylesheet" href="/assets/css/bootstrap.min.css?v=20260524" />
         <link rel="stylesheet" href="/assets/fontawesome/css/fontawesome.min.css?v=20260524" />
         <link rel="stylesheet" href="/assets/css/flaticon.min.css?v=20260524" />
-        <link rel="stylesheet" href="/assets/css/fancybox.min.css?v=20260524" />
         <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css?v=20260524" />
         <link rel="stylesheet" href="/assets/css/animate.min.css?v=20260524" />
         <link rel="stylesheet" href="/assets/css/select2.min.css?v=20260524" />
-        <link rel="stylesheet" href="/assets/css/jquery-ui.min.css?v=20260524" />
         <link rel="stylesheet" href="/assets/css/odometer.css?v=20260524" />
-        <link rel="stylesheet" href="/assets/css/style.css?v=20260528" />
+        <link rel="stylesheet" href="/assets/css/style.css?v=20260528-3" />
       </head>
       <body suppressHydrationWarning>
-        <Preloader />
-        {children}
+        <SiteChrome>
+          <Preloader />
+          {children}
+        </SiteChrome>
 
         {/* Template JS (kept as-is). Order matters. Vendor libraries load early, then
             main.js runs after hydration so it cannot rewrite the DOM before React starts. */}
         <Script src="/assets/js/vendor/jquery-3.7.1.min.js" strategy="beforeInteractive" />
 
-        <Script src="/assets/js/bootstrap.min.js" strategy="beforeInteractive" />
         <Script src="/assets/js/gsap.min.js" strategy="beforeInteractive" />
-        <Script src="/assets/js/ScrollSmoother.js" strategy="beforeInteractive" />
-        <Script src="/assets/js/gsap-scroll-to-plugin.min.js" strategy="beforeInteractive" />
         <Script src="/assets/js/ScrollTrigger.min.js" strategy="beforeInteractive" />
         <Script src="/assets/js/swiper-bundle.min.js" strategy="beforeInteractive" />
         <Script src="/assets/js/marquee.min.js" strategy="beforeInteractive" />
-        <Script src="/assets/js/jquery.fancybox.js" strategy="beforeInteractive" />
         <Script src="/assets/js/select2.min.js" strategy="beforeInteractive" />
-        <Script src="/assets/js/jquery-ui.min.js" strategy="beforeInteractive" />
         <Script src="/assets/js/jquery.validate.min.js" strategy="beforeInteractive" />
         <Script src="/assets/js/jquery.appear.js" strategy="beforeInteractive" />
         <Script src="/assets/js/jquery.odometer.min.js" strategy="beforeInteractive" />
         <Script src="/assets/js/wow.min.js" strategy="beforeInteractive" />
-        <Script src="/assets/js/imagesloaded.pkgd.min.js" strategy="beforeInteractive" />
-        <Script src="/assets/js/isotope.pkgd.min.js" strategy="beforeInteractive" />
         <Script src="/assets/js/lenis.min.js" strategy="beforeInteractive" />
         <Script src="/assets/js/splite-type.min.js" strategy="beforeInteractive" />
-        <Script src="/assets/js/vanilla-tilt.min.js" strategy="beforeInteractive" />
-        <Script src="/assets/js/three.min.js" strategy="beforeInteractive" />
-        <Script src="/assets/js/hover.js" strategy="beforeInteractive" />
 
-        <Script src="/assets/js/main.js?v=20260528" strategy="afterInteractive" />
+        <Script src="/assets/js/main.js?v=20260528-2" strategy="afterInteractive" />
         <RouteScripts />
       </body>
     </html>

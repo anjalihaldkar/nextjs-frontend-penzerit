@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export function SiteFooter() {
@@ -5,7 +6,7 @@ export function SiteFooter() {
     <>
       <footer className="footer-section panzer-compact-footer panzer-image-footer z-1 br-30 xxl-br-0 pt-75 position-relative mx-30 mb-30 xxl-m-0 overflow-hidden">
         <div className="bg image mbm-screen">
-          <img src="/assets/images/footer/hm1-bg01.webp" alt="" />
+          <Image width={1880} height={651} src="/assets/images/footer/hm1-bg01.webp" alt="" />
         </div>
         <div className="footer-top space">
           <div className="container">
@@ -13,7 +14,7 @@ export function SiteFooter() {
               <div className="col-lg-12 footer-brand">
                 <div className="brand-info wow fadeInUp" data-wow-delay=".2s">
                   <div className="logo">
-                    <img src="/assets/images/logo/logo.png" alt="Panzer IT Logo" width={150} />
+                    <Image width={200} height={46} src="/assets/images/logo/logo.png" alt="Panzer IT Logo"  />
                   </div>
                   <div className="contact-info">
                     <div className="contact-item">

@@ -71589,3 +71589,100 @@ button *,
     overflow-wrap: break-word;
   }
 }
+
+/* Next.js home section parity fixes */
+.panzer-page-home .panzer-cyber-image {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  object-fit: cover !important;
+}
+
+.panzer-page-home .tv-service-section.style-4 .panzer-scroll-service .service-box-four .image-box .thumb img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  object-fit: cover !important;
+}
+
+.panzer-page-home .tv-marquee-section .marquee_mode {
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+
+.panzer-page-home .tv-marquee-section .marquee_mode .js-marquee {
+  display: flex;
+  align-items: center;
+}
+
+.panzer-page-home .tv-marquee-section .marquee_mode .m-item {
+  white-space: nowrap;
+}
+
+.panzer-page-home .slider__marquee.marquee-wrap.style-2 {
+  overflow: hidden;
+}
+
+.panzer-page-home .slider__marquee.marquee-wrap.style-2 .panzer-next-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: panzer-next-marquee 28s linear infinite;
+  will-change: transform;
+}
+
+.panzer-page-home .slider__marquee.marquee-wrap.style-2:hover .panzer-next-marquee-track {
+  animation-play-state: paused;
+}
+
+.panzer-page-home .slider__marquee.marquee-wrap.style-2 .marquee__group {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+  white-space: nowrap;
+}
+
+.panzer-page-home .slider__marquee.marquee-wrap.style-2 .marquee__group .m-item {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.panzer-page-home .slider__marquee.marquee-wrap.style-2 .marquee__group .m-item .icon {
+  width: 45px !important;
+  height: 45px !important;
+  object-fit: contain;
+}
+
+@keyframes panzer-next-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@media (max-width: 767px) {
+  .panzer-page-home .slider__marquee.marquee-wrap.style-2 {
+    padding: 28px 0;
+  }
+
+  .panzer-page-home .slider__marquee.marquee-wrap.style-2 .marquee__group .m-item {
+    margin-right: 24px;
+    font-size: 22px;
+  }
+
+  .panzer-page-home .slider__marquee.marquee-wrap.style-2 .marquee__group .m-item .icon {
+    width: 34px !important;
+    height: 34px !important;
+    margin-right: 18px;
+  }
+}

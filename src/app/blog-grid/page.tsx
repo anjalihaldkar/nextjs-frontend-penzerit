@@ -1,43 +1,11 @@
-import { SiteFooter } from "@/components/SiteFooter";
-import { SiteHeader } from "@/components/SiteHeader";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Page() {
   return (
-    <div className="panzer-page panzer-page-blog-grid">
-<div className="page-wrapper bg-light">
-
-              
-              
-
-
-              
-               <SiteHeader />
-
-              
-              
-
-
-              
-              
-              
-
-
-              
-              
-              
-
-
-              
-              
-              
-
-
-              
-              
-              <Breadcrumb title="Latest Blog" paths={[{"name":"Latest Blog"}]} />
+    <>
+<Breadcrumb title="Latest Blog" paths={[{"name":"Latest Blog"}]} />
 
               
               <section className="tv-blog-section space bg-light">
@@ -47,7 +15,7 @@ export default function Page() {
                               <article className="blog-single-box">
                                   <div className="inner-box">
                                       <div className="blog-image">
-                                          <Image src="/assets/images/blog/blog01.webp" alt="Blog Image"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                          <Image src="/assets/images/blog/blog01.webp" alt="Blog Image" width={392} height={284} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                           <div className="category-tag"><span></span>16 Aug, 2025</div>
                                       </div>
                                       <div className="blog-content">
@@ -65,7 +33,7 @@ export default function Page() {
                               <article className="blog-single-box">
                                   <div className="inner-box">
                                       <div className="blog-image">
-                                          <Image src="/assets/images/blog/blog02.webp" alt="Blog Image"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                          <Image src="/assets/images/blog/blog02.webp" alt="Blog Image" width={392} height={284} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                           <div className="category-tag"><span></span>17 Aug, 2025</div>
                                       </div>
                                       <div className="blog-content">
@@ -83,7 +51,7 @@ export default function Page() {
                               <article className="blog-single-box">
                                   <div className="inner-box">
                                       <div className="blog-image">
-                                          <Image src="/assets/images/blog/blog03.webp" alt="Blog Image"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                          <Image src="/assets/images/blog/blog03.webp" alt="Blog Image" width={392} height={284} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                           <div className="category-tag"><span></span>29 Aug, 2025</div>
                                       </div>
                                       <div className="blog-content">
@@ -101,7 +69,7 @@ export default function Page() {
                               <article className="blog-single-box">
                                   <div className="inner-box">
                                       <div className="blog-image">
-                                          <Image src="/assets/images/blog/blog-grid01.webp" alt="Blog Image"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                          <Image src="/assets/images/blog/blog-grid01.webp" alt="Blog Image" width={392} height={284} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                           <div className="category-tag"><span></span>17 Aug, 2025</div>
                                       </div>
                                       <div className="blog-content">
@@ -119,7 +87,7 @@ export default function Page() {
                               <article className="blog-single-box">
                                   <div className="inner-box">
                                       <div className="blog-image">
-                                          <Image src="/assets/images/blog/blog-grid02.webp" alt="Blog Image"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                          <Image src="/assets/images/blog/blog-grid02.webp" alt="Blog Image" width={392} height={284} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                           <div className="category-tag"><span></span>18 Aug, 2025</div>
                                       </div>
                                       <div className="blog-content">
@@ -137,7 +105,7 @@ export default function Page() {
                               <article className="blog-single-box">
                                   <div className="inner-box">
                                       <div className="blog-image">
-                                          <Image src="/assets/images/blog/blog-grid03.webp" alt="Blog Image"  width={0} height={0} sizes="100vw" style={{ width: "100%", height: "auto" }} unoptimized />
+                                          <Image src="/assets/images/blog/blog-grid03.webp" alt="Blog Image" width={392} height={284} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                           <div className="category-tag"><span></span>19 Aug, 2025</div>
                                       </div>
                                       <div className="blog-content">
@@ -160,15 +128,6 @@ export default function Page() {
                       </ul>
                   </div>
               </section>
-
-              <SiteFooter />
-
-          </div>
-          
-
-
-          
-      	
-    </div>
+    </>
   );
 }

@@ -47,8 +47,6 @@ JS TABLE OF CONTENTS
 	function initTemplateOnLoad() {
 		smoothScrolling();
 		tiltHover();
-		popupSearch();
-		mobileMenu();
 		backgroundImage();
 		ajaxForm();
 		magnificPopup();
@@ -64,7 +62,6 @@ JS TABLE OF CONTENTS
 		marqueeMode();
 		circleBoxAnimation();
 		currentBox();
-		sideBox();
 		masonryIsotope();
 		commonJs();
 		wowAnimation();
@@ -110,108 +107,6 @@ JS TABLE OF CONTENTS
 
 
 
-
-
-
-	/*===========================================
-	=         Mobile Menu Active         =
-	=============================================*/
-	function mobileMenu() {
-		if ($(".mobile-menu").length) {
-			var mobileMenuContent = $(".tv-header .main-menu .navigation").html();
-
-			$(".mobile-menu .navigation").append(mobileMenuContent);
-			$('.sticky-header .navigation').append(mobileMenuContent);
-			$.fn.mobilemenu = function (options) {
-				var opt = $.extend({
-					menuToggleBtn: ".menu-toggle",
-					bodyToggleClass: "body-visible",
-					subMenuClass: "submenu-class",
-					subMenuParent: "submenu-item-has-children",
-					subMenuParentToggle: "active-class",
-					meanExpandClass: "mean-expand-class",
-					appendElement: '<span class="mean-expand-class"></span>',
-					subMenuToggleClass: "menu-open",
-					toggleSpeed: 400,
-				},
-					options
-				);
-
-				return this.each(function () {
-					var menu = $(this);
-
-					function menuToggle() {
-						menu.toggleClass(opt.bodyToggleClass);
-
-						var subMenu = "." + opt.subMenuClass;
-						$(subMenu).each(function () {
-							if ($(this).hasClass(opt.subMenuToggleClass)) {
-								$(this).removeClass(opt.subMenuToggleClass);
-								$(this).css("display", "none");
-								$(this).parent().removeClass(opt.subMenuParentToggle);
-							}
-						});
-					}
-
-					menu.find("li").each(function () {
-						var submenu = $(this).find("ul,.tv-mega-menu");
-						submenu.addClass(opt.subMenuClass);
-						submenu.css("display", "none");
-						submenu.parent().addClass(opt.subMenuParent);
-						submenu.prev("a").append(opt.appendElement);
-						submenu.next("a").append(opt.appendElement);
-					});
-
-					function toggleDropDown($element) {
-						var $parent = $($element).parent();
-						var $siblings = $parent.siblings();
-
-						$siblings.removeClass(opt.subMenuParentToggle);
-						$siblings.find("ul,.tv-mega-menu").slideUp(opt.toggleSpeed).removeClass(opt.subMenuToggleClass);
-
-						$parent.toggleClass(opt.subMenuParentToggle);
-						$($element).next("ul,.tv-mega-menu").slideToggle(opt.toggleSpeed).toggleClass(opt.subMenuToggleClass);
-					}
-
-					var expandToggler = "." + opt.meanExpandClass;
-					$(expandToggler).each(function () {
-						$(this).on("click", function (e) {
-							e.preventDefault();
-							toggleDropDown($(this).parent());
-						});
-					});
-
-					$(opt.menuToggleBtn).each(function () {
-						$(this).on("click", function () {
-							menuToggle();
-						});
-					});
-
-					menu.on("click", function (e) {
-						e.stopPropagation();
-						menuToggle();
-					});
-
-					menu.find("div").on("click", function (e) {
-						e.stopPropagation();
-					});
-				});
-			};
-			$(".mobile-menu-wrapper").mobilemenu();
-		}
-	}
-
-	/*===========================================
-	=         Sticky Fix         =
-	=============================================*/
-	$(window).scroll(function () {
-		var topPos = $(this).scrollTop();
-		if (topPos > 100) {
-			$('.sticky-header').addClass('fixed-header animated slideInDown');
-		} else {
-			$('.sticky-header').removeClass('fixed-header animated slideInDown');
-		}
-	});
 
 
 
@@ -274,6 +169,8 @@ JS TABLE OF CONTENTS
 	=============================================*/
 	function tiltHover() {
 		const tilt = document.querySelectorAll(".tilt");
+		if (typeof VanillaTilt === "undefined" || !tilt.length) return;
+
 		VanillaTilt.init(tilt, {
 			reverse: true,
 			max: 15,
@@ -293,19 +190,6 @@ JS TABLE OF CONTENTS
 		});
 	}
 
-
-	/*===========================================
-	=         PopUp Search         =
-	=============================================*/
-	function popupSearch() {
-		if ($(".search-btn").length) {
-			$(".search-btn").click(function () {
-				$("body").addClass("search-active");
-			}).end().find(".close-search").click(function () {
-				$("body").removeClass("search-active");
-			});
-		}
-	}
 
 	/*===========================================
 	=         Set Background Image         =
@@ -409,6 +293,8 @@ JS TABLE OF CONTENTS
 	=============================================*/
 	function magnificPopup() {
 		//Fancybox
+		if (typeof Fancybox === "undefined" || !document.querySelector("[data-fancybox]")) return;
+
 		Fancybox.bind("[data-fancybox]", {
 			animated: true,
 			transitionEffect: "fade",
@@ -423,7 +309,7 @@ JS TABLE OF CONTENTS
 	=============================================*/
 	function masonaryFunction() {
 		const elem = document.querySelector('.masonary-active');
-		if (elem) {
+		if (elem && typeof imagesLoaded !== "undefined" && typeof Isotope !== "undefined") {
 			imagesLoaded(elem, () => {
 				const iso = new Isotope(elem, {
 					itemSelector: '.filter-item',
@@ -564,7 +450,7 @@ JS TABLE OF CONTENTS
 	=        Custom Date & Time Picker         =
 	=============================================*/
 	function customDateSelect() {
-		if ($(".datepicker").length) {
+		if ($.fn.datepicker && $(".datepicker").length) {
 			$(".datepicker").datepicker({
 				dateFormat: "mm/dd/yy",
 				showAnim: "slideDown",
@@ -797,29 +683,11 @@ JS TABLE OF CONTENTS
 
 
 	/*===========================================
-	=         Popup Sidebox         =
-	=============================================*/
-	function sideBox() {
-		$("body").removeClass("open-sidebar");
-		$(document).on("click", ".sidebar-trigger", function (e) {
-			e.preventDefault();
-			$("body").toggleClass("open-sidebar");
-		});
-		$(document).on("click", ".sidebar-close-btn, .sidebar-overlay", function (e) {
-			e.preventDefault();
-			$("body.open-sidebar").removeClass("open-sidebar");
-		});
-	}
-
-
-	/*===========================================
 	=         Masonary Isotope         =
 	=============================================*/
 	function masonryIsotope() {
-		if ($(".image_load").length) {
+		if ($(".image_load").length && $.fn.imagesLoaded && $.fn.isotope) {
 			$('.image_load').imagesLoaded(function () {
-
-				if ($.fn.isotope) {
 
 					var $portfolio = $('.image_load'); // Fixed selector typo
 
@@ -842,7 +710,6 @@ JS TABLE OF CONTENTS
 							filter: selector
 						});
 					});
-				}
 			});
 		}
 	}
@@ -1668,9 +1535,13 @@ JS TABLE OF CONTENTS
 
 
 	/* ------------- Gsap registration Js ------------- */
-	gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
+	const gsapPlugins = [];
+	if (typeof ScrollTrigger !== "undefined") gsapPlugins.push(ScrollTrigger);
+	if (typeof ScrollSmoother !== "undefined") gsapPlugins.push(ScrollSmoother);
+	if (typeof ScrollToPlugin !== "undefined") gsapPlugins.push(ScrollToPlugin);
+	if (gsapPlugins.length) gsap.registerPlugin.apply(gsap, gsapPlugins);
 
-	if ($("#smooth-wrapper").length && $("#smooth-content").length) {
+	if (typeof ScrollSmoother !== "undefined" && $("#smooth-wrapper").length && $("#smooth-content").length) {
 		gsap.config({
 			nullTargetWarn: false,
 		});
