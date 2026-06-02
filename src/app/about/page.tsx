@@ -11,7 +11,7 @@ export default function Page() {
                               <div className="tv-choose-left">
                                   
                                   <div className="title-wrap three" data-wow-duration="1.5s" data-wow-delay=".4s">
-                                      <div className="sub-title-2 text-theme"><i className="fa-solid fa-circle-check"></i>About Us</div>
+                                      <div className="sub-title-2 text-theme">About Us</div>
                                       <h2 className="sec-title no-title-animation">Best IT Security Solution <br />Provider in India</h2>
                                   </div>
                                   <p className="mb-35">Panzer IT understands that Information Technology is all about data. The company focuses on making business data secure, accessible and available through advanced technologies from multiple vendors across the globe.</p>

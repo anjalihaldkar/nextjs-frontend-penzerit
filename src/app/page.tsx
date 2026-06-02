@@ -446,7 +446,7 @@ export default function Page() {
                             <div className="panzer-achievement-grid">
                                 <div className="panzer-achievement-copy">
                                     <div className="panzer-achievement-pill">
-                                        <i className="fa-solid fa-shield-check"></i>
+                                        {/* <i className="fa-solid fa-shield-check"></i> */}
                                         <span>Panzer IT</span>
                                     </div>
                                     <h2 className="panzer-achievement-title no-title-animation">Make IT <span>Secure</span> Across Endpoint, Backup, Cloud And Data Protection</h2>
@@ -456,7 +456,7 @@ export default function Page() {
                                             <div className="panzer-protection-item" key={`${item.title}-${item.text}`}>
                                                 <span className="panzer-protection-icon">
                                                     <i className={`fa-light ${item.icon}`}></i>
-                                                    <b><i className="fa-solid fa-shield-check"></i></b>
+                                                    {/* <b><i className="fa-solid fa-shield-check"></i></b> */}
                                                 </span>
                                                 <strong>{item.title}</strong>
                                                 <span>{item.text}</span>
