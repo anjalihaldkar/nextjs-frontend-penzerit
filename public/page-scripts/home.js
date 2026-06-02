@@ -135,6 +135,49 @@
     var servicePrevButton = document.querySelector(".panzer-service-prev");
     var serviceNextButton = document.querySelector(".panzer-service-next");
 
+    function refreshServicePins() {
+      var serviceSection = document.querySelector(".tv-service-section.style-4");
+      if (!serviceSection || !window.gsap || !window.ScrollTrigger) return;
+
+      var serviceRows = Array.prototype.slice.call(serviceSection.querySelectorAll(".service-item-pin"));
+
+      window.ScrollTrigger.getAll().forEach(function (trigger) {
+        if (trigger.trigger && serviceSection.contains(trigger.trigger) && trigger.trigger.classList.contains("service-item-pin")) {
+          trigger.kill();
+        }
+      });
+
+      serviceRows.forEach(function (row) {
+        row.style.opacity = "";
+        row.style.transform = "";
+      });
+
+      if (window.innerWidth <= 992) {
+        window.ScrollTrigger.refresh();
+        return;
+      }
+
+      serviceRows.forEach(function (row) {
+        window.gsap.to(row, {
+          opacity: 0,
+          scale: 0.9,
+          y: 50,
+          scrollTrigger: {
+            trigger: row,
+            scrub: true,
+            start: "top 150px",
+            pin: true,
+            pinSpacing: false,
+            markers: false,
+          },
+        });
+      });
+
+      window.requestAnimationFrame(function () {
+        window.ScrollTrigger.refresh();
+      });
+    }
+
     if (serviceScroller && servicePrevButton && serviceNextButton && !serviceScroller.dataset.panzerServiceReady) {
       serviceScroller.dataset.panzerServiceReady = "true";
 
@@ -164,6 +207,18 @@
 
       serviceNextButton.addEventListener("click", function (event) {
         moveServiceScroller(1, event);
+      });
+    }
+
+    refreshServicePins();
+
+    if (serviceScroller && !serviceScroller.dataset.panzerServiceResizeReady) {
+      serviceScroller.dataset.panzerServiceResizeReady = "true";
+      var resizeTimer;
+
+      window.addEventListener("resize", function () {
+        window.clearTimeout(resizeTimer);
+        resizeTimer = window.setTimeout(refreshServicePins, 150);
       });
     }
 

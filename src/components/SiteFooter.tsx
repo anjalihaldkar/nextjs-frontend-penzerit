@@ -31,13 +31,24 @@ export function SiteFooter() {
                     </div>
                     <div className="contact-item">
                       <h3 className="title">LOCATION</h3>
-                      <Link href="/contact">
-                        <i className="fa-solid fa-location-dot"></i> Navi Mumbai, Maharashtra
-                      </Link>
+                      <div className="panzer-footer-addresses">
+                        <Link href="/contact">
+                          <i className="fa-solid fa-location-dot"></i>
+                          <span>New Delhi: F-398, Sector 63, Noida (NCR) 201307</span>
+                        </Link>
+                        <Link href="/contact">
+                          <i className="fa-solid fa-location-dot"></i>
+                          <span>Mumbai: 203, Sai Jewel, Plot 26, Sector 35/I, Kharghar, Navi Mumbai, Maharashtra 410210</span>
+                        </Link>
+                        <Link href="/contact">
+                          <i className="fa-solid fa-location-dot"></i>
+                          <span>World Wide Work support for queries, requirements, discussions and IT security consultancy.</span>
+                        </Link>
+                      </div>
                     </div>
                   </div>
                   <div className="panzer-footer-newsletter">
-                    <h3 className="title">subscribe to our newsletters</h3>
+                    <h3 className="title">SUBSCRIBE TO OUR NEWSLETTERS</h3>
                     <form className="newsletter-form" action="https://formspree.io/f/mzbnjrnb" method="post">
                       <div className="form-group">
                         <input type="email" name="email" className="email" defaultValue="" placeholder="Email Address" autoComplete="on" required={true} />

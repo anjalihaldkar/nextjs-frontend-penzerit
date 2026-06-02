@@ -2,6 +2,54 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Page() {
+  const lockAboutFeatures = [
+    { icon: "fa-hand-holding-gear", text: "360 Degree Comprehensive Security Solutions" },
+    { icon: "fa-user-group", text: "Experienced IT Security Consultants" },
+  ];
+
+  const lockAboutFlow = [
+    { icon: "fa-magnifying-glass", title: "Assess", text: "We identify risks before they impact you." },
+    { icon: "fa-shield-halved", title: "Protect", text: "We build strong defenses that scale." },
+    { icon: "fa-eye", title: "Detect", text: "We monitor threats in real-time." },
+    { icon: "fa-bolt", title: "Respond", text: "We act fast to minimize damage." },
+    { icon: "fa-rotate-right", title: "Recover", text: "We help you bounce back stronger." },
+  ];
+
+  const achievementProtections = [
+    { icon: "fa-desktop", title: "Endpoint", text: "Security" },
+    { icon: "fa-cloud", title: "Cloud", text: "Security" },
+    { icon: "fa-server", title: "Server", text: "Protection" },
+    { icon: "fa-envelope", title: "Email", text: "Security" },
+    { icon: "fa-globe", title: "Network", text: "Protection" },
+  ];
+
+  const achievementCards = [
+    {
+      badge: "Partner Network",
+      icon: "fa-buildings",
+      value: "11+",
+      title: "Associate Brands",
+      text: "Trusted partnerships with leading technology innovators.",
+      footer: [
+        { icon: "fa-handshake", label: "Trusted Partnerships" },
+        { icon: "fa-award", label: "Enterprise Grade Solutions" },
+        { icon: "fa-shield-check", label: "Proven Excellence" },
+      ],
+    },
+    {
+      badge: "Our Solutions",
+      icon: "fa-shield-check",
+      value: "360°",
+      title: "Security Solutions",
+      text: "Comprehensive solutions designed to protect what matters most.",
+      footer: [
+        { icon: "fa-crosshairs", label: "24/7 Monitoring" },
+        { icon: "fa-shield-check", label: "99.9% Threat Detection" },
+        { icon: "fa-clock", label: "Rapid Incident Response" },
+      ],
+    },
+  ];
+
   return (
     <>
 <section className="tv-hero-section style-4 panzer-cyber-hero">
@@ -342,69 +390,50 @@ export default function Page() {
                    
                 <section className="tv-about-section style-4 space bg-light panzer-home-about-section">
                     <div className="container">
-                        <div className="row align-items-center gy-30">
-                            <div className="col-lg-6">
-                                <div className="about-left">
-                                    <div className="main-image-box">
-                                        
-                                        <div className="image-group panzer-about-single-image">
-                                            <div className="image1  for-sat-image" data-wow-delay="0.2s"><Image className="br-30 mw-inherit" src="/assets/images/about/cc.png" alt="People discussing" width={612} height={344} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
+                        <div className="panzer-lock-about-grid">
+                            <div className="panzer-lock-about-copy">
+                                <div className="panzer-lock-about-pill">Who We Are</div>
+                                <h2 className="panzer-lock-about-title no-title-animation">Best IT Security <span>Solution Provider</span></h2>
+                                <p className="panzer-lock-about-text">Panzer IT helps organizations protect data across endpoints, servers, cloud, storage and networks with advanced security, backup and recovery solutions.</p>
+                                <div className="panzer-lock-about-features">
+                                    {lockAboutFeatures.map((item) => (
+                                        <div className="panzer-lock-feature" key={item.text}>
+                                            <span className="panzer-lock-feature-icon">
+                                                <i className={`fa-light ${item.icon}`}></i>
+                                            </span>
+                                            <h3>{item.text}</h3>
                                         </div>
-                                    </div>
+                                    ))}
                                 </div>
-                            </div>
-                            <div className="col-lg-6">
-                                <div className="about-content-wrap">
-                                    
-                                    <div className="title-wrap " data-wow-duration="1.5s" data-wow-delay=".4s">
-                                        <div className="sub-title-2 text-theme">Who We Are
-                                        </div>
-                                        <h2 className="sec-title no-title-animation">Best IT Security <br />Solution Provider</h2>
-                                        <p>Panzer IT helps organizations protect data across endpoints, servers, cloud,
-                                            storage and networks with advanced security, backup and recovery solutions.</p>
-                                    </div>
-                                    <div className="about-content" data-wow-duration="2s" data-wow-delay=".2s">
-                                        <div className="about-feature">
-                                            <div className="feature-icon">
-                                                <i className="flaticon-service"></i>
-                                            </div>
-                                            <div className="feature-text">
-                                                <h5>360 Degree Comprehensive Security Solutions</h5>
-                                            </div>
-                                        </div>
-                                        <div className="about-feature">
-                                            <div className="feature-icon bg-dark">
-                                                <i className="flaticon-people"></i>
-                                            </div>
-                                            <div className="feature-text">
-                                                <h5>Experienced IT Security Consultants</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="pt-30 pb-25" data-wow-duration="2s" data-wow-delay=".2s">
-                                        <div className="border"></div>
-                                    </div>
-                                    <ul className="features" data-wow-duration="2s" data-wow-delay=".2s">
-                                        <li>Secure data access from anywhere with the right protection parameters</li>
-                                        <li>Continuous secure data accessibility and availability for business operations</li>
-                                    </ul>
-                                    <Link href="/about" className="theme-btn mt-40 br-30 panzer-static-about-btn">
-                                        <span className="link-effect">
-                                            <span className="effect-1">Solution</span>
-                                            <span className="effect-1">Solution</span>
-                                        </span>
-                                        <span className="arrow-all">
-                                            <i>
-                                                <svg width="16" height="19" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M2 6H10M10 6L6 2M10 6L6 10" stroke="#1053f3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                                </svg>
-                                                <svg width="16" height="19" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M2 6H10M10 6L6 2M10 6L6 10" stroke="#1053f3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                                </svg>
-                                            </i>
-                                        </span>
+                                <div className="panzer-lock-about-actions">
+                                    <Link href="/solution" className="panzer-lock-about-btn primary">
+                                        <span>Explore Solutions</span>
+                                        <i className="fa-solid fa-arrow-right"></i>
                                     </Link>
                                 </div>
+                            </div>
+
+                            <div className="panzer-lock-about-visual">
+                                <div className="panzer-lock-network" aria-hidden="true">
+                                    <span></span><span></span><span></span><span></span><span></span>
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <Image className="panzer-lock-image" src="/assets/images/hero/create.png" alt="Blue cyber security lock with shield" width={1024} height={1536} sizes="(max-width: 991px) 80vw, 36vw" />
+                            </div>
+
+                            <div className="panzer-lock-about-flow">
+                                {lockAboutFlow.map((item) => (
+                                    <div className="panzer-lock-flow-card" key={item.title}>
+                                        <span className="panzer-lock-flow-dot" aria-hidden="true"></span>
+                                        <div className="panzer-lock-flow-icon">
+                                            <i className={`fa-light ${item.icon}`}></i>
+                                        </div>
+                                        <div>
+                                            <h3>{item.title}</h3>
+                                            <p>{item.text}</p>
+                                        </div>
+                                    </div>
+                                ))}
                             </div>
                         </div>
                     </div>
@@ -412,55 +441,54 @@ export default function Page() {
 
                   
                 <section className="tv-achivement-section bg-light overflow-hidden panzer-home-achievement-section">
-                    <div className="tv-achivement-inner position-relative overflow-hidden bg-light2 mx-20 ml-mx-0">
+                    <div className="tv-achivement-inner panzer-achievement-modern position-relative overflow-hidden bg-light2 mx-20 ml-mx-0">
                         <div className="container">
-                            <div className="row gy-30">
-                                <div className="col-lg-6 col-xxl-6">
-                                    <div className="achivement-content-wrapper">
-                                        
-                                        <div className="title-wrap three" data-wow-duration="1.5s" data-wow-delay=".4s">
-                                            <div className="sub-title-2 text-theme">Panzer IT</div>
-                                            <h2 className="sec-title no-title-animation">Make IT Secure Across <br />Endpoint, Backup, Cloud <br />And Data Protection</h2>
-                                            <p>PCs and servers are connected more than ever, and threats are increasingly more
-                                                advanced. Panzer IT helps secure every entry point including endpoint, server,
-                                                cloud, network perimeter, web, mail and storage.</p>
-                                        </div>
+                            <div className="panzer-achievement-grid">
+                                <div className="panzer-achievement-copy">
+                                    <div className="panzer-achievement-pill">
+                                        <i className="fa-solid fa-shield-check"></i>
+                                        <span>Panzer IT</span>
+                                    </div>
+                                    <h2 className="panzer-achievement-title no-title-animation">Make IT <span>Secure</span> Across Endpoint, Backup, Cloud And Data Protection</h2>
+                                    <p className="panzer-achievement-text">PCs and servers are connected more than ever, and threats are increasingly more advanced. Panzer IT helps secure every entry point including endpoint, server, cloud, network perimeter, web, mail and storage.</p>
+                                    <div className="panzer-protection-strip" aria-label="Panzer IT protection areas">
+                                        {achievementProtections.map((item) => (
+                                            <div className="panzer-protection-item" key={`${item.title}-${item.text}`}>
+                                                <span className="panzer-protection-icon">
+                                                    <i className={`fa-light ${item.icon}`}></i>
+                                                    <b><i className="fa-solid fa-shield-check"></i></b>
+                                                </span>
+                                                <strong>{item.title}</strong>
+                                                <span>{item.text}</span>
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
-                                <div className="col-lg-3 col-xxl-3 lpm-d-none">
-                                    <div className="achivement-image-wrapper">
-                                        {/* <div className="thumb-bg">
-                                            <svg version="1.1" viewBox="0 0 586.23 500.74" xmlns="http://www.w3.org/2000/svg">
-                                                <g transform="translate(-1.0738 -1.2546)">
-                                                    <path d="m211.33 501.74c-187.01-7.406-269.07-172.39-164.01-329.74 130.19-194.98 434.71-232.19 520.53-63.614 85.759 168.44-126.35 402.46-356.52 393.35zm63.333-96.994c199.68-42.298 301.86-265.24 140.24-305.98-121.19-30.549-281.94 59.67-317 177.91-27.173 91.643 57.87 153.26 176.77 128.07z" />
-                                                </g>outer-box
-                                            </svg>
-                                        </div> */}
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-xxl-3">
-                                    <div className="achivement-right-wrapper">
-                                        <div className="content">
-                                            
-                                            <h4>Panzer IT</h4>
-                                        </div>
-                                        <div className="counter-box bg-light">
-                                            <div className="counter-inner">
-                                                <div className="icon"><Image src="/assets/images/achivement/hm2-icon01.webp" alt="" width={29} height={29} sizes="100vw" style={{ width: "100%", height: "auto" }} />
-                                                </div>
-                                                <div className="count"><span className="count-number odometer" data-count="11">0</span><span className="plus">+</span></div>
+
+                                <div className="panzer-achievement-cards">
+                                    {achievementCards.map((card) => (
+                                        <div className="panzer-achievement-card" key={card.title}>
+                                            <div className="panzer-achievement-card-visual">
+                                                <span>
+                                                    <i className={`fa-light ${card.icon}`}></i>
+                                                </span>
                                             </div>
-                                            <p>Associate Brands</p>
-                                        </div>
-                                        <div className="counter-box bg-light">
-                                            <div className="counter-inner">
-                                                <div className="icon"><Image src="/assets/images/achivement/hm2-icon02.webp" alt="" width={30} height={25} sizes="100vw" style={{ width: "100%", height: "auto" }} />
-                                                </div>
-                                                <div className="count"><span className="count-number odometer" data-count="360">0</span><span className="plus">&deg;</span></div>
+                                            <div className="panzer-achievement-card-body">
+                                                <div className="panzer-achievement-card-badge">{card.badge}</div>
+                                                <div className="panzer-achievement-value">{card.value}</div>
+                                                <h3>{card.title}</h3>
+                                                <p>{card.text}</p>
                                             </div>
-                                            <p>Security Solutions</p>
+                                            <div className="panzer-achievement-card-footer">
+                                                {card.footer.map((item) => (
+                                                    <div className="panzer-achievement-footer-item" key={item.label}>
+                                                        <i className={`fa-light ${item.icon}`}></i>
+                                                        <span>{item.label}</span>
+                                                    </div>
+                                                ))}
+                                            </div>
                                         </div>
-                                    </div>
+                                    ))}
                                 </div>
                             </div>
                         </div>

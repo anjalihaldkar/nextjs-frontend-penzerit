@@ -10445,7 +10445,7 @@ background: var(--light-color);
   display: flex;
   gap: 60px;
   padding: 0 0 30px;
-  border-bottom: 1px solid var(--bs-border-color5);
+
   margin: 40px 0 35px;
   /* Medium devices */
   /* Large devices */
@@ -10467,7 +10467,7 @@ background: var(--light-color);
   }
 }
 .footer-section .footer-brand .contact-info .contact-item .title {
-  opacity: 0.502;
+  opacity: 0.802;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
@@ -10533,7 +10533,7 @@ background: var(--light-color);
 }
 .footer-section .footer-bottom {
   border-top: 1px solid var(--bs-border-color5);
-  padding: 28px 0;
+  padding: 10px 0;
   position: relative;
   overflow: hidden;
   /* Small devices */
@@ -10596,7 +10596,7 @@ background: var(--light-color);
 }
 .footer-section.panzer-compact-footer .footer-top {
   padding-top: 20px;
-  padding-bottom: 28px;
+  padding-bottom: 0px;
 }
 .footer-section.panzer-compact-footer .footer-brand .contact-info {
   flex-direction: column;
@@ -10635,11 +10635,13 @@ background: var(--light-color);
 }
 .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .brand-info {
   display: grid;
-  grid-template-columns: 190px minmax(0, 1fr) minmax(300px, 380px);
-  grid-template-areas: "logo contact newsletter" "logo contact social";
-  align-items: center;
+  grid-template-columns: 190px minmax(300px, 380px) minmax(180px, 1fr);
+  grid-template-areas:
+    "logo newsletter social"
+    "contact contact contact";
+  align-items: start;
   column-gap: clamp(24px, 3vw, 44px);
-  row-gap: 16px;
+  row-gap: 26px;
 }
 .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .logo {
   grid-area: logo;
@@ -10647,26 +10649,49 @@ background: var(--light-color);
 .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .contact-info {
   display: grid;
   grid-area: contact;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: minmax(180px, 220px) minmax(170px, 210px) minmax(360px, 1fr);
   align-items: start;
   justify-content: stretch;
-  gap: 18px;
+  gap: clamp(18px, 3vw, 42px);
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .contact-info .contact-item {
   align-content: start;
-  justify-items: center;
+  justify-items: start;
 }
 .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .contact-info .contact-item a {
   max-width: none;
-  justify-content: center;
-  text-align: center;
+  justify-content: flex-start;
+  text-align: left;
 }
 .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .contact-info .contact-item a[href^=tel] {
   white-space: nowrap;
 }
+.footer-section.panzer-compact-footer .footer-brand .contact-info .contact-item .panzer-footer-addresses {
+  display: grid;
+  gap: 10px;
+  width: 100%;
+}
+.footer-section.panzer-compact-footer .footer-brand .contact-info .contact-item .panzer-footer-addresses a {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  gap: 8px;
+  align-items: start;
+  max-width: 100%;
+  text-align: left;
+  line-height: 1.42;
+}
+.footer-section.panzer-compact-footer .footer-brand .contact-info .contact-item .panzer-footer-addresses a i {
+  margin-top: 4px;
+}
+.footer-section.panzer-compact-footer .footer-brand .contact-info .contact-item .panzer-footer-addresses a span {
+  overflow-wrap: anywhere;
+}
 .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .social-links {
   grid-area: social;
   justify-content: flex-end;
+  align-self: end;
   padding-top: 0;
 }
 .panzer-footer-newsletter {
@@ -10715,14 +10740,16 @@ background: var(--light-color);
 }
 @media (max-width: 1199px) {
   .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .brand-info {
-    grid-template-columns: 170px minmax(0, 1fr);
-    grid-template-areas: "logo contact" "newsletter newsletter" "social social";
+    grid-template-columns: 170px minmax(300px, 460px) minmax(120px, 1fr);
+    grid-template-areas:
+      "logo newsletter social"
+      "contact contact contact";
   }
   .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .social-links {
-    justify-content: center;
+    justify-content: flex-end;
   }
   .panzer-footer-newsletter {
-    justify-self: center;
+    justify-self: stretch;
     max-width: 460px;
   }
 }
@@ -10734,6 +10761,16 @@ background: var(--light-color);
   }
   .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .contact-info {
     grid-template-columns: 1fr;
+    border-top: 0;
+    padding-top: 0;
+  }
+  .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .contact-info .contact-item {
+    justify-items: center;
+    text-align: center;
+  }
+  .footer-section.panzer-compact-footer .footer-brand .contact-info .contact-item .panzer-footer-addresses {
+    max-width: 640px;
+    margin: 0 auto;
   }
   .panzer-footer-newsletter {
     justify-self: center;
@@ -66534,17 +66571,17 @@ button *,
                     margin-left: auto !important;
                     margin-right: auto !important;
                         padding-top: 45px;
-            padding-bottom: 45px;
+            padding-bottom: 0px;
                 }
 
                 .panzer-page-home .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .brand-info {
-                    grid-template-columns: 190px minmax(0, 1fr) minmax(300px, 380px);
+                    grid-template-columns: 190px minmax(300px, 380px) minmax(180px, 1fr);
                     grid-template-areas:
-                        "logo contact newsletter"
-                        "logo contact social";
+                        "logo newsletter social"
+                        "contact contact contact";
                     column-gap: clamp(24px, 3vw, 44px);
-                    row-gap: 16px;
-                    align-items: center;
+                    row-gap: 26px;
+                    align-items: start;
                 }
 
                 .panzer-page-home .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .logo {
@@ -66554,21 +66591,28 @@ button *,
                 .panzer-page-home .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .contact-info {
                     display: grid;
                     grid-area: contact;
-                    grid-template-columns: repeat(3, minmax(0, 1fr));
+                    grid-template-columns: minmax(180px, 220px) minmax(170px, 210px) minmax(360px, 1fr);
                     align-items: start;
                     justify-content: stretch;
-                    gap: 18px;
+                    gap: clamp(18px, 3vw, 42px);
+                    padding-top: 22px;
+                    border-top: 1px solid rgba(47, 99, 221, 0.16);
                 }
 
                 .panzer-page-home .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .contact-info .contact-item {
-                    align-content: start;
-                    justify-items: center;
+                    align-content: left;
+                    justify-items: start;
                 }
 
                 .panzer-page-home .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .contact-info .contact-item a {
                     max-width: none;
-                    justify-content: center;
-                    text-align: center;
+                    justify-content: flex-start;
+                    text-align: left;
+                }
+
+                .panzer-page-home .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .contact-info .contact-item .panzer-footer-addresses a {
+                    justify-content: stretch;
+                    text-align: left;
                 }
 
                 .panzer-page-home .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .contact-info .contact-item a[href^="tel"] {
@@ -66578,6 +66622,7 @@ button *,
                 .panzer-page-home .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .social-links {
                     grid-area: social;
                     justify-content: flex-end;
+                    align-self: end;
                 }
 
                 .panzer-page-home .panzer-image-footer {
@@ -66686,19 +66731,18 @@ button *,
 
                 @media (max-width: 1199px) {
                     .panzer-page-home .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .brand-info {
-                        grid-template-columns: 170px minmax(0, 1fr);
+                        grid-template-columns: 170px minmax(300px, 460px) minmax(120px, 1fr);
                         grid-template-areas:
-                            "logo contact"
-                            "newsletter newsletter"
-                            "social social";
+                            "logo newsletter social"
+                            "contact contact contact";
                     }
 
                     .panzer-page-home .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .social-links {
-                        justify-content: center;
+                        justify-content: flex-end;
                     }
 
                     .panzer-page-home .panzer-footer-newsletter {
-                        justify-self: center;
+                        justify-self: stretch;
                         max-width: 460px;
                     }
                 }
@@ -66723,6 +66767,18 @@ button *,
 
                     .panzer-page-home .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .contact-info {
                         grid-template-columns: 1fr;
+                        border-top: 0;
+                        padding-top: 0;
+                    }
+
+                    .panzer-page-home .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .contact-info .contact-item {
+                        justify-items: left;
+                        text-align: center;
+                    }
+
+                    .panzer-page-home .footer-section.panzer-compact-footer .footer-brand .contact-info .contact-item .panzer-footer-addresses {
+                        max-width: 640px;
+                        margin: 0 auto;
                     }
                 }
 
@@ -67428,6 +67484,492 @@ button *,
                         aspect-ratio: 4 / 3;
                         object-fit: cover;
                         object-position: center;
+                    }
+                }
+
+                /* Home lock about layout. Old image/text section can be restored from page.tsx history. */
+                .panzer-page-home .panzer-home-about-section {
+                    position: relative;
+                    overflow: hidden;
+                    background: #fbfdff !important;
+                    padding-top: clamp(72px, 7vw, 112px);
+                    padding-bottom: clamp(72px, 7vw, 112px);
+                }
+
+                .panzer-page-home .panzer-lock-about-grid {
+                    display: grid;
+                    grid-template-columns: minmax(310px, 0.95fr) minmax(300px, 0.9fr) minmax(270px, 0.72fr);
+                    gap: clamp(18px, 2.5vw, 44px);
+                    align-items: center;
+                }
+
+                .panzer-page-home .panzer-lock-about-copy,
+                .panzer-page-home .panzer-lock-about-visual,
+                .panzer-page-home .panzer-lock-about-flow {
+                    min-width: 0;
+                }
+
+                .panzer-page-home .panzer-lock-about-pill {
+                    display: inline-flex;
+                    min-height: 36px;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 7px 22px;
+                    border: 1px solid rgba(16, 83, 243, 0.42);
+                    border-radius: 999px;
+                    background: #ffffff;
+                    color: #1053f3;
+                    font-size: 14px;
+                    line-height: 1;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    letter-spacing: 0;
+                }
+
+                .panzer-page-home .panzer-lock-about-title {
+                    max-width: 650px;
+                    margin: 28px 0 24px;
+                    color: #061238;
+                    font-size: clamp(46px, 4.9vw, 74px);
+                    line-height: 1.06;
+                    font-weight: 800;
+                    letter-spacing: 0;
+                }
+
+                .panzer-page-home .panzer-lock-about-title span {
+                    display: block;
+                    color: #1053f3;
+                }
+
+                .panzer-page-home .panzer-lock-about-title::after {
+                    display: block;
+                    width: 72px;
+                    height: 5px;
+                    margin-top: 23px;
+                    border-radius: 999px;
+                    background: #1053f3;
+                    content: "";
+                }
+
+                .panzer-page-home .panzer-lock-about-text {
+                    max-width: 520px;
+                    margin: 0;
+                    color: #34405e;
+                    font-size: 18px;
+                    line-height: 1.64;
+                    font-weight: 500;
+                }
+
+                .panzer-page-home .panzer-lock-about-features {
+                    display: grid;
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                    gap: clamp(18px, 2.2vw, 30px);
+                    margin-top: 34px;
+                    padding-bottom: 26px;
+                    border-bottom: 1px solid rgba(12, 39, 91, 0.12);
+                }
+
+                .panzer-page-home .panzer-lock-feature {
+                    display: grid;
+                    grid-template-columns: clamp(58px, 5.2vw, 78px) minmax(0, 1fr);
+                    gap: clamp(14px, 1.5vw, 20px);
+                    align-items: center;
+                    min-width: 0;
+                }
+
+                .panzer-page-home .panzer-lock-feature-icon {
+                    display: inline-flex;
+                    width: clamp(58px, 5.2vw, 78px);
+                    height: clamp(58px, 5.2vw, 78px);
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    color: #ffffff;
+                    background: linear-gradient(145deg, #1053f3 0%, #5b82e7 100%);
+                    box-shadow: 0 14px 28px rgba(16, 83, 243, 0.22);
+                    font-size: clamp(24px, 2.2vw, 34px);
+                    flex: 0 0 auto;
+                }
+
+                .panzer-page-home .panzer-lock-feature h3 {
+                    margin: 0;
+                    color: #1053f3;
+                    font-size: clamp(20px, 2.05vw, 30px);
+                    line-height: 1.18;
+                    font-weight: 600;
+                    letter-spacing: 0;
+                    overflow-wrap: anywhere;
+                }
+
+                .panzer-page-home .panzer-lock-about-actions {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 22px;
+                    margin-top: 32px;
+                }
+
+                .panzer-page-home .panzer-lock-about-btn {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    min-height: 58px;
+                    gap: 13px;
+                    padding: 0 24px;
+                    border-radius: 10px;
+                    font-size: 15px;
+                    line-height: 1;
+                    font-weight: 800;
+                    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, color 0.25s ease;
+                }
+
+                .panzer-page-home .panzer-lock-about-btn i {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .panzer-page-home .panzer-lock-about-btn.primary {
+                    color: #ffffff;
+                    background: #1053f3;
+                    box-shadow: 0 16px 34px rgba(16, 83, 243, 0.27);
+                }
+
+                .panzer-page-home .panzer-lock-about-btn.primary i {
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    background: #ffffff;
+                    color: #1053f3;
+                    font-size: 14px;
+                }
+
+                .panzer-page-home .panzer-lock-about-btn:hover {
+                    transform: translateY(-2px);
+                }
+
+                .panzer-page-home .panzer-lock-about-visual {
+                    position: relative;
+                    min-height: 560px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    isolation: isolate;
+                }
+
+                .panzer-page-home .panzer-lock-about-visual::before {
+                    position: absolute;
+                    content: "";
+                    width: min(92%, 520px);
+                    height: min(92%, 520px);
+                    border-radius: 50%;
+                    background:
+                        radial-gradient(circle at center, rgba(16, 83, 243, 0.08) 0 2px, transparent 3px),
+                        conic-gradient(from 18deg, rgba(16, 83, 243, 0.18), rgba(80, 214, 255, 0.05), rgba(16, 83, 243, 0.18));
+                    opacity: 0.62;
+                    -webkit-mask: radial-gradient(circle, transparent 0 36%, #000 37% 100%);
+                    mask: radial-gradient(circle, transparent 0 36%, #000 37% 100%);
+                    z-index: -2;
+                }
+
+                .panzer-page-home .panzer-lock-network {
+                    position: absolute;
+                    inset: 18px 8px 64px;
+                    z-index: -1;
+                    opacity: 0.75;
+                    background:
+                        linear-gradient(29deg, transparent 22%, rgba(16, 83, 243, 0.2) 22.35%, transparent 22.8%),
+                        linear-gradient(138deg, transparent 30%, rgba(16, 83, 243, 0.16) 30.35%, transparent 30.8%),
+                        linear-gradient(74deg, transparent 44%, rgba(80, 214, 255, 0.22) 44.35%, transparent 44.8%),
+                        linear-gradient(160deg, transparent 58%, rgba(16, 83, 243, 0.12) 58.35%, transparent 58.8%);
+                }
+
+                .panzer-page-home .panzer-lock-network span {
+                    position: absolute;
+                    width: 7px;
+                    height: 7px;
+                    border-radius: 50%;
+                    background: #1053f3;
+                    box-shadow: 0 0 0 5px rgba(16, 83, 243, 0.08);
+                }
+
+                .panzer-page-home .panzer-lock-network span:nth-child(1) { left: 14%; top: 23%; }
+                .panzer-page-home .panzer-lock-network span:nth-child(2) { left: 25%; top: 55%; }
+                .panzer-page-home .panzer-lock-network span:nth-child(3) { left: 39%; top: 14%; }
+                .panzer-page-home .panzer-lock-network span:nth-child(4) { left: 55%; top: 9%; }
+                .panzer-page-home .panzer-lock-network span:nth-child(5) { left: 75%; top: 26%; }
+                .panzer-page-home .panzer-lock-network span:nth-child(6) { left: 82%; top: 58%; }
+                .panzer-page-home .panzer-lock-network span:nth-child(7) { left: 62%; top: 77%; }
+                .panzer-page-home .panzer-lock-network span:nth-child(8) { left: 34%; top: 81%; }
+
+                .panzer-page-home .panzer-lock-image {
+                    width: min(82%, 390px);
+                    height: auto;
+                    display: block;
+                    object-fit: contain;
+                    filter: drop-shadow(0 28px 42px rgba(16, 83, 243, 0.2));
+                }
+
+                .panzer-page-home .panzer-lock-about-flow {
+                    position: relative;
+                    display: grid;
+                    gap: 16px;
+                }
+
+                .panzer-page-home .panzer-lock-about-flow::before {
+                    position: absolute;
+                    content: "";
+                    top: 34px;
+                    bottom: 34px;
+                    left: -20px;
+                    border-left: 1px dashed rgba(16, 83, 243, 0.34);
+                }
+
+                .panzer-page-home .panzer-lock-flow-card {
+                    position: relative;
+                    display: grid;
+                    grid-template-columns: 66px minmax(0, 1fr);
+                    gap: 18px;
+                    align-items: center;
+                    min-height: 108px;
+                    padding: 18px 22px;
+                    border: 1px solid rgba(12, 39, 91, 0.08);
+                    border-radius: 14px;
+                    background: rgba(255, 255, 255, 0.92);
+                    box-shadow: 0 10px 28px rgba(12, 39, 91, 0.08);
+                }
+
+                .panzer-page-home .panzer-lock-flow-dot {
+                    position: absolute;
+                    top: 50%;
+                    left: -27px;
+                    width: 11px;
+                    height: 11px;
+                    border-radius: 50%;
+                    background: #1053f3;
+                    transform: translateY(-50%);
+                    box-shadow: 0 0 0 5px rgba(16, 83, 243, 0.08);
+                }
+
+                .panzer-page-home .panzer-lock-flow-icon {
+                    display: inline-flex;
+                    width: 66px;
+                    height: 66px;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    color: #1053f3;
+                    background: #eef4ff;
+                    font-size: 29px;
+                }
+
+                .panzer-page-home .panzer-lock-flow-card h3 {
+                    margin: 0 0 5px;
+                    color: #1053f3;
+                    font-size: 20px;
+                    line-height: 1.18;
+                    font-weight: 800;
+                }
+
+                .panzer-page-home .panzer-lock-flow-card p {
+                    margin: 0;
+                    color: #35415c;
+                    font-size: 14px;
+                    line-height: 1.35;
+                    font-weight: 600;
+                }
+
+                @media (min-width: 992px) and (max-width: 1399px) {
+                    .panzer-page-home .panzer-lock-about-grid {
+                        grid-template-columns: minmax(280px, 0.9fr) minmax(250px, 0.78fr) minmax(250px, 0.72fr);
+                        gap: clamp(14px, 1.8vw, 26px);
+                    }
+
+                    .panzer-page-home .panzer-lock-about-title {
+                        font-size: clamp(40px, 4.2vw, 58px);
+                        margin-bottom: 18px;
+                    }
+
+                    .panzer-page-home .panzer-lock-about-text {
+                        font-size: 15px;
+                        line-height: 1.58;
+                    }
+
+                    .panzer-page-home .panzer-lock-about-actions {
+                        gap: 12px;
+                        margin-top: 22px;
+                    }
+
+                    .panzer-page-home .panzer-lock-about-features {
+                        gap: 12px;
+                        margin-top: 24px;
+                        padding-bottom: 20px;
+                    }
+
+                    .panzer-page-home .panzer-lock-feature {
+                        grid-template-columns: 44px minmax(0, 1fr);
+                        gap: 10px;
+                    }
+
+                    .panzer-page-home .panzer-lock-feature-icon {
+                        width: 44px;
+                        height: 44px;
+                        font-size: 20px;
+                    }
+
+                    .panzer-page-home .panzer-lock-feature h3 {
+                        font-size: clamp(15px, 1.55vw, 20px);
+                        line-height: 1.18;
+                    }
+
+                    .panzer-page-home .panzer-lock-about-btn {
+                        min-height: 50px;
+                        padding: 0 17px;
+                        font-size: 13px;
+                    }
+
+                    .panzer-page-home .panzer-lock-about-visual {
+                        min-height: 440px;
+                    }
+
+                    .panzer-page-home .panzer-lock-image {
+                        width: min(88%, 300px);
+                    }
+
+                    .panzer-page-home .panzer-lock-about-visual::before {
+                        width: min(96%, 360px);
+                        height: min(96%, 360px);
+                    }
+
+                    .panzer-page-home .panzer-lock-about-flow {
+                        gap: 10px;
+                    }
+
+                    .panzer-page-home .panzer-lock-about-flow::before {
+                        left: -13px;
+                    }
+
+                    .panzer-page-home .panzer-lock-flow-card {
+                        grid-template-columns: 48px minmax(0, 1fr);
+                        gap: 10px;
+                        min-height: 82px;
+                        padding: 12px 14px;
+                        border-radius: 12px;
+                    }
+
+                    .panzer-page-home .panzer-lock-flow-dot {
+                        left: -18px;
+                        width: 9px;
+                        height: 9px;
+                    }
+
+                    .panzer-page-home .panzer-lock-flow-icon {
+                        width: 48px;
+                        height: 48px;
+                        font-size: 22px;
+                    }
+
+                    .panzer-page-home .panzer-lock-flow-card h3 {
+                        font-size: 16px;
+                    }
+
+                    .panzer-page-home .panzer-lock-flow-card p {
+                        font-size: 11px;
+                        line-height: 1.28;
+                    }
+                }
+
+                @media (max-width: 991px) {
+                    .panzer-page-home .panzer-lock-about-grid {
+                        grid-template-columns: 1fr;
+                    }
+
+                    .panzer-page-home .panzer-lock-about-copy {
+                        text-align: center;
+                    }
+
+                    .panzer-page-home .panzer-lock-about-title,
+                    .panzer-page-home .panzer-lock-about-text {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    .panzer-page-home .panzer-lock-about-title::after {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    .panzer-page-home .panzer-lock-about-actions {
+                        justify-content: center;
+                    }
+
+                    .panzer-page-home .panzer-lock-about-features {
+                        max-width: 720px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        text-align: left;
+                    }
+
+                    .panzer-page-home .panzer-lock-about-visual {
+                        min-height: 500px;
+                        order: 2;
+                    }
+
+                    .panzer-page-home .panzer-lock-about-flow {
+                        grid-template-columns: repeat(2, minmax(0, 1fr));
+                        grid-column: auto;
+                    }
+                }
+
+                @media (max-width: 767px) {
+                    .panzer-page-home .panzer-lock-about-title {
+                        font-size: clamp(42px, 12vw, 58px);
+                    }
+
+                    .panzer-page-home .panzer-lock-about-actions {
+                        flex-direction: column;
+                    }
+
+                    .panzer-page-home .panzer-lock-about-features {
+                        grid-template-columns: 1fr;
+                        max-width: 430px;
+                    }
+
+                    .panzer-page-home .panzer-lock-feature h3 {
+                        font-size: clamp(20px, 6vw, 25px);
+                    }
+
+                    .panzer-page-home .panzer-lock-about-btn {
+                        width: 100%;
+                    }
+
+                    .panzer-page-home .panzer-lock-about-flow {
+                        grid-template-columns: 1fr;
+                    }
+
+                    .panzer-page-home .panzer-lock-about-visual {
+                        min-height: 390px;
+                    }
+
+                    .panzer-page-home .panzer-lock-image {
+                        width: min(76%, 300px);
+                    }
+
+                    .panzer-page-home .panzer-lock-about-visual::before {
+                        width: 340px;
+                        height: 340px;
+                    }
+
+                    .panzer-page-home .panzer-lock-flow-card {
+                        grid-template-columns: 60px minmax(0, 1fr);
+                        text-align: left;
+                        justify-items: stretch;
+                        min-height: 96px;
+                    }
+
+                    .panzer-page-home .panzer-lock-flow-icon {
+                        width: 60px;
+                        height: 60px;
+                        font-size: 25px;
                     }
                 }
 
@@ -72944,6 +73486,440 @@ button *,
   .panzer-page-home .panzer-home-achievement-section .counter-box {
     min-height: 128px;
     padding: 22px 24px !important;
+  }
+}
+
+/* Home achievement reference layout */
+.panzer-page-home .panzer-home-achievement-section {
+  background: #fbfdff !important;
+}
+
+.panzer-page-home .panzer-achievement-modern.tv-achivement-inner {
+  margin: 0 !important;
+  padding: clamp(48px, 5vw, 78px) 0;
+  background:
+    radial-gradient(circle at 50% 55%, rgba(16, 83, 243, 0.08), transparent 26%),
+    linear-gradient(180deg, #ffffff 0%, #fbfdff 100%) !important;
+  border-top: 1px solid rgba(16, 83, 243, 0.07);
+  border-bottom: 1px solid rgba(16, 83, 243, 0.07);
+}
+
+.panzer-page-home .panzer-achievement-grid {
+  display: grid;
+  grid-template-columns: minmax(390px, 1fr) minmax(380px, 0.74fr);
+  gap: clamp(28px, 4vw, 58px);
+  align-items: center;
+}
+
+.panzer-page-home .panzer-achievement-copy,
+.panzer-page-home .panzer-achievement-cards {
+  min-width: 0;
+}
+
+.panzer-page-home .panzer-achievement-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 38px;
+  padding: 7px 18px;
+  border: 1px solid rgba(16, 83, 243, 0.34);
+  border-radius: 999px;
+  background: #ffffff;
+  color: #1053f3;
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.panzer-page-home .panzer-achievement-pill i {
+  font-size: 15px;
+}
+
+.panzer-page-home .panzer-achievement-title {
+  max-width: 820px;
+  margin: 24px 0 18px;
+  color: #07133d;
+  font-size: clamp(34px, 3.8vw, 54px);
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.panzer-page-home .panzer-achievement-title span {
+  color: #1053f3;
+}
+
+.panzer-page-home .panzer-achievement-title::after {
+  display: block;
+  width: 86px;
+  height: 4px;
+  margin-top: 18px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #1053f3 0%, #1053f3 78%, #44d5ff 78%, #44d5ff 100%);
+  content: "";
+}
+
+.panzer-page-home .panzer-achievement-text {
+  max-width: 620px;
+  margin: 0;
+  color: #263453;
+  font-size: clamp(15px, 1.05vw, 17px);
+  line-height: 1.62;
+  font-weight: 500;
+}
+
+.panzer-page-home .panzer-protection-strip {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin-top: 34px;
+  overflow: hidden;
+  border: 1px solid rgba(16, 83, 243, 0.12);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 18px 42px rgba(12, 39, 91, 0.08);
+}
+
+.panzer-page-home .panzer-protection-item {
+  position: relative;
+  display: flex;
+  min-height: 96px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 10px;
+  text-align: center;
+  color: #07133d;
+  min-width: 0;
+}
+
+.panzer-page-home .panzer-protection-item + .panzer-protection-item {
+  border-left: 1px solid rgba(16, 83, 243, 0.14);
+}
+
+.panzer-page-home .panzer-protection-item:first-child::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background: #1053f3;
+  content: "";
+}
+
+.panzer-page-home .panzer-protection-icon {
+  position: relative;
+  display: inline-flex;
+  width: 34px;
+  height: 34px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  color: #1053f3;
+  font-size: 26px;
+}
+
+.panzer-page-home .panzer-protection-icon b {
+  position: absolute;
+  right: -6px;
+  bottom: -4px;
+  display: inline-flex;
+  width: 18px;
+  height: 18px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #eef4ff;
+  color: #1053f3;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.panzer-page-home .panzer-protection-item strong,
+.panzer-page-home .panzer-protection-item span:not(.panzer-protection-icon) {
+  display: block;
+  color: #07133d;
+  font-size: clamp(11px, 0.85vw, 13px);
+  line-height: 1.25;
+  font-weight: 800;
+}
+
+.panzer-page-home .panzer-achievement-cards {
+  display: grid;
+  gap: 22px;
+}
+
+.panzer-page-home .panzer-achievement-card {
+  display: grid;
+  grid-template-columns: minmax(130px, 170px) minmax(0, 1fr);
+  overflow: hidden;
+  border: 1px solid rgba(16, 83, 243, 0.12);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 16px 38px rgba(12, 39, 91, 0.09);
+}
+
+.panzer-page-home .panzer-achievement-card-visual {
+  position: relative;
+  display: flex;
+  min-height: 150px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(255, 255, 255, 0.18), transparent 28%),
+    linear-gradient(145deg, #2771ff 0%, #0710b9 100%);
+}
+
+.panzer-page-home .panzer-achievement-card-visual::before {
+  position: absolute;
+  width: 92px;
+  height: 92px;
+  border: 4px solid rgba(255, 255, 255, 0.18);
+  border-radius: 50%;
+  content: "";
+}
+
+.panzer-page-home .panzer-achievement-card-visual::after {
+  position: absolute;
+  right: -17px;
+  bottom: -16px;
+  width: 74px;
+  height: 74px;
+  background: rgba(255, 255, 255, 0.88);
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  content: "";
+}
+
+.panzer-page-home .panzer-achievement-card-visual span {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  width: 68px;
+  height: 68px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 34px;
+}
+
+.panzer-page-home .panzer-achievement-card-body {
+  padding: clamp(20px, 2.2vw, 28px) clamp(22px, 2.7vw, 34px) 20px;
+  min-width: 0;
+}
+
+.panzer-page-home .panzer-achievement-card-badge {
+  display: inline-flex;
+  min-height: 24px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: #eef4ff;
+  color: #2b72ff;
+  font-size: 10px;
+  line-height: 1;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.panzer-page-home .panzer-achievement-value {
+  color: #1053f3;
+  font-size: clamp(34px, 3vw, 44px);
+  line-height: 1;
+  font-weight: 900;
+}
+
+.panzer-page-home .panzer-achievement-card-body h3 {
+  margin: 8px 0 7px;
+  color: #07133d;
+  font-size: clamp(17px, 1.35vw, 21px);
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.panzer-page-home .panzer-achievement-card-body p {
+  max-width: 300px;
+  margin: 0;
+  color: #34405e;
+  font-size: clamp(13px, 0.95vw, 15px);
+  line-height: 1.42;
+  font-weight: 600;
+}
+
+.panzer-page-home .panzer-achievement-card-footer {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid rgba(16, 83, 243, 0.12);
+  background: rgba(255, 255, 255, 0.74);
+}
+
+.panzer-page-home .panzer-achievement-footer-item {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr);
+  gap: 9px;
+  align-items: center;
+  min-height: 60px;
+  padding: 12px 16px;
+  color: #07133d;
+  min-width: 0;
+}
+
+.panzer-page-home .panzer-achievement-footer-item + .panzer-achievement-footer-item {
+  border-left: 1px solid rgba(16, 83, 243, 0.16);
+}
+
+.panzer-page-home .panzer-achievement-footer-item i {
+  color: #1053f3;
+  font-size: 24px;
+}
+
+.panzer-page-home .panzer-achievement-footer-item span {
+  color: #273553;
+  font-size: clamp(11px, 0.85vw, 13px);
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+  .panzer-page-home .panzer-achievement-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(360px, 0.76fr);
+    gap: clamp(24px, 3vw, 38px);
+  }
+
+  .panzer-page-home .panzer-achievement-copy {
+    max-width: 100%;
+  }
+
+  .panzer-page-home .panzer-achievement-title {
+    font-size: clamp(34px, 3.6vw, 48px);
+  }
+
+  .panzer-page-home .panzer-achievement-text {
+    max-width: 560px;
+  }
+
+  .panzer-page-home .panzer-protection-strip {
+    margin-top: 28px;
+  }
+
+  .panzer-page-home .panzer-protection-item {
+    min-height: 86px;
+    padding: 12px 8px;
+  }
+
+  .panzer-page-home .panzer-achievement-cards {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .panzer-page-home .panzer-achievement-card {
+    grid-template-columns: minmax(116px, 145px) minmax(0, 1fr);
+  }
+
+  .panzer-page-home .panzer-achievement-card-visual {
+    min-height: 134px;
+  }
+
+  .panzer-page-home .panzer-achievement-card-footer {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .panzer-page-home .panzer-achievement-footer-item + .panzer-achievement-footer-item {
+    border-left: 1px solid rgba(16, 83, 243, 0.16);
+    border-top: 0;
+  }
+
+  .panzer-page-home .panzer-achievement-footer-item {
+    grid-template-columns: 24px minmax(0, 1fr);
+    gap: 7px;
+    min-height: 54px;
+    padding: 10px 12px;
+  }
+
+  .panzer-page-home .panzer-achievement-footer-item i {
+    font-size: 20px;
+  }
+
+  .panzer-page-home .panzer-achievement-footer-item span {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .panzer-page-home .panzer-achievement-copy {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .panzer-page-home .panzer-achievement-title,
+  .panzer-page-home .panzer-achievement-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .panzer-page-home .panzer-achievement-title::after {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .panzer-page-home .panzer-protection-strip {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .panzer-page-home .panzer-protection-item:nth-child(4) {
+    border-left: 0;
+  }
+
+  .panzer-page-home .panzer-achievement-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 575px) {
+  .panzer-page-home .panzer-achievement-modern.tv-achivement-inner {
+    padding: 44px 0;
+  }
+
+  .panzer-page-home .panzer-achievement-title {
+    font-size: clamp(31px, 9vw, 40px);
+  }
+
+  .panzer-page-home .panzer-protection-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .panzer-page-home .panzer-protection-item:nth-child(3),
+  .panzer-page-home .panzer-protection-item:nth-child(5) {
+    border-left: 0;
+  }
+
+  .panzer-page-home .panzer-achievement-card {
+    grid-template-columns: 1fr;
+  }
+
+  .panzer-page-home .panzer-achievement-card-visual {
+    min-height: 128px;
+  }
+
+  .panzer-page-home .panzer-achievement-card-body {
+    padding: 22px 20px;
+    text-align: center;
+  }
+
+  .panzer-page-home .panzer-achievement-card-body p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .panzer-page-home .panzer-achievement-footer-item {
+    min-height: 60px;
+    padding: 12px 16px;
   }
 }
 

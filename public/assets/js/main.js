@@ -1676,7 +1676,8 @@ JS TABLE OF CONTENTS
 	}
 
 	const panzerServiceSlider = document.querySelector(".panzer-scroll-service");
-	if (panzerServiceSlider) {
+	if (panzerServiceSlider && !panzerServiceSlider.dataset.panzerServiceReady) {
+		panzerServiceSlider.dataset.panzerServiceReady = "true";
 		const prevButton = document.querySelector(".panzer-service-prev");
 		const nextButton = document.querySelector(".panzer-service-next");
 		const getServiceScrollStep = () => {

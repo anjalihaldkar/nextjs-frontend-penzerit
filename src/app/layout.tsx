@@ -38,7 +38,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="/assets/css/animate.min.css?v=20260524" />
         <link rel="stylesheet" href="/assets/css/select2.min.css?v=20260524" />
         <link rel="stylesheet" href="/assets/css/odometer.css?v=20260524" />
-        <link rel="stylesheet" href="/assets/css/style.css?v=20260601-9" />
+        <link rel="stylesheet" href="/assets/css/style.css?v=20260602-11" />
       </head>
       <body suppressHydrationWarning>
         <SiteChrome>
@@ -62,7 +62,7 @@ export default function RootLayout({
         <Script src="/assets/js/lenis.min.js" strategy="beforeInteractive" />
         <Script src="/assets/js/splite-type.min.js" strategy="beforeInteractive" />
 
-        <Script src="/assets/js/main.js?v=20260528-2" strategy="afterInteractive" />
+        <Script src="/assets/js/main.js?v=20260602-1" strategy="afterInteractive" />
         <RouteScripts />
       </body>
     </html>
