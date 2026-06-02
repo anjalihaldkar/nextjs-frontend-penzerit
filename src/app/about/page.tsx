@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Page() {
   return (
     <>
-<section className="tv-choose-section space bg-light">
+<section className="tv-choose-section space bg-light panzer-about-secure-section">
                   <div className="container">
                       <div className="row gy-30">
                           <div className="col-lg-12 col-xl-6">
@@ -61,42 +61,44 @@ export default function Page() {
                                           <div className="choose-box box-4"></div>
                                       </div>
                                   </div>
-                                  <Link href="/contact" className="theme-btn mt-40 panzer-static-about-btn">
-                                      <span className="link-effect">
-                                          <span className="effect-1">Let&apos;s Make IT Secure</span>
-                                          <span className="effect-1">Let&apos;s Make IT Secure</span>
-                                      </span>
-                                      <span className="arrow-all">
-                                          <i>
-                                              <svg width="16" height="19" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                  <path d="M2 6H10M10 6L6 2M10 6L6 10" stroke="#1053f3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                              </svg>
-                                              <svg width="16" height="19" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                  <path d="M2 6H10M10 6L6 2M10 6L6 10" stroke="#1053f3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                              </svg>
-                                          </i>
-                                      </span>
-                                  </Link>
                               </div>
                           </div>
                           <div className="col-lg-12 col-xl-6">
-                             <div className="tv-choose-right-box panzer-about-data-wheel">
+                             <div className="tv-choose-right-box panzer-about-data-wheel panzer-about-secure-visual">
                                   <div className="data-item-hover">
                                       <figure className="image_right">
-                                          <Image src="/assets/images/choose/about-1.webp" alt="Agency Image" width={612} height={408} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                          <Image src="/assets/images/hero/img11.png" alt="Cyber security data protection illustration" width={1024} height={1024} sizes="(max-width: 1199px) 82vw, 44vw" style={{ width: "100%", height: "auto" }} />
                                       </figure>
                                   </div>
-
-      							<div className="text_right">
-      								<div className="content">
-      									
-      									<h3 className="title">Secure Data <br />Access</h3>
-      									<div className="arrow"><Image src="/assets/images/choose/arrow.webp" alt="" width={58} height={159} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
-      									<span className="year">Available</span>
-      								</div>
-      							</div>
-      							<Link className="middle-btn" href="/contact"><i className="fa-solid fa-arrow-up-right"></i></Link>
       						</div>
+                          </div>
+                      </div>
+                      <div className="panzer-about-secure-bottom">
+                          <Link href="/contact" className="panzer-about-secure-cta">
+                              <span>Let&apos;s Make IT Secure</span>
+                              <i className="fa-solid fa-arrow-right"></i>
+                          </Link>
+                          <div className="panzer-about-secure-stats" aria-label="Panzer IT highlights">
+                              <div className="panzer-about-secure-stat">
+                                  <span><i className="fa-solid fa-users"></i></span>
+                                  <strong>10+</strong>
+                                  <p>Years of Expertise</p>
+                              </div>
+                              <div className="panzer-about-secure-stat">
+                                  <span><i className="fa-solid fa-shield-check"></i></span>
+                                  <strong>500+</strong>
+                                  <p>Happy Clients</p>
+                              </div>
+                              <div className="panzer-about-secure-stat">
+                                  <span><i className="fa-solid fa-headset"></i></span>
+                                  <strong>24/7</strong>
+                                  <p>Support</p>
+                              </div>
+                              <div className="panzer-about-secure-stat">
+                                  <span><i className="fa-solid fa-award"></i></span>
+                                  <strong>99.9%</strong>
+                                  <p>Uptime Assurance</p>
+                              </div>
                           </div>
                       </div>
                   </div>

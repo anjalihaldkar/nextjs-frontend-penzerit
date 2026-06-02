@@ -290,7 +290,7 @@ export function SiteHeader() {
         </div>
       </div>
 
-      <div className={`sticky-header${isSticky ? " fixed-header animated slideInDown" : ""}`}>
+      <div className={`sticky-header${isSticky ? " fixed-header" : ""}`}>
         <div className="container">
            <div className="main-wrapper">
           <div className="menu-area">

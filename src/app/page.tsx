@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Page() {
   const lockAboutFeatures = [
-    { icon: "fa-hand-holding-gear", text: "360 Degree Comprehensive Security Solutions" },
+    { icon: "fa-shield-check", text: "360 Degree Comprehensive Security Solutions" },
     { icon: "fa-user-group", text: "Experienced IT Security Consultants" },
   ];
 
@@ -58,7 +58,7 @@ export default function Page() {
                             <div className="swiper-wrapper">
                                 <div className="swiper-slide">
                                     <div className="panzer-cyber-slide">
-                                        <Image priority className="panzer-cyber-image" src="/assets/images/hero/try-banner1.png" alt="Digital lock cyber security banner" width={2048} height={1152} sizes="100vw" />
+                                        <Image priority className="panzer-cyber-image" src="/assets/images/hero/try-banner1-v2.png" alt="Digital lock cyber security banner" width={1694} height={929} sizes="100vw" />
                                         <div className="container panzer-cyber-shell">
                                             <div className="panzer-cyber-copy" data-swiper-parallax="-180">
                                                 <span className="panzer-cyber-kicker">AI Powered Protection</span>
@@ -75,7 +75,7 @@ export default function Page() {
                                 </div>
                                 <div className="swiper-slide">
                                     <div className="panzer-cyber-slide">
-                                        <Image className="panzer-cyber-image" src="/assets/images/hero/try-banner2.png" alt="Data protection cyber security banner" width={2048} height={1152} sizes="100vw" />
+                                        <Image className="panzer-cyber-image" src="/assets/images/hero/try-banner2-v2.png" alt="Data protection cyber security banner" width={1800} height={874} sizes="100vw" />
                                         <div className="container panzer-cyber-shell">
                                             <div className="panzer-cyber-copy" data-swiper-parallax="-180">
                                                 <span className="panzer-cyber-kicker">Data Loss Prevention</span>
@@ -92,7 +92,7 @@ export default function Page() {
                                 </div>
                                 <div className="swiper-slide">
                                     <div className="panzer-cyber-slide">
-                                        <Image className="panzer-cyber-image" src="/assets/images/hero/try-banner-3.png" alt="Backup and recovery cyber security banner" width={2048} height={1152} sizes="100vw" />
+                                        <Image className="panzer-cyber-image" src="/assets/images/hero/try-banner3-v2.png" alt="Backup and recovery cyber security banner" width={1767} height={890} sizes="100vw" />
                                         <div className="container panzer-cyber-shell">
                                             <div className="panzer-cyber-copy" data-swiper-parallax="-180">
                                                 <span className="panzer-cyber-kicker">Backup And Recovery</span>

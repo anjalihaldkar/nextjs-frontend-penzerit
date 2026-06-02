@@ -12,44 +12,38 @@ interface BreadcrumbProps {
 }
 
 export function Breadcrumb({ title, paths }: BreadcrumbProps) {
+  const currentPath = paths.length > 0 ? paths[paths.length - 1]?.name : title;
+  const crumbLabel = ["Home", ...paths.map((path) => path.name)].join(" / ");
+
   return (
-    <section className="tv-breadcrumb-section">
-      <div className="tv-breadcrumb-inner mx-30 ml-mx-0 position-relative overflow-hidden br-30 ml-br-0">
-        <div className="bg image" style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, zIndex: -1 }}>
-          <Image
-            src="/assets/images/bg-img/breadcrumb.png"
-            alt="Breadcrumb Background"
-            fill
-            style={{ objectFit: "cover" }}
-            priority
-          />
-        </div>
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <div className="title-outer">
-                <div className="page-title">
-                  <h2 className="title">{title}</h2>
-                  <ul className="page-breadcrumb">
-                    <li>
-                      <Link href="/">
-                        <i className="fa-solid fa-house-chimney"></i>Home
-                      </Link>
-                    </li>
-                    {paths.map((path, index) => (
-                      <li key={index}>
-                        <span>/</span>{" "}
-                        {path.url ? (
-                          <Link href={path.url}>{path.name}</Link>
-                        ) : (
-                          path.name
-                        )}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
+    <section className="panzer-resource-breadcrumb-section" aria-label={`${title} breadcrumb`}>
+      <div className="container-fluid">
+        <div className="panzer-resource-breadcrumb-shell">
+          <div className="panzer-resource-breadcrumb-copy">
+            <div className="panzer-resource-breadcrumb-pill">
+              <i className="fa-regular fa-folder-open"></i>
+              <span>{currentPath}</span>
             </div>
+            <h1 className="panzer-resource-breadcrumb-title">{title}</h1>
+            <p className="panzer-resource-breadcrumb-text">
+              Explore Panzer IT resources, solutions and security insights designed to help your business stay informed and protected.
+            </p>
+            <nav className="panzer-resource-breadcrumb-nav" aria-label="Breadcrumb">
+              <Link href="/">
+                <i className="fa-solid fa-house-chimney"></i>
+                <span>{crumbLabel}</span>
+              </Link>
+            </nav>
+          </div>
+          <div className="panzer-resource-breadcrumb-visual" aria-hidden="true">
+            <Image
+              src="/assets/images/hero/breadcumb.png"
+              alt=""
+              width={1536}
+              height={1024}
+              sizes="(max-width: 991px) 86vw, 52vw"
+              priority
+            />
           </div>
         </div>
       </div>

@@ -988,8 +988,14 @@ JS TABLE OF CONTENTS
 				spaceBetween: 20,
 				centeredSlides: false,
 				loop: hasEnoughSlidesForLoop(".brands-slider-three", 6),
-				speed: 700,
+				slidesPerGroup: 2,
+				speed: 850,
 				allowTouchMove: true,
+				autoplay: {
+					delay: 1200,
+					disableOnInteraction: false,
+					pauseOnMouseEnter: false,
+				},
 				navigation: {
 					prevEl: ".panzer-brand-prev",
 					nextEl: ".panzer-brand-next",

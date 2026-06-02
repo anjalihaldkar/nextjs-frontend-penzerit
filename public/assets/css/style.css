@@ -48,13 +48,13 @@
 ==================================*/
 /*------------------- 1.1. Variable-------------------*/
 :root {
-  --theme-color:  #2f63dd;
-  --theme-color3: #2f63dd;
+  --theme-color:  #061176;
+  --theme-color3: #061176;
   --title-color: var(--dark-color);
   --body-color: var(--gray-color);
   --dark-color: var(--theme-color3);
   --dark-color2: #09155c;
-  --dark-color3: #2f63dd;
+  --dark-color3: #061176;
   --dark-color4: #06134c;
   --gray-color: #a0a3b5;
   --gray-color2: #616161;
@@ -10962,6 +10962,236 @@ background: var(--light-color);
 }
 .page-breadcrumb li:hover:first-child::before {
   color: var(--white-color);
+}
+
+/* Panzer resource breadcrumb */
+.panzer-resource-breadcrumb-section {
+  padding: clamp(16px, 2vw, 28px) 0 clamp(24px, 3vw, 42px);
+  background: #ffffff;
+}
+
+.panzer-resource-breadcrumb-shell {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(330px, 0.82fr) minmax(420px, 1.18fr);
+  align-items: center;
+  min-height: clamp(280px, 23vw, 360px);
+  overflow: hidden;
+  border: 1px solid rgba(6, 17, 118, 0.06);
+  border-radius: clamp(18px, 2vw, 30px);
+  background:
+    radial-gradient(circle at 86% 21%, rgba(43, 95, 236, 0.1), transparent 24%),
+    linear-gradient(135deg, #f9fbff 0%, #eff5ff 58%, #f7fbff 100%);
+  box-shadow: 0 22px 58px rgba(16, 35, 91, 0.08);
+}
+
+.panzer-resource-breadcrumb-shell::before,
+.panzer-resource-breadcrumb-shell::after {
+  position: absolute;
+  inset: auto;
+  content: "";
+  pointer-events: none;
+}
+
+/* .panzer-resource-breadcrumb-shell::before {
+  left: 16%;
+  right: 20%;
+  bottom: 11%;
+  height: 150px;
+  border: 1px solid rgba(18, 86, 239, 0.08);
+  border-color: rgba(18, 86, 239, 0.12) transparent transparent transparent;
+  border-radius: 50%;
+  transform: rotate(-8deg);
+} */
+
+.panzer-resource-breadcrumb-shell::after {
+  right: 10%;
+  top: 12%;
+  width: 118px;
+  height: 118px;
+  background-image: radial-gradient(rgba(16, 83, 243, 0.24) 1.5px, transparent 1.5px);
+  background-size: 18px 18px;
+  opacity: 0.48;
+}
+
+.panzer-resource-breadcrumb-copy {
+  position: relative;
+  z-index: 2;
+  padding: clamp(28px, 4vw, 54px) clamp(20px, 3.2vw, 48px) clamp(28px, 4vw, 54px) clamp(56px, 22.8vw, 144px);
+}
+
+.panzer-resource-breadcrumb-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 38px;
+  padding: 8px 20px;
+  border: 1px solid rgba(16, 83, 243, 0.22);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.76);
+  color: #3268cf;
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  box-shadow: 0 12px 28px rgba(16, 83, 243, 0.08);
+}
+
+.panzer-resource-breadcrumb-pill i {
+  font-size: 15px;
+}
+
+.panzer-resource-breadcrumb-title {
+  margin: clamp(18px, 2vw, 26px) 0 12px;
+  color: #061238;
+  font-size: clamp(36px, 4.1vw, 54px);
+  line-height: 1.02;
+  font-weight: 850;
+  letter-spacing: 0;
+}
+
+.panzer-resource-breadcrumb-text {
+  max-width: 420px;
+  margin: 0;
+  color: #61708d;
+  font-size: clamp(14px, 1vw, 16px);
+  line-height: 1.62;
+  font-weight: 650;
+}
+
+.panzer-resource-breadcrumb-nav {
+  display: flex;
+  margin-top: clamp(18px, 2vw, 26px);
+}
+
+.panzer-resource-breadcrumb-nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 46px;
+  max-width: 100%;
+  padding: 0 22px;
+  border-radius: 999px;
+  color: #ffffff;
+  background: #1053f3;
+  box-shadow: 0 14px 28px rgba(16, 83, 243, 0.24);
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.panzer-resource-breadcrumb-nav a span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.panzer-resource-breadcrumb-nav a i {
+  flex: 0 0 auto;
+  font-size: 14px;
+}
+
+.panzer-resource-breadcrumb-visual {
+  position: relative;
+  z-index: 1;
+  min-height: inherit;
+  height: 100%;
+  overflow: hidden;
+}
+
+.panzer-resource-breadcrumb-visual::before {
+  position: absolute;
+  inset: 0 auto 0 0;
+  z-index: 2;
+  width: 24%;
+  background: linear-gradient(90deg, #f5f8ff 0%, rgba(245, 248, 255, 0) 100%);
+  content: "";
+  pointer-events: none;
+}
+
+.panzer-resource-breadcrumb-visual img {
+  position: absolute;
+  right: auto;
+  left: 50%;
+  top: 50%;
+  width: min(88%, 640px);
+  height: auto;
+  max-width: none;
+  mix-blend-mode: screen;
+  opacity: 0.98;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 991px) {
+  .panzer-resource-breadcrumb-shell {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .panzer-resource-breadcrumb-copy {
+    text-align: center;
+  }
+
+  .panzer-resource-breadcrumb-text {
+    margin-inline: auto;
+  }
+
+  .panzer-resource-breadcrumb-nav {
+    justify-content: center;
+  }
+
+  .panzer-resource-breadcrumb-visual {
+    min-height: clamp(220px, 48vw, 340px);
+  }
+
+  .panzer-resource-breadcrumb-visual::before {
+    inset: 0;
+    width: 100%;
+    background: linear-gradient(180deg, #f5f8ff 0%, rgba(245, 248, 255, 0) 34%);
+  }
+
+  .panzer-resource-breadcrumb-visual img {
+    left: 50%;
+    width: min(84vw, 560px);
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 575px) {
+  .panzer-resource-breadcrumb-section {
+    padding-top: 14px;
+  }
+
+  .panzer-resource-breadcrumb-shell {
+    border-radius: 18px;
+  }
+
+  .panzer-resource-breadcrumb-copy {
+    padding: 30px 18px 20px;
+  }
+
+  .panzer-resource-breadcrumb-pill {
+    min-height: 34px;
+    padding: 7px 15px;
+    font-size: 11px;
+  }
+
+  .panzer-resource-breadcrumb-title {
+    font-size: clamp(30px, 10vw, 40px);
+  }
+
+  .panzer-resource-breadcrumb-nav a {
+    width: 100%;
+    min-height: 44px;
+    padding: 0 16px;
+    font-size: 13px;
+  }
+
+  .panzer-resource-breadcrumb-visual {
+    min-height: 190px;
+  }
 }
 
 .footer-location-item {
@@ -64780,7 +65010,7 @@ button *,
   min-height: 42px;
   padding: 12px 24px;
   border-radius: 8px;
-  background: #2f63dd;
+  background:#061176;
   color: #ffffff !important;
   font-size: 15px;
   font-weight: 700;
@@ -65101,7 +65331,7 @@ button *,
                     min-height: 42px;
                     padding: 12px 24px;
                     border-radius: 8px;
-                    background: #2f63dd;
+                    background: #e76b1f;
                     color: #ffffff !important;
                     font-size: 15px;
                     font-weight: 700;
@@ -67498,7 +67728,7 @@ button *,
 
                 .panzer-page-home .panzer-lock-about-grid {
                     display: grid;
-                    grid-template-columns: minmax(310px, 0.95fr) minmax(300px, 0.9fr) minmax(270px, 0.72fr);
+                    grid-template-columns: minmax(360px, 1.04fr) minmax(300px, 0.86fr) minmax(280px, 0.74fr);
                     gap: clamp(18px, 2.5vw, 44px);
                     align-items: center;
                 }
@@ -67527,85 +67757,91 @@ button *,
                 }
 
                 .panzer-page-home .panzer-lock-about-title {
-                    max-width: 650px;
-                    margin: 28px 0 24px;
+                    max-width: 520px;
+                    margin: 24px 0 20px;
                     color: #061238;
-                    font-size: clamp(46px, 4.9vw, 74px);
-                    line-height: 1.06;
+                    font-size: clamp(42px, 4.2vw, 64px);
+                    line-height: 1.08;
                     font-weight: 800;
                     letter-spacing: 0;
                 }
 
                 .panzer-page-home .panzer-lock-about-title span {
                     display: block;
-                    color: #1053f3;
+                    color: #051372;
                 }
 
                 .panzer-page-home .panzer-lock-about-title::after {
                     display: block;
-                    width: 72px;
-                    height: 5px;
-                    margin-top: 23px;
+                    width: 64px;
+                    height: 4px;
+                    margin-top: 20px;
                     border-radius: 999px;
                     background: #1053f3;
                     content: "";
                 }
 
                 .panzer-page-home .panzer-lock-about-text {
-                    max-width: 520px;
+                    max-width: 500px;
                     margin: 0;
                     color: #34405e;
-                    font-size: 18px;
-                    line-height: 1.64;
+                    font-size: 16px;
+                    line-height: 1.58;
                     font-weight: 500;
                 }
 
                 .panzer-page-home .panzer-lock-about-features {
-                    display: grid;
-                    grid-template-columns: repeat(2, minmax(0, 1fr));
-                    gap: clamp(18px, 2.2vw, 30px);
-                    margin-top: 34px;
-                    padding-bottom: 26px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 14px;
+                    margin-top: 26px;
+                    padding-bottom: 22px;
                     border-bottom: 1px solid rgba(12, 39, 91, 0.12);
                 }
 
                 .panzer-page-home .panzer-lock-feature {
                     display: grid;
-                    grid-template-columns: clamp(58px, 5.2vw, 78px) minmax(0, 1fr);
-                    gap: clamp(14px, 1.5vw, 20px);
+                    grid-template-columns: 58px minmax(0, 1fr);
+                    flex: 1 1 100%;
+                    gap: 16px;
                     align-items: center;
                     min-width: 0;
+                    padding: 12px 14px;
+                    border: 1px solid rgba(16, 83, 243, 0.1);
+                    border-radius: 16px;
+                    background: rgba(255, 255, 255, 0.72);
                 }
 
                 .panzer-page-home .panzer-lock-feature-icon {
                     display: inline-flex;
-                    width: clamp(58px, 5.2vw, 78px);
-                    height: clamp(58px, 5.2vw, 78px);
+                    width: 58px;
+                    height: 58px;
                     align-items: center;
                     justify-content: center;
                     border-radius: 50%;
                     color: #ffffff;
                     background: linear-gradient(145deg, #1053f3 0%, #5b82e7 100%);
                     box-shadow: 0 14px 28px rgba(16, 83, 243, 0.22);
-                    font-size: clamp(24px, 2.2vw, 34px);
+                    font-size: 24px;
                     flex: 0 0 auto;
                 }
 
                 .panzer-page-home .panzer-lock-feature h3 {
                     margin: 0;
                     color: #1053f3;
-                    font-size: clamp(20px, 2.05vw, 30px);
-                    line-height: 1.18;
+                    font-size: clamp(20px, 1.8vw, 25px);
+                    line-height: 1.22;
                     font-weight: 600;
                     letter-spacing: 0;
-                    overflow-wrap: anywhere;
+                    overflow-wrap: normal;
+                    word-break: normal;
                 }
 
                 .panzer-page-home .panzer-lock-about-actions {
                     display: flex;
                     flex-wrap: wrap;
                     gap: 22px;
-                    margin-top: 32px;
+                    margin-top: 24px;
                 }
 
                 .panzer-page-home .panzer-lock-about-btn {
@@ -67630,7 +67866,7 @@ button *,
 
                 .panzer-page-home .panzer-lock-about-btn.primary {
                     color: #ffffff;
-                    background: #1053f3;
+                    background: #051372;
                     box-shadow: 0 16px 34px rgba(16, 83, 243, 0.27);
                 }
 
@@ -67780,13 +68016,13 @@ button *,
 
                 @media (min-width: 992px) and (max-width: 1399px) {
                     .panzer-page-home .panzer-lock-about-grid {
-                        grid-template-columns: minmax(280px, 0.9fr) minmax(250px, 0.78fr) minmax(250px, 0.72fr);
+                        grid-template-columns: minmax(360px, 1.08fr) minmax(270px, 0.82fr) minmax(270px, 0.82fr);
                         gap: clamp(14px, 1.8vw, 26px);
                     }
 
                     .panzer-page-home .panzer-lock-about-title {
-                        font-size: clamp(40px, 4.2vw, 58px);
-                        margin-bottom: 18px;
+                        font-size: clamp(38px, 3.6vw, 52px);
+                        margin-bottom: 16px;
                     }
 
                     .panzer-page-home .panzer-lock-about-text {
@@ -67806,19 +68042,21 @@ button *,
                     }
 
                     .panzer-page-home .panzer-lock-feature {
-                        grid-template-columns: 44px minmax(0, 1fr);
-                        gap: 10px;
+                        grid-template-columns: 54px minmax(0, 1fr);
+                        flex-basis: 100%;
+                        gap: 14px;
+                        padding: 11px 13px;
                     }
 
                     .panzer-page-home .panzer-lock-feature-icon {
-                        width: 44px;
-                        height: 44px;
-                        font-size: 20px;
+                        width: 54px;
+                        height: 54px;
+                        font-size: 23px;
                     }
 
                     .panzer-page-home .panzer-lock-feature h3 {
-                        font-size: clamp(15px, 1.55vw, 20px);
-                        line-height: 1.18;
+                        font-size: clamp(18px, 1.55vw, 22px);
+                        line-height: 1.2;
                     }
 
                     .panzer-page-home .panzer-lock-about-btn {
@@ -72704,47 +72942,62 @@ button *,
   }
 }
 
-/* Compact home contact section image */
+/* Home contact section balanced card and image */
 .panzer-page-home .tv-contact-section.style-4 .tv-contact-inner {
-  padding-top: clamp(54px, 5vw, 82px);
-  padding-bottom: clamp(54px, 5vw, 82px);
+  padding-top: clamp(56px, 5.4vw, 88px);
+  padding-bottom: clamp(56px, 5.4vw, 88px);
 }
 
 .panzer-page-home .tv-contact-section.style-4 .contact-wrapper {
-  align-items: center !important;
+  align-items: stretch !important;
 }
 
 .panzer-page-home .tv-contact-section.style-4 .contact-left-thumb {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 0;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  min-height: clamp(500px, 39vw, 620px);
+  border-radius: 26px;
 }
 
 .panzer-page-home .tv-contact-section.style-4 .contact-left-thumb figure {
-  width: min(100%, 430px);
-  height: auto;
-  min-height: 0;
-  margin: 0 auto;
-  aspect-ratio: 1 / 1;
-  border-radius: 24px;
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  margin: 0;
+  aspect-ratio: auto;
+  border-radius: inherit;
+  overflow: hidden;
 }
 
 .panzer-page-home .tv-contact-section.style-4 .contact-left-thumb img {
   width: 100% !important;
   height: 100% !important;
-  max-height: 430px;
-  object-fit: cover;
+  max-height: none;
+  object-fit: cover !important;
+  object-position: center center;
+}
+
+.panzer-page-home .tv-contact-section.style-4 .contact-right-content {
+  height: 100%;
+  min-height: clamp(500px, 39vw, 620px);
+  padding: clamp(38px, 4.2vw, 62px) clamp(34px, 4vw, 58px);
+  border-radius: 26px;
+  justify-content: center;
 }
 
 @media (max-width: 991px) {
+  .panzer-page-home .tv-contact-section.style-4 .contact-right-content,
+  .panzer-page-home .tv-contact-section.style-4 .contact-left-thumb {
+    min-height: auto;
+  }
+
   .panzer-page-home .tv-contact-section.style-4 .contact-left-thumb figure {
-    width: min(100%, 380px);
+    min-height: 420px;
   }
 
   .panzer-page-home .tv-contact-section.style-4 .contact-left-thumb img {
-    max-height: 380px;
+    max-height: none;
   }
 }
 
@@ -72755,12 +73008,17 @@ button *,
   }
 
   .panzer-page-home .tv-contact-section.style-4 .contact-left-thumb figure {
-    width: min(100%, 300px);
+    min-height: 320px;
     border-radius: 18px;
   }
 
   .panzer-page-home .tv-contact-section.style-4 .contact-left-thumb img {
-    max-height: 300px;
+    max-height: none;
+  }
+
+  .panzer-page-home .tv-contact-section.style-4 .contact-right-content {
+    padding: 34px 22px;
+    border-radius: 18px;
   }
 }
 
@@ -72771,6 +73029,20 @@ button *,
   background: #ffffff !important;
   background-image: none !important;
   box-shadow: 0 1px 0 rgba(6, 17, 83, 0.08) !important;
+}
+
+.sticky-header {
+  transform: translate3d(0, -110%, 0);
+  transition: transform 0.24s ease, opacity 0.2s ease, visibility 0.2s ease;
+  will-change: transform, opacity;
+  animation: none !important;
+  pointer-events: none;
+}
+
+.sticky-header.fixed-header {
+  transform: translate3d(0, 0, 0);
+  pointer-events: auto;
+  animation: none !important;
 }
 
 .panzer-image-header .main-wrapper,
@@ -72789,7 +73061,7 @@ button *,
 .panzer-page-home .panzer-image-header .main-wrapper .main-menu > ul > li.menu-item-has-children > a::before,
 .sticky-header .main-menu a,
 .sticky-header .main-menu > ul > li.menu-item-has-children > a::before {
-  color: #4a78e2 !important;
+  color: #061176 !important;
 }
 
 .panzer-image-header .sidebar-btn,
@@ -73043,7 +73315,7 @@ button *,
   padding: 0;
   background: transparent;
   border: 0;
-  color: #ffb21d;
+  color: #e76b1f;
   opacity: 1;
   font-size: 15px;
   line-height: 1;
@@ -73096,8 +73368,8 @@ button *,
   padding: 16px 28px;
   border: 0;
   border-radius: 4px;
-  background: #ffb21d;
-  color: #080b12;
+  background: #e76b1f;
+  color: #ffffff;
   font-size: 16px;
   line-height: 1;
   font-weight: 800;
@@ -73138,7 +73410,7 @@ button *,
   padding: 0;
   border: 0 !important;
   border-radius: 0;
-  background: rgba(1, 7, 18, 0.84) !important;
+  background: var(--theme-color) !important;
   color: transparent !important;
   box-shadow: inset 0 -2px 0 rgba(40, 71, 170, 0.42), 0 16px 28px rgba(0, 0, 0, 0.22);
   pointer-events: auto;
@@ -74025,7 +74297,7 @@ button *,
   padding: clamp(26px, 3vw, 42px) clamp(48px, 5vw, 72px) !important;
   border: 1px solid rgba(9, 21, 40, 0.08) !important;
   border-radius: 28px !important;
-  background: #d7d7d7 !important;
+  background: #061176 !important;
   box-shadow: 0 18px 48px rgba(9, 21, 40, 0.12) !important;
 }
 
@@ -74035,7 +74307,7 @@ button *,
 }
 
 .panzer-page-home .panzer-brand-partners-section .trusted-partners .title {
-  color: #091528 !important;
+  color: #ffffff !important;
   font-size: 13px;
   line-height: 1;
   font-weight: 900;
@@ -74044,6 +74316,16 @@ button *,
 
 .panzer-page-home .panzer-brand-partners-section .brands-slider-three {
   padding: 0 !important;
+}
+
+.panzer-page-home .panzer-brand-partners-section .brands-slider-three .swiper-wrapper {
+  align-items: center;
+}
+
+.panzer-page-home .panzer-brand-partners-section .brands-slider-three .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .panzer-page-home .panzer-brand-partners-section .brands-slider-three::before,
@@ -74059,12 +74341,12 @@ button *,
 
 .panzer-page-home .panzer-brand-partners-section .brands-slider-three::before {
   left: 0;
-  background: linear-gradient(90deg, #d7d7d7 0%, rgba(215, 215, 215, 0) 100%) !important;
+  background: linear-gradient(90deg, #061176 0%, rgba(6, 17, 118, 0) 100%) !important;
 }
 
 .panzer-page-home .panzer-brand-partners-section .brands-slider-three::after {
   right: 0;
-  background: linear-gradient(90deg, rgba(215, 215, 215, 0) 0%, #d7d7d7 100%) !important;
+  background: linear-gradient(90deg, rgba(6, 17, 118, 0) 0%, #061176 100%) !important;
 }
 
 .panzer-page-home .panzer-brand-partners-section .tv-brands-section.style-3 .sponsors-outer .brand-item {
@@ -74081,14 +74363,38 @@ button *,
 }
 
 .panzer-page-home .panzer-brand-partners-section .tv-brands-section .sponsors-outer .brand-item .image {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
+  overflow: visible !important;
 }
 
 .panzer-page-home .panzer-brand-partners-section .tv-brands-section .sponsors-outer .brand-item .image img {
+  position: static !important;
+  display: block !important;
+  width: auto !important;
+  height: auto !important;
   max-width: 150px;
   max-height: 48px;
+  margin: 0 auto !important;
+  opacity: 1 !important;
+  filter: none !important;
   object-fit: contain !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+.panzer-page-home .panzer-brand-partners-section .tv-brands-section .sponsors-outer .brand-item .image img:first-child {
+  display: none !important;
+}
+
+.panzer-page-home .panzer-brand-partners-section .tv-brands-section .sponsors-outer .brand-item .image:hover img,
+.panzer-page-home .panzer-brand-partners-section .tv-brands-section .sponsors-outer .brand-item .image:hover img:first-child,
+.panzer-page-home .panzer-brand-partners-section .tv-brands-section .sponsors-outer .brand-item .image:hover img:nth-child(2) {
+  opacity: 1 !important;
+  filter: none !important;
   transform: none !important;
 }
 
@@ -74123,6 +74429,221 @@ button *,
   border-color: #091528 !important;
   background: #091528 !important;
   color: #ffffff !important;
+}
+
+/* About page secure choose section refresh */
+.panzer-page-about .panzer-about-secure-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.panzer-page-about .panzer-about-secure-section .row {
+  align-items: center;
+}
+
+.panzer-page-about .panzer-about-secure-section .panzer-about-secure-visual.tv-choose-right-box {
+  display: flex !important;
+  width: 100% !important;
+  height: auto !important;
+  max-width: 560px !important;
+  margin: 0 auto !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.panzer-page-about .panzer-about-secure-section .panzer-about-secure-visual .data-item-hover {
+  position: relative !important;
+  inset: auto !important;
+  width: 100%;
+}
+
+.panzer-page-about .panzer-about-secure-section .panzer-about-secure-visual .image_right {
+  width: 100% !important;
+  height: auto !important;
+  margin: 0 !important;
+  border: 0 !important;
+  outline: 0 !important;
+  border-radius: 28px !important;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(232, 239, 255, 0.84));
+  box-shadow: none !important;
+}
+
+.panzer-page-about .panzer-about-secure-section .panzer-about-secure-visual .image_right img {
+  display: block;
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+  transform: scale(1.055);
+}
+
+.panzer-page-about .panzer-about-secure-section .panzer-about-secure-visual .text_right,
+.panzer-page-about .panzer-about-secure-section .panzer-about-secure-visual .middle-btn {
+  display: none !important;
+}
+
+.panzer-about-secure-bottom {
+  display: grid;
+  grid-template-columns: minmax(240px, 360px) minmax(0, 1fr);
+  gap: clamp(24px, 3vw, 42px);
+  align-items: center;
+  margin-top: clamp(34px, 4vw, 58px);
+}
+
+.panzer-about-secure-cta {
+  position: relative;
+  display: inline-flex;
+  min-height: 74px;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding: 0 18px 0 34px;
+  border-radius: 999px;
+  color: #ffffff !important;
+  background: #061176;
+  font-size: clamp(18px, 1.6vw, 22px);
+  line-height: 1;
+  font-weight: 800;
+  box-shadow: 0 18px 36px rgba(6, 17, 118, 0.2);
+}
+
+.panzer-about-secure-cta::before {
+  position: absolute;
+  left: -120px;
+  top: 50%;
+  z-index: -1;
+  width: 220px;
+  height: 150px;
+  background: repeating-radial-gradient(ellipse at center, rgba(16, 83, 243, 0.2) 0 1px, transparent 2px 11px);
+  opacity: 0.55;
+  transform: translateY(-50%) rotate(-8deg);
+  content: "";
+}
+
+.panzer-about-secure-cta i {
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #1053f3;
+  font-size: 20px;
+}
+
+.panzer-about-secure-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  overflow: hidden;
+  border: 1px solid rgba(6, 17, 118, 0.08);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 18px 50px rgba(11, 31, 79, 0.08);
+  backdrop-filter: blur(14px);
+}
+
+.panzer-about-secure-stat {
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr);
+  column-gap: 14px;
+  align-items: center;
+  min-height: 108px;
+  padding: 18px 22px;
+  border-right: 1px solid rgba(6, 17, 118, 0.1);
+}
+
+.panzer-about-secure-stat:last-child {
+  border-right: 0;
+}
+
+.panzer-about-secure-stat span {
+  display: inline-flex;
+  width: 54px;
+  height: 54px;
+  grid-row: span 2;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #1053f3;
+  background: #ecf2ff;
+  font-size: 21px;
+}
+
+.panzer-about-secure-stat strong {
+  color: #1053f3;
+  font-size: clamp(24px, 2vw, 30px);
+  line-height: 1;
+  font-weight: 900;
+}
+
+.panzer-about-secure-stat p {
+  margin: 4px 0 0;
+  color: #4b556c;
+  font-size: 14px;
+  line-height: 1.25;
+  font-weight: 650;
+}
+
+@media (max-width: 1199px) {
+  .panzer-page-about .panzer-about-secure-section .panzer-about-secure-visual.tv-choose-right-box {
+    margin-top: 30px !important;
+  }
+
+  .panzer-about-secure-bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .panzer-about-secure-cta {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .panzer-about-secure-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .panzer-about-secure-stat:nth-child(2) {
+    border-right: 0;
+  }
+
+  .panzer-about-secure-stat:nth-child(-n + 2) {
+    border-bottom: 1px solid rgba(6, 17, 118, 0.1);
+  }
+}
+
+@media (max-width: 575px) {
+  .panzer-page-about .panzer-about-secure-section .panzer-about-secure-visual.tv-choose-right-box {
+    max-width: 360px !important;
+  }
+
+  .panzer-about-secure-cta {
+    width: 100%;
+    min-height: 62px;
+    padding-left: 22px;
+    font-size: 17px;
+  }
+
+  .panzer-about-secure-cta i {
+    width: 42px;
+    height: 42px;
+  }
+
+  .panzer-about-secure-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .panzer-about-secure-stat,
+  .panzer-about-secure-stat:nth-child(2) {
+    border-right: 0;
+    border-bottom: 1px solid rgba(6, 17, 118, 0.1);
+  }
+
+  .panzer-about-secure-stat:last-child {
+    border-bottom: 0;
+  }
 }
 
 @media (max-width: 991px) {
