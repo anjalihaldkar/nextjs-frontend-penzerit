@@ -125,7 +125,7 @@ function MainNavigation({
           style={mobile ? { display: companyOpen ? "block" : "none" } : undefined}
         >
           <li><Link href="/about" onClick={onNavigate}>About Us</Link></li>
-          <li><Link href="/contact" onClick={onNavigate}>Contact</Link></li>
+          
         </ul>
       </li>
     </ul>
@@ -240,7 +240,7 @@ export function SiteHeader() {
               </div>
               <div className="col-auto header-right-wrapper">
                 <div className="outer-box">
-                  <Link href="/contact" className="panzer-header-cta">Connect with Us</Link>
+                  <Link href="/contact" className="panzer-header-cta">Contact Us</Link>
                 </div>
               </div>
             </div>
@@ -292,30 +292,39 @@ export function SiteHeader() {
 
       <div className={`sticky-header${isSticky ? " fixed-header animated slideInDown" : ""}`}>
         <div className="container">
+           <div className="main-wrapper">
           <div className="menu-area">
             <div className="row align-items-center justify-content-between">
               <div className="col-auto logo">
                 <div className="header-logo">
                   <Link href="/">
-                    <Image width={200} height={46} alt="logo" src="/assets/images/logo/logo.png" />
-                    <Image width={200} height={46} alt="logo" src="/assets/images/logo/logo.png" />
+                    <Image alt="logo" src="/assets/images/logo/logo.png" width={160} height={50} style={{ height: "auto" }} />
+                    <Image alt="logo" src="/assets/images/logo/logo.png" width={160} height={50} style={{ height: "auto" }} />
                   </Link>
                 </div>
               </div>
-              <div className="col-auto nav-menu">
-                <nav className="main-menu d-none d-lg-inline-block">
-                  <MainNavigation className="navigation clearfix" />
-                </nav>
-                <div className="navbar-right d-inline-flex d-lg-none">
-                  <button className="menu-toggle sidebar-btn" type="button" aria-label="Open menu" onClick={toggleMobileMenu}>
-                    <span className="line"></span>
-                    <span className="line"></span>
-                    <span className="line"></span>
-                  </button>
+              <div className="col-auto nav-outer ms-auto">
+                <div className="nav-menu">
+                  <nav className="main-menu d-none d-lg-inline-block">
+                    <MainNavigation />
+                  </nav>
+                  <div className="navbar-right d-inline-flex d-lg-none">
+                    <button className="menu-toggle sidebar-btn" type="button" aria-label="Open menu" onClick={toggleMobileMenu}>
+                      <span className="line"></span>
+                      <span className="line"></span>
+                      <span className="line"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="col-auto header-right-wrapper">
+                <div className="outer-box">
+                  <Link href="/contact" className="panzer-header-cta">Contact Us</Link>
                 </div>
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
 
