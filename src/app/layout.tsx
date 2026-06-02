@@ -38,7 +38,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="/assets/css/animate.min.css?v=20260524" />
         <link rel="stylesheet" href="/assets/css/select2.min.css?v=20260524" />
         <link rel="stylesheet" href="/assets/css/odometer.css?v=20260524" />
-        <link rel="stylesheet" href="/assets/css/style.css?v=20260528-3" />
+        <link rel="stylesheet" href="/assets/css/style.css?v=20260601-9" />
       </head>
       <body suppressHydrationWarning>
         <SiteChrome>

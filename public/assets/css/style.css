@@ -21059,7 +21059,7 @@ transition: all 0.4s ease 0s;
   padding-left: 80px;
   border-radius: 0 30px 30px 0;
   flex: 1;
-  padding: 80px 50px 80px;
+  padding: 20px 50px 20px;
   border-radius: 30px;
   background-color: var(--light-color);
   -webkit-backdrop-filter: blur(20px);
@@ -21076,7 +21076,7 @@ transition: all 0.4s ease 0s;
 }
 .tv-contact-section.style-4 .contact-left-thumb {
   border-radius: 30px;
-  border: 15px solid var(--white-color);
+  /* border: 15px solid var(--white-color); */
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -22925,7 +22925,7 @@ transition: all 0.4s ease 0s;
   position: relative;
 }
 .tv-process-section .process-inner .process-title h2 {
-  font-size: 150px;
+  font-size: 95px;
   line-height: 1;
   font-weight: 800;
   font-family: var(--title-font);
@@ -22959,14 +22959,14 @@ transition: all 0.4s ease 0s;
 }
 @media (max-width: 414px) {
   .tv-process-section .process-inner .process-title h2 {
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 700;
   }
 }
 .tv-process-section .process-inner .process-title::before {
   position: absolute;
   content: "";
-  border-bottom: 2px dashed var(--theme-color);
+  border-bottom: 2px dashed #ffffff00;
   bottom: -90px;
   width: 100%;
   height: 100%;
@@ -67777,6 +67777,10 @@ button *,
                   flex-wrap: nowrap;
                   align-items: flex-end;
                   white-space: nowrap;
+                  color: #2f63dd;
+                  font-size: clamp(80px, 8vw, 150px);
+                  line-height: 0.85;
+                  font-weight: 800;
               }
 
               .panzer-page-about .tv-service-section .tv-service-inner .tv-service-item .service-right .tags {
@@ -71684,5 +71688,1498 @@ button *,
     width: 34px !important;
     height: 34px !important;
     margin-right: 18px;
+  }
+}
+
+/* Cinematic home hero banner */
+.panzer-page-home .panzer-cyber-hero {
+  background: white;
+}
+
+.panzer-page-home .panzer-cyber-slider-wrap,
+.panzer-page-home .panzer-cyber-slider,
+.panzer-page-home .panzer-cyber-slider .swiper-wrapper,
+.panzer-page-home .panzer-cyber-slider .swiper-slide {
+  min-height: clamp(620px, 41vw, 780px);
+}
+
+.panzer-page-home .panzer-cyber-slide,
+.panzer-page-home .panzer-cyber-shell {
+  min-height: clamp(620px, 41vw, 780px);
+}
+
+.panzer-page-home .panzer-cyber-slide {
+  position: relative;
+  overflow: hidden;
+  background: #020716;
+}
+
+.panzer-page-home .panzer-cyber-slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(90deg, rgba(2, 5, 18, 0.96) 0%, rgba(2, 5, 18, 0.78) 28%, rgba(2, 5, 18, 0.32) 55%, rgba(2, 5, 18, 0.2) 100%),
+    linear-gradient(180deg, rgba(2, 5, 18, 0.4) 0%, rgba(2, 5, 18, 0.06) 44%, rgba(2, 5, 18, 0.68) 100%);
+  pointer-events: none;
+}
+
+.panzer-page-home .panzer-cyber-image {
+  object-position: center center;
+  transform: scale(1.01);
+}
+
+.panzer-page-home .panzer-cyber-shell {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  padding-top: clamp(76px, 7vw, 126px);
+  padding-bottom: clamp(76px, 7vw, 126px);
+}
+
+.panzer-page-home .panzer-cyber-copy {
+  max-width: 780px;
+  padding-left: clamp(12px, 2vw, 26px);
+}
+
+.panzer-page-home .panzer-cyber-kicker {
+  margin-bottom: 18px;
+  background: rgba(48, 190, 199, 0.18);
+  border-color: rgba(134, 242, 255, 0.42);
+  color: #dffbff;
+}
+
+.panzer-page-home .panzer-cyber-title {
+  max-width: 760px;
+  margin-bottom: 24px;
+  color: #ffffff;
+  font-size: clamp(44px, 4.25vw, 72px);
+  font-weight: 800;
+  line-height: 1.06;
+  letter-spacing: 0;
+  text-shadow: 0 14px 34px rgba(0, 0, 0, 0.38);
+}
+
+.panzer-page-home .panzer-cyber-text {
+  max-width: 700px;
+  color: rgba(255, 255, 255, 0.94);
+  font-size: clamp(18px, 1.35vw, 26px);
+  line-height: 1.46;
+  font-weight: 600;
+  text-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+}
+
+.panzer-page-home .panzer-cyber-actions {
+  margin-top: clamp(28px, 3vw, 44px);
+}
+
+.panzer-page-home .panzer-cyber-btn {
+  min-height: 54px;
+  padding: 15px 30px;
+  border-radius: 999px;
+  font-weight: 800;
+}
+
+.panzer-page-home .panzer-cyber-btn.primary {
+  background: #2f766f;
+  border-color: rgba(255, 255, 255, 0.92);
+  color: #ffffff;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.24);
+}
+
+.panzer-page-home .panzer-cyber-btn.primary:hover {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #0b2d33;
+}
+
+.panzer-page-home .panzer-cyber-btn.secondary {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.62);
+  color: #ffffff;
+}
+
+.panzer-page-home .panzer-cyber-visual {
+  display: none;
+}
+
+.panzer-page-home .panzer-cyber-controls {
+  top: 50%;
+  bottom: auto;
+  width: min(calc(100% - 40px), 1840px);
+  transform: translate(-50%, -50%);
+}
+
+.panzer-page-home .panzer-cyber-nav button {
+  width: clamp(44px, 3.2vw, 62px);
+  height: clamp(44px, 3.2vw, 62px);
+  background: transparent;
+  border: 0;
+  color: #ffffff;
+  font-size: clamp(24px, 2.4vw, 44px);
+  box-shadow: none;
+}
+
+.panzer-page-home .panzer-cyber-nav button:hover {
+  background: transparent;
+  color: #7eeaff;
+  transform: scale(1.08);
+}
+
+@media (max-width: 991px) {
+  .panzer-page-home .panzer-cyber-slider-wrap,
+  .panzer-page-home .panzer-cyber-slider,
+  .panzer-page-home .panzer-cyber-slider .swiper-wrapper,
+  .panzer-page-home .panzer-cyber-slider .swiper-slide,
+  .panzer-page-home .panzer-cyber-slide,
+  .panzer-page-home .panzer-cyber-shell {
+    min-height: clamp(560px, 82vw, 680px);
+  }
+
+  .panzer-page-home .panzer-cyber-slide::before {
+    background:
+      linear-gradient(90deg, rgba(2, 5, 18, 0.94) 0%, rgba(2, 5, 18, 0.7) 46%, rgba(2, 5, 18, 0.35) 100%),
+      linear-gradient(180deg, rgba(2, 5, 18, 0.35) 0%, rgba(2, 5, 18, 0.12) 42%, rgba(2, 5, 18, 0.76) 100%);
+  }
+
+  .panzer-page-home .panzer-cyber-image {
+    object-position: 62% center;
+  }
+
+  .panzer-page-home .panzer-cyber-shell {
+    padding-top: 86px;
+    padding-bottom: 86px;
+  }
+
+  .panzer-page-home .panzer-cyber-copy {
+    max-width: 650px;
+    text-align: left;
+  }
+
+  .panzer-page-home .panzer-cyber-title {
+    max-width: 640px;
+    font-size: clamp(38px, 7vw, 56px);
+  }
+
+  .panzer-page-home .panzer-cyber-text {
+    max-width: 590px;
+    font-size: clamp(17px, 2.7vw, 22px);
+  }
+
+  .panzer-page-home .panzer-cyber-controls {
+    position: absolute;
+    top: auto;
+    bottom: 26px;
+    width: 100%;
+    margin-top: 0;
+    padding: 0 24px;
+    transform: translateX(-50%);
+    pointer-events: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .panzer-page-home .panzer-cyber-slider-wrap,
+  .panzer-page-home .panzer-cyber-slider,
+  .panzer-page-home .panzer-cyber-slider .swiper-wrapper,
+  .panzer-page-home .panzer-cyber-slider .swiper-slide,
+  .panzer-page-home .panzer-cyber-slide,
+  .panzer-page-home .panzer-cyber-shell {
+    min-height: 620px;
+  }
+
+  .panzer-page-home .panzer-cyber-slide::before {
+    background:
+      linear-gradient(180deg, rgba(2, 5, 18, 0.9) 0%, rgba(2, 5, 18, 0.72) 38%, rgba(2, 5, 18, 0.48) 60%, rgba(2, 5, 18, 0.9) 100%),
+      linear-gradient(90deg, rgba(2, 5, 18, 0.94) 0%, rgba(2, 5, 18, 0.56) 100%);
+  }
+
+  .panzer-page-home .panzer-cyber-image {
+    object-position: 70% center;
+  }
+
+  .panzer-page-home .panzer-cyber-shell {
+    justify-content: center;
+    padding: 82px 24px 96px;
+  }
+
+  .panzer-page-home .panzer-cyber-copy {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .panzer-page-home .panzer-cyber-kicker {
+    margin-inline: auto;
+  }
+
+  .panzer-page-home .panzer-cyber-title {
+    font-size: clamp(32px, 10vw, 44px);
+    line-height: 1.08;
+  }
+
+  .panzer-page-home .panzer-cyber-text {
+    font-size: 16px;
+    line-height: 1.56;
+  }
+
+  .panzer-page-home .panzer-cyber-actions {
+    gap: 12px;
+  }
+
+  .panzer-page-home .panzer-cyber-btn {
+    min-height: 50px;
+    padding: 13px 20px;
+  }
+
+  .panzer-page-home .panzer-cyber-controls {
+    bottom: 22px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .panzer-page-home .panzer-cyber-nav button {
+    width: 44px;
+    height: 44px;
+    font-size: 24px;
+  }
+}
+
+/* Reference-matched home banner refinements */
+.panzer-page-home .panzer-cyber-slider-wrap,
+.panzer-page-home .panzer-cyber-slider,
+.panzer-page-home .panzer-cyber-slider .swiper-wrapper,
+.panzer-page-home .panzer-cyber-slider .swiper-slide,
+.panzer-page-home .panzer-cyber-slide,
+.panzer-page-home .panzer-cyber-shell {
+  min-height: clamp(650px, 40.5vw, 772px);
+}
+
+.panzer-page-home .panzer-cyber-slide::before {
+  background:
+    linear-gradient(90deg, rgba(2, 4, 16, 0.98) 0%, rgba(2, 4, 16, 0.9) 23%, rgba(2, 4, 16, 0.42) 52%, rgba(2, 4, 16, 0.12) 100%),
+    linear-gradient(180deg, rgba(2, 4, 16, 0.14) 0%, rgba(2, 4, 16, 0.03) 58%, rgba(2, 4, 16, 0.3) 100%);
+}
+
+.panzer-page-home .panzer-cyber-shell.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: clamp(88px, 6.8vw, 130px) clamp(80px, 6.55vw, 124px) clamp(90px, 6.5vw, 128px);
+}
+
+.panzer-page-home .panzer-cyber-copy {
+  width: min(100%, 820px);
+  max-width: 820px;
+  padding-left: 0;
+}
+
+.panzer-page-home .panzer-cyber-kicker {
+  display: none;
+}
+
+.panzer-page-home .panzer-cyber-title {
+  max-width: 820px;
+  margin: 0 0 28px;
+  font-size: clamp(48px, 3.95vw, 74px);
+  line-height: 1.06;
+  font-weight: 800;
+}
+
+.panzer-page-home .panzer-cyber-text {
+  max-width: 820px;
+  margin: 0;
+  font-size: clamp(22px, 1.48vw, 30px);
+  line-height: 1.32;
+  font-weight: 700;
+}
+
+.panzer-page-home .panzer-cyber-actions {
+  margin-top: 42px;
+}
+
+.panzer-page-home .panzer-cyber-btn.secondary {
+  display: none;
+}
+
+.panzer-page-home .panzer-cyber-btn.primary {
+  min-width: 154px;
+  min-height: 54px;
+  padding: 14px 28px;
+  border: 2px solid #ffffff;
+  border-radius: 999px;
+  background: #2f766f;
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.panzer-page-home .panzer-cyber-controls {
+  top: 50%;
+  bottom: auto;
+  width: 100%;
+  padding: 0 24px;
+  transform: translate(-50%, -50%);
+}
+
+.panzer-page-home .panzer-cyber-nav button {
+  position: relative;
+  width: 34px;
+  height: 50px;
+  padding: 0;
+  background: transparent !important;
+  border: 0 !important;
+  color: transparent !important;
+}
+
+.panzer-page-home .panzer-cyber-nav button i {
+  display: none;
+}
+
+.panzer-page-home .panzer-cyber-nav button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  border-top: 7px solid #ffffff;
+  border-left: 7px solid #ffffff;
+  border-radius: 4px 0 0 0;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.panzer-page-home .panzer-cyber-prev::before {
+  left: 5px;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.panzer-page-home .panzer-cyber-next::before {
+  right: 5px;
+  transform: translateY(-50%) rotate(135deg);
+}
+
+.panzer-page-home .panzer-cyber-prev:hover::before {
+  border-color: #8ff6ff;
+  transform: translateY(-50%) rotate(-45deg) scale(1.08);
+}
+
+.panzer-page-home .panzer-cyber-next:hover::before {
+  border-color: #8ff6ff;
+  transform: translateY(-50%) rotate(135deg) scale(1.08);
+}
+
+@media (max-width: 991px) {
+  .panzer-page-home .panzer-cyber-slider-wrap,
+  .panzer-page-home .panzer-cyber-slider,
+  .panzer-page-home .panzer-cyber-slider .swiper-wrapper,
+  .panzer-page-home .panzer-cyber-slider .swiper-slide,
+  .panzer-page-home .panzer-cyber-slide,
+  .panzer-page-home .panzer-cyber-shell {
+    min-height: 640px;
+  }
+
+  .panzer-page-home .panzer-cyber-shell.container {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+
+  .panzer-page-home .panzer-cyber-title {
+    font-size: clamp(38px, 7vw, 56px);
+  }
+
+  .panzer-page-home .panzer-cyber-text {
+    max-width: 620px;
+    font-size: clamp(18px, 2.6vw, 24px);
+  }
+
+  .panzer-page-home .panzer-cyber-controls {
+    top: 50%;
+    bottom: auto;
+    padding: 0 18px;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 575px) {
+  .panzer-page-home .panzer-cyber-slider-wrap,
+  .panzer-page-home .panzer-cyber-slider,
+  .panzer-page-home .panzer-cyber-slider .swiper-wrapper,
+  .panzer-page-home .panzer-cyber-slider .swiper-slide,
+  .panzer-page-home .panzer-cyber-slide,
+  .panzer-page-home .panzer-cyber-shell {
+    min-height: 610px;
+  }
+
+  .panzer-page-home .panzer-cyber-slide::before {
+    background:
+      linear-gradient(180deg, rgba(2, 4, 16, 0.9) 0%, rgba(2, 4, 16, 0.64) 50%, rgba(2, 4, 16, 0.88) 100%),
+      linear-gradient(90deg, rgba(2, 4, 16, 0.96) 0%, rgba(2, 4, 16, 0.52) 100%);
+  }
+
+  .panzer-page-home .panzer-cyber-shell.container {
+    padding: 86px 54px 92px;
+  }
+
+  .panzer-page-home .panzer-cyber-copy {
+    text-align: left;
+  }
+
+  .panzer-page-home .panzer-cyber-title {
+    font-size: clamp(32px, 10vw, 42px);
+  }
+
+  .panzer-page-home .panzer-cyber-text {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 650;
+  }
+
+  .panzer-page-home .panzer-cyber-actions {
+    margin-top: 28px;
+    align-items: flex-start;
+  }
+
+  .panzer-page-home .panzer-cyber-btn.primary {
+    width: auto;
+    min-width: 134px;
+    min-height: 48px;
+    padding: 13px 24px;
+    font-size: 15px;
+  }
+
+  .panzer-page-home .panzer-cyber-nav button {
+    width: 26px;
+    height: 42px;
+  }
+
+  .panzer-page-home .panzer-cyber-nav button::before {
+    width: 18px;
+    height: 18px;
+    border-top-width: 6px;
+    border-left-width: 6px;
+  }
+}
+
+/* Compact home contact section image */
+.panzer-page-home .tv-contact-section.style-4 .tv-contact-inner {
+  padding-top: clamp(54px, 5vw, 82px);
+  padding-bottom: clamp(54px, 5vw, 82px);
+}
+
+.panzer-page-home .tv-contact-section.style-4 .contact-wrapper {
+  align-items: center !important;
+}
+
+.panzer-page-home .tv-contact-section.style-4 .contact-left-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+  height: auto;
+}
+
+.panzer-page-home .tv-contact-section.style-4 .contact-left-thumb figure {
+  width: min(100%, 430px);
+  height: auto;
+  min-height: 0;
+  margin: 0 auto;
+  aspect-ratio: 1 / 1;
+  border-radius: 24px;
+}
+
+.panzer-page-home .tv-contact-section.style-4 .contact-left-thumb img {
+  width: 100% !important;
+  height: 100% !important;
+  max-height: 430px;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .panzer-page-home .tv-contact-section.style-4 .contact-left-thumb figure {
+    width: min(100%, 380px);
+  }
+
+  .panzer-page-home .tv-contact-section.style-4 .contact-left-thumb img {
+    max-height: 380px;
+  }
+}
+
+@media (max-width: 575px) {
+  .panzer-page-home .tv-contact-section.style-4 .tv-contact-inner {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+
+  .panzer-page-home .tv-contact-section.style-4 .contact-left-thumb figure {
+    width: min(100%, 300px);
+    border-radius: 18px;
+  }
+
+  .panzer-page-home .tv-contact-section.style-4 .contact-left-thumb img {
+    max-height: 300px;
+  }
+}
+
+/* White navbar without image background */
+.panzer-image-header,
+.panzer-page-home .panzer-image-header,
+.sticky-header {
+  background: #ffffff !important;
+  background-image: none !important;
+  box-shadow: 0 1px 0 rgba(6, 17, 83, 0.08) !important;
+}
+
+.panzer-image-header .main-wrapper,
+.panzer-page-home .panzer-image-header .main-wrapper,
+.sticky-header .menu-area {
+  background: #ffffff !important;
+}
+
+.panzer-image-header .main-menu a,
+.panzer-image-header .main-wrapper .main-menu a,
+.panzer-image-header .main-menu > ul > li.menu-item-has-children > a::before,
+.panzer-image-header .main-wrapper .main-menu > ul > li.menu-item-has-children > a::before,
+.panzer-page-home .panzer-image-header .main-menu a,
+.panzer-page-home .panzer-image-header .main-wrapper .main-menu a,
+.panzer-page-home .panzer-image-header .main-menu > ul > li.menu-item-has-children > a::before,
+.panzer-page-home .panzer-image-header .main-wrapper .main-menu > ul > li.menu-item-has-children > a::before,
+.sticky-header .main-menu a,
+.sticky-header .main-menu > ul > li.menu-item-has-children > a::before {
+  color: #4a78e2 !important;
+}
+
+.panzer-image-header .sidebar-btn,
+.panzer-page-home .panzer-image-header .sidebar-btn {
+  border-color: #061153 !important;
+}
+
+.panzer-image-header .sidebar-btn .line,
+.panzer-page-home .panzer-image-header .sidebar-btn .line {
+  background: #061153 !important;
+}
+
+/* Ensure brand page cards render even when WOW animation is not initialized */
+.panzer-page-brand .panzer-brand-page .wow {
+  visibility: visible !important;
+  opacity: 1 !important;
+  animation-name: none !important;
+  transform: none !important;
+}
+
+.panzer-page-brand .panzer-brand-page .row.gy-30 {
+  position: relative;
+  z-index: 2;
+}
+
+.panzer-page-brand .panzer-brand-page .tv-service-single-box .solution-card-image.panzer-brand-logo {
+  height: auto;
+  aspect-ratio: 16 / 4.6;
+  padding: clamp(14px, 2.2vw, 26px);
+  background: #ffffff;
+  border: 1px solid rgba(8, 30, 55, 0.08);
+}
+
+.panzer-page-brand .panzer-brand-page .tv-service-single-box .solution-card-image.panzer-brand-logo img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: min(100%, 330px);
+  max-height: 92px;
+  margin: 0 auto;
+  object-fit: contain !important;
+}
+
+.panzer-page-brand .panzer-brand-page .tv-service-single-box:hover .solution-card-image.panzer-brand-logo {
+  background: #ffffff;
+  border-color: rgba(255, 255, 255, 0.82);
+}
+
+/* Solution page clean icon card design */
+.panzer-page-solution .panzer-solution-grid {
+  align-items: stretch;
+}
+
+.panzer-page-solution .panzer-solution-grid > [class*="col-"] {
+  display: flex;
+}
+
+.panzer-page-solution .panzer-solution-card {
+  width: 100%;
+  min-height: 300px;
+  padding: 0 !important;
+  overflow: hidden;
+  border-radius: 12px !important;
+  border: 1px solid rgba(6, 17, 83, 0.1) !important;
+  background: #ffffff !important;
+  box-shadow: 0 8px 22px rgba(6, 17, 83, 0.05);
+  backdrop-filter: none !important;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.panzer-page-solution .panzer-solution-card::before,
+.panzer-page-solution .panzer-solution-card::after {
+  content: none !important;
+}
+
+.panzer-page-solution .panzer-solution-card .inner-box {
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  padding: 30px !important;
+  text-align: left !important;
+}
+
+.panzer-page-solution .panzer-solution-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background: #eef4ff;
+  color: #4a78e2;
+  font-size: 15px;
+  line-height: 1;
+  transition: background 0.28s ease, color 0.28s ease, transform 0.28s ease;
+}
+
+.panzer-page-solution .panzer-solution-number {
+  display: block;
+  margin-bottom: 10px;
+  color: #aeb9cb;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.panzer-page-solution .panzer-solution-card .title {
+  margin: 0 0 10px !important;
+  color: #17233c !important;
+  font-size: 18px !important;
+  line-height: 1.28 !important;
+  font-weight: 800 !important;
+}
+
+.panzer-page-solution .panzer-solution-card .text {
+  margin: 0 0 22px !important;
+  padding-bottom: 0 !important;
+  color: #5f6f86 !important;
+  font-size: 15px !important;
+  line-height: 1.58 !important;
+  font-weight: 500;
+}
+
+.panzer-page-solution .panzer-solution-learn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: auto;
+  color: #2f63dd !important;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 800;
+  transition: color 0.28s ease, transform 0.28s ease;
+}
+
+.panzer-page-solution .panzer-solution-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(74, 120, 226, 0.3) !important;
+  box-shadow: 0 20px 42px rgba(47, 99, 221, 0.13);
+}
+
+.panzer-page-solution .panzer-solution-card:hover .panzer-solution-icon {
+  transform: translateY(-2px);
+  background: #4a78e2;
+  color: #ffffff;
+}
+
+.panzer-page-solution .panzer-solution-card:hover .panzer-solution-learn {
+  color: #174bd1 !important;
+  transform: translateX(3px);
+}
+
+@media (max-width: 991px) {
+  .panzer-page-solution .panzer-solution-card,
+  .panzer-page-solution .panzer-solution-card .inner-box {
+    min-height: 280px;
+  }
+}
+
+@media (max-width: 575px) {
+  .panzer-page-solution .panzer-solution-card {
+    min-height: 0;
+    border-radius: 10px !important;
+  }
+
+  .panzer-page-solution .panzer-solution-card .inner-box {
+    min-height: 0;
+    padding: 24px !important;
+  }
+
+  .panzer-page-solution .panzer-solution-card .title {
+    font-size: 17px !important;
+  }
+
+  .panzer-page-solution .panzer-solution-card .text {
+    font-size: 14px !important;
+  }
+}
+
+/* Simple full-screen home hero slider */
+.panzer-page-home .panzer-cyber-hero {
+  position: relative;
+  min-height: 100vh;
+  
+}
+
+.panzer-page-home .panzer-cyber-slider-wrap,
+.panzer-page-home .panzer-cyber-slider,
+.panzer-page-home .panzer-cyber-slider .swiper-wrapper,
+.panzer-page-home .panzer-cyber-slider .swiper-slide,
+.panzer-page-home .panzer-cyber-slide,
+.panzer-page-home .panzer-cyber-shell {
+  min-height: 100vh !important;
+}
+
+.panzer-page-home .panzer-cyber-slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: transparent;
+}
+
+.panzer-page-home .panzer-cyber-slide::before {
+  content: none;
+}
+
+.panzer-page-home .panzer-cyber-slide::after {
+  content: none !important;
+}
+
+.panzer-page-home .panzer-cyber-image {
+  position: absolute !important;
+  inset: 0;
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  object-position: center;
+  opacity: 1 !important;
+  transform: scale(1.02);
+}
+
+.panzer-page-home .panzer-cyber-shell.container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: clamp(110px, 8vw, 150px) clamp(86px, 8vw, 156px) clamp(86px, 7vw, 130px);
+}
+
+.panzer-page-home .panzer-cyber-copy {
+  width: min(100%, 690px);
+  max-width: 690px;
+  padding: 0;
+  text-align: left;
+}
+
+.panzer-page-home .panzer-cyber-kicker {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 22px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  color: #ffb21d;
+  opacity: 1;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.panzer-page-home .panzer-cyber-title {
+  max-width: 690px;
+  margin: 0 0 28px;
+  color: #ffffff !important;
+  opacity: 1;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(44px, 5vw, 82px);
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
+}
+
+.panzer-page-home .panzer-cyber-title span {
+  color: #ffffff !important;
+}
+
+.panzer-page-home .panzer-cyber-text {
+  max-width: 650px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.98) !important;
+  opacity: 1;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(18px, 1.55vw, 29px);
+  line-height: 1.42;
+  font-weight: 700;
+  text-shadow: 0 3px 14px rgba(0, 0, 0, 0.42);
+}
+
+.panzer-page-home .panzer-cyber-actions {
+  display: flex;
+  margin-top: 42px;
+}
+
+.panzer-page-home .panzer-cyber-btn.primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 170px;
+  min-height: 58px;
+  padding: 16px 28px;
+  border: 0;
+  border-radius: 4px;
+  background: #ffb21d;
+  color: #080b12;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 800;
+  text-transform: uppercase;
+  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.28);
+}
+
+.panzer-page-home .panzer-cyber-btn.primary:hover {
+  background: #ffffff;
+  color: #080b12;
+}
+
+.panzer-page-home .panzer-cyber-controls {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 4;
+  width: 100%;
+  padding: 0 20px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.panzer-page-home .panzer-cyber-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.panzer-page-home .panzer-cyber-nav button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(42px, 3.4vw, 58px);
+  height: clamp(58px, 4.8vw, 82px);
+  padding: 0;
+  border: 0 !important;
+  border-radius: 0;
+  background: rgba(1, 7, 18, 0.84) !important;
+  color: transparent !important;
+  box-shadow: inset 0 -2px 0 rgba(40, 71, 170, 0.42), 0 16px 28px rgba(0, 0, 0, 0.22);
+  pointer-events: auto;
+}
+
+.panzer-page-home .panzer-cyber-nav button i {
+  display: none;
+}
+
+.panzer-page-home .panzer-cyber-nav button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: clamp(20px, 1.55vw, 28px);
+  height: clamp(20px, 1.55vw, 28px);
+  border-top: clamp(5px, 0.45vw, 8px) solid #ffffff;
+  border-left: clamp(5px, 0.45vw, 8px) solid #ffffff;
+  border-radius: 4px 0 0 0;
+  transition: border-color 0.22s ease, transform 0.22s ease;
+}
+
+.panzer-page-home .panzer-cyber-prev::before {
+  left: 50%;
+  transform: translate(-38%, -50%) rotate(-45deg);
+}
+
+.panzer-page-home .panzer-cyber-next::before {
+  right: 50%;
+  transform: translate(38%, -50%) rotate(135deg);
+}
+
+.panzer-page-home .panzer-cyber-nav button:hover {
+  background: rgba(1, 7, 18, 0.95) !important;
+  transform: none;
+}
+
+.panzer-page-home .panzer-cyber-prev:hover::before {
+  border-color: #ffb21d;
+  transform: translate(-48%, -50%) rotate(-45deg);
+}
+
+.panzer-page-home .panzer-cyber-next:hover::before {
+  border-color: #ffb21d;
+  transform: translate(48%, -50%) rotate(135deg);
+}
+
+.panzer-page-home .panzer-cyber-pagination {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(26px, 4vw, 46px);
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  width: auto !important;
+  transform: translateX(-50%);
+}
+
+.panzer-page-home .panzer-cyber-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  margin: 0 !important;
+  border: 2px solid rgba(255, 255, 255, 0.84);
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+  transition: background 0.22s ease, border-color 0.22s ease, transform 0.22s ease;
+}
+
+.panzer-page-home .panzer-cyber-pagination .swiper-pagination-bullet-active {
+  background: #ffffff;
+  border-color: #ffffff;
+  transform: scale(1.12);
+}
+
+@media (max-width: 991px) {
+  .panzer-page-home .panzer-cyber-shell.container {
+    justify-content: flex-start;
+    padding: 110px 76px 96px;
+  }
+
+  .panzer-page-home .panzer-cyber-copy {
+    max-width: 640px;
+  }
+
+  .panzer-page-home .panzer-cyber-title {
+    font-size: clamp(38px, 7vw, 58px);
+  }
+}
+
+@media (max-width: 575px) {
+  .panzer-page-home .panzer-cyber-slider-wrap,
+  .panzer-page-home .panzer-cyber-slider,
+  .panzer-page-home .panzer-cyber-slider .swiper-wrapper,
+  .panzer-page-home .panzer-cyber-slider .swiper-slide,
+  .panzer-page-home .panzer-cyber-slide,
+  .panzer-page-home .panzer-cyber-shell {
+    min-height: 680px !important;
+  }
+
+  .panzer-page-home .panzer-cyber-slide::before {
+    content: none;
+  }
+
+  .panzer-page-home .panzer-cyber-slide::after {
+    content: none !important;
+  }
+
+  .panzer-page-home .panzer-cyber-shell.container {
+    align-items: center;
+    justify-content: center;
+    padding: 96px 54px 88px;
+  }
+
+  .panzer-page-home .panzer-cyber-copy {
+    text-align: left;
+  }
+
+  .panzer-page-home .panzer-cyber-kicker {
+    font-size: 12px;
+    letter-spacing: 0.12em;
+  }
+
+  .panzer-page-home .panzer-cyber-title {
+    font-size: clamp(31px, 10vw, 42px);
+  }
+
+  .panzer-page-home .panzer-cyber-text {
+    font-size: 16px;
+    line-height: 1.52;
+  }
+
+  .panzer-page-home .panzer-cyber-actions {
+    margin-top: 30px;
+  }
+
+  .panzer-page-home .panzer-cyber-btn.primary {
+    min-width: 144px;
+    min-height: 50px;
+    padding: 14px 22px;
+    font-size: 14px;
+  }
+
+  .panzer-page-home .panzer-cyber-controls {
+    padding: 0 8px;
+  }
+
+  .panzer-page-home .panzer-cyber-nav button {
+    width: 38px;
+    height: 56px;
+  }
+
+  .panzer-page-home .panzer-cyber-pagination {
+    bottom: 22px;
+    gap: 10px;
+  }
+
+  .panzer-page-home .panzer-cyber-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* Clean home achievement section */
+.panzer-page-home .panzer-home-achievement-section {
+  background: #f6f9ff !important;
+}
+
+.panzer-page-home .panzer-home-achievement-section .tv-achivement-inner {
+  margin: 0 !important;
+  padding: clamp(64px, 7vw, 110px) 0;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(241, 247, 255, 0.98) 100%) !important;
+  border-top: 1px solid rgba(17, 43, 84, 0.08);
+  border-bottom: 1px solid rgba(17, 43, 84, 0.08);
+}
+
+.panzer-page-home .panzer-home-achievement-section .row {
+  align-items: center;
+  row-gap: 32px;
+}
+
+.panzer-page-home .panzer-home-achievement-section .lpm-d-none {
+  display: none !important;
+}
+
+@media (min-width: 992px) {
+  .panzer-page-home .panzer-home-achievement-section .col-lg-6 {
+    flex: 0 0 auto;
+    width: 64%;
+  }
+
+  .panzer-page-home .panzer-home-achievement-section .col-lg-3:last-child {
+    flex: 0 0 auto;
+    width: 36%;
+  }
+}
+
+.panzer-page-home .panzer-home-achievement-section .achivement-content-wrapper {
+  max-width: 760px;
+  padding: 0;
+}
+
+.panzer-page-home .panzer-home-achievement-section .sub-title-2 {
+  margin-bottom: 16px;
+  color: #2f63dd !important;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.panzer-page-home .panzer-home-achievement-section .sec-title {
+  margin: 0 0 22px;
+  color: #10213d;
+  font-size: clamp(34px, 4vw, 58px);
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+.panzer-page-home .panzer-home-achievement-section .title-wrap.three p {
+  max-width: 680px;
+  margin: 0;
+  color: #526277;
+  font-size: clamp(16px, 1.15vw, 19px);
+  line-height: 1.72;
+  font-weight: 500;
+}
+
+.panzer-page-home .panzer-home-achievement-section .achivement-right-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  padding: 0;
+}
+
+.panzer-page-home .panzer-home-achievement-section .achivement-right-wrapper .content {
+  padding: 0;
+}
+
+.panzer-page-home .panzer-home-achievement-section .achivement-right-wrapper .content h4 {
+  margin: 0 0 2px;
+  color: #10213d;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 900;
+}
+
+.panzer-page-home .panzer-home-achievement-section .counter-box {
+  position: relative;
+  min-height: 144px;
+  padding: 26px 28px !important;
+  overflow: hidden;
+  border: 1px solid rgba(47, 99, 221, 0.14);
+  border-radius: 8px;
+  background: #ffffff !important;
+  box-shadow: 0 18px 42px rgba(16, 33, 61, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.panzer-page-home .panzer-home-achievement-section .counter-box::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+  background: #2f63dd;
+}
+
+.panzer-page-home .panzer-home-achievement-section .counter-box:hover {
+  transform: translateY(-4px);
+  border-color: rgba(47, 99, 221, 0.32);
+  box-shadow: 0 24px 54px rgba(47, 99, 221, 0.14);
+}
+
+.panzer-page-home .panzer-home-achievement-section .counter-box .counter-inner {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 14px;
+}
+
+.panzer-page-home .panzer-home-achievement-section .counter-box .counter-inner .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 52px;
+  height: 52px;
+  border-radius: 8px;
+  background: #eef4ff;
+}
+
+.panzer-page-home .panzer-home-achievement-section .counter-box .counter-inner .icon img {
+  width: 28px !important;
+  height: 28px !important;
+  object-fit: contain;
+}
+
+.panzer-page-home .panzer-home-achievement-section .counter-box .counter-inner .count {
+  display: flex;
+  align-items: baseline;
+  color: #10213d;
+  font-size: clamp(42px, 4vw, 60px);
+  line-height: 0.95;
+  font-weight: 900;
+}
+
+.panzer-page-home .panzer-home-achievement-section .counter-box .counter-inner .count .plus {
+  color: #2f63dd;
+  font-size: 0.48em;
+  font-weight: 900;
+}
+
+.panzer-page-home .panzer-home-achievement-section .counter-box p {
+  margin: 0;
+  color: #5a6a7d;
+  font-size: 16px;
+  line-height: 1.45;
+  font-weight: 800;
+}
+
+@media (max-width: 991px) {
+  .panzer-page-home .panzer-home-achievement-section .achivement-content-wrapper {
+    max-width: 100%;
+  }
+
+  .panzer-page-home .panzer-home-achievement-section .achivement-right-wrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 575px) {
+  .panzer-page-home .panzer-home-achievement-section .tv-achivement-inner {
+    padding: 48px 0;
+  }
+
+  .panzer-page-home .panzer-home-achievement-section .sec-title br {
+    display: none;
+  }
+
+  .panzer-page-home .panzer-home-achievement-section .achivement-right-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .panzer-page-home .panzer-home-achievement-section .counter-box {
+    min-height: 128px;
+    padding: 22px 24px !important;
+  }
+}
+
+/* Solid dark footer */
+.footer-section.panzer-compact-footer.panzer-image-footer {
+  background: #091528 !important;
+  background-image: none !important;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.footer-section.panzer-compact-footer.panzer-image-footer .bg.image {
+  display: none !important;
+}
+
+.footer-section.panzer-compact-footer.panzer-image-footer .footer-top,
+.footer-section.panzer-compact-footer.panzer-image-footer .footer-bottom {
+  position: relative;
+  z-index: 2;
+  background: transparent !important;
+}
+
+.footer-section.panzer-compact-footer.panzer-image-footer .footer-brand::before {
+  background: rgba(255, 255, 255, 0.12) !important;
+}
+
+.footer-section.panzer-compact-footer.panzer-image-footer .logo img {
+  filter: brightness(0) invert(1);
+}
+
+.footer-section.panzer-compact-footer.panzer-image-footer .footer-brand .contact-info .contact-item .title,
+.footer-section.panzer-compact-footer.panzer-image-footer .panzer-footer-newsletter .title {
+  color: rgba(255, 255, 255, 0.62) !important;
+}
+
+.footer-section.panzer-compact-footer.panzer-image-footer .footer-brand .contact-info .contact-item a,
+.footer-section.panzer-compact-footer.panzer-image-footer .footer-brand .contact-info .contact-item a i,
+.footer-section.panzer-compact-footer.panzer-image-footer .footer-bottom p,
+.footer-section.panzer-compact-footer.panzer-image-footer .footer-bottom p a,
+.footer-section.panzer-compact-footer.panzer-image-footer .footer-bottom .footer-policy a {
+  color: rgba(255, 255, 255, 0.86) !important;
+}
+
+.footer-section.panzer-compact-footer.panzer-image-footer .footer-brand .contact-info .contact-item a:hover,
+.footer-section.panzer-compact-footer.panzer-image-footer .footer-bottom p a:hover,
+.footer-section.panzer-compact-footer.panzer-image-footer .footer-bottom .footer-policy a:hover {
+  color: #ffffff !important;
+}
+
+.footer-section.panzer-compact-footer.panzer-image-footer .footer-brand .social-links a {
+  border-color: rgba(255, 255, 255, 0.18) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #ffffff !important;
+}
+
+.footer-section.panzer-compact-footer.panzer-image-footer .footer-brand .social-links a:hover {
+  border-color: #ffffff !important;
+  background: #ffffff !important;
+  color: #091528 !important;
+}
+
+.footer-section.panzer-compact-footer.panzer-image-footer .panzer-footer-newsletter .newsletter-form input[type="email"] {
+  border-color: rgba(255, 255, 255, 0.16) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #ffffff !important;
+}
+
+.footer-section.panzer-compact-footer.panzer-image-footer .panzer-footer-newsletter .newsletter-form input[type="email"]::placeholder {
+  color: rgba(255, 255, 255, 0.56) !important;
+}
+
+.footer-section.panzer-compact-footer.panzer-image-footer .panzer-footer-newsletter .newsletter-form button[type="submit"] {
+  background: #ffffff !important;
+  color: #091528 !important;
+}
+
+.footer-section.panzer-compact-footer.panzer-image-footer .footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+/* Compact brand partners strip */
+.panzer-page-home .panzer-brand-partners-section {
+  min-height: 0 !important;
+  padding: clamp(42px, 5vw, 72px) 0 !important;
+  background: #f6f9ff !important;
+  overflow: hidden;
+}
+
+.panzer-page-home .panzer-brand-partners-section .panzer-cyber-brand-strip {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.panzer-page-home .panzer-brand-partners-section .tv-brands-section {
+  padding: 0 !important;
+}
+
+.panzer-page-home .panzer-brand-partners-section .container {
+  max-width: 1320px;
+}
+
+.panzer-page-home .panzer-brand-partners-section .panzer-cyber-brand-panel {
+  position: relative;
+  padding: clamp(26px, 3vw, 42px) clamp(48px, 5vw, 72px) !important;
+  border: 1px solid rgba(9, 21, 40, 0.08) !important;
+  border-radius: 28px !important;
+  background: #d7d7d7 !important;
+  box-shadow: 0 18px 48px rgba(9, 21, 40, 0.12) !important;
+}
+
+.panzer-page-home .panzer-brand-partners-section .trusted-partners {
+  justify-content: center;
+  margin-bottom: 24px !important;
+}
+
+.panzer-page-home .panzer-brand-partners-section .trusted-partners .title {
+  color: #091528 !important;
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+}
+
+.panzer-page-home .panzer-brand-partners-section .brands-slider-three {
+  padding: 0 !important;
+}
+
+.panzer-page-home .panzer-brand-partners-section .brands-slider-three::before,
+.panzer-page-home .panzer-brand-partners-section .brands-slider-three::after {
+  content: "" !important;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 48px;
+  height: 100%;
+  pointer-events: none;
+}
+
+.panzer-page-home .panzer-brand-partners-section .brands-slider-three::before {
+  left: 0;
+  background: linear-gradient(90deg, #d7d7d7 0%, rgba(215, 215, 215, 0) 100%) !important;
+}
+
+.panzer-page-home .panzer-brand-partners-section .brands-slider-three::after {
+  right: 0;
+  background: linear-gradient(90deg, rgba(215, 215, 215, 0) 0%, #d7d7d7 100%) !important;
+}
+
+.panzer-page-home .panzer-brand-partners-section .tv-brands-section.style-3 .sponsors-outer .brand-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 92px !important;
+  max-width: none !important;
+  padding: 18px 20px !important;
+  border: 1px solid rgba(9, 21, 40, 0.08) !important;
+  border-radius: 8px !important;
+  background: #ffffff !important;
+  box-shadow: none !important;
+}
+
+.panzer-page-home .panzer-brand-partners-section .tv-brands-section .sponsors-outer .brand-item .image {
+  width: 100%;
+  height: 100%;
+}
+
+.panzer-page-home .panzer-brand-partners-section .tv-brands-section .sponsors-outer .brand-item .image img {
+  max-width: 150px;
+  max-height: 48px;
+  object-fit: contain !important;
+  transform: none !important;
+}
+
+.panzer-page-home .panzer-brand-partners-section .panzer-brand-nav {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  right: 14px;
+  z-index: 8;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.panzer-page-home .panzer-brand-partners-section .panzer-brand-nav button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(9, 21, 40, 0.16) !important;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4) !important;
+  color: #091528 !important;
+  box-shadow: 0 10px 24px rgba(9, 21, 40, 0.1);
+  pointer-events: auto;
+  transition: background 0.22s ease, color 0.22s ease, border-color 0.22s ease;
+}
+
+.panzer-page-home .panzer-brand-partners-section .panzer-brand-nav button:hover {
+  border-color: #091528 !important;
+  background: #091528 !important;
+  color: #ffffff !important;
+}
+
+@media (max-width: 991px) {
+  .panzer-page-home .panzer-brand-partners-section {
+    padding: 36px 0 !important;
+  }
+
+  .panzer-page-home .panzer-brand-partners-section .panzer-cyber-brand-panel {
+    padding: 26px 54px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .panzer-page-home .panzer-brand-partners-section {
+    padding: 28px 0 !important;
+  }
+
+  .panzer-page-home .panzer-brand-partners-section .panzer-cyber-brand-panel {
+    padding: 24px 46px !important;
+    border-radius: 8px !important;
+  }
+
+  .panzer-page-home .panzer-brand-partners-section .tv-brands-section.style-3 .sponsors-outer .brand-item {
+    height: 84px !important;
+  }
+
+  .panzer-page-home .panzer-brand-partners-section .panzer-brand-nav {
+    left: 8px;
+    right: 8px;
+  }
+
+  .panzer-page-home .panzer-brand-partners-section .panzer-brand-nav button {
+    width: 34px;
+    height: 34px;
   }
 }

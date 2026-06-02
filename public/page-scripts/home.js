@@ -211,12 +211,12 @@
       }
 
       // eslint-disable-next-line no-undef
-      new Swiper(".panzer-cyber-slider", {
+      new Swiper(sliderElement, {
         slidesPerView: 1,
         spaceBetween: 0,
         centeredSlides: false,
-        loop: false,
-        rewind: slideTotal > 1,
+        loop: slideTotal > 1,
+        rewind: false,
         speed: 900,
         grabCursor: true,
         watchSlidesProgress: true,
@@ -229,6 +229,10 @@
         navigation: {
           prevEl: ".panzer-cyber-prev",
           nextEl: ".panzer-cyber-next",
+        },
+        pagination: {
+          el: ".panzer-cyber-pagination",
+          clickable: true,
         },
         keyboard: {
           enabled: true,

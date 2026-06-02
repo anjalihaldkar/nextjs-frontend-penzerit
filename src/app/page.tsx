@@ -4,97 +4,74 @@ import Link from "next/link";
 export default function Page() {
   return (
     <>
-<section className="tv-hero-section  style-4 panzer-cyber-hero">
+<section className="tv-hero-section style-4 panzer-cyber-hero">
                     <div className="panzer-cyber-slider-wrap">
                         <div className="panzer-cyber-slider swiper" aria-label="Hero banner slider">
                             <div className="swiper-wrapper">
                                 <div className="swiper-slide">
                                     <div className="panzer-cyber-slide">
-                                        <Image className="panzer-cyber-image" src="/assets/images/hero/bg1.webp" alt="Cyber security operations banner" width={612} height={367} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                        <Image priority className="panzer-cyber-image" src="/assets/images/hero/try-banner1.png" alt="Digital lock cyber security banner" width={2048} height={1152} sizes="100vw" />
                                         <div className="container panzer-cyber-shell">
                                             <div className="panzer-cyber-copy" data-swiper-parallax="-180">
-                                                <span className="panzer-cyber-kicker">Managed Security</span>
-                                                <h1 className="panzer-cyber-title"> <span>Simple security for every endpoint</span></h1>
+                                                <span className="panzer-cyber-kicker">AI Powered Protection</span>
+                                                <h1 className="panzer-cyber-title"><span>Cyber Resilience For </span></h1>
                                                 <p className="panzer-cyber-text">
-                                                    Panzer IT helps protect your devices, users and business data with clear monitoring and quick support.
+                                                    Anticipate threats, reduce cyber risk and keep your teams moving with clear security, backup and data protection support.
                                                 </p>
                                                 <div className="panzer-cyber-actions">
-                                                    <Link href="/contact" className="panzer-cyber-btn primary">Connect with Us</Link>
-                                                    <Link href="tel:+919004655099" className="panzer-cyber-btn secondary">Call +91 90046 55099</Link>
+                                                    <Link href="/contact" className="panzer-cyber-btn primary">Enquire Today</Link>
                                                 </div>
-                                                
                                             </div>
-                                            <aside className="panzer-cyber-visual" data-swiper-parallax="-90">
-                                                <div className="panzer-cyber-visual-frame">
-                                                    <Image className="panzer-cyber-visual-image" src="/assets/images/hero/banner.webp" alt="Cyber security lock on circuit board" width={622} height={350} sizes="100vw" style={{ width: "100%", height: "auto" }} />
-                                                </div>
-                                            </aside>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="swiper-slide">
                                     <div className="panzer-cyber-slide">
-                                        <Image className="panzer-cyber-image" src="/assets/images/hero/b2.jpg" alt="Cyber threat monitoring banner" width={427} height={240} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                        <Image className="panzer-cyber-image" src="/assets/images/hero/try-banner2.png" alt="Data protection cyber security banner" width={2048} height={1152} sizes="100vw" />
                                         <div className="container panzer-cyber-shell">
                                             <div className="panzer-cyber-copy" data-swiper-parallax="-180">
-                                                <span className="panzer-cyber-kicker">Data Protection</span>
-                                                <h2 className="panzer-cyber-title"><span>Find data risk before it spreads</span></h2>
+                                                <span className="panzer-cyber-kicker">Data Loss Prevention</span>
+                                                <h2 className="panzer-cyber-title"><span>Protect Sensitive Data </span></h2>
                                                 <p className="panzer-cyber-text">
-                                                    Track activity, reduce data leaks and give your team an easier way to understand insider risk.
+                                                    Discover risky activity, prevent accidental leaks and give leaders the visibility they need for confident decisions.
                                                 </p>
                                                 <div className="panzer-cyber-actions">
-                                                    <Link href="/about" className="panzer-cyber-btn primary">Explore Panzer IT</Link>
-                                                    <Link href="/contact" className="panzer-cyber-btn secondary">Request a Demo</Link>
+                                                    <Link href="/solution" className="panzer-cyber-btn primary">View Solutions</Link>
                                                 </div>
-                                                
                                             </div>
-                                            <aside className="panzer-cyber-visual" data-swiper-parallax="-90">
-                                                <div className="panzer-cyber-visual-frame">
-                                                    <Image className="panzer-cyber-visual-image" src="/assets/images/hero/banner.webp" alt="Cyber security lock on circuit board" width={622} height={350} sizes="100vw" style={{ width: "100%", height: "auto" }} />
-                                                </div>
-                                            </aside>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="swiper-slide">
                                     <div className="panzer-cyber-slide">
-                                        <Image className="panzer-cyber-image" src="/assets/images/hero/bg3.webp" alt="Cyber defense and data protection banner" width={612} height={245} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                        <Image className="panzer-cyber-image" src="/assets/images/hero/try-banner-3.png" alt="Backup and recovery cyber security banner" width={2048} height={1152} sizes="100vw" />
                                         <div className="container panzer-cyber-shell">
                                             <div className="panzer-cyber-copy" data-swiper-parallax="-180">
                                                 <span className="panzer-cyber-kicker">Backup And Recovery</span>
-                                                <h2 className="panzer-cyber-title"> <span>Recover fast and keep work running</span></h2>
+                                                <h2 className="panzer-cyber-title"><span>Recover Fast When Every </span></h2>
                                                 <p className="panzer-cyber-text">
-                                                    Protect important systems with backup, recovery and endpoint defense that keeps your business available.
+                                                    Build dependable recovery plans for endpoints, servers and cloud workloads so business stays available.
                                                 </p>
                                                 <div className="panzer-cyber-actions">
-                                                    <Link href="/contact" className="panzer-cyber-btn primary">Talk to Security Team</Link>
-                                                    <Link href="/about" className="panzer-cyber-btn secondary">Learn More</Link>
+                                                    <Link href="/contact" className="panzer-cyber-btn primary">Talk To Expert</Link>
                                                 </div>
-                                                
                                             </div>
-                                            <aside className="panzer-cyber-visual" data-swiper-parallax="-90">
-                                                <div className="panzer-cyber-visual-frame">
-                                                    <Image className="panzer-cyber-visual-image" src="/assets/images/hero/banner.webp" alt="Cyber security lock on circuit board" width={622} height={350} sizes="100vw" style={{ width: "100%", height: "auto" }} />
-                                                </div>
-                                            </aside>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="panzer-cyber-controls">
-                            <div className="panzer-cyber-controls-right">
-                                
-                                <div className="panzer-cyber-nav">
-                                    <button className="panzer-cyber-prev" type="button" aria-label="Previous slide">
-                                        <i className="fa-light fa-arrow-left-long"></i>
-                                    </button>
-                                    <button className="panzer-cyber-next" type="button" aria-label="Next slide">
-                                        <i className="fa-light fa-arrow-right-long"></i>
-                                    </button>
-                                </div>
+                            <div className="panzer-cyber-nav">
+                                <button className="panzer-cyber-prev" type="button" aria-label="Previous slide">
+                                    <i className="fa-light fa-arrow-left-long"></i>
+                                </button>
+                                <button className="panzer-cyber-next" type="button" aria-label="Next slide">
+                                    <i className="fa-light fa-arrow-right-long"></i>
+                                </button>
                             </div>
                         </div>
+                        <div className="panzer-cyber-pagination" aria-label="Hero slider pagination"></div>
                     </div>
                 
                 </section>
@@ -119,7 +96,7 @@ export default function Page() {
                                     <div className="service-title-area d-flex justify-content-between sm-flex-column sm-mb-30">
                                         
                                         <div className="title-wrap " data-wow-duration="1.5s" data-wow-delay=".4s">
-                                            <div className="sub-title-2 text-white two"><i className="fa-solid fa-circle-check"></i>Solutions</div>
+                                            <div className="sub-title-2 text-white two">Solutions</div>
                                             <h2 className="panzer-static-sec-title text-white">Panzer IT Security, Backup <br />and Data Protection
                                                 Solutions
                                             </h2>
@@ -371,7 +348,7 @@ export default function Page() {
                                     <div className="main-image-box">
                                         
                                         <div className="image-group panzer-about-single-image">
-                                            <div className="image1  for-sat-image" data-wow-delay="0.2s"><Image className="br-30 mw-inherit" src="/assets/images/about/cc.webp" alt="People discussing" width={612} height={344} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
+                                            <div className="image1  for-sat-image" data-wow-delay="0.2s"><Image className="br-30 mw-inherit" src="/assets/images/about/cc.png" alt="People discussing" width={612} height={344} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
                                         </div>
                                     </div>
                                 </div>
@@ -380,7 +357,7 @@ export default function Page() {
                                 <div className="about-content-wrap">
                                     
                                     <div className="title-wrap " data-wow-duration="1.5s" data-wow-delay=".4s">
-                                        <div className="sub-title-2 text-theme"><i className="fa-solid fa-circle-check"></i>Who We Are
+                                        <div className="sub-title-2 text-theme">Who We Are
                                         </div>
                                         <h2 className="sec-title no-title-animation">Best IT Security <br />Solution Provider</h2>
                                         <p>Panzer IT helps organizations protect data across endpoints, servers, cloud,
@@ -413,8 +390,8 @@ export default function Page() {
                                     </ul>
                                     <Link href="/about" className="theme-btn mt-40 br-30 panzer-static-about-btn">
                                         <span className="link-effect">
-                                            <span className="effect-1">About Panzer IT</span>
-                                            <span className="effect-1">About Panzer IT</span>
+                                            <span className="effect-1">Solution</span>
+                                            <span className="effect-1">Solution</span>
                                         </span>
                                         <span className="arrow-all">
                                             <i>
@@ -442,49 +419,23 @@ export default function Page() {
                                     <div className="achivement-content-wrapper">
                                         
                                         <div className="title-wrap three" data-wow-duration="1.5s" data-wow-delay=".4s">
-                                            <div className="sub-title-2 text-theme"><i className="fa-solid fa-circle-check"></i>Panzer IT</div>
+                                            <div className="sub-title-2 text-theme">Panzer IT</div>
                                             <h2 className="sec-title no-title-animation">Make IT Secure Across <br />Endpoint, Backup, Cloud <br />And Data Protection</h2>
                                             <p>PCs and servers are connected more than ever, and threats are increasingly more
                                                 advanced. Panzer IT helps secure every entry point including endpoint, server,
                                                 cloud, network perimeter, web, mail and storage.</p>
                                         </div>
-                                        <div className="inner-contact">
-                                            <div className="icon">
-                                                <Image src="/assets/images/callus/call-iocn.webp" alt="" width={40} height={40} sizes="100vw" style={{ width: "100%", height: "auto" }} />
-                                            </div>
-                                            <div className="content">
-                                                <h6 className="call-text">Contact Us</h6>
-                                                <Link className="call-phone" href="tel:+919004655099">+91 90046 55099</Link>
-                                            </div>
-                                        </div>
-                                        <Link href="/contact" className="theme-btn mt-40 br-30 panzer-static-contact-btn">
-                                            <span className="link-effect">
-                                                <span className="effect-1">Contact Us</span>
-                                                <span className="effect-1">Contact Us</span>
-                                            </span>
-                                            <span className="arrow-all">
-                                                <i>
-                                                    <svg width="16" height="19" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M2 6H10M10 6L6 2M10 6L6 10" stroke="#1053f3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                                    </svg>
-                                                    <svg width="16" height="19" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M2 6H10M10 6L6 2M10 6L6 10" stroke="#1053f3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                                    </svg>
-                                                </i>
-                                            </span>
-                                        </Link>
                                     </div>
                                 </div>
                                 <div className="col-lg-3 col-xxl-3 lpm-d-none">
                                     <div className="achivement-image-wrapper">
-                                        <div className="thumb-bg">
+                                        {/* <div className="thumb-bg">
                                             <svg version="1.1" viewBox="0 0 586.23 500.74" xmlns="http://www.w3.org/2000/svg">
                                                 <g transform="translate(-1.0738 -1.2546)">
                                                     <path d="m211.33 501.74c-187.01-7.406-269.07-172.39-164.01-329.74 130.19-194.98 434.71-232.19 520.53-63.614 85.759 168.44-126.35 402.46-356.52 393.35zm63.333-96.994c199.68-42.298 301.86-265.24 140.24-305.98-121.19-30.549-281.94 59.67-317 177.91-27.173 91.643 57.87 153.26 176.77 128.07z" />
                                                 </g>outer-box
                                             </svg>
-                                        </div>
-                                        <div className="thumb img-anim-right"><Image src="/assets/images/achivement/man.png" alt="" width={587} height={704} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
+                                        </div> */}
                                     </div>
                                 </div>
                                 <div className="col-lg-3 col-xxl-3">
@@ -520,7 +471,7 @@ export default function Page() {
 
 
 
-        <section className="tv-hero-section style-4 panzer-cyber-hero panzer-brand-partners-section">
+        <section className="panzer-brand-partners-section">
                 <div className="panzer-cyber-brand-strip">
                         
                         <div className="tv-brands-section style-3 position-relative z-3">
@@ -651,7 +602,7 @@ export default function Page() {
                                 <div className="col-lg-6">
                                     <div className="contact-right-content">
                                         <div className="title-wrap text-center">
-                                            <div className="sub-title-2 text-theme"><i className="fa-solid fa-circle-check"></i>Contact
+                                            <div className="sub-title-2 text-theme">Contact
                                                 Us</div>
                                             <h2 className="sec-title no-title-animation">Feel free to touch base <br /> with Panzer IT</h2>
                                         </div>
@@ -693,7 +644,7 @@ export default function Page() {
                                 <div className="col-lg-6">
                                     <div className="contact-left-thumb wow img-anim-right data-item-hover overflow-hidden">
                                         <figure className="panzer-static-img" data-style="01" data-intensity="0.2" data-speedin="1" data-speedout="1">
-                                            <Image src="/assets/images/contact/hm4-img011.webp" alt="" width={648} height={625} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                            <Image src="/assets/images/hero/deal.png" alt="Business deal discussion" width={1254} height={1254} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                         </figure>
                                     </div>
                                 </div>
@@ -751,7 +702,7 @@ export default function Page() {
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="title-wrap text-center">
-                                    <div className="sub-title-2  text-theme"><i className="fa-solid fa-circle-check"></i>Latest
+                                    <div className="sub-title-2  text-theme">Latest
                                         Resources
                                     </div>
                                     <h2 className="sec-title no-title-animation">Write-ups, Tech Stuff & News <br /> from Panzer IT</h2>

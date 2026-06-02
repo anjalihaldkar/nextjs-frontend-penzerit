@@ -232,7 +232,7 @@ export default function Page() {
                                   </div>
                                   <div className="counter">
                                           <div className="about-counter">
-                                              <div className="count-box"><span className="count-number odometer" data-count="150"></span></div>
+                                              <div className="count-box"><span className="count-number odometer" data-count="150">150</span></div>
                                               <div className="text">
                                                   <span>+</span>
                                                   <p>Man-Years of <br /> Security Experience</p>
@@ -285,10 +285,10 @@ export default function Page() {
                                           </div>
                                       </div>
                                   </div>
-                                  <Link href="/contact" className="theme-btn mt-40 br-30 panzer-static-about-btn">
+                                  <Link href="/solution" className="theme-btn mt-40 br-30 panzer-static-about-btn">
                                       <span className="link-effect">
-                                          <span className="effect-1">Contact Panzer IT</span>
-                                          <span className="effect-1">Contact Panzer IT</span>
+                                          <span className="effect-1">Solution</span>
+                                          <span className="effect-1">Solution</span>
                                       </span>
                                       <span className="arrow-all">
                                           <i>

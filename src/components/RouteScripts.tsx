@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import Script from "next/script";
 
 const routeScripts: Record<string, string> = {
-  "/": "/page-scripts/home.js?v=20260528-2",
+  "/": "/page-scripts/home.js?v=20260601-1",
   "/brand": "/page-scripts/brand.js?v=20260528",
   "/solution": "/page-scripts/solution.js?v=20260528",
 };
