@@ -113,7 +113,7 @@ function MainNavigation({
         <Link href="/blog-grid" onClick={onNavigate}>Blogs</Link>
       </li>
       <li>
-        <Link href="/download" onClick={onNavigate}>Resources</Link>
+        <Link href="/resources" onClick={onNavigate}>Resources</Link>
       </li>
       <li className={`menu-item-has-children${mobile ? " submenu-item-has-children" : ""}${companyOpen ? " active-class" : ""}`}>
         <Link href="/about" onClick={onNavigate}>

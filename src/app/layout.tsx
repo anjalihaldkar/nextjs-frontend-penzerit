@@ -38,7 +38,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="/assets/css/animate.min.css?v=20260524" />
         <link rel="stylesheet" href="/assets/css/select2.min.css?v=20260524" />
         <link rel="stylesheet" href="/assets/css/odometer.css?v=20260524" />
-        <link rel="stylesheet" href="/assets/css/style.css?v=20260603-2" />
+        <link rel="stylesheet" href="/assets/css/style.css?v=20260603-14" />
       </head>
       <body suppressHydrationWarning>
         <SiteChrome>
@@ -50,19 +50,29 @@ export default function RootLayout({
             main.js runs after hydration so it cannot rewrite the DOM before React starts. */}
         <Script src="/assets/js/vendor/jquery-3.7.1.min.js" strategy="beforeInteractive" />
 
+        <Script src="/assets/js/bootstrap.min.js" strategy="beforeInteractive" />
+        <Script src="/assets/js/jquery-ui.min.js" strategy="beforeInteractive" />
         <Script src="/assets/js/gsap.min.js" strategy="beforeInteractive" />
         <Script src="/assets/js/ScrollTrigger.min.js" strategy="beforeInteractive" />
+        <Script src="/assets/js/gsap-scroll-to-plugin.min.js" strategy="beforeInteractive" />
+        <Script src="/assets/js/ScrollSmoother.js" strategy="beforeInteractive" />
         <Script src="/assets/js/swiper-bundle.min.js" strategy="beforeInteractive" />
         <Script src="/assets/js/marquee.min.js" strategy="beforeInteractive" />
         <Script src="/assets/js/select2.min.js" strategy="beforeInteractive" />
         <Script src="/assets/js/jquery.validate.min.js" strategy="beforeInteractive" />
         <Script src="/assets/js/jquery.appear.js" strategy="beforeInteractive" />
         <Script src="/assets/js/jquery.odometer.min.js" strategy="beforeInteractive" />
+        <Script src="/assets/js/imagesloaded.pkgd.min.js" strategy="beforeInteractive" />
+        <Script src="/assets/js/isotope.pkgd.min.js" strategy="beforeInteractive" />
+        <Script src="/assets/js/jquery.fancybox.js" strategy="beforeInteractive" />
         <Script src="/assets/js/wow.min.js" strategy="beforeInteractive" />
         <Script src="/assets/js/lenis.min.js" strategy="beforeInteractive" />
         <Script src="/assets/js/splite-type.min.js" strategy="beforeInteractive" />
+        <Script src="/assets/js/vanilla-tilt.min.js" strategy="beforeInteractive" />
+        <Script src="/assets/js/three.min.js" strategy="beforeInteractive" />
+        <Script src="/assets/js/hover.js" strategy="beforeInteractive" />
 
-        <Script src="/assets/js/main.js?v=20260602-2" strategy="afterInteractive" />
+        <Script src="/assets/js/main.js?v=20260603-1" strategy="afterInteractive" />
         <RouteScripts />
       </body>
     </html>

@@ -28,7 +28,7 @@ const solutions = [
   {
     title: <>Backup & Disaster <br />Recovery</>,
     alt: "Backup and disaster recovery",
-    icon: "fa-hexagon-nodes",
+    icon: "fa-database",
     text: "Keep virtual, physical, cloud and SaaS workloads recoverable with resilient backup strategy and business continuity planning.",
   },
   {
@@ -71,7 +71,8 @@ export function SolutionsGrid() {
               <h4 className="title">{solution.title}</h4>
               <p className="text">{solution.text}</p>
               <Link href="/solution-details" className="panzer-solution-learn">
-                Learn more <span aria-hidden="true">-&gt;</span>
+                <span>Learn more</span>
+                <span className="panzer-solution-learn-arrow" aria-hidden="true">→</span>
               </Link>
             </div>
           </div>

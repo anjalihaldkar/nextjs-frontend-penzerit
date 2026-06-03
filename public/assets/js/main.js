@@ -73,6 +73,10 @@ JS TABLE OF CONTENTS
 		dataItemHover();
 	}
 
+	window.PanzerTheme = window.PanzerTheme || {};
+	window.PanzerTheme.init = initTemplateOnLoad;
+	window.PanzerTheme.preloader = preLoader;
+
 	if (document.readyState === "complete") {
 		window.setTimeout(initTemplateOnLoad, 0);
 	} else {
@@ -916,7 +920,7 @@ JS TABLE OF CONTENTS
 	=============================================*/
 	function allSlider() {
 		function getSlideCount(selector) {
-			const slider = document.querySelector(selector);
+			const slider = typeof selector === "string" ? document.querySelector(selector) : selector;
 			return slider ? slider.querySelectorAll(".swiper-slide").length : 0;
 		}
 
@@ -982,12 +986,14 @@ JS TABLE OF CONTENTS
 		}
 
 		// Brands Slider use this project Home page 3
-		if ($(".brands-slider-three").length > 0) {
-			new Swiper(".brands-slider-three", {
+		$(".brands-slider-three").not(".panzer-cyber-brand-panel .brands-slider-three").each(function () {
+			const brandSlider = this;
+
+			new Swiper(brandSlider, {
 				slidesPerView: "auto",
 				spaceBetween: 20,
 				centeredSlides: false,
-				loop: hasEnoughSlidesForLoop(".brands-slider-three", 6),
+				loop: hasEnoughSlidesForLoop(brandSlider, 6),
 				slidesPerGroup: 2,
 				speed: 850,
 				allowTouchMove: true,
@@ -1008,7 +1014,7 @@ JS TABLE OF CONTENTS
 					0: { slidesPerView: 1 },
 				},
 			});
-		}
+		});
 
 		// Brands Slider Two
 		if ($('.brands-slider-two').length) {

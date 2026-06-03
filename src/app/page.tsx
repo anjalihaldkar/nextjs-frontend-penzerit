@@ -445,10 +445,10 @@ export default function Page() {
                         <div className="container">
                             <div className="panzer-achievement-grid">
                                 <div className="panzer-achievement-copy">
-                                    <div className="panzer-achievement-pill">
-                                        {/* <i className="fa-solid fa-shield-check"></i> */}
+                                    {/* <div className="panzer-achievement-pill">
+                                       
                                         <span>Panzer IT</span>
-                                    </div>
+                                    </div> */}
                                     <h2 className="panzer-achievement-title no-title-animation">Make IT <span>Secure</span> Across Endpoint, Backup, Cloud And Data Protection</h2>
                                     <p className="panzer-achievement-text">PCs and servers are connected more than ever, and threats are increasingly more advanced. Panzer IT helps secure every entry point including endpoint, server, cloud, network perimeter, web, mail and storage.</p>
                                     <div className="panzer-protection-strip" aria-label="Panzer IT protection areas">
@@ -603,14 +603,14 @@ export default function Page() {
                                                     </div>
 
                                                 </div>
-                                                <div className="panzer-brand-nav" aria-label="Brand partners slider controls">
-                                                    <button className="panzer-brand-prev" type="button" aria-label="Previous brand">
-                                                        <i className="fa-light fa-arrow-left-long"></i>
-                                                    </button>
-                                                    <button className="panzer-brand-next" type="button" aria-label="Next brand">
-                                                        <i className="fa-light fa-arrow-right-long"></i>
-                                                    </button>
-                                                </div>
+                                            </div>
+                                            <div className="panzer-brand-nav" aria-label="Brand partners slider controls">
+                                                <button className="panzer-brand-prev" type="button" aria-label="Previous brand">
+                                                    <i className="fa-light fa-arrow-left-long"></i>
+                                                </button>
+                                                <button className="panzer-brand-next" type="button" aria-label="Next brand">
+                                                    <i className="fa-light fa-arrow-right-long"></i>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>

@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Page() {
   return (
     <>
-<Breadcrumb title="Resources" paths={[{"name":"Downloads"}]} />
+<Breadcrumb title="Resources" paths={[{"name":"Resources"}]} />
 
 
       		
@@ -17,14 +17,14 @@ export default function Page() {
                           <div className="col-lg-12">
                               <div className="service-title-area d-flex justify-content-between sm-flex-column sm-mb-30">
                                   <div className="title-wrap" data-wow-duration="1.5s" data-wow-delay=".4s">
-                                      <div className="sub-title-2 text-theme"><i className="fa-solid fa-circle-check"></i>Downloads</div>
-                                      <h2 className="sec-title no-title-animation">Panzer IT downloads, product presentations <br /> and technical resources</h2>
+                                      <div className="sub-title-2 text-theme">Resources</div>
+                                      <h2 className="sec-title no-title-animation">Panzer IT resources, product presentations <br /> and technical resources</h2>
                                   </div>
                                   
                               </div>
                           </div>
                       </div>
-                      <div className="row gy-25 download-resource-row">
+                      <div className="row gy-25 resource-row">
                           <div className="col-lg-4 col-md-6">
                               <div className="service-box-five">
                                   <div className="icon-top">
@@ -37,10 +37,10 @@ export default function Page() {
                                       <h4>Panzer IT Product <br /> Presentation</h4>
                                   </div>
                                   <p>Company overview, mission statement, solution portfolio and associate brand highlights from Panzer IT.</p>
-                                  <Link href="https://panzerit.com/wp-content/uploads/2025/01/PIT_Presentation_online.pdf" className="theme-btn style2 br-30">
+                                  <Link href="https://panzerit.com/wp-content/uploads/2025/01/PIT_Presentation_online.pdf" className="theme-btn style2 br-30" target="_blank" rel="noopener noreferrer">
                                           <span className="link-effect">
-                                              <span className="effect-1">Download PDF</span>
-                                              <span className="effect-1">Download PDF</span>
+                                              <span className="effect-1">View Resources</span>
+                                              <span className="effect-1">View Resources</span>
                                           </span>
                                           <span className="arrow-all-2">
                                               <i>
@@ -67,10 +67,10 @@ export default function Page() {
                                       <h4>Falcongaze SecureTower <br /> Presentation</h4>
                                   </div>
                                   <p>Workflow control, insider threat protection and data leak prevention presentation from Falcongaze SecureTower.</p>
-                                  <Link href="https://panzerit.com/wp-content/uploads/2018/09/Falcongaze-SecureTower.-Workflows-control-and-Insider-Threat-Protection.pdf" className="theme-btn style2 br-30">
+                                  <Link href="https://panzerit.com/wp-content/uploads/2018/09/Falcongaze-SecureTower.-Workflows-control-and-Insider-Threat-Protection.pdf" className="theme-btn style2 br-30" target="_blank" rel="noopener noreferrer">
                                           <span className="link-effect">
-                                              <span className="effect-1">Download PDF</span>
-                                              <span className="effect-1">Download PDF</span>
+                                              <span className="effect-1">View Resources</span>
+                                              <span className="effect-1">View Resources</span>
                                           </span>
                                           <span className="arrow-all-2">
                                               <i>
@@ -97,10 +97,10 @@ export default function Page() {
                                       <h4>Netop Remote Control <br /> Overview</h4>
                                   </div>
                                   <p>General presentation for secure remote access, remote support and cross-platform device connectivity.</p>
-                                  <Link href="https://panzerit.com/wp-content/uploads/2018/09/NRC-General-Presentation.pdf" className="theme-btn style2 br-30">
+                                  <Link href="https://panzerit.com/wp-content/uploads/2018/09/NRC-General-Presentation.pdf" className="theme-btn style2 br-30" target="_blank" rel="noopener noreferrer">
                                           <span className="link-effect">
-                                              <span className="effect-1">Download PDF</span>
-                                              <span className="effect-1">Download PDF</span>
+                                              <span className="effect-1">View Resources</span>
+                                              <span className="effect-1">View Resources</span>
                                           </span>
                                           <span className="arrow-all-2">
                                               <i>
@@ -127,10 +127,10 @@ export default function Page() {
                                       <h4>Heimdal Product <br /> Presentation</h4>
                                   </div>
                                   <p>Advance persistent threat prevention, patch management and real-time cloud protection overview.</p>
-                                  <Link href="https://panzerit.com/wp-content/uploads/2018/09/Heimdal-Product-Presentation.pdf" className="theme-btn style2 br-30">
+                                  <Link href="https://panzerit.com/wp-content/uploads/2018/09/Heimdal-Product-Presentation.pdf" className="theme-btn style2 br-30" target="_blank" rel="noopener noreferrer">
                                           <span className="link-effect">
-                                              <span className="effect-1">Download PDF</span>
-                                              <span className="effect-1">Download PDF</span>
+                                              <span className="effect-1">View Resources</span>
+                                              <span className="effect-1">View Resources</span>
                                           </span>
                                           <span className="arrow-all-2">
                                               <i>
@@ -157,10 +157,10 @@ export default function Page() {
                                       <h4>Scopd Manual <br /> v10.60</h4>
                                   </div>
                                   <p>Technical manual covering search, indexing, audit options, reporting and management functions.</p>
-                                  <Link href="https://panzerit.com/techteam/Scopd_Manual9.pdf" className="theme-btn style2 br-30">
+                                  <Link href="https://panzerit.com/techteam/Scopd_Manual9.pdf" className="theme-btn style2 br-30" target="_blank" rel="noopener noreferrer">
                                           <span className="link-effect">
-                                              <span className="effect-1">Download PDF</span>
-                                              <span className="effect-1">Download PDF</span>
+                                              <span className="effect-1">View Resources</span>
+                                              <span className="effect-1">View Resources</span>
                                           </span>
                                           <span className="arrow-all-2">
                                               <i>
@@ -187,10 +187,10 @@ export default function Page() {
                                       <h4>Emsisoft Anti-Malware <br /> Free Trial</h4>
                                   </div>
                                   <p>30-day free trial resources with 32-bit MSI, 64-bit MSI and combined EXE options listed by Panzer IT.</p>
-                                  <Link href="https://panzerit.com/brands/emsisoft-most-advance-malware-protection/" className="theme-btn style2 br-30">
+                                  <Link href="https://panzerit.com/brands/emsisoft-most-advance-malware-protection/" className="theme-btn style2 br-30" target="_blank" rel="noopener noreferrer">
                                           <span className="link-effect">
-                                              <span className="effect-1">Open Resource</span>
-                                              <span className="effect-1">Open Resource</span>
+                                              <span className="effect-1">View Resources</span>
+                                              <span className="effect-1">View Resources</span>
                                           </span>
                                           <span className="arrow-all-2">
                                               <i>
@@ -211,7 +211,7 @@ export default function Page() {
 
 
       		
-              <section className="tv-choose-section style-6 space bg-dark position-relative download-page-choose">
+              <section className="tv-choose-section style-6 space bg-dark position-relative resource-page-choose">
                   <div className="bg image"><Image src="/assets/images/choose/hm8-bg01.webp" alt="" width={1920} height={886} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
                   <div className="container">
                       

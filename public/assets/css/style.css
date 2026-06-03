@@ -10602,7 +10602,7 @@ background: var(--light-color);
   flex-direction: column;
   gap: 14px;
   padding-bottom: 16px;
-  margin: 20px 0 18px;
+  margin: 10px 0 1px;
 }
 .footer-section.panzer-compact-footer .footer-brand .contact-info .contact-item {
   display: grid;
@@ -10635,16 +10635,22 @@ background: var(--light-color);
 }
 .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .brand-info {
   display: grid;
-  grid-template-columns: 190px minmax(300px, 380px) minmax(180px, 1fr);
+  grid-template-columns: minmax(220px, 1fr) minmax(320px, 480px);
   grid-template-areas:
-    "logo newsletter social"
-    "contact contact contact";
+    "brand newsletter"
+    "contact contact";
   align-items: start;
   column-gap: clamp(24px, 3vw, 44px);
   row-gap: 26px;
 }
+.footer-section.panzer-compact-footer .footer-brand.col-lg-12 .panzer-footer-brand-block {
+  grid-area: brand;
+  display: grid;
+  gap: 22px;
+  justify-items: start;
+}
 .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .logo {
-  grid-area: logo;
+  grid-area: auto;
 }
 .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .contact-info {
   display: grid;
@@ -10689,15 +10695,16 @@ background: var(--light-color);
   overflow-wrap: anywhere;
 }
 .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .social-links {
-  grid-area: social;
-  justify-content: flex-end;
-  align-self: end;
+  grid-area: auto;
+  justify-content: flex-start;
+  align-self: start;
   padding-top: 0;
 }
 .panzer-footer-newsletter {
   grid-area: newsletter;
   width: 100%;
   max-width: none;
+  justify-self: end;
 }
 .panzer-footer-newsletter .title {
   margin: 0 0 10px;
@@ -10740,24 +10747,30 @@ background: var(--light-color);
 }
 @media (max-width: 1199px) {
   .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .brand-info {
-    grid-template-columns: 170px minmax(300px, 460px) minmax(120px, 1fr);
+    grid-template-columns: minmax(200px, 1fr) minmax(300px, 430px);
     grid-template-areas:
-      "logo newsletter social"
-      "contact contact contact";
+      "brand newsletter"
+      "contact contact";
   }
   .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .social-links {
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
   .panzer-footer-newsletter {
-    justify-self: stretch;
-    max-width: 460px;
+    justify-self: end;
+    max-width: 430px;
   }
 }
 @media (max-width: 991px) {
   .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .brand-info {
     grid-template-columns: 1fr;
-    grid-template-areas: "logo" "contact" "newsletter" "social";
+    grid-template-areas: "brand" "newsletter" "contact";
     gap: 18px;
+  }
+  .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .panzer-footer-brand-block {
+    justify-items: baseline;
+  }
+  .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .social-links {
+    justify-content: center;
   }
   .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .contact-info {
     grid-template-columns: 1fr;
@@ -10765,7 +10778,7 @@ background: var(--light-color);
     padding-top: 0;
   }
   .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .contact-info .contact-item {
-    justify-items: center;
+    justify-items: baseline;
     text-align: center;
   }
   .footer-section.panzer-compact-footer .footer-brand .contact-info .contact-item .panzer-footer-addresses {
@@ -10774,6 +10787,7 @@ background: var(--light-color);
   }
   .panzer-footer-newsletter {
     justify-self: center;
+    max-width: 520px;
   }
 }
 .footer-section.panzer-compact-footer .footer-widget .title {
@@ -11065,24 +11079,49 @@ background: var(--light-color);
   margin-top: clamp(18px, 2vw, 26px);
 }
 
-.panzer-resource-breadcrumb-nav a {
+.panzer-resource-breadcrumb-nav ol {
   display: inline-flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
   min-height: 46px;
   max-width: 100%;
-  padding: 0 22px;
+  margin: 0;
+  padding: 9px 22px;
   border-radius: 999px;
   color: #ffffff;
   background: #1053f3;
   box-shadow: 0 14px 28px rgba(16, 83, 243, 0.24);
   font-size: 15px;
-  line-height: 1;
+  line-height: 1.15;
   font-weight: 800;
+  list-style: none;
 }
 
-.panzer-resource-breadcrumb-nav a span {
+.panzer-resource-breadcrumb-nav li {
+  display: inline-flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.panzer-resource-breadcrumb-nav li + li::before {
+  flex: 0 0 auto;
+  margin-right: 10px;
+  color: rgba(255, 255, 255, 0.82);
+  content: "/";
+}
+
+.panzer-resource-breadcrumb-nav a,
+.panzer-resource-breadcrumb-nav span {
+  display: inline-flex;
+  align-items: center;
+  min-width: 0;
+  color: inherit;
+}
+
+.panzer-resource-breadcrumb-nav a span,
+.panzer-resource-breadcrumb-nav li > span {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -11090,6 +11129,7 @@ background: var(--light-color);
 
 .panzer-resource-breadcrumb-nav a i {
   flex: 0 0 auto;
+  margin-right: 8px;
   font-size: 14px;
 }
 
@@ -11131,6 +11171,7 @@ background: var(--light-color);
   }
 
   .panzer-resource-breadcrumb-copy {
+    padding: clamp(34px, 6vw, 52px) clamp(20px, 5vw, 44px) 22px;
     text-align: center;
   }
 
@@ -11143,7 +11184,7 @@ background: var(--light-color);
   }
 
   .panzer-resource-breadcrumb-visual {
-    min-height: clamp(220px, 48vw, 340px);
+    min-height: clamp(210px, 42vw, 320px);
   }
 
   .panzer-resource-breadcrumb-visual::before {
@@ -11154,7 +11195,7 @@ background: var(--light-color);
 
   .panzer-resource-breadcrumb-visual img {
     left: 50%;
-    width: min(84vw, 560px);
+    width: min(82vw, 540px);
     transform: translate(-50%, -50%);
   }
 }
@@ -11169,7 +11210,7 @@ background: var(--light-color);
   }
 
   .panzer-resource-breadcrumb-copy {
-    padding: 30px 18px 20px;
+    padding: 28px 16px 18px;
   }
 
   .panzer-resource-breadcrumb-pill {
@@ -11182,15 +11223,20 @@ background: var(--light-color);
     font-size: clamp(30px, 10vw, 40px);
   }
 
-  .panzer-resource-breadcrumb-nav a {
+  .panzer-resource-breadcrumb-nav ol {
     width: 100%;
     min-height: 44px;
-    padding: 0 16px;
+    padding: 10px 16px;
     font-size: 13px;
+    border-radius: 22px;
   }
 
   .panzer-resource-breadcrumb-visual {
-    min-height: 190px;
+    min-height: 170px;
+  }
+
+  .panzer-resource-breadcrumb-visual img {
+    width: min(94vw, 430px);
   }
 }
 
@@ -16888,7 +16934,7 @@ transition: 0.3s;
 .service-box-five:hover .theme-btn .arrow-all-2 i svg path {
   fill: var(--white-color);
 }
-.download-page .download-resource-row .service-box-five:hover {
+.resource-page .resource-row .service-box-five:hover {
   background:
     radial-gradient(circle at 10% 18%, rgba(255, 255, 255, 0.95) 0 16%, rgba(255, 255, 255, 0) 34%),
     radial-gradient(circle at 90% 0%, rgba(220, 246, 255, 0.95) 0 20%, rgba(220, 246, 255, 0) 46%),
@@ -16896,26 +16942,26 @@ transition: 0.3s;
   border: none;
   box-shadow: 0 24px 60px rgba(47, 99, 221, 0.16);
 }
-.download-page .download-resource-row .service-box-five:hover .icon-top .icon {
+.resource-page .resource-row .service-box-five:hover .icon-top .icon {
   background: rgba(255, 255, 255, 0.78);
 }
-.download-page .download-resource-row .service-box-five:hover .icon-top .icon span,
-.download-page .download-resource-row .service-box-five:hover .service-top h4,
-.download-page .download-resource-row .service-box-five:hover p,
-.download-page .download-resource-row .service-box-five:hover .theme-btn {
+.resource-page .resource-row .service-box-five:hover .icon-top .icon span,
+.resource-page .resource-row .service-box-five:hover .service-top h4,
+.resource-page .resource-row .service-box-five:hover p,
+.resource-page .resource-row .service-box-five:hover .theme-btn {
   color: var(--dark-color);
 }
-.download-page .download-resource-row .service-box-five:hover .service-top .logo {
+.resource-page .resource-row .service-box-five:hover .service-top .logo {
   animation: none;
 }
-.download-page .download-resource-row .service-box-five:hover .service-top .logo img {
+.resource-page .resource-row .service-box-five:hover .service-top .logo img {
   filter: none;
 }
-.download-page .download-resource-row .service-box-five:hover .theme-btn {
+.resource-page .resource-row .service-box-five:hover .theme-btn {
   background-color: rgba(255, 255, 255, 0.44);
   border-color: rgba(47, 99, 221, 0.18);
 }
-.download-page .download-resource-row .service-box-five:hover .theme-btn .arrow-all-2 i svg path {
+.resource-page .resource-row .service-box-five:hover .theme-btn .arrow-all-2 i svg path {
   fill: #061153;
 }
 
@@ -17459,7 +17505,7 @@ transition: 0.3s;
   margin-bottom: 38px;
 }
 
-.service-download-btn .theme-btn {
+.service-resource-btn .theme-btn {
   text-align: left;
   justify-content: start;
   border-radius: 7px;
@@ -17467,20 +17513,20 @@ transition: 0.3s;
   /* Extra small devices */
 }
 @media (min-width: 1024px) and (max-width: 1280px) {
-  .service-download-btn .theme-btn {
+  .service-resource-btn .theme-btn {
     padding: 13px 10px !important;
   }
 }
 @media (max-width: 375px) {
-  .service-download-btn .theme-btn {
+  .service-resource-btn .theme-btn {
     padding-right: 0;
     padding-left: 10px;
   }
 }
-.service-download-btn .theme-btn.btn-style-2 {
+.service-resource-btn .theme-btn.btn-style-2 {
   color: var(--white-color);
 }
-.service-download-btn .theme-btn.btn-style-2:hover {
+.service-resource-btn .theme-btn.btn-style-2:hover {
   color: var(--white-color);
 }
 
@@ -23918,10 +23964,8 @@ transition: all 0.4s ease 0s;
   background-color: var(--bs-border-color8);
 }
 .tv-cta-section.inner .image-grid .image-box {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px;
-  max-width: 560px;
+  display: block;
+  max-width: 520px;
   width: 100%;
 }
 .tv-cta-section.inner .image-grid .image-box .image-item {
@@ -23930,6 +23974,7 @@ transition: all 0.4s ease 0s;
   background-color: transparent;
   border-radius: 18px;
   overflow: hidden;
+  box-shadow: 0 24px 60px rgba(6, 17, 83, 0.14);
 }
 .tv-cta-section.inner .image-grid .image-box .image-item img {
   display: block;
@@ -23944,8 +23989,7 @@ transition: all 0.4s ease 0s;
     margin-top: 20px;
   }
   .tv-cta-section.inner .image-grid .image-box {
-    grid-template-columns: 1fr;
-    gap: 14px;
+    max-width: 100%;
   }
 }
 
@@ -66805,17 +66849,20 @@ button *,
                 }
 
                 .panzer-page-home .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .brand-info {
-                    grid-template-columns: 190px minmax(300px, 380px) minmax(180px, 1fr);
+                    grid-template-columns: minmax(220px, 1fr) minmax(320px, 480px);
                     grid-template-areas:
-                        "logo newsletter social"
-                        "contact contact contact";
+                        "brand newsletter"
+                        "contact contact";
                     column-gap: clamp(24px, 3vw, 44px);
                     row-gap: 26px;
                     align-items: start;
                 }
 
-                .panzer-page-home .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .logo {
-                    grid-area: logo;
+                .panzer-page-home .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .panzer-footer-brand-block {
+                    grid-area: brand;
+                    display: grid;
+                    gap: 22px;
+                    justify-items: start;
                 }
 
                 .panzer-page-home .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .contact-info {
@@ -66850,9 +66897,9 @@ button *,
                 }
 
                 .panzer-page-home .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .social-links {
-                    grid-area: social;
-                    justify-content: flex-end;
-                    align-self: end;
+                    grid-area: auto;
+                    justify-content: flex-start;
+                    align-self: start;
                 }
 
                 .panzer-page-home .panzer-image-footer {
@@ -66961,19 +67008,19 @@ button *,
 
                 @media (max-width: 1199px) {
                     .panzer-page-home .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .brand-info {
-                        grid-template-columns: 170px minmax(300px, 460px) minmax(120px, 1fr);
+                        grid-template-columns: minmax(200px, 1fr) minmax(300px, 430px);
                         grid-template-areas:
-                            "logo newsletter social"
-                            "contact contact contact";
+                            "brand newsletter"
+                            "contact contact";
                     }
 
                     .panzer-page-home .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .social-links {
-                        justify-content: flex-end;
+                        justify-content: flex-start;
                     }
 
                     .panzer-page-home .panzer-footer-newsletter {
-                        justify-self: stretch;
-                        max-width: 460px;
+                        justify-self: end;
+                        max-width: 430px;
                     }
                 }
 
@@ -66985,14 +67032,22 @@ button *,
                     .panzer-page-home .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .brand-info {
                         grid-template-columns: 1fr;
                         grid-template-areas:
-                            "logo"
-                            "contact"
+                            "brand"
                             "newsletter"
-                            "social";
+                            "contact";
+                    }
+
+                    .panzer-page-home .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .panzer-footer-brand-block {
+                        justify-items: center;
+                    }
+
+                    .panzer-page-home .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .social-links {
+                        justify-content: center;
                     }
 
                     .panzer-page-home .panzer-footer-newsletter {
                         justify-self: center;
+                        max-width: 520px;
                     }
 
                     .panzer-page-home .footer-section.panzer-compact-footer .footer-brand.col-lg-12 .contact-info {
@@ -70843,33 +70898,33 @@ button *,
                   background-color: var(--theme-color);
               }
 
-/* src/app/download/page.tsx block 1 */
-.panzer-page-download .panzer-solution-overview {
+/* src/app/resources/page.tsx block 1 */
+.panzer-page-resources .panzer-solution-overview {
                   padding: 32px;
                   border-radius: 30px;
                   background: linear-gradient(180deg, #061153 0%, #0b235f 100%);
                   box-shadow: 0 24px 80px rgba(6, 17, 83, 0.14);
               }
 
-              .panzer-page-download .panzer-solution-overview .title {
+              .panzer-page-resources .panzer-solution-overview .title {
                   margin-bottom: 14px;
                   color: #fff;
                   font-size: 28px;
                   line-height: 1.25;
               }
 
-              .panzer-page-download .panzer-solution-overview p, .panzer-page-download .panzer-solution-overview li, .panzer-page-download .panzer-solution-overview .panzer-solution-stat-label {
+              .panzer-page-resources .panzer-solution-overview p, .panzer-page-resources .panzer-solution-overview li, .panzer-page-resources .panzer-solution-overview .panzer-solution-stat-label {
                   color: rgba(255, 255, 255, 0.82);
               }
 
-              .panzer-page-download .panzer-solution-stat-grid {
+              .panzer-page-resources .panzer-solution-stat-grid {
                   display: grid;
                   grid-template-columns: repeat(2, minmax(0, 1fr));
                   gap: 16px;
                   margin: 28px 0;
               }
 
-              .panzer-page-download .panzer-solution-stat {
+              .panzer-page-resources .panzer-solution-stat {
                   padding: 20px;
                   border: 1px solid rgba(255, 255, 255, 0.12);
                   border-radius: 22px;
@@ -70877,37 +70932,37 @@ button *,
                   backdrop-filter: blur(10px);
               }
 
-              .panzer-page-download .panzer-solution-stat strong {
+              .panzer-page-resources .panzer-solution-stat strong {
                   display: block;
                   color: #fff;
                   font-size: 30px;
                   line-height: 1;
               }
 
-              .panzer-page-download .panzer-solution-stat-label {
+              .panzer-page-resources .panzer-solution-stat-label {
                   display: block;
                   margin-top: 8px;
                   font-size: 14px;
                   line-height: 1.5;
               }
 
-              .panzer-page-download .panzer-solution-list {
+              .panzer-page-resources .panzer-solution-list {
                   margin: 0;
                   padding: 0;
                   list-style: none;
               }
 
-              .panzer-page-download .panzer-solution-list li {
+              .panzer-page-resources .panzer-solution-list li {
                   position: relative;
                   padding-left: 28px;
                   margin-bottom: 12px;
               }
 
-              .panzer-page-download .panzer-solution-list li:last-child {
+              .panzer-page-resources .panzer-solution-list li:last-child {
                   margin-bottom: 0;
               }
 
-              .panzer-page-download .panzer-solution-list li::before {
+              .panzer-page-resources .panzer-solution-list li::before {
                   content: "\\f058";
                   position: absolute;
                   top: 1px;
@@ -70917,52 +70972,52 @@ button *,
                   font-weight: 900;
               }
 
-              .panzer-page-download .panzer-solution-image img {
+              .panzer-page-resources .panzer-solution-image img {
                   width: 100%;
                   border-radius: 30px;
               }
 
-              .panzer-page-download .solution-page .tv-callus-section .title-wrap {
+              .panzer-page-resources .solution-page .tv-callus-section .title-wrap {
                   max-width: 820px;
                   margin: 0 auto;
                   text-align: center;
               }
 
-              .panzer-page-download .download-page .tv-callus-section .title-wrap.white.three {
+              .panzer-page-resources .resource-page .tv-callus-section .title-wrap.white.three {
                   margin: 0;
                   text-align: left;
               }
 
-              .panzer-page-download .solution-page .tv-callus-section .callus-contact {
+              .panzer-page-resources .solution-page .tv-callus-section .callus-contact {
                   justify-content: center;
                   text-align: center;
               }
 
-              .panzer-page-download .solution-page .tv-service-section.style-5 .service-title-area {
+              .panzer-page-resources .solution-page .tv-service-section.style-5 .service-title-area {
                   gap: 24px;
               }
 
-              .panzer-page-download .solution-page .tv-service-section.style-5 .service-box-five {
+              .panzer-page-resources .solution-page .tv-service-section.style-5 .service-box-five {
                   height: 100%;
               }
 
-              .panzer-page-download .solution-page .tv-service-section.style-5 .service-top h4, .panzer-page-download .solution-page .tv-choose-section.style-6 .choose-box .text h6 {
+              .panzer-page-resources .solution-page .tv-service-section.style-5 .service-top h4, .panzer-page-resources .solution-page .tv-choose-section.style-6 .choose-box .text h6 {
                   overflow-wrap: anywhere;
               }
 
-              .panzer-page-download .solution-page .tv-service-section.style-5 .theme-btn, .panzer-page-download .solution-page .tv-service-section.style-5 .theme-btn.style2 {
+              .panzer-page-resources .solution-page .tv-service-section.style-5 .theme-btn, .panzer-page-resources .solution-page .tv-service-section.style-5 .theme-btn.style2 {
                   max-width: 100%;
               }
 
-              .panzer-page-download .solution-page .tv-choose-section.style-6 .choose-left, .panzer-page-download .solution-page .tv-choose-section.style-6 .choose-right {
+              .panzer-page-resources .solution-page .tv-choose-section.style-6 .choose-left, .panzer-page-resources .solution-page .tv-choose-section.style-6 .choose-right {
                   height: 100%;
               }
 
-              .panzer-page-download .solution-page .tv-choose-section.style-6 .choose-box {
+              .panzer-page-resources .solution-page .tv-choose-section.style-6 .choose-box {
                   min-height: 96px;
               }
 
-              .panzer-page-download .download-resource-row .service-box-five:hover, .panzer-page-download .download-resource-row .service-box-five:focus-within {
+              .panzer-page-resources .resource-row .service-box-five:hover, .panzer-page-resources .resource-row .service-box-five:focus-within {
                   background:
                       radial-gradient(circle at 10% 18%, rgba(255, 255, 255, 0.96) 0 16%, rgba(255, 255, 255, 0) 34%),
                       radial-gradient(circle at 88% 0%, rgba(220, 246, 255, 0.96) 0 20%, rgba(220, 246, 255, 0) 46%),
@@ -70971,58 +71026,125 @@ button *,
                   box-shadow: 0 24px 60px rgba(47, 99, 221, 0.16);
               }
 
-              .panzer-page-download .download-resource-row .service-box-five:hover .service-top h4, .panzer-page-download .download-resource-row .service-box-five:focus-within .service-top h4 {
+              .panzer-page-resources .resource-row .service-box-five:hover .service-top h4, .panzer-page-resources .resource-row .service-box-five:focus-within .service-top h4 {
                   color: var(--theme-color) !important;
               }
 
-              .panzer-page-download .download-resource-row .service-box-five:hover p, .panzer-page-download .download-resource-row .service-box-five:focus-within p {
+              .panzer-page-resources .resource-row .service-box-five:hover p, .panzer-page-resources .resource-row .service-box-five:focus-within p {
                   color: var(--gray-color2) !important;
               }
 
-              .panzer-page-download .download-resource-row .service-box-five:hover .service-top .logo, .panzer-page-download .download-resource-row .service-box-five:focus-within .service-top .logo {
+              .panzer-page-resources .resource-row .service-box-five:hover .service-top .logo, .panzer-page-resources .resource-row .service-box-five:focus-within .service-top .logo {
                   animation: none !important;
               }
 
-              .panzer-page-download .download-resource-row .service-box-five:hover .service-top .logo img, .panzer-page-download .download-resource-row .service-box-five:focus-within .service-top .logo img {
+              .panzer-page-resources .resource-row .service-box-five:hover .service-top .logo img, .panzer-page-resources .resource-row .service-box-five:focus-within .service-top .logo img {
                   filter: none !important;
               }
 
-              .panzer-page-download .download-resource-row .service-box-five:hover .theme-btn, .panzer-page-download .download-resource-row .service-box-five:focus-within .theme-btn {
+              .panzer-page-resources .resource-row .service-box-five:hover .theme-btn, .panzer-page-resources .resource-row .service-box-five:focus-within .theme-btn {
                   background-color: rgba(255, 255, 255, 0.44) !important;
                   border-color: rgba(47, 99, 221, 0.18) !important;
                   color: var(--theme-color) !important;
               }
 
-              .panzer-page-download .download-resource-row .service-box-five:hover .theme-btn .arrow-all-2 i svg path, .panzer-page-download .download-resource-row .service-box-five:focus-within .theme-btn .arrow-all-2 i svg path {
+              .panzer-page-resources .resource-row .service-box-five:hover .theme-btn .arrow-all-2 i svg path, .panzer-page-resources .resource-row .service-box-five:focus-within .theme-btn .arrow-all-2 i svg path {
                   fill: #061153 !important;
               }
 
-              .panzer-page-download .download-page-choose.tv-choose-section.style-6 .choose-box, .panzer-page-download .download-page-choose.tv-choose-section.style-6 .choose-box:hover {
-                  background: var(--bs-bg-color5);
-                  border-color: var(--bs-border-color7);
-              }
-
-              .panzer-page-download .download-page-choose.tv-choose-section.style-6 .choose-box, .panzer-page-download .download-page-choose.tv-choose-section.style-6 .choose-box * {
+              .panzer-page-resources .resource-row .theme-btn.style2,
+              .panzer-page-resources .resource-row .theme-btn.style2 * {
                   transition: none !important;
               }
 
-              .panzer-page-download .download-page-choose.tv-choose-section.style-6 .choose-box::before, .panzer-page-download .download-page-choose.tv-choose-section.style-6 .choose-box:hover::before {
+              .panzer-page-resources .resource-row .theme-btn.style2::before,
+              .panzer-page-resources .resource-row .theme-btn.style2:hover::before {
                   display: none !important;
                   animation: none !important;
               }
 
-              .panzer-page-download .download-page-choose.tv-choose-section.style-6 .choose-box:hover .icon img {
+              .panzer-page-resources .resource-row .theme-btn.style2:hover,
+              .panzer-page-resources .resource-row .service-box-five:hover .theme-btn.style2,
+              .panzer-page-resources .resource-row .service-box-five:focus-within .theme-btn.style2 {
+                  background-color: rgba(232, 237, 250, 0) !important;
+                  border-color: var(--bs-border-color) !important;
+                  color: var(--dark-color) !important;
+              }
+
+              .panzer-page-resources .resource-row .theme-btn.style2 .link-effect .effect-1,
+              .panzer-page-resources .resource-row .theme-btn.style2:hover .link-effect .effect-1,
+              .panzer-page-resources .resource-row .theme-btn.style2 .link-effect:hover .effect-1 {
+                  top: 0 !important;
+                  transform: none !important;
+              }
+
+              .panzer-page-resources .resource-row .theme-btn.style2 .link-effect .effect-1:nth-child(2),
+              .panzer-page-resources .resource-row .theme-btn.style2 .arrow-all-2 i svg:nth-child(2) {
+                  display: none !important;
+              }
+
+              .panzer-page-resources .resource-row .theme-btn.style2 .arrow-all-2 i svg:first-child,
+              .panzer-page-resources .resource-row .theme-btn.style2:hover .arrow-all-2 i svg:first-child {
+                  opacity: 1 !important;
+                  transform: translateY(-1px) !important;
+                  visibility: visible !important;
+              }
+
+              .panzer-page-resources .resource-row .theme-btn.style2 .arrow-all-2 i svg path,
+              .panzer-page-resources .resource-row .theme-btn.style2:hover .arrow-all-2 i svg path {
+                  fill: #061153 !important;
+              }
+
+              .panzer-page-resources .resource-page-choose.tv-choose-section.style-6 {
+                  background: #020611 !important;
+                  overflow: hidden;
+              }
+
+              .panzer-page-resources .resource-page-choose.tv-choose-section.style-6 .bg.image {
+                  inset: 0;
+                  height: 100%;
+                  opacity: 1;
+              }
+
+              .panzer-page-resources .resource-page-choose.tv-choose-section.style-6 .bg.image img {
+                  width: 100% !important;
+                  height: 100% !important;
+                  object-fit: cover;
+                  object-position: center;
+              }
+
+              .panzer-page-resources .resource-page-choose.tv-choose-section.style-6 + .tv-contact-section {
+                  background: #eef3ff;
+                  position: relative;
+                  z-index: 1;
+              }
+
+              .panzer-page-resources .resource-page-choose.tv-choose-section.style-6 .choose-box, .panzer-page-resources .resource-page-choose.tv-choose-section.style-6 .choose-box:hover {
+                  background: var(--bs-bg-color5);
+                  border-color: var(--bs-border-color7);
+              }
+
+              .panzer-page-resources .resource-page-choose.tv-choose-section.style-6 .choose-box, .panzer-page-resources .resource-page-choose.tv-choose-section.style-6 .choose-box * {
+                  transition: none !important;
+              }
+
+              .panzer-page-resources .resource-page-choose.tv-choose-section.style-6 .choose-box::before, .panzer-page-resources .resource-page-choose.tv-choose-section.style-6 .choose-box:hover::before {
+                  display: none !important;
+                  animation: none !important;
+              }
+
+              .panzer-page-resources .resource-page-choose.tv-choose-section.style-6 .choose-box:hover .icon img {
                   animation: none !important;
                   filter: none !important;
                   transform: none !important;
               }
 
-              .panzer-page-download .solution-page .tv-contact-section.style-4 .contact-left-thumb img {
+              .panzer-page-resources .solution-page .tv-contact-section.style-4 .contact-left-thumb img {
                   width: 100%;
                   height: auto;
               }
 
-              .panzer-page-download .loading-screen {
+              .panzer-page-resources .loading-screen {
                   position: fixed;
                   inset: 0;
                   display: flex;
@@ -71034,11 +71156,11 @@ button *,
                   overflow: hidden;
               }
 
-              .panzer-page-download .loading-screen::before, .panzer-page-download .loading-screen::after {
+              .panzer-page-resources .loading-screen::before, .panzer-page-resources .loading-screen::after {
                   display: none;
               }
 
-              .panzer-page-download .loading-screen .preloader-close {
+              .panzer-page-resources .loading-screen .preloader-close {
                   appearance: none;
                   position: fixed;
                   top: 22px;
@@ -71060,13 +71182,13 @@ button *,
                   transition: background 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
               }
 
-              .panzer-page-download .loading-screen .preloader-close:hover {
+              .panzer-page-resources .loading-screen .preloader-close:hover {
                   transform: translateY(-2px);
                   background: rgba(255, 255, 255, 0.14);
                   border-color: rgba(255, 255, 255, 0.22);
               }
 
-              .panzer-page-download .panzer-preloader-inner {
+              .panzer-page-resources .panzer-preloader-inner {
                   position: relative;
                   z-index: 2;
                   display: flex;
@@ -71077,7 +71199,7 @@ button *,
                   padding: 0;
               }
 
-              .panzer-page-download .panzer-preloader-orbit {
+              .panzer-page-resources .panzer-preloader-orbit {
                   position: absolute;
                   top: 50%;
                   left: 50%;
@@ -71086,7 +71208,7 @@ button *,
                   pointer-events: none;
               }
 
-              .panzer-page-download .panzer-preloader-orbit.one {
+              .panzer-page-resources .panzer-preloader-orbit.one {
                   width: 220px;
                   height: 220px;
                   border: 4px solid rgba(255, 255, 255, 0.1);
@@ -71096,11 +71218,11 @@ button *,
                   animation: panzer-preloader-spin 1.15s linear infinite;
               }
 
-              .panzer-page-download .panzer-preloader-orbit.two {
+              .panzer-page-resources .panzer-preloader-orbit.two {
                   display: none;
               }
 
-              .panzer-page-download .panzer-preloader-logo-wrap {
+              .panzer-page-resources .panzer-preloader-logo-wrap {
                   position: absolute;
                   top: 50%;
                   left: 50%;
@@ -71118,7 +71240,7 @@ button *,
                   box-shadow: none;
               }
 
-              .panzer-page-download .panzer-preloader-logo {
+              .panzer-page-resources .panzer-preloader-logo {
                   width: min(150px, 100%);
                   height: auto;
                   object-fit: contain;
@@ -71126,11 +71248,11 @@ button *,
                   animation: none;
               }
 
-              .panzer-page-download .panzer-preloader-progress {
+              .panzer-page-resources .panzer-preloader-progress {
                   display: none;
               }
 
-              .panzer-page-download .panzer-preloader-progress span {
+              .panzer-page-resources .panzer-preloader-progress span {
                   display: none;
               }
 
@@ -71145,67 +71267,67 @@ button *,
               }
 
               @media (max-width: 767px) {
-                  .panzer-page-download .panzer-solution-overview {
+                  .panzer-page-resources .panzer-solution-overview {
                       padding: 24px;
                   }
 
-                  .panzer-page-download .panzer-solution-stat-grid {
+                  .panzer-page-resources .panzer-solution-stat-grid {
                       grid-template-columns: 1fr;
                   }
 
-                  .panzer-page-download .solution-page .tv-callus-section .callus-inner {
+                  .panzer-page-resources .solution-page .tv-callus-section .callus-inner {
                       padding-top: 70px;
                       padding-bottom: 70px;
                   }
 
-                  .panzer-page-download .solution-page .tv-callus-section .sec-title br, .panzer-page-download .solution-page .tv-service-section.style-5 .sec-title br, .panzer-page-download .solution-page .tv-choose-section.style-6 .sec-title br {
+                  .panzer-page-resources .solution-page .tv-callus-section .sec-title br, .panzer-page-resources .solution-page .tv-service-section.style-5 .sec-title br, .panzer-page-resources .solution-page .tv-choose-section.style-6 .sec-title br {
                       display: none;
                   }
 
-                  .panzer-page-download .solution-page .tv-service-section.style-5 .service-title-area {
+                  .panzer-page-resources .solution-page .tv-service-section.style-5 .service-title-area {
                       text-align: center;
                   }
 
-                  .panzer-page-download .solution-page .tv-service-section.style-5 .service-btn {
+                  .panzer-page-resources .solution-page .tv-service-section.style-5 .service-btn {
                       width: 100%;
                       justify-content: center;
                   }
 
-                  .panzer-page-download .solution-page .tv-service-section.style-5 .service-btn .theme-btn, .panzer-page-download .solution-page .tv-service-section.style-5 .service-box-five .theme-btn {
+                  .panzer-page-resources .solution-page .tv-service-section.style-5 .service-btn .theme-btn, .panzer-page-resources .solution-page .tv-service-section.style-5 .service-box-five .theme-btn {
                       width: 100%;
                       justify-content: center;
                       text-align: center;
                   }
 
-                  .panzer-page-download .solution-page .tv-service-section.style-5 .service-box-five {
+                  .panzer-page-resources .solution-page .tv-service-section.style-5 .service-box-five {
                       padding: 28px 22px;
                   }
 
-                  .panzer-page-download .solution-page .tv-choose-section.style-6 .choose-box {
+                  .panzer-page-resources .solution-page .tv-choose-section.style-6 .choose-box {
                       min-height: auto;
                       margin-bottom: 18px !important;
                   }
 
-                  .panzer-page-download .solution-page .tv-contact-section.style-4 .contact-form .form-grid {
+                  .panzer-page-resources .solution-page .tv-contact-section.style-4 .contact-form .form-grid {
                       grid-template-columns: 1fr;
                   }
               }
 
               @media (max-width: 991px) {
-                  .panzer-page-download .solution-page .tv-service-section.style-5 .service-title-area {
+                  .panzer-page-resources .solution-page .tv-service-section.style-5 .service-title-area {
                       text-align: center;
                   }
 
-                  .panzer-page-download .solution-page .tv-service-section.style-5 .service-btn {
+                  .panzer-page-resources .solution-page .tv-service-section.style-5 .service-btn {
                       justify-content: center;
                   }
 
-                  .panzer-page-download .solution-page .tv-choose-section.style-6 .choose-left, .panzer-page-download .solution-page .tv-choose-section.style-6 .choose-right {
+                  .panzer-page-resources .solution-page .tv-choose-section.style-6 .choose-left, .panzer-page-resources .solution-page .tv-choose-section.style-6 .choose-right {
                       max-width: 520px;
                       margin: 0 auto;
                   }
 
-                  .panzer-page-download .solution-page .tv-contact-section.style-4 .contact-right-content {
+                  .panzer-page-resources .solution-page .tv-contact-section.style-4 .contact-right-content {
                       padding-right: 0;
                   }
               }
@@ -72391,6 +72513,277 @@ button *,
   object-fit: cover !important;
 }
 
+.panzer-page-home .tv-service-section.style-4 > .tv-service-inner.space {
+  padding-top: clamp(72px, 6vw, 104px) !important;
+  padding-bottom: clamp(72px, 6vw, 104px) !important;
+}
+
+@media (max-width: 991px) {
+  .panzer-page-home .tv-service-section.style-4 > .tv-service-inner.space {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+  }
+}
+
+/* Home about section final responsive balance */
+.panzer-page-home .panzer-home-about-section {
+  padding-top: clamp(56px, 5vw, 84px) !important;
+  padding-bottom: clamp(56px, 5vw, 84px) !important;
+}
+
+.panzer-page-home .panzer-lock-about-grid {
+  grid-template-columns: minmax(320px, 0.92fr) minmax(260px, 0.72fr) minmax(300px, 0.82fr) !important;
+  gap: clamp(22px, 2.3vw, 38px) !important;
+  align-items: center !important;
+}
+
+.panzer-page-home .panzer-lock-about-title {
+  max-width: 440px !important;
+  margin: 20px 0 16px !important;
+  font-size: clamp(36px, 3.25vw, 50px) !important;
+  line-height: 1.12 !important;
+}
+
+.panzer-page-home .panzer-lock-about-title::after {
+  width: 58px !important;
+  height: 4px !important;
+  margin-top: 18px !important;
+}
+
+.panzer-page-home .panzer-lock-about-text {
+  max-width: 520px !important;
+  font-size: 15px !important;
+  line-height: 1.62 !important;
+}
+
+.panzer-page-home .panzer-lock-about-features {
+  gap: 12px !important;
+  margin-top: 22px !important;
+  padding-bottom: 18px !important;
+}
+
+.panzer-page-home .panzer-lock-feature {
+  grid-template-columns: 50px minmax(0, 1fr) !important;
+  gap: 14px !important;
+  padding: 12px 14px !important;
+  border-radius: 14px !important;
+}
+
+.panzer-page-home .panzer-lock-feature-icon {
+  width: 50px !important;
+  height: 50px !important;
+  font-size: 21px !important;
+}
+
+.panzer-page-home .panzer-lock-feature h3 {
+  font-size: clamp(17px, 1.35vw, 21px) !important;
+  line-height: 1.25 !important;
+  font-weight: 650 !important;
+}
+
+.panzer-page-home .panzer-lock-about-actions {
+  margin-top: 20px !important;
+}
+
+.panzer-page-home .panzer-lock-about-btn {
+  min-height: 50px !important;
+  padding: 0 20px !important;
+}
+
+.panzer-page-home .panzer-lock-about-visual {
+  min-height: clamp(360px, 32vw, 460px) !important;
+}
+
+.panzer-page-home .panzer-lock-about-visual::before {
+  width: min(94%, 390px) !important;
+  height: min(94%, 390px) !important;
+}
+
+.panzer-page-home .panzer-lock-network {
+  inset: 28px 16px 54px !important;
+}
+
+.panzer-page-home .panzer-lock-image {
+  width: min(78%, 318px) !important;
+}
+
+.panzer-page-home .panzer-lock-about-flow {
+  gap: 13px !important;
+}
+
+.panzer-page-home .panzer-lock-about-flow::before {
+  left: -15px !important;
+}
+
+.panzer-page-home .panzer-lock-flow-card {
+  grid-template-columns: 52px minmax(0, 1fr) !important;
+  gap: 13px !important;
+  min-height: 88px !important;
+  padding: 14px 16px !important;
+  border-radius: 12px !important;
+}
+
+.panzer-page-home .panzer-lock-flow-dot {
+  left: -20px !important;
+  width: 9px !important;
+  height: 9px !important;
+}
+
+.panzer-page-home .panzer-lock-flow-icon {
+  width: 52px !important;
+  height: 52px !important;
+  font-size: 24px !important;
+}
+
+.panzer-page-home .panzer-lock-flow-card h3 {
+  margin-bottom: 4px !important;
+  font-size: 17px !important;
+}
+
+.panzer-page-home .panzer-lock-flow-card p {
+  font-size: 13px !important;
+  line-height: 1.35 !important;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .panzer-page-home .panzer-lock-about-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 0.82fr) !important;
+  }
+
+  .panzer-page-home .panzer-lock-about-title {
+    max-width: 560px !important;
+    font-size: clamp(38px, 5vw, 48px) !important;
+  }
+
+  .panzer-page-home .panzer-lock-about-visual {
+    min-height: 360px !important;
+  }
+
+  .panzer-page-home .panzer-lock-about-flow {
+    grid-column: 1 / -1 !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    margin-top: 8px !important;
+  }
+
+  .panzer-page-home .panzer-lock-about-flow::before,
+  .panzer-page-home .panzer-lock-flow-dot {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .panzer-page-home .panzer-home-about-section {
+    padding-top: 48px !important;
+    padding-bottom: 52px !important;
+  }
+
+  .panzer-page-home .panzer-lock-about-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  .panzer-page-home .panzer-lock-about-copy {
+    text-align: center !important;
+  }
+
+  .panzer-page-home .panzer-lock-about-title {
+    max-width: 420px !important;
+    margin-inline: auto !important;
+    font-size: clamp(32px, 9.4vw, 40px) !important;
+    line-height: 1.12 !important;
+  }
+
+  .panzer-page-home .panzer-lock-about-text {
+    margin-inline: auto !important;
+    font-size: 14px !important;
+  }
+
+  .panzer-page-home .panzer-lock-about-title::after {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .panzer-page-home .panzer-lock-about-features {
+    max-width: 430px !important;
+    margin-inline: auto !important;
+    text-align: left !important;
+  }
+
+  .panzer-page-home .panzer-lock-about-actions {
+    justify-content: center !important;
+  }
+
+  .panzer-page-home .panzer-lock-about-visual {
+    min-height: 320px !important;
+    order: 2 !important;
+  }
+
+  .panzer-page-home .panzer-lock-image {
+    width: min(70%, 250px) !important;
+  }
+
+  .panzer-page-home .panzer-lock-about-visual::before {
+    width: 280px !important;
+    height: 280px !important;
+  }
+
+  .panzer-page-home .panzer-lock-about-flow {
+    grid-template-columns: 1fr !important;
+    order: 3 !important;
+  }
+
+  .panzer-page-home .panzer-lock-about-flow::before,
+  .panzer-page-home .panzer-lock-flow-dot {
+    display: none !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .panzer-page-home .panzer-lock-about-pill {
+    min-height: 32px !important;
+    padding: 7px 16px !important;
+    font-size: 12px !important;
+  }
+
+  .panzer-page-home .panzer-lock-feature {
+    grid-template-columns: 44px minmax(0, 1fr) !important;
+    padding: 11px 12px !important;
+  }
+
+  .panzer-page-home .panzer-lock-feature-icon {
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 18px !important;
+  }
+
+  .panzer-page-home .panzer-lock-feature h3 {
+    font-size: 16px !important;
+  }
+
+  .panzer-page-home .panzer-lock-about-btn {
+    width: 100% !important;
+  }
+
+  .panzer-page-home .panzer-lock-flow-card {
+    grid-template-columns: 46px minmax(0, 1fr) !important;
+    min-height: 82px !important;
+    padding: 13px 14px !important;
+  }
+
+  .panzer-page-home .panzer-lock-flow-icon {
+    width: 46px !important;
+    height: 46px !important;
+    font-size: 21px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .panzer-page-home .tv-service-section.style-4 > .tv-service-inner.space {
+    padding-top: 48px !important;
+    padding-bottom: 52px !important;
+  }
+}
+
 .panzer-page-home .tv-marquee-section .marquee_mode {
   display: block;
   width: 100%;
@@ -73192,13 +73585,22 @@ button *,
 .panzer-page-solution .panzer-solution-learn {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 7px;
   margin-top: auto;
-  color: #2f63dd !important;
-  font-size: 14px;
+  color: #2465e8 !important;
+  font-size: 18px;
   line-height: 1;
   font-weight: 800;
+  letter-spacing: 0;
   transition: color 0.28s ease, transform 0.28s ease;
+}
+
+.panzer-page-solution .panzer-solution-learn-arrow {
+  display: inline-block;
+  font-size: 21px;
+  line-height: 0.85;
+  transform: translateY(-1px);
+  transition: transform 0.28s ease;
 }
 
 .panzer-page-solution .panzer-solution-card:hover {
@@ -73216,6 +73618,10 @@ button *,
 .panzer-page-solution .panzer-solution-card:hover .panzer-solution-learn {
   color: #174bd1 !important;
   transform: translateX(3px);
+}
+
+.panzer-page-solution .panzer-solution-card:hover .panzer-solution-learn-arrow {
+  transform: translate(3px, -1px);
 }
 
 @media (max-width: 991px) {
@@ -73243,13 +73649,19 @@ button *,
   .panzer-page-solution .panzer-solution-card .text {
     font-size: 14px !important;
   }
+
+  .panzer-page-solution .panzer-solution-learn {
+    font-size: 16px;
+  }
 }
 
 /* Simple full-screen home hero slider */
 .panzer-page-home .panzer-cyber-hero {
   position: relative;
-  min-height: 100vh;
-  
+  --panzer-hero-height: clamp(560px, calc(100svh - 96px), 820px);
+  min-height: var(--panzer-hero-height);
+  height: var(--panzer-hero-height);
+  overflow: hidden;
 }
 
 .panzer-page-home .panzer-cyber-slider-wrap,
@@ -73258,7 +73670,8 @@ button *,
 .panzer-page-home .panzer-cyber-slider .swiper-slide,
 .panzer-page-home .panzer-cyber-slide,
 .panzer-page-home .panzer-cyber-shell {
-  min-height: 100vh !important;
+  min-height: var(--panzer-hero-height) !important;
+  height: var(--panzer-hero-height) !important;
 }
 
 .panzer-page-home .panzer-cyber-slide {
@@ -73298,7 +73711,7 @@ button *,
   width: 100%;
   max-width: 100%;
   margin: 0;
-  padding: clamp(110px, 8vw, 150px) clamp(86px, 8vw, 156px) clamp(86px, 7vw, 130px);
+  padding: clamp(76px, 7vw, 116px) clamp(86px, 8vw, 156px) clamp(82px, 6vw, 112px);
 }
 
 .panzer-page-home .panzer-cyber-copy {
@@ -73330,7 +73743,7 @@ button *,
   color: #ffffff !important;
   opacity: 1;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(44px, 5vw, 82px);
+  font-size: clamp(42px, 4.4vw, 72px);
   line-height: 1.08;
   font-weight: 700;
   letter-spacing: 0;
@@ -73348,7 +73761,7 @@ button *,
   color: rgba(255, 255, 255, 0.98) !important;
   opacity: 1;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(18px, 1.55vw, 29px);
+  font-size: clamp(18px, 1.35vw, 25px);
   line-height: 1.42;
   font-weight: 700;
   text-shadow: 0 3px 14px rgba(0, 0, 0, 0.42);
@@ -73356,7 +73769,7 @@ button *,
 
 .panzer-page-home .panzer-cyber-actions {
   display: flex;
-  margin-top: 42px;
+  margin-top: 34px;
 }
 
 .panzer-page-home .panzer-cyber-btn.primary {
@@ -73405,14 +73818,14 @@ button *,
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: clamp(42px, 3.4vw, 58px);
-  height: clamp(58px, 4.8vw, 82px);
+  width: clamp(30px, 2.6vw, 42px);
+  height: clamp(40px, 3.5vw, 56px);
   padding: 0;
   border: 0 !important;
   border-radius: 0;
-  background: var(--theme-color) !important;
+  background: transparent !important;
   color: transparent !important;
-  box-shadow: inset 0 -2px 0 rgba(40, 71, 170, 0.42), 0 16px 28px rgba(0, 0, 0, 0.22);
+  box-shadow: none !important;
   pointer-events: auto;
 }
 
@@ -73424,11 +73837,11 @@ button *,
   content: "";
   position: absolute;
   top: 50%;
-  width: clamp(20px, 1.55vw, 28px);
-  height: clamp(20px, 1.55vw, 28px);
-  border-top: clamp(5px, 0.45vw, 8px) solid #ffffff;
-  border-left: clamp(5px, 0.45vw, 8px) solid #ffffff;
-  border-radius: 4px 0 0 0;
+  width: clamp(15px, 1.2vw, 21px);
+  height: clamp(15px, 1.2vw, 21px);
+  border-top: clamp(3px, 0.28vw, 5px) solid #ffffff;
+  border-left: clamp(3px, 0.28vw, 5px) solid #ffffff;
+  border-radius: 3px 0 0 0;
   transition: border-color 0.22s ease, transform 0.22s ease;
 }
 
@@ -73443,24 +73856,25 @@ button *,
 }
 
 .panzer-page-home .panzer-cyber-nav button:hover {
-  background: rgba(1, 7, 18, 0.95) !important;
+  background: transparent !important;
+  box-shadow: none !important;
   transform: none;
 }
 
 .panzer-page-home .panzer-cyber-prev:hover::before {
-  border-color: #ffb21d;
+  border-color: #ffffff;
   transform: translate(-48%, -50%) rotate(-45deg);
 }
 
 .panzer-page-home .panzer-cyber-next:hover::before {
-  border-color: #ffb21d;
+  border-color: #ffffff;
   transform: translate(48%, -50%) rotate(135deg);
 }
 
 .panzer-page-home .panzer-cyber-pagination {
   position: absolute;
   left: 50%;
-  bottom: clamp(26px, 4vw, 46px);
+  bottom: clamp(24px, 3.2vw, 38px);
   z-index: 5;
   display: flex;
   align-items: center;
@@ -73487,9 +73901,13 @@ button *,
 }
 
 @media (max-width: 991px) {
+  .panzer-page-home .panzer-cyber-hero {
+    --panzer-hero-height: clamp(560px, calc(100svh - 84px), 720px);
+  }
+
   .panzer-page-home .panzer-cyber-shell.container {
     justify-content: flex-start;
-    padding: 110px 76px 96px;
+    padding: 84px 76px 86px;
   }
 
   .panzer-page-home .panzer-cyber-copy {
@@ -73502,13 +73920,18 @@ button *,
 }
 
 @media (max-width: 575px) {
+  .panzer-page-home .panzer-cyber-hero {
+    --panzer-hero-height: clamp(520px, calc(100svh - 70px), 620px);
+  }
+
   .panzer-page-home .panzer-cyber-slider-wrap,
   .panzer-page-home .panzer-cyber-slider,
   .panzer-page-home .panzer-cyber-slider .swiper-wrapper,
   .panzer-page-home .panzer-cyber-slider .swiper-slide,
   .panzer-page-home .panzer-cyber-slide,
   .panzer-page-home .panzer-cyber-shell {
-    min-height: 680px !important;
+    min-height: var(--panzer-hero-height) !important;
+    height: var(--panzer-hero-height) !important;
   }
 
   .panzer-page-home .panzer-cyber-slide::before {
@@ -73522,7 +73945,7 @@ button *,
   .panzer-page-home .panzer-cyber-shell.container {
     align-items: center;
     justify-content: center;
-    padding: 96px 54px 88px;
+    padding: 72px 54px 76px;
   }
 
   .panzer-page-home .panzer-cyber-copy {
@@ -73544,7 +73967,7 @@ button *,
   }
 
   .panzer-page-home .panzer-cyber-actions {
-    margin-top: 30px;
+    margin-top: 24px;
   }
 
   .panzer-page-home .panzer-cyber-btn.primary {
@@ -73559,8 +73982,8 @@ button *,
   }
 
   .panzer-page-home .panzer-cyber-nav button {
-    width: 38px;
-    height: 56px;
+    width: 30px;
+    height: 42px;
   }
 
   .panzer-page-home .panzer-cyber-pagination {
@@ -74268,6 +74691,7 @@ button *,
 }
 
 .footer-section.panzer-compact-footer.panzer-image-footer .footer-bottom {
+  padding-bottom: 23px;
   border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
 }
 
@@ -74276,7 +74700,7 @@ button *,
   min-height: 0 !important;
   padding: clamp(42px, 5vw, 72px) 0 !important;
   background: #f6f9ff !important;
-  overflow: hidden;
+  overflow: visible !important;
 }
 
 .panzer-page-home .panzer-brand-partners-section .panzer-cyber-brand-strip {
@@ -74294,11 +74718,12 @@ button *,
 
 .panzer-page-home .panzer-brand-partners-section .panzer-cyber-brand-panel {
   position: relative;
-  padding: clamp(26px, 3vw, 42px) clamp(48px, 5vw, 72px) !important;
-  border: 1px solid rgba(9, 21, 40, 0.08) !important;
+  padding: clamp(28px, 3vw, 44px) clamp(72px, 6vw, 96px) !important;
+  border: 1px solid rgba(6, 18, 56, 0.08) !important;
   border-radius: 28px !important;
-  background: #061176 !important;
-  box-shadow: 0 18px 48px rgba(9, 21, 40, 0.12) !important;
+  background: #ffffff !important;
+  box-shadow: 0 22px 58px rgba(9, 21, 40, 0.09) !important;
+  overflow: visible !important;
 }
 
 .panzer-page-home .panzer-brand-partners-section .trusted-partners {
@@ -74307,7 +74732,7 @@ button *,
 }
 
 .panzer-page-home .panzer-brand-partners-section .trusted-partners .title {
-  color: #ffffff !important;
+  color: #061238 !important;
   font-size: 13px;
   line-height: 1;
   font-weight: 900;
@@ -74315,7 +74740,8 @@ button *,
 }
 
 .panzer-page-home .panzer-brand-partners-section .brands-slider-three {
-  padding: 0 !important;
+  padding: 0 4px !important;
+  overflow: hidden !important;
 }
 
 .panzer-page-home .panzer-brand-partners-section .brands-slider-three .swiper-wrapper {
@@ -74334,32 +74760,32 @@ button *,
   position: absolute;
   top: 0;
   z-index: 2;
-  width: 48px;
+  width: 34px;
   height: 100%;
   pointer-events: none;
 }
 
 .panzer-page-home .panzer-brand-partners-section .brands-slider-three::before {
   left: 0;
-  background: linear-gradient(90deg, #061176 0%, rgba(6, 17, 118, 0) 100%) !important;
+  background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%) !important;
 }
 
 .panzer-page-home .panzer-brand-partners-section .brands-slider-three::after {
   right: 0;
-  background: linear-gradient(90deg, rgba(6, 17, 118, 0) 0%, #061176 100%) !important;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%) !important;
 }
 
 .panzer-page-home .panzer-brand-partners-section .tv-brands-section.style-3 .sponsors-outer .brand-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 92px !important;
+  height: 94px !important;
   max-width: none !important;
-  padding: 18px 20px !important;
+  padding: 18px 18px !important;
   border: 1px solid rgba(9, 21, 40, 0.08) !important;
-  border-radius: 8px !important;
+  border-radius: 10px !important;
   background: #ffffff !important;
-  box-shadow: none !important;
+  box-shadow: 0 10px 26px rgba(9, 21, 40, 0.06) !important;
 }
 
 .panzer-page-home .panzer-brand-partners-section .tv-brands-section .sponsors-outer .brand-item .image {
@@ -74400,10 +74826,10 @@ button *,
 
 .panzer-page-home .panzer-brand-partners-section .panzer-brand-nav {
   position: absolute;
-  top: 50%;
-  left: 14px;
-  right: 14px;
-  z-index: 8;
+  top: calc(50% + 16px);
+  left: 18px;
+  right: 18px;
+  z-index: 20;
   display: flex;
   justify-content: space-between;
   transform: translateY(-50%);
@@ -74414,20 +74840,26 @@ button *,
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 38px;
-  height: 38px;
-  border: 1px solid rgba(9, 21, 40, 0.16) !important;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(16, 83, 243, 0.18) !important;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.4) !important;
-  color: #091528 !important;
-  box-shadow: 0 10px 24px rgba(9, 21, 40, 0.1);
+  background: #ffffff !important;
+  color: #1053f3 !important;
+  box-shadow: 0 14px 30px rgba(9, 21, 40, 0.14);
   pointer-events: auto;
   transition: background 0.22s ease, color 0.22s ease, border-color 0.22s ease;
 }
 
+.panzer-page-home .panzer-brand-partners-section .panzer-brand-nav button i {
+  color: inherit !important;
+  font-size: 18px;
+  line-height: 1;
+}
+
 .panzer-page-home .panzer-brand-partners-section .panzer-brand-nav button:hover {
-  border-color: #091528 !important;
-  background: #091528 !important;
+  border-color: #1053f3 !important;
+  background: #1053f3 !important;
   color: #ffffff !important;
 }
 
@@ -75496,7 +75928,7 @@ button *,
   }
 
   .panzer-page-home .panzer-brand-partners-section .panzer-cyber-brand-panel {
-    padding: 26px 54px !important;
+    padding: 26px 64px !important;
   }
 }
 
@@ -75507,7 +75939,7 @@ button *,
 
   .panzer-page-home .panzer-brand-partners-section .panzer-cyber-brand-panel {
     padding: 24px 46px !important;
-    border-radius: 8px !important;
+    border-radius: 18px !important;
   }
 
   .panzer-page-home .panzer-brand-partners-section .tv-brands-section.style-3 .sponsors-outer .brand-item {
@@ -75515,12 +75947,13 @@ button *,
   }
 
   .panzer-page-home .panzer-brand-partners-section .panzer-brand-nav {
+    top: calc(50% + 14px);
     left: 8px;
     right: 8px;
   }
 
   .panzer-page-home .panzer-brand-partners-section .panzer-brand-nav button {
-    width: 34px;
-    height: 34px;
+    width: 36px;
+    height: 36px;
   }
 }

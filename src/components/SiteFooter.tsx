@@ -13,8 +13,16 @@ export function SiteFooter() {
             <div className="row">
               <div className="col-lg-12 footer-brand">
                 <div className="brand-info wow fadeInUp" data-wow-delay=".2s">
-                  <div className="logo">
-                    <Image width={200} height={46} src="/assets/images/logo/logo.png" alt="Panzer IT Logo"  />
+                  <div className="panzer-footer-brand-block">
+                    <div className="logo">
+                      <Image width={200} height={46} src="/assets/images/logo/logo.png" alt="Panzer IT Logo"  />
+                    </div>
+                    <div className="social-links">
+                      <Link href="#" className="social-icon"><i className="fab fa-facebook-f"></i></Link>
+                      <Link href="#" className="social-icon"><i className="fab fa-x-twitter"></i></Link>
+                      <Link href="#" className="social-icon"><i className="fab fa-linkedin-in"></i></Link>
+                      <Link href="#" className="social-icon"><i className="fab fa-pinterest-p"></i></Link>
+                    </div>
                   </div>
                   <div className="contact-info">
                     <div className="contact-item">
@@ -57,12 +65,6 @@ export function SiteFooter() {
                         </button>
                       </div>
                     </form>
-                  </div>
-                  <div className="social-links">
-                    <Link href="#" className="social-icon"><i className="fab fa-facebook-f"></i></Link>
-                    <Link href="#" className="social-icon"><i className="fab fa-x-twitter"></i></Link>
-                    <Link href="#" className="social-icon"><i className="fab fa-linkedin-in"></i></Link>
-                    <Link href="#" className="social-icon"><i className="fab fa-pinterest-p"></i></Link>
                   </div>
                 </div>
               </div>

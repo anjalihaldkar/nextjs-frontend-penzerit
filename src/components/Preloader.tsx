@@ -5,12 +5,13 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 
 export function Preloader() {
-  const [isVisible, setIsVisible] = useState(true);
   const pathname = usePathname();
+  const [hiddenPathname, setHiddenPathname] = useState<string | null>(null);
+  const isVisible = hiddenPathname !== pathname;
 
   useEffect(() => {
     const closePreloader = () => {
-      setIsVisible(false);
+      setHiddenPathname(pathname);
     };
 
     const timer = window.setTimeout(closePreloader, 700);
@@ -18,7 +19,7 @@ export function Preloader() {
     return () => {
       window.clearTimeout(timer);
     };
-  }, []);
+  }, [pathname]);
 
   if (!isVisible) return null;
 
@@ -32,7 +33,7 @@ export function Preloader() {
           className="preloader-close" 
           type="button" 
           aria-label="Skip preloader"
-          onClick={() => setIsVisible(false)}
+          onClick={() => setHiddenPathname(pathname)}
         >
           Skip
         </button>

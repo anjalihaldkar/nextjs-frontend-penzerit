@@ -66,9 +66,9 @@
       // eslint-disable-next-line no-undef
       var brandSlider = new Swiper(brandSliderElement, {
         slidesPerView: 1,
-        spaceBetween: 20,
+        spaceBetween: 18,
         centeredSlides: false,
-        loop: brandSlideTotal > 6,
+        loop: brandSlideTotal > 5,
         speed: 650,
         allowTouchMove: true,
         observer: true,
@@ -79,7 +79,7 @@
           540: { slidesPerView: 2 },
           767: { slidesPerView: 3 },
           854: { slidesPerView: 4 },
-          1199: { slidesPerView: 6 },
+          1199: { slidesPerView: 5 },
         },
       });
 

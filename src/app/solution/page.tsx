@@ -116,7 +116,7 @@ export default function Page() {
                             <div className="col-lg-6">
                                 <div className="cta-content-wrapper">
                                    <div className="title-wrap three" data-wow-duration="1.5s" data-wow-delay=".4s">
-                                        <div className="sub-title-2 text-theme"><i className="fa-solid fa-circle-check"></i>Get In Touch</div>
+                                        <div className="sub-title-2 text-theme">Contact Us</div>
                                         <h2 className="sec-title">Let&apos;s Collaborate with Us</h2>
                                         <p>Collaboratively supply bricks-and-clicks metrics for maintainable users from <br /> reinvent unique value for just in time consult.</p>
                                     </div>
@@ -171,10 +171,7 @@ export default function Page() {
                                         <span></span>
                                     </div>
                                     <div className="image-box">
-                                        <div className="image-item"><Image src="/assets/images/service/details01.webp" alt="Person 1" width={127} height={127} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
-                                        <div className="image-item"><Image src="/assets/images/service/details02.webp" alt="Person 3" width={127} height={127} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
-                                        <div className="image-item"><Image src="/assets/images/service/details03.webp" alt="Person 4" width={127} height={127} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
-                                        <div className="image-item"><Image src="/assets/images/service/details04.webp" alt="Person 5" width={127} height={127} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
+                                        <div className="image-item"><Image src="/assets/images/service/details01.webp" alt="Panzer IT consultation" width={560} height={420} sizes="(max-width: 991px) 90vw, 560px" style={{ width: "100%", height: "auto" }} /></div>
                                     </div>
                                 </div>
                             </div>

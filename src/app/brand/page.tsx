@@ -38,8 +38,8 @@ export default function Page() {
                                         <p className="text mb-30"><strong>File Name:</strong> PIT_Presentation.pptx</p>
                                         <Link href="https://panzerit.com/brands/" target="_blank" className="theme-btn panzer-static-read-btn">
                                             <span className="link-effect">
-                                                <span className="effect-1">DOWNLOAD FILE</span>
-                                                <span className="effect-1">DOWNLOAD FILE</span>
+                                                <span className="effect-1">VIEW RESOURCE</span>
+                                                <span className="effect-1">VIEW RESOURCE</span>
                                             </span>
                                             <i className="fa-solid fa-arrow-up-right"></i>
                                         </Link>
