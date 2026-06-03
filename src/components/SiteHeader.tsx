@@ -128,6 +128,11 @@ function MainNavigation({
           
         </ul>
       </li>
+      {mobile && (
+        <li>
+          <Link href="/contact" onClick={onNavigate}>Contact Us</Link>
+        </li>
+      )}
     </ul>
   );
 }
@@ -252,7 +257,7 @@ export function SiteHeader() {
         <div className="mobile-menu-area" onClick={(event) => event.stopPropagation()}>
           <button className="menu-toggle" type="button" aria-label="Close menu" onClick={toggleMobileMenu}><i className="fas fa-times"></i></button>
           <div className="mobile-logo">
-            <Link href="/" onClick={closeMobileMenu}><Image width={864} height={200} alt="Panzer IT" src="/assets/images/logo/logo.webp" /></Link>
+            <Link href="/" onClick={closeMobileMenu}><Image width={864} height={200} alt="Panzer IT" src="/assets/images/logo/logo.png" /></Link>
           </div>
           <nav className="mobile-menu" aria-label="Mobile navigation">
             <MainNavigation
