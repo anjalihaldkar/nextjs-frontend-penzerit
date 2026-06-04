@@ -16,7 +16,7 @@ export default function Page() {
                               <div className="contact-content-wrap">
                                   
                                   <div className="title-wrap" data-wow-duration="1.5s" data-wow-delay=".4s">
-                                      <div className="sub-title-2 text-theme"><i className="fa-solid fa-circle-check"></i>Contact Us</div>
+                                      <div className="sub-title-2 text-theme">Contact Us</div>
                                       <h2 className="sec-title no-title-animation">Contact Panzer IT for <br /> cyber security, backup <br />and data  protection</h2>
                                       <p>Feel free to touchbase Panzer IT for any query, requirement, discussion or IT security consultancy.</p>
                                   </div>
@@ -157,7 +157,7 @@ export default function Page() {
                   <div className="container">
                       
                       <div className="title-wrap three text-center" data-wow-duration="1.5s" data-wow-delay=".4s">
-                          <div className="sub-title-2 text-theme"><i className="fa-solid fa-circle-check"></i>Our Branches</div>
+                          <div className="sub-title-2 text-theme">Our Branches</div>
                           <h2 className="sec-title no-title-animation">Connect with our office locations</h2>
                           <p>Panzer IT is available for discussions, enquiries and consultancy support through its New Delhi and Mumbai offices.</p>
                       </div>

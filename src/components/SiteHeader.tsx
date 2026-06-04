@@ -224,8 +224,8 @@ export function SiteHeader() {
               <div className="col-auto logo">
                 <div className="header-logo">
                   <Link href="/">
-                    <Image alt="logo" src="/assets/images/logo/logo.png" width={160} height={50} style={{ height: "auto" }} />
-                    <Image alt="logo" src="/assets/images/logo/logo.png" width={160} height={50} style={{ height: "auto" }} />
+                    <Image alt="logo" src="/assets/images/logo/logo.png" width={160} height={50} loading="eager" style={{ width: "auto", height: "auto" }} />
+                    <Image alt="logo" src="/assets/images/logo/logo.png" width={160} height={50} loading="eager" style={{ width: "auto", height: "auto" }} />
                   </Link>
                 </div>
               </div>
@@ -257,7 +257,7 @@ export function SiteHeader() {
         <div className="mobile-menu-area" onClick={(event) => event.stopPropagation()}>
           <button className="menu-toggle" type="button" aria-label="Close menu" onClick={toggleMobileMenu}><i className="fas fa-times"></i></button>
           <div className="mobile-logo">
-            <Link href="/" onClick={closeMobileMenu}><Image width={864} height={200} alt="Panzer IT" src="/assets/images/logo/logo.png" /></Link>
+            <Link href="/" onClick={closeMobileMenu}><Image width={864} height={200} alt="Panzer IT" src="/assets/images/logo/logo.png" style={{ width: "auto", height: "auto" }} /></Link>
           </div>
           <nav className="mobile-menu" aria-label="Mobile navigation">
             <MainNavigation
@@ -303,8 +303,8 @@ export function SiteHeader() {
               <div className="col-auto logo">
                 <div className="header-logo">
                   <Link href="/">
-                    <Image alt="logo" src="/assets/images/logo/logo.png" width={160} height={50} style={{ height: "auto" }} />
-                    <Image alt="logo" src="/assets/images/logo/logo.png" width={160} height={50} style={{ height: "auto" }} />
+                    <Image alt="logo" src="/assets/images/logo/logo.png" width={160} height={50} loading="eager" style={{ width: "auto", height: "auto" }} />
+                    <Image alt="logo" src="/assets/images/logo/logo.png" width={160} height={50} loading="eager" style={{ width: "auto", height: "auto" }} />
                   </Link>
                 </div>
               </div>

@@ -216,7 +216,7 @@ export default function Page() {
                   <div className="container">
                       
                       <div className="title-wrap text-center three">
-                          <div className="sub-title-2 text-white two"><i className="fa-solid fa-circle-check"></i>Product</div>
+                          <div className="sub-title-2 text-white two">Product</div>
                           <h2 className="sec-title text-white no-title-animation">Explore Panzer IT products <br /> across security and recovery</h2>
                       </div>
 
@@ -273,7 +273,7 @@ export default function Page() {
                               <div className="col-lg-6">
                                   <div className="contact-right-content">
                                       <div className="title-wrap text-center">
-                                          <div className="sub-title-2 text-theme"><i className="fa-solid fa-circle-check"></i>Contact
+                                          <div className="sub-title-2 text-theme">Contact
                                               Us</div>
                                           <h2 className="sec-title no-title-animation">Feel free to touch base with Panzer IT</h2>
                                       </div>

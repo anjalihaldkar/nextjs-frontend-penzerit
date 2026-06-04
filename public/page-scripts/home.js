@@ -55,78 +55,72 @@
       // eslint-disable-next-line no-undef
       if (typeof Swiper === "undefined") return;
 
-      var brandSlideTotal = brandSliderElement.querySelectorAll(".swiper-wrapper > .swiper-slide").length;
+      var brandWrapper = brandSliderElement.querySelector(".swiper-wrapper");
       var brandPrevButton = brandPanel.querySelector(".panzer-brand-prev");
       var brandNextButton = brandPanel.querySelector(".panzer-brand-next");
+
+      function resetButton(button) {
+        if (!button) return null;
+        var cleanButton = button.cloneNode(true);
+        button.replaceWith(cleanButton);
+        return cleanButton;
+      }
+
+      if (!brandWrapper) return;
 
       if (brandSliderElement.swiper && !brandSliderElement.swiper.destroyed) {
         brandSliderElement.swiper.destroy(true, true);
       }
 
-      // eslint-disable-next-line no-undef
-      var brandSlider = new Swiper(brandSliderElement, {
-        slidesPerView: 1,
-        spaceBetween: 18,
-        centeredSlides: false,
-        loop: brandSlideTotal > 5,
-        speed: 650,
-        allowTouchMove: true,
-        observer: true,
-        observeParents: true,
-        navigation: false,
-        breakpoints: {
-          0: { slidesPerView: 1 },
-          540: { slidesPerView: 2 },
-          767: { slidesPerView: 3 },
-          854: { slidesPerView: 4 },
-          1199: { slidesPerView: 5 },
-        },
+      brandWrapper.querySelectorAll(".panzer-brand-loop-fill").forEach(function (slide) {
+        slide.remove();
       });
 
-      function moveBrandSlider(direction, event) {
-        if (event) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
+      var brandSlides = brandWrapper.querySelectorAll(":scope > .swiper-slide");
+      var brandSlideTotal = brandSlides.length;
 
-        var currentTranslate = brandSlider.getTranslate();
-        brandSlider.setTransition(0);
-        brandSlider.setTranslate(currentTranslate);
-        brandSlider.animating = false;
-        brandSlider.updateProgress(currentTranslate);
-        brandSlider.updateActiveIndex();
-        brandSlider.updateSlidesClasses();
-
-        if (direction === "prev") {
-          brandSlider.slidePrev(450, true);
-        } else {
-          brandSlider.slideNext(450, true);
-        }
+      if (brandSlideTotal % 2 !== 0 && brandSlides[0]) {
+        var fillSlide = brandSlides[0].cloneNode(true);
+        fillSlide.classList.add("panzer-brand-loop-fill");
+        fillSlide.setAttribute("aria-hidden", "true");
+        brandWrapper.appendChild(fillSlide);
+        brandSlideTotal += 1;
       }
 
-      if (brandPrevButton) {
-        ["pointerdown", "pointerup", "touchstart", "touchend"].forEach(function (eventName) {
-          brandPrevButton.addEventListener(eventName, function (event) {
-            event.stopPropagation();
-          });
-        });
+      brandPrevButton = resetButton(brandPrevButton);
+      brandNextButton = resetButton(brandNextButton);
 
-        brandPrevButton.addEventListener("click", function (event) {
-          moveBrandSlider("prev", event);
-        });
-      }
-
-      if (brandNextButton) {
-        ["pointerdown", "pointerup", "touchstart", "touchend"].forEach(function (eventName) {
-          brandNextButton.addEventListener(eventName, function (event) {
-            event.stopPropagation();
-          });
-        });
-
-        brandNextButton.addEventListener("click", function (event) {
-          moveBrandSlider("next", event);
-        });
-      }
+      // eslint-disable-next-line no-undef
+      new Swiper(brandSliderElement, {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 18,
+        centeredSlides: false,
+        loop: brandSlideTotal > 4,
+        loopAddBlankSlides: false,
+        loopAdditionalSlides: 2,
+        speed: 850,
+        allowTouchMove: true,
+        autoplay: {
+          delay: 2400,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: false,
+          stopOnLastSlide: false,
+        },
+        observer: true,
+        observeParents: true,
+        navigation: {
+          prevEl: brandPrevButton,
+          nextEl: brandNextButton,
+        },
+        breakpoints: {
+          0: { slidesPerView: 1, slidesPerGroup: 1 },
+          576: { slidesPerView: 2, slidesPerGroup: 2 },
+          767: { slidesPerView: 3, slidesPerGroup: 2 },
+          854: { slidesPerView: 4, slidesPerGroup: 2 },
+          1199: { slidesPerView: 4, slidesPerGroup: 2 },
+        },
+      });
     });
   }
 

@@ -1,7 +1,6 @@
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { SolutionsGrid } from "@/components/SolutionsGrid";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Page() {
   return (
@@ -22,7 +21,7 @@ export default function Page() {
                             <div className="row">
                                 <div className="col-lg-12 text-center">
                                     <div className="title-wrap two white" data-wow-duration="2s" data-wow-delay=".0s">
-                                        <div className="sub-title-2"><i className="fa-solid fa-circle-check"></i>Solutions</div>
+                                        <div className="sub-title-2">cSolutions</div>
                                         <h2 className="sec-title text-dark no-title-animation">Security, Backup and Data Protection <br />Solutions from Panzer IT</h2>
                                     </div>
                                 </div>
@@ -110,68 +109,56 @@ export default function Page() {
 
                 
                 
-                <section className="tv-cta-section inner bg-light">
-                    <div className="container border-top">
-                        <div className="row gy-30 align-items-center">
-                            <div className="col-lg-6">
-                                <div className="cta-content-wrapper">
-                                   <div className="title-wrap three" data-wow-duration="1.5s" data-wow-delay=".4s">
-                                        <div className="sub-title-2 text-theme">Contact Us</div>
-                                        <h2 className="sec-title">Let&apos;s Collaborate with Us</h2>
-                                        <p>Collaboratively supply bricks-and-clicks metrics for maintainable users from <br /> reinvent unique value for just in time consult.</p>
+                <section className="tv-contact-section style-4 z-1">
+                    <div className="tv-contact-inner space position-relative overflow-hidden bg-light2 mx-20 ml-mx-0">
+                        <div className="container">
+                            <div className="row gy-30 contact-wrapper align-items-stretch">
+                                <div className="col-lg-6">
+                                    <div className="contact-right-content">
+                                        <div className="title-wrap text-center">
+                                            <div className="sub-title-2 text-theme">Contact
+                                                Us</div>
+                                            <h2 className="sec-title no-title-animation">Feel free to touch base <br /> with Panzer IT</h2>
+                                        </div>
+                                        <div className="contact-form style-4">
+                                            <form id="solution_contact_form" className="contact_form" action="#" method="post">
+                                                <div className="form-grid">
+                                                    <div className="form-group">
+                                                        <input type="text" id="solutionFullName" name="name" placeholder="Your Name" required={true} autoComplete="on" />
+                                                    </div>
+                                                    <div className="form-group">
+                                                        <input type="email" id="solutionUserEmail" name="email" placeholder="E-Mail" required={true} autoComplete="on" />
+                                                    </div>
+                                                </div>
+                                                <div className="form-grid">
+                                                    <div className="form-group">
+                                                        <select className="custom-select" id="solutionService" name="service" autoComplete="off" defaultValue="">
+                                                            <option value="" disabled={true}>Select Service</option>
+                                                            <option value="scopd-dlp">Scopd DLP with UEBA</option>
+                                                            <option value="backup-recovery">Backup & Disaster Recovery</option>
+                                                            <option value="dlp">Data Leak Prevention - DLP</option>
+                                                            <option value="vapt">Vulnerability Scanner, Assessment & VAPT</option>
+                                                            <option value="employee-monitoring">Employee Monitoring</option>
+                                                            <option value="edr">Advance Threat Prevention | EDR | EPS</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div className="form-group">
+                                                    <textarea id="solutionMsg" name="msg" placeholder="Write Message" required={true}></textarea>
+                                                </div>
+                                                <button type="submit" className="theme-btn panzer-static-send-btn" data-loading-text="Please wait...">
+                                                    <span className="btn-title mr-10">Send Message</span>
+                                                    <i className="fa-solid fa-arrow-right"></i>
+                                                </button>
+                                            </form>
+                                        </div>
                                     </div>
-                                    <Link href="/contact" className="theme-btn">
-                                        <span className="link-effect">
-                                            <span className="effect-1">Contact Panzer IT</span>
-                                            <span className="effect-1">Contact Panzer IT</span>
-                                        </span>
-                                        <span className="arrow-all">
-                                            <i>
-                                                <svg width="16" height="19" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M2 6H10M10 6L6 2M10 6L6 10" stroke="#1053f3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                                </svg>
-                                                <svg width="16" height="19" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M2 6H10M10 6L6 2M10 6L6 10" stroke="#1053f3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                                </svg>
-                                            </i>
-                                        </span>
-                                    </Link>
-                               </div>
-                            </div>
-                            <div className="col-lg-6">
-                                <div className="image-grid">
-                                    <div className="lines">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                    <div className="lines2">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                    <div className="image-box">
-                                        <div className="image-item"><Image src="/assets/images/service/details01.webp" alt="Panzer IT consultation" width={560} height={420} sizes="(max-width: 991px) 90vw, 560px" style={{ width: "100%", height: "auto" }} /></div>
+                                </div>
+                                <div className="col-lg-6">
+                                    <div className="contact-left-thumb wow img-anim-right data-item-hover overflow-hidden">
+                                        <figure className="panzer-static-img" data-style="01" data-intensity="0.2" data-speedin="1" data-speedout="1">
+                                            <Image src="/assets/images/hero/deal.png" alt="Business deal discussion" width={1254} height={1254} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                        </figure>
                                     </div>
                                 </div>
                             </div>

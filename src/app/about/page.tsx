@@ -248,7 +248,7 @@ export default function Page() {
                               <div className="about-content-wrap">
                                   
                                   <div className="title-wrap three">
-                                      <div className="sub-title-2 text-theme"><i className="fa-solid fa-circle-check"></i>Mission Statement</div>
+                                      <div className="sub-title-2 text-theme">Mission Statement</div>
                                       <h2 className="sec-title no-title-animation">Continuous Secure Data <br /> Accessibility & Availability</h2>
                                       <p>Panzer IT believes data should be available to an organization every moment, from anywhere, with the right protection parameters. When data is not available when required, the purpose of IT is defeated.</p>
                                   </div>
@@ -333,7 +333,7 @@ export default function Page() {
 <div className="container">
                       <div className="row justify-content-center">
                           <div className="col-lg-7 text-center">
-                              <div className="panzer-cv-label"><i className="fa-solid fa-circle-check"></i>Core Values</div>
+                              <div className="panzer-cv-label">Core Values</div>
                               <h2 className="panzer-cv-title">Core Values That Guide <br /> Panzer IT</h2>
                            
                           </div>

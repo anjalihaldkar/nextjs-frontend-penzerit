@@ -21,7 +21,7 @@ export default function Page() {
                             <div className="row">
                                 <div className="col-lg-12 text-center">
                                     <div className="title-wrap two white" data-wow-duration="2s" data-wow-delay=".0s">
-                                        <div className="sub-title-2"><i className="fa-solid fa-circle-check"></i>Brands</div>
+                                        <div className="sub-title-2">Brands</div>
                                         <h2 className="sec-title text-dark no-title-animation">Trusted Security, Backup and Data Protection <br />Brands with Panzer IT</h2>
                                     </div>
                                 </div>
