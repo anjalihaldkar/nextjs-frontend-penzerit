@@ -39,8 +39,8 @@ export default function Page() {
                                   <p>Company overview, mission statement, solution portfolio and associate brand highlights from Panzer IT.</p>
                                   <Link href="https://panzerit.com/wp-content/uploads/2025/01/PIT_Presentation_online.pdf" className="theme-btn style2 br-30" target="_blank" rel="noopener noreferrer">
                                           <span className="link-effect">
-                                              <span className="effect-1">View Resources</span>
-                                              <span className="effect-1">View Resources</span>
+                                              <span className="effect-1">Download now</span>
+                                              <span className="effect-1">Download now</span>
                                           </span>
                                           <span className="arrow-all-2">
                                               <i>
@@ -69,8 +69,8 @@ export default function Page() {
                                   <p>Workflow control, insider threat protection and data leak prevention presentation from Falcongaze SecureTower.</p>
                                   <Link href="https://panzerit.com/wp-content/uploads/2018/09/Falcongaze-SecureTower.-Workflows-control-and-Insider-Threat-Protection.pdf" className="theme-btn style2 br-30" target="_blank" rel="noopener noreferrer">
                                           <span className="link-effect">
-                                              <span className="effect-1">View Resources</span>
-                                              <span className="effect-1">View Resources</span>
+                                              <span className="effect-1">Download now</span>
+                                              <span className="effect-1">Download now</span>
                                           </span>
                                           <span className="arrow-all-2">
                                               <i>
@@ -99,8 +99,8 @@ export default function Page() {
                                   <p>General presentation for secure remote access, remote support and cross-platform device connectivity.</p>
                                   <Link href="https://panzerit.com/wp-content/uploads/2018/09/NRC-General-Presentation.pdf" className="theme-btn style2 br-30" target="_blank" rel="noopener noreferrer">
                                           <span className="link-effect">
-                                              <span className="effect-1">View Resources</span>
-                                              <span className="effect-1">View Resources</span>
+                                              <span className="effect-1">Download now</span>
+                                              <span className="effect-1">Download now</span>
                                           </span>
                                           <span className="arrow-all-2">
                                               <i>
@@ -129,8 +129,8 @@ export default function Page() {
                                   <p>Advance persistent threat prevention, patch management and real-time cloud protection overview.</p>
                                   <Link href="https://panzerit.com/wp-content/uploads/2018/09/Heimdal-Product-Presentation.pdf" className="theme-btn style2 br-30" target="_blank" rel="noopener noreferrer">
                                           <span className="link-effect">
-                                              <span className="effect-1">View Resources</span>
-                                              <span className="effect-1">View Resources</span>
+                                              <span className="effect-1">Download now</span>
+                                              <span className="effect-1">Download now</span>
                                           </span>
                                           <span className="arrow-all-2">
                                               <i>
@@ -159,8 +159,8 @@ export default function Page() {
                                   <p>Technical manual covering search, indexing, audit options, reporting and management functions.</p>
                                   <Link href="https://panzerit.com/techteam/Scopd_Manual9.pdf" className="theme-btn style2 br-30" target="_blank" rel="noopener noreferrer">
                                           <span className="link-effect">
-                                              <span className="effect-1">View Resources</span>
-                                              <span className="effect-1">View Resources</span>
+                                              <span className="effect-1">Download now</span>
+                                              <span className="effect-1">Download now</span>
                                           </span>
                                           <span className="arrow-all-2">
                                               <i>
@@ -189,8 +189,8 @@ export default function Page() {
                                   <p>30-day free trial resources with 32-bit MSI, 64-bit MSI and combined EXE options listed by Panzer IT.</p>
                                   <Link href="https://panzerit.com/brands/emsisoft-most-advance-malware-protection/" className="theme-btn style2 br-30" target="_blank" rel="noopener noreferrer">
                                           <span className="link-effect">
-                                              <span className="effect-1">View Resources</span>
-                                              <span className="effect-1">View Resources</span>
+                                              <span className="effect-1">Download now</span>
+                                              <span className="effect-1">Download now</span>
                                           </span>
                                           <span className="arrow-all-2">
                                               <i>

@@ -245,7 +245,7 @@ export function SiteHeader() {
               </div>
               <div className="col-auto header-right-wrapper">
                 <div className="outer-box">
-                  <Link href="/contact" className="panzer-header-cta">Contact Us</Link>
+                  <Link href="/contact" className="panzer-header-cta">Get in touch</Link>
                 </div>
               </div>
             </div>
@@ -324,7 +324,7 @@ export function SiteHeader() {
               </div>
               <div className="col-auto header-right-wrapper">
                 <div className="outer-box">
-                  <Link href="/contact" className="panzer-header-cta">Contact Us</Link>
+                  <Link href="/contact" className="panzer-header-cta">Get in touch</Link>
                 </div>
               </div>
             </div>

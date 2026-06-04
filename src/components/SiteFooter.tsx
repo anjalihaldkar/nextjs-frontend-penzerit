@@ -74,12 +74,12 @@ export function SiteFooter() {
         <div className="footer-bottom">
           <div className="container">
             <div className="row gy-15">
-              <div className="col-md-6">
+              <div className="col-md-6 order-2 order-md-1">
                 <div className="copyright wow fadeInUp" data-wow-delay=".3s">
                   <p className="mb-0">Copyright ® Panzer IT - Make IT Secure. All Rights Reserved.</p>
                 </div>
               </div>
-              <div className="col-md-6 text-md-end">
+              <div className="col-md-6 text-md-end order-1 order-md-2">
                 <div className="footer-policy wow fadeInUp" data-wow-delay=".6s">
                   <Link href="#">Privacy Policy</Link>
                 </div>
