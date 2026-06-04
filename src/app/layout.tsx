@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { RouteScripts } from "@/components/RouteScripts";
+import { LegacyMainScript } from "@/components/LegacyMainScript";
 import { Preloader } from "@/components/Preloader";
 import { SiteChrome } from "@/components/SiteChrome";
 import "./globals.css";
@@ -72,7 +73,7 @@ export default function RootLayout({
         <Script src="/assets/js/three.min.js" strategy="beforeInteractive" />
         <Script src="/assets/js/hover.js" strategy="beforeInteractive" />
 
-        <Script src="/assets/js/main.js?v=20260603-1" strategy="afterInteractive" />
+        <LegacyMainScript />
         <RouteScripts />
       </body>
     </html>
