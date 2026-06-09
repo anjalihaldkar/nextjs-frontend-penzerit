@@ -153,20 +153,7 @@ export default function Page() {
                 </div>
               </div>
 
-              <div className="panzer-brand-detail-summary">
-                <div>
-                  <strong>9+</strong>
-                  <span>Specialist Brands</span>
-                </div>
-                <div>
-                  <strong>360</strong>
-                  <span>Security Coverage</span>
-                </div>
-                <div>
-                  <strong>24/7</strong>
-                  <span>Consultation Support</span>
-                </div>
-              </div>
+          
 
               <div className="panzer-brand-detail-capabilities">
                 <h3>Brand Capabilities</h3>
@@ -179,28 +166,6 @@ export default function Page() {
                     </span>
                   ))}
                 </div>
-              </div>
-
-              <div className="panzer-brand-detail-grid">
-                {brands.map((brand) => (
-                  <article className="panzer-brand-detail-card" id={brand.id} key={brand.id}>
-                    <div className="panzer-brand-detail-logo-box">
-                      <Image
-                        src={brand.logo}
-                        alt={brand.title}
-                        width={brand.width}
-                        height={brand.height}
-                        sizes="(max-width: 575px) 70vw, 220px"
-                      />
-                    </div>
-                    <h3>{brand.title}</h3>
-                    <p>{brand.text}</p>
-                    <Link href="/contact">
-                      <span>Discuss Brand</span>
-                      <i className="fa-solid fa-arrow-right"></i>
-                    </Link>
-                  </article>
-                ))}
               </div>
 
               <div className="panzer-brand-detail-faq">

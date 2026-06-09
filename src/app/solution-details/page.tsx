@@ -11,12 +11,6 @@ const solutionCategories = [
   "IAM | PAM | PSM & DBAM",
 ];
 
-const solutionStats = [
-  { value: "360", label: "Security Coverage" },
-  { value: "24/7", label: "Support Alignment" },
-  { value: "150+", label: "Man-Years Experience" },
-];
-
 const highlights = [
   {
     icon: "fa-shield-halved",
@@ -82,41 +76,43 @@ export default function Page() {
         <div className="container">
           <div className="panzer-solution-detail-layout">
             <aside className="panzer-solution-detail-sidebar" aria-label="Solution categories">
-              <div className="panzer-solution-detail-side-card">
-                <h2>Solution Categories</h2>
-                <nav>
-                  {solutionCategories.map((category, index) => (
-                    <Link href="/contact" key={category} className={index === 0 ? "active" : undefined}>
-                      <span>{category}</span>
-                      <i className="fa-solid fa-arrow-right"></i>
-                    </Link>
-                  ))}
-                </nav>
-              </div>
+              <div className="panzer-solution-detail-sidebar-inner">
+                <div className="panzer-solution-detail-side-card">
+                  <h2>Solution Categories</h2>
+                  <nav>
+                    {solutionCategories.map((category, index) => (
+                      <Link href="/contact" key={category} className={index === 0 ? "active" : undefined}>
+                        <span>{category}</span>
+                        <i className="fa-solid fa-arrow-right"></i>
+                      </Link>
+                    ))}
+                  </nav>
+                </div>
 
-              <div className="panzer-solution-detail-help">
-                <span className="panzer-solution-detail-help-icon">
-                  <i className="fa-solid fa-headset"></i>
-                </span>
-                <h3>Need Solution Guidance?</h3>
-                <p>Talk to Panzer IT for the right security, backup and data protection solution fit.</p>
-                <Link href="/contact">
-                  <span>Contact Us</span>
-                  <i className="fa-solid fa-arrow-right"></i>
-                </Link>
+                <div className="panzer-solution-detail-help">
+                  <span className="panzer-solution-detail-help-icon">
+                    <i className="fa-solid fa-headset"></i>
+                  </span>
+                  <h3>Need Solution Guidance?</h3>
+                  <p>Talk to Panzer IT for the right security, backup and data protection solution fit.</p>
+                  <Link href="/contact">
+                    <span>Contact Us</span>
+                    <i className="fa-solid fa-arrow-right"></i>
+                  </Link>
+                </div>
               </div>
             </aside>
 
             <div className="panzer-solution-detail-content">
               <div className="panzer-solution-detail-hero">
                 <div className="panzer-solution-detail-copy">
-                  <div className="panzer-solution-detail-pill">Panzer IT Solutions</div>
+                  
                   <h2>Security, Backup And Data Protection Built Around Your Data</h2>
                   <p>
                     Panzer IT helps organizations secure sensitive data, control user access, prevent advanced threats and keep business systems
                     recoverable with a practical mix of proven security technologies.
                   </p>
-                  <div className="panzer-solution-detail-actions">
+                  {/* <div className="panzer-solution-detail-actions">
                     <Link href="/contact">
                       <span>Discuss Requirement</span>
                       <i className="fa-solid fa-arrow-right"></i>
@@ -124,7 +120,7 @@ export default function Page() {
                     <Link href="/solution">
                       <span>View All Solutions</span>
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="panzer-solution-detail-image">
                   <Image
@@ -135,15 +131,6 @@ export default function Page() {
                     sizes="(max-width: 991px) 100vw, 43vw"
                   />
                 </div>
-              </div>
-
-              <div className="panzer-solution-detail-stats">
-                {solutionStats.map((stat) => (
-                  <div key={stat.label}>
-                    <strong>{stat.value}</strong>
-                    <span>{stat.label}</span>
-                  </div>
-                ))}
               </div>
 
               <div className="panzer-solution-detail-highlights">

@@ -210,60 +210,7 @@ export default function Page() {
               </section>
 
 
-      		
-              <section className="tv-choose-section style-6 space bg-dark position-relative resource-page-choose">
-                  <div className="bg image"><Image src="/assets/images/choose/hm8-bg01.webp" alt="" width={1920} height={886} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
-                  <div className="container">
-                      
-                      <div className="title-wrap text-center three">
-                          <div className="sub-title-2 text-white two">Product</div>
-                          <h2 className="sec-title text-white no-title-animation">Explore Panzer IT products <br /> across security and recovery</h2>
-                      </div>
-
-                      <div className="row gy-30">
-                          <div className="col-lg-4 col-md-6 col-sm-6">
-                              <div className="choose-left">
-                                  <div className="choose-box mb-40">
-                                      <div className="icon"><Image src="/assets/images/choose/hm8-icon01.webp" alt="" width={32} height={44} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
-                                      <div className="text"><h6>Scopd DLP <br /> with UEBA</h6></div>
-                                  </div>
-                                  <div className="choose-box mb-40">
-                                      <div className="icon"><Image src="/assets/images/choose/hm8-icon02.webp" alt="" width={45} height={39} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
-                                      <div className="text"><h6>Falcongaze <br /> SecureTower</h6></div>
-                                  </div>
-                                  <div className="choose-box">
-                                      <div className="icon"><Image src="/assets/images/choose/hm8-icon03.webp" alt="" width={42} height={35} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
-                                      <div className="text"><h6>Netop Remote <br /> Control</h6></div>
-                                  </div>
-                              </div>
-                          </div>
-                          <div className="col-lg-4 col-md-6 d-none d-lg-block">
-                              <div className="choose-middle">
-                                  <div className="ai-box">
-                                      <Image className="spin2" src="/assets/images/choose/hm8-ai.webp" alt="" width={424} height={424} sizes="100vw" style={{ width: "100%", height: "auto" }} />
-                                      <div className="circle"><h1>360°</h1></div>
-                                  </div>                                                      
-                              </div>
-                          </div>
-                          <div className="col-lg-4 col-md-6 col-sm-6">
-                              <div className="choose-right">
-                                  <div className="choose-box mb-40">
-                                      <div className="icon"><Image src="/assets/images/choose/hm8-icon01.webp" alt="" width={32} height={44} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
-                                      <div className="text"><h6>Heimdal <br /> Security</h6></div>
-                                  </div>
-                                  <div className="choose-box mb-40">
-                                      <div className="icon"><Image src="/assets/images/choose/hm8-icon02.webp" alt="" width={45} height={39} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
-                                      <div className="text"><h6>Emsisoft <br /> Anti-Malware</h6></div>
-                                  </div>
-                                  <div className="choose-box">
-                                      <div className="icon"><Image src="/assets/images/choose/hm8-icon03.webp" alt="" width={42} height={35} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
-                                      <div className="text"><h6>Vembu BDR <br /> Suite</h6></div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </section>
+      	
 
 
               <section className="tv-contact-section style-4 z-1">
@@ -313,7 +260,7 @@ export default function Page() {
                                   </div>
                               </div>
                               <div className="col-lg-6">
-                                  <div className="contact-left-thumb wow img-anim-right overflow-hidden">
+                                  <div className="contact-left-thumb overflow-hidden">
                                       <figure>
                                           <Image src="/assets/images/contact/hm4-img011.webp" alt="" width={648} height={625} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                       </figure>

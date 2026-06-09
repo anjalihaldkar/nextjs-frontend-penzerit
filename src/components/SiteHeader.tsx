@@ -5,14 +5,14 @@ import Link from "next/link";
 import Image from "next/image";
 
 const solutionLinks = [
-  "Scopd DLP with UEBA",
-  "Vulnerability Scanner, Assessment & Penetration Testing",
-  "Employee Monitoring Solution",
-  "Most Advance Anti-Malware",
-  "Backup & Disaster Recovery",
-  "Backup Solution",
-  "Data Leak Prevention - DLP",
-  "Advance Threat Prevention | EDR | EPS",
+  { label: "Scopd DLP with UEBA", icon: "fa-shield-check" },
+  { label: "Vulnerability Scanner, Assessment & Penetration Testing", icon: "fa-magnifying-glass-chart" },
+  { label: "Employee Monitoring Solution", icon: "fa-desktop" },
+  { label: "Most Advance Anti-Malware", icon: "fa-bug-slash" },
+  { label: "Backup & Disaster Recovery", icon: "fa-cloud-arrow-up" },
+  { label: "Backup Solution", icon: "fa-database" },
+  { label: "Data Leak Prevention - DLP", icon: "fa-file-shield" },
+  { label: "Advance Threat Prevention | EDR | EPS", icon: "fa-radar" },
 ];
 
 const brandLinks = [
@@ -86,9 +86,12 @@ function MainNavigation({
           className={`sub-menu solution-sub-menu${mobile ? " submenu-class" : ""}${solutionsOpen ? " menu-open" : ""}`}
           style={mobile ? { display: solutionsOpen ? "block" : "none" } : undefined}
         >
-          {solutionLinks.map((label) => (
-            <li key={label}>
-              <Link href="/solution-details" onClick={onNavigate}>{label}</Link>
+          {solutionLinks.map((item) => (
+            <li key={item.label}>
+              <Link href="/solution-details" onClick={onNavigate}>
+                <i className={`fa-solid ${item.icon} panzer-dropdown-icon`}></i>
+                <span>{item.label}</span>
+              </Link>
             </li>
           ))}
         </ul>

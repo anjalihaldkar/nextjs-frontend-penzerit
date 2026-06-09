@@ -65,7 +65,7 @@ export default function Page() {
                           </div>
                           <div className="col-lg-12 col-xl-6">
                              <div className="tv-choose-right-box panzer-about-data-wheel panzer-about-secure-visual">
-                                  <div className="data-item-hover">
+                                  <div>
                                       <figure className="image_right">
                                           <Image src="/assets/images/hero/img11.png" alt="Cyber security data protection illustration" width={1024} height={1024} sizes="(max-width: 1199px) 82vw, 44vw" style={{ width: "100%", height: "auto" }} />
                                       </figure>

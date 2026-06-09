@@ -23,7 +23,7 @@ export default function Page() {
                                           <Image src="/assets/images/blog/blog-thumb05.webp" alt="Meeting Image" width={832} height={500} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                       </div>
                                       <div className="card-content">
-                                          <span className="category">Marketing</span>
+                                         
                                           <h3 className="title">10 Free SEO Marketing Tools Growing Business</h3>
                                           <div className="author-info">
                                               <div className="author">
@@ -154,62 +154,9 @@ export default function Page() {
                                           </ul>
                                       </div>
                                   </div>
-                                  <div className="sidebar-latest-posts">
-                                      <h4 className="sidebar-title"> Latest Posts </h4>
-                                      <div className="widget-box">
-                                          <div className="latest-posts">
-                                              <div className="post">
-                                                  <Link href="#"><Image src="/assets/images/blog/latest-details01.webp" alt="Post Image" width={88} height={88} sizes="100vw" style={{ width: "100%", height: "auto" }} /></Link>
-                                                  <div className="post-content">
-                                                      <Link href="#">How to Install Droip into Local WP Server?</Link>
-                                                      <p>August 17, 2025</p>
-                                                  </div>
-                                              </div>
-                                              <div className="post">
-                                                  <Link href="#"><Image src="/assets/images/blog/latest-details02.webp" alt="Post Image" width={88} height={88} sizes="100vw" style={{ width: "100%", height: "auto" }} /></Link>
-                                                  <div className="post-content">
-                                                      <Link href="#">10 Free SEO Marketing tools Growing Business</Link>
-                                                      <p>August 18, 2025</p>
-                                                  </div>
-                                              </div>
-                                              <div className="post">
-                                                  <Link href="#"><Image src="/assets/images/blog/latest-details03.webp" alt="Post Image" width={88} height={88} sizes="100vw" style={{ width: "100%", height: "auto" }} /></Link>
-                                                  <div className="post-content">
-                                                      <Link href="#">Most popular Promt for Sales Growth in 2025</Link>
-                                                      <p>August 19, 2025</p>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div className="sidebar-tags">
-                                      <h4 className="sidebar-title"> Latest Posts </h4>
-                                      <div className="widget-box">
-                                          <div className="tag-list">
-                                              <span className="tag">BUSINESS</span>
-                                              <span className="tag active">FINANCE</span>
-                                              <span className="tag">DATA</span>
-                                              <span className="tag">CORPORATE</span>
-                                              <span className="tag">CONSULTING</span>
-                                              <span className="tag">MARKETING</span>
-                                              <span className="tag">TRADING</span>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div className="sidebar-newsletter">
-                                      <h4 className="sidebar-title"> Newsletter </h4>
-                                      <div className="widget-box mb-0">
-                                          <form className="newsletter-form" action="https://formspree.io/f/mzbnjrnb" method="post">
-                                              <div className="form-group">
-                                                  <input type="email" name="email" className="email mb-0" placeholder="Enter email" autoComplete="on" required={true} />
-                                                  <button type="submit">
-                                                      <i className="far fa-paper-plane"></i>
-                                                      <span className="btn-title"></span>
-                                                  </button>
-                                              </div>
-                                          </form>
-                                      </div>
-                                  </div>
+                               
+                               
+                               
 
                               </div>
                           </div>

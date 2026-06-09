@@ -36,13 +36,13 @@ export default function Page() {
                                         <h3 className="title text-dark">Panzer IT Presentation</h3>
                                         <p className="text mb-20">Explore Panzer IT&apos;s brand portfolio across data leak prevention, employee monitoring, vulnerability assessment, endpoint security, secure remote access and backup solutions.</p>
                                         <p className="text mb-30"><strong>File Name:</strong> PIT_Presentation.pptx</p>
-                                        <Link href="https://panzerit.com/brands/" target="_blank" className="theme-btn panzer-static-read-btn">
+                                        {/* <Link href="https://panzerit.com/brands/" target="_blank" className="theme-btn panzer-static-read-btn">
                                             <span className="link-effect">
                                                 <span className="effect-1">VIEW RESOURCE</span>
                                                 <span className="effect-1">VIEW RESOURCE</span>
                                             </span>
                                             <i className="fa-solid fa-arrow-up-right"></i>
-                                        </Link>
+                                        </Link> */}
                                     </div>
                                 </div>
                                 <div className="col-lg-7">

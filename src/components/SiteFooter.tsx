@@ -17,12 +17,6 @@ export function SiteFooter() {
                     <div className="logo">
                       <Image width={200} height={46} src="/assets/images/logo/logo.png" alt="Panzer IT Logo"  />
                     </div>
-                    <div className="social-links">
-                      <Link href="#" className="social-icon"><i className="fab fa-facebook-f"></i></Link>
-                      <Link href="#" className="social-icon"><i className="fab fa-x-twitter"></i></Link>
-                      <Link href="#" className="social-icon"><i className="fab fa-linkedin-in"></i></Link>
-                      <Link href="#" className="social-icon"><i className="fab fa-pinterest-p"></i></Link>
-                    </div>
                   </div>
                   <div className="contact-info">
                     <div className="contact-item">
@@ -42,16 +36,17 @@ export function SiteFooter() {
                       <div className="panzer-footer-addresses">
                         <Link href="/contact">
                           <i className="fa-solid fa-location-dot"></i>
-                          <span>New Delhi: F-398, Sector 63, Noida (NCR) 201307</span>
+                          <span>Delhi (NCR) | Mumbai | All India Network</span>
                         </Link>
-                        <Link href="/contact">
-                          <i className="fa-solid fa-location-dot"></i>
-                          <span>Mumbai: 203, Sai Jewel, Plot 26, Sector 35/I, Kharghar, Navi Mumbai, Maharashtra 410210</span>
-                        </Link>
-                        <Link href="/contact">
-                          <i className="fa-solid fa-location-dot"></i>
-                          <span>World Wide Work support for queries, requirements, discussions and IT security consultancy.</span>
-                        </Link>
+                    
+                      </div>
+                    </div>
+                    <div className="contact-item panzer-footer-social-item">
+                      <h3 className="title">SOCIAL LINKS</h3>
+                      <div className="social-links">
+                        <Link href="#" className="social-icon" aria-label="Panzer IT on LinkedIn"><i className="fab fa-linkedin-in"></i></Link>
+                        <Link href="#" className="social-icon" aria-label="Panzer IT on Twitter"><i className="fab fa-x-twitter"></i></Link>
+                        <Link href="#" className="social-icon" aria-label="Panzer IT on Google"><i className="fab fa-google"></i></Link>
                       </div>
                     </div>
                   </div>
@@ -76,12 +71,12 @@ export function SiteFooter() {
             <div className="row gy-15">
               <div className="col-md-6 order-2 order-md-1">
                 <div className="copyright wow fadeInUp" data-wow-delay=".3s">
-                  <p className="mb-0">Copyright ® Panzer IT - Make IT Secure. All Rights Reserved.</p>
+                  <p className="mb-0">Copyright &reg; Panzer IT - Make IT Secure. All Rights Reserved.</p>
                 </div>
               </div>
               <div className="col-md-6 text-md-end order-1 order-md-2">
                 <div className="footer-policy wow fadeInUp" data-wow-delay=".6s">
-                  <Link href="#">Privacy Policy</Link>
+                  <Link href="/privacy-policy">Privacy Policy</Link>
                 </div>
               </div>
             </div>

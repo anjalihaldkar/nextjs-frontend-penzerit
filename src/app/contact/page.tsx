@@ -21,7 +21,7 @@ export default function Page() {
                                       <p>Feel free to touchbase Panzer IT for any query, requirement, discussion or IT security consultancy.</p>
                                   </div>
                                   <div className="contact-info">
-                                      <div className="contact-item">
+                                      {/* <div className="contact-item">
                                           <div className="icon">
                                               <i className="fa-solid fa-location-dot"></i>
                                           </div>
@@ -30,7 +30,7 @@ export default function Page() {
                                               <p>New Delhi: F-398, Sector 63, Noida (NCR) 201307</p>
                                               <p className="mb-0 mt-10">Mumbai: 203, Sai Jewel, Plot 26, Sector 35/I, Kharghar, Navi Mumbai, Maharashtra 410210</p>
                                           </div>
-                                      </div>
+                                      </div> */}
                                       <div className="contact-item">
                                           <div className="icon">
                                               <i className="fa-light fa-circle-phone"></i>
@@ -57,32 +57,7 @@ export default function Page() {
                                           </div>
                                       </div>
                                   </div>
-                                  <div className="social-links">
-                                      <Link href="#">
-                                          <span className="link-effect">
-                                              <span className="effect-1">Facebook</span>
-                                              <span className="effect-1">Facebook</span>
-                                          </span>
-                                      </Link>
-                                      <Link href="#">
-                                          <span className="link-effect">
-                                              <span className="effect-1">Twitter/X</span>
-                                              <span className="effect-1">Twitter/X</span>
-                                          </span>
-                                      </Link>
-                                      <Link href="#">
-                                          <span className="link-effect">
-                                              <span className="effect-1">LinkedIn</span>
-                                              <span className="effect-1">LinkedIn</span>
-                                          </span>
-                                      </Link>
-                                      <Link href="#">
-                                          <span className="link-effect">
-                                              <span className="effect-1">Instagram</span>
-                                              <span className="effect-1">Instagram</span>
-                                          </span>
-                                      </Link>
-                                  </div>
+                               
                               </div>
                           </div>
                           <div className="col-lg-7">

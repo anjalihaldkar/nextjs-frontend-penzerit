@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { RouteScripts } from "@/components/RouteScripts";
 import { LegacyMainScript } from "@/components/LegacyMainScript";
-import { Preloader } from "@/components/Preloader";
+// import { Preloader } from "@/components/Preloader";
 import { SiteChrome } from "@/components/SiteChrome";
 import "./globals.css";
 
@@ -39,11 +39,11 @@ export default function RootLayout({
         <link rel="stylesheet" href="/assets/css/animate.min.css?v=20260524" />
         <link rel="stylesheet" href="/assets/css/select2.min.css?v=20260524" />
         <link rel="stylesheet" href="/assets/css/odometer.css?v=20260524" />
-        <link rel="stylesheet" href="/assets/css/style.css?v=20260604-9" />
+        <link rel="stylesheet" href="/assets/css/style.css?v=20260608-1" />
       </head>
       <body suppressHydrationWarning>
         <SiteChrome>
-          <Preloader />
+          {/* <Preloader /> */}
           {children}
         </SiteChrome>
 

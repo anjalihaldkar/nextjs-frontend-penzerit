@@ -385,7 +385,44 @@ export default function Page() {
                         </div>
                     </div>
                 </section>
+                {/* brand */}
+                  
+                <div className="tv-marquee-section bg-light position-relative">
+                    <div className="tv-marquee-inner mx-20 ml-mx-0 position-relative">
+                        <div className="container-fluid p-0 overflow-hidden">
+                            <div className="slider__marquee clearfix br-0 marquee-wrap style-2">
+                                <div className="panzer-next-marquee-track">
+                                <ul className="marquee__group">
+                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
+                                        Endpoint Security</li>
+                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
+                                        Backup & Disaster Recovery</li>
+                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
+                                        Data Loss Prevention (DLP)</li>
+                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
+                                        Vulnerability Assessment & VAPT</li>
+                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
+                                        IAM, PAM & Network Security</li>
+                                </ul>
+                                <ul className="marquee__group" aria-hidden="true">
+                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
+                                        Endpoint Security</li>
+                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
+                                        Backup & Disaster Recovery</li>
+                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
+                                        Data Loss Prevention (DLP)</li>
+                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
+                                        Vulnerability Assessment & VAPT</li>
+                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
+                                        IAM, PAM & Network Security</li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+               
 
                    
                 <section className="tv-about-section style-4 space bg-light panzer-home-about-section">
@@ -406,8 +443,8 @@ export default function Page() {
                                     ))}
                                 </div>
                                 <div className="panzer-lock-about-actions">
-                                    <Link href="/solution" className="panzer-lock-about-btn primary">
-                                        <span>Explore Solutions</span>
+                                    <Link href="/about" className="panzer-lock-about-btn primary">
+                                        <span>Read More</span>
                                         <i className="fa-solid fa-arrow-right"></i>
                                     </Link>
                                 </div>
@@ -621,7 +658,60 @@ export default function Page() {
         </section>
               
 
-               
+    
+              <section className="tv-choose-section style-6 space bg-dark position-relative resource-page-choose">
+                  <div className="bg image"><Image src="/assets/images/choose/hm8-bg01.webp" alt="" width={1920} height={886} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
+                  <div className="container">
+                      
+                      <div className="title-wrap text-center three">
+                          <div className="sub-title-2 text-white two">Product</div>
+                          <h2 className="sec-title text-white no-title-animation">Explore Panzer IT products <br /> across security and recovery</h2>
+                      </div>
+
+                      <div className="row gy-30">
+                          <div className="col-lg-4 col-md-6 col-sm-6">
+                              <div className="choose-left">
+                                  <div className="choose-box mb-40">
+                                      <div className="icon"><Image src="/assets/images/choose/hm8-icon01.webp" alt="" width={32} height={44} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
+                                      <div className="text"><h6>Scopd DLP <br /> with UEBA</h6></div>
+                                  </div>
+                                  <div className="choose-box mb-40">
+                                      <div className="icon"><Image src="/assets/images/choose/hm8-icon02.webp" alt="" width={45} height={39} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
+                                      <div className="text"><h6>Falcongaze <br /> SecureTower</h6></div>
+                                  </div>
+                                  <div className="choose-box">
+                                      <div className="icon"><Image src="/assets/images/choose/hm8-icon03.webp" alt="" width={42} height={35} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
+                                      <div className="text"><h6>Netop Remote <br /> Control</h6></div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div className="col-lg-4 col-md-6 d-none d-lg-block">
+                              <div className="choose-middle">
+                                  <div className="ai-box">
+                                      <Image className="spin2" src="/assets/images/choose/hm8-ai.webp" alt="" width={424} height={424} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                      <div className="circle"><h1>360°</h1></div>
+                                  </div>                                                      
+                              </div>
+                          </div>
+                          <div className="col-lg-4 col-md-6 col-sm-6">
+                              <div className="choose-right">
+                                  <div className="choose-box mb-40">
+                                      <div className="icon"><Image src="/assets/images/choose/hm8-icon01.webp" alt="" width={32} height={44} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
+                                      <div className="text"><h6>Heimdal <br /> Security</h6></div>
+                                  </div>
+                                  <div className="choose-box mb-40">
+                                      <div className="icon"><Image src="/assets/images/choose/hm8-icon02.webp" alt="" width={45} height={39} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
+                                      <div className="text"><h6>Emsisoft <br /> Anti-Malware</h6></div>
+                                  </div>
+                                  <div className="choose-box">
+                                      <div className="icon"><Image src="/assets/images/choose/hm8-icon03.webp" alt="" width={42} height={35} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
+                                      <div className="text"><h6>Vembu BDR <br /> Suite</h6></div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </section>
          
                 <section className="tv-contact-section style-4 z-1">
                     <div className="tv-contact-inner space position-relative overflow-hidden bg-light2 mx-20 ml-mx-0">
@@ -670,8 +760,8 @@ export default function Page() {
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
-                                    <div className="contact-left-thumb wow img-anim-right data-item-hover overflow-hidden">
-                                        <figure className="panzer-static-img" data-style="01" data-intensity="0.2" data-speedin="1" data-speedout="1">
+                                    <div className="contact-left-thumb overflow-hidden">
+                                        <figure className="panzer-static-img">
                                             <Image src="/assets/images/hero/deal.png" alt="Business deal discussion" width={1254} height={1254} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                         </figure>
                                     </div>
@@ -684,43 +774,7 @@ export default function Page() {
 
 
               
-                
-                <div className="tv-marquee-section bg-light position-relative">
-                    <div className="tv-marquee-inner mx-20 ml-mx-0 position-relative">
-                        <div className="container-fluid p-0 overflow-hidden">
-                            <div className="slider__marquee clearfix br-0 marquee-wrap style-2">
-                                <div className="panzer-next-marquee-track">
-                                <ul className="marquee__group">
-                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
-                                        Endpoint Security</li>
-                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
-                                        Backup & Disaster Recovery</li>
-                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
-                                        Data Loss Prevention (DLP)</li>
-                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
-                                        Vulnerability Assessment & VAPT</li>
-                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
-                                        IAM, PAM & Network Security</li>
-                                </ul>
-                                <ul className="marquee__group" aria-hidden="true">
-                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
-                                        Endpoint Security</li>
-                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
-                                        Backup & Disaster Recovery</li>
-                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
-                                        Data Loss Prevention (DLP)</li>
-                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
-                                        Vulnerability Assessment & VAPT</li>
-                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
-                                        IAM, PAM & Network Security</li>
-                                </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-               
+              
 
 
                 
@@ -731,9 +785,9 @@ export default function Page() {
                             <div className="col-lg-12">
                                 <div className="title-wrap text-center">
                                     <div className="sub-title-2  text-theme">Latest
-                                        Resources
+                                        Blogs
                                     </div>
-                                    <h2 className="sec-title no-title-animation">Write-ups, Tech Stuff & News <br /> from Panzer IT</h2>
+                                    <h2 className="sec-title no-title-animation">Write-ups, Tech Stuff & News </h2>
                                 </div>
                             </div>
                         </div>
@@ -751,8 +805,13 @@ export default function Page() {
                                                 <div className="border dark"></div>
                                             </div>
                                             <div className="blog-meta">
-                                                <Link href="#" className="continue-reading">Explore More</Link>
-                                                <span>Panzer IT Blog</span>
+                                                <Link href="#" className="continue-reading">Read More</Link>
+                                                <div className="blog-details__social-list">
+                                                  <span>Share:</span>
+                                                  <Link href="https://www.facebook.com/"><i className="fa-brands fa-facebook-f"></i></Link>
+                                                  <Link href="https://x.com/"><i className="fa-brands fa-x-twitter"></i></Link>
+                                                  <Link href="https://www.pinterest.com/"><i className="fa-brands fa-pinterest-p"></i></Link>
+                                              </div>
                                             </div>
                                         </div>
                                     </div>
@@ -772,7 +831,12 @@ export default function Page() {
                                             </div>
                                             <div className="blog-meta">
                                                 <Link href="#" className="continue-reading">Explore More</Link>
-                                                <span>Panzer IT Blog</span>
+                                                <div className="blog-details__social-list">
+                                                  <span>Share:</span>
+                                                  <Link href="https://www.facebook.com/"><i className="fa-brands fa-facebook-f"></i></Link>
+                                                  <Link href="https://x.com/"><i className="fa-brands fa-x-twitter"></i></Link>
+                                                  <Link href="https://www.pinterest.com/"><i className="fa-brands fa-pinterest-p"></i></Link>
+                                              </div>
                                             </div>
                                         </div>
                                     </div>
@@ -792,7 +856,91 @@ export default function Page() {
                                             </div>
                                             <div className="blog-meta">
                                                 <Link href="#" className="continue-reading">Explore More</Link>
-                                                <span>Panzer IT Blog</span>
+                                                 <div className="blog-details__social-list">
+                                                  <span>Share:</span>
+                                                  <Link href="https://www.facebook.com/"><i className="fa-brands fa-facebook-f"></i></Link>
+                                                  <Link href="https://x.com/"><i className="fa-brands fa-x-twitter"></i></Link>
+                                                  <Link href="https://www.pinterest.com/"><i className="fa-brands fa-pinterest-p"></i></Link>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+
+
+
+                                <div className="col-lg-4 col-md-6 col-sm-6">
+                                <article className="blog-single-box">
+                                    <div className="inner-box">
+                                        <div className="blog-image">
+                                            <Image src="/assets/images/blog/blog01.webp" alt="Blog Image" width={392} height={284} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                            <div className="category-tag"><span></span>Write-up</div>
+                                        </div>
+                                        <div className="blog-content">
+                                            <h4 className="title"><Link href="#">Understanding Ransomware: <br /> Protecting Your Data in the Digital Age</Link></h4>
+                                            <div className="pt-25 pb-30">
+                                                <div className="border dark"></div>
+                                            </div>
+                                            <div className="blog-meta">
+                                                <Link href="#" className="continue-reading">Read More</Link>
+                                                <div className="blog-details__social-list">
+                                                  <span>Share:</span>
+                                                  <Link href="https://www.facebook.com/"><i className="fa-brands fa-facebook-f"></i></Link>
+                                                  <Link href="https://x.com/"><i className="fa-brands fa-x-twitter"></i></Link>
+                                                  <Link href="https://www.pinterest.com/"><i className="fa-brands fa-pinterest-p"></i></Link>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div className="col-lg-4 col-md-6 col-sm-6">
+                                <article className="blog-single-box">
+                                    <div className="inner-box">
+                                        <div className="blog-image">
+                                            <Image src="/assets/images/blog/blog02.webp" alt="Blog Image" width={392} height={284} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                            <div className="category-tag"><span></span>Tech Stuff</div>
+                                        </div>
+                                        <div className="blog-content">
+                                            <h4 className="title"><Link href="#">Understanding IAM, PAM, <br /> and DBAM: Enhancing Cybersecurity</Link></h4>
+                                            <div className="pt-25 pb-30">
+                                                <div className="border dark"></div>
+                                            </div>
+                                            <div className="blog-meta">
+                                                <Link href="#" className="continue-reading">Explore More</Link>
+                                                <div className="blog-details__social-list">
+                                                  <span>Share:</span>
+                                                  <Link href="https://www.facebook.com/"><i className="fa-brands fa-facebook-f"></i></Link>
+                                                  <Link href="https://x.com/"><i className="fa-brands fa-x-twitter"></i></Link>
+                                                  <Link href="https://www.pinterest.com/"><i className="fa-brands fa-pinterest-p"></i></Link>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div className="col-lg-4 col-md-6 col-sm-6">
+                                <article className="blog-single-box">
+                                    <div className="inner-box">
+                                        <div className="blog-image">
+                                            <Image src="/assets/images/blog/blog03.webp" alt="Blog Image" width={392} height={284} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                            <div className="category-tag"><span></span>Compliance</div>
+                                        </div>
+                                        <div className="blog-content">
+                                            <h4 className="title"><Link href="#">Essential Cyber Security <br /> Steps for Organizations</Link></h4>
+                                            <div className="pt-25 pb-30">
+                                                <div className="border dark"></div>
+                                            </div>
+                                            <div className="blog-meta">
+                                                <Link href="#" className="continue-reading">Explore More</Link>
+                                                 <div className="blog-details__social-list">
+                                                  <span>Share:</span>
+                                                  <Link href="https://www.facebook.com/"><i className="fa-brands fa-facebook-f"></i></Link>
+                                                  <Link href="https://x.com/"><i className="fa-brands fa-x-twitter"></i></Link>
+                                                  <Link href="https://www.pinterest.com/"><i className="fa-brands fa-pinterest-p"></i></Link>
+                                              </div>
                                             </div>
                                         </div>
                                     </div>

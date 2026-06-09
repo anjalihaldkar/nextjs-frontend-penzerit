@@ -117,6 +117,161 @@
   --ripple-ani-duration: 5s;
 }
 
+/* Panzer privacy policy page */
+.panzer-page-privacy-policy .panzer-privacy-section {
+  position: relative;
+}
+
+.panzer-page-privacy-policy .panzer-privacy-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 360px) minmax(0, 1fr);
+  gap: 30px;
+  align-items: start;
+}
+
+.panzer-page-privacy-policy .panzer-privacy-summary,
+.panzer-page-privacy-policy .panzer-privacy-content {
+  background: #ffffff;
+  border: 1px solid rgba(16, 83, 243, 0.08);
+  box-shadow: 0 12px 38px rgba(6, 17, 83, 0.06);
+}
+
+.panzer-page-privacy-policy .panzer-privacy-summary {
+  position: sticky;
+  top: 110px;
+  border-radius: 20px;
+  padding: 34px 30px;
+}
+
+.panzer-page-privacy-policy .panzer-privacy-summary-icon {
+  width: 58px;
+  height: 58px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: #eaf0ff;
+  color: #1053f3;
+  font-size: 24px;
+  margin-bottom: 22px;
+}
+
+.panzer-page-privacy-policy .panzer-privacy-summary h2,
+.panzer-page-privacy-policy .panzer-privacy-intro h2 {
+  color: #061153;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.panzer-page-privacy-policy .panzer-privacy-summary h2 {
+  font-size: 26px;
+  margin-bottom: 14px;
+}
+
+.panzer-page-privacy-policy .panzer-privacy-summary p {
+  color: #5f6b82;
+  line-height: 1.75;
+  margin-bottom: 22px;
+}
+
+.panzer-page-privacy-policy .panzer-privacy-mail {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #1053f3;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.panzer-page-privacy-policy .panzer-privacy-content {
+  border-radius: 20px;
+  padding: 46px 50px;
+}
+
+.panzer-page-privacy-policy .panzer-privacy-intro {
+  padding-bottom: 26px;
+  margin-bottom: 26px;
+  border-bottom: 1px solid rgba(6, 17, 83, 0.1);
+}
+
+.panzer-page-privacy-policy .panzer-privacy-intro h2 {
+  font-size: clamp(32px, 4vw, 46px);
+  margin-bottom: 18px;
+}
+
+.panzer-page-privacy-policy .panzer-privacy-block {
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(6, 17, 83, 0.08);
+}
+
+.panzer-page-privacy-policy .panzer-privacy-block h3 {
+  color: #061153;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.35;
+  margin-bottom: 14px;
+}
+
+.panzer-page-privacy-policy .panzer-privacy-content p {
+  color: #5f6b82;
+  font-size: 17px;
+  line-height: 1.85;
+  margin-bottom: 14px;
+}
+
+.panzer-page-privacy-policy .panzer-privacy-content p:last-child {
+  margin-bottom: 0;
+}
+
+.panzer-page-privacy-policy .panzer-privacy-note {
+  margin-top: 30px;
+  padding: 28px;
+  border-radius: 16px;
+  background: #f3f7ff;
+}
+
+.panzer-page-privacy-policy .panzer-privacy-note a:not(.theme-btn) {
+  color: #1053f3;
+  font-weight: 700;
+}
+
+.panzer-page-privacy-policy .panzer-privacy-contact {
+  margin-top: 22px;
+}
+
+@media (max-width: 991px) {
+  .panzer-page-privacy-policy .panzer-privacy-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .panzer-page-privacy-policy .panzer-privacy-summary {
+    position: static;
+  }
+}
+
+@media (max-width: 575px) {
+  .panzer-page-privacy-policy .panzer-privacy-summary,
+  .panzer-page-privacy-policy .panzer-privacy-content {
+    border-radius: 14px;
+  }
+
+  .panzer-page-privacy-policy .panzer-privacy-summary {
+    padding: 28px 22px;
+  }
+
+  .panzer-page-privacy-policy .panzer-privacy-content {
+    padding: 32px 22px;
+  }
+
+  .panzer-page-privacy-policy .panzer-privacy-content p {
+    font-size: 16px;
+  }
+
+  .panzer-page-privacy-policy .panzer-privacy-note {
+    padding: 22px;
+  }
+}
+
 /*------------------- 1.2. Mixin -------------------*/
 /*================Responsive Cool System================*/
 /*Position*/
@@ -7999,7 +8154,7 @@ transition: all 500ms ease;
 .sidebar-widget .widget-box {
   width: 100%;
   margin-bottom: 30px;
-  padding: 35px;
+  padding: 25px;
   border-radius: 0 0 10px 10px;
   background-color: var(--white-color);
   /* Extra small devices */
@@ -10782,11 +10937,11 @@ background: var(--light-color);
     text-align: center;
   }
   .footer-section.panzer-compact-footer .footer-brand .contact-info .contact-item .panzer-footer-addresses {
-    max-width: 640px;
+   
     margin: 0 auto;
   }
   .panzer-footer-newsletter {
-    justify-self: center;
+    justify-self: left;
     max-width: 520px;
   }
 }
@@ -10980,7 +11135,7 @@ background: var(--light-color);
 
 /* Panzer resource breadcrumb */
 .panzer-resource-breadcrumb-section {
-  padding: clamp(16px, 2vw, 28px) 0 clamp(24px, 3vw, 42px);
+  padding: 0 0 clamp(24px, 3vw, 42px);
   background: #ffffff;
 }
 
@@ -11034,30 +11189,8 @@ background: var(--light-color);
   padding: clamp(28px, 4vw, 54px) clamp(20px, 3.2vw, 48px) clamp(28px, 4vw, 54px) clamp(56px, 22.8vw, 144px);
 }
 
-.panzer-resource-breadcrumb-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  min-height: 38px;
-  padding: 8px 20px;
-  border: 1px solid rgba(16, 83, 243, 0.22);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.76);
-  color: #3268cf;
-  font-size: 13px;
-  line-height: 1;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 0;
-  box-shadow: 0 12px 28px rgba(16, 83, 243, 0.08);
-}
-
-.panzer-resource-breadcrumb-pill i {
-  font-size: 15px;
-}
-
 .panzer-resource-breadcrumb-title {
-  margin: clamp(18px, 2vw, 26px) 0 12px;
+  margin: 0 0 12px;
   color: #061238;
   font-size: clamp(36px, 4.1vw, 54px);
   line-height: 1.02;
@@ -11076,26 +11209,27 @@ background: var(--light-color);
 
 .panzer-resource-breadcrumb-nav {
   display: flex;
-  margin-top: clamp(18px, 2vw, 26px);
+  justify-content: flex-start;
+  margin: 0 0 clamp(14px, 1.6vw, 22px);
+  padding: clamp(16px, 1.8vw, 22px) clamp(24px, 4.5vw, 52px) 0;
 }
 
 .panzer-resource-breadcrumb-nav ol {
   display: inline-flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  min-height: 46px;
+  justify-content: flex-start;
+  gap: 14px;
   max-width: 100%;
   margin: 0;
-  padding: 9px 22px;
-  border-radius: 999px;
-  color: #ffffff;
-  background: #1053f3;
-  box-shadow: 0 14px 28px rgba(16, 83, 243, 0.24);
-  font-size: 15px;
-  line-height: 1.15;
-  font-weight: 800;
+  padding: 0;
+  border-radius: 0;
+  color: #061153;
+  background: transparent;
+  box-shadow: none;
+  font-size: clamp(15px, 1.05vw, 18px);
+  line-height: 1.35;
+  font-weight: 500;
   list-style: none;
 }
 
@@ -11107,8 +11241,8 @@ background: var(--light-color);
 
 .panzer-resource-breadcrumb-nav li + li::before {
   flex: 0 0 auto;
-  margin-right: 10px;
-  color: rgba(255, 255, 255, 0.82);
+  margin-right: 14px;
+  color: #061153;
   content: "/";
 }
 
@@ -11128,9 +11262,11 @@ background: var(--light-color);
 }
 
 .panzer-resource-breadcrumb-nav a i {
-  flex: 0 0 auto;
-  margin-right: 8px;
-  font-size: 14px;
+  display: none;
+}
+
+.panzer-resource-breadcrumb-nav a:hover {
+  color: #1053f3;
 }
 
 .panzer-resource-breadcrumb-visual {
@@ -11172,15 +11308,11 @@ background: var(--light-color);
 
   .panzer-resource-breadcrumb-copy {
     padding: clamp(34px, 6vw, 52px) clamp(20px, 5vw, 44px) 22px;
-    text-align: center;
+    text-align: left;
   }
 
   .panzer-resource-breadcrumb-text {
-    margin-inline: auto;
-  }
-
-  .panzer-resource-breadcrumb-nav {
-    justify-content: center;
+    margin-inline: 0;
   }
 
   .panzer-resource-breadcrumb-visual {
@@ -11210,13 +11342,7 @@ background: var(--light-color);
   }
 
   .panzer-resource-breadcrumb-copy {
-    padding: 28px 16px 18px;
-  }
-
-  .panzer-resource-breadcrumb-pill {
-    min-height: 34px;
-    padding: 7px 15px;
-    font-size: 11px;
+    padding: 64px 16px 18px;
   }
 
   .panzer-resource-breadcrumb-title {
@@ -11224,11 +11350,12 @@ background: var(--light-color);
   }
 
   .panzer-resource-breadcrumb-nav ol {
-    width: 100%;
-    min-height: 44px;
-    padding: 10px 16px;
-    font-size: 13px;
-    border-radius: 22px;
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .panzer-resource-breadcrumb-nav li + li::before {
+    margin-right: 10px;
   }
 
   .panzer-resource-breadcrumb-visual {
@@ -16720,7 +16847,7 @@ transition: 0.3s;
   margin-left: 0;
   margin-top: 0;
   padding: 43px 34px 43px 36px;
-  background: var(--light-color);
+  background: #d6d6d652;
   position: relative;
   z-index: 1;
   border-radius: 0 0 30px 30px;
@@ -21354,7 +21481,7 @@ transition: all 0.4s ease 0s;
 
 .contact-left-thumb img {
   width: 100%;
-  height: 100%;
+  height: 610px !important;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -26638,7 +26765,7 @@ padding: 18px 30px;
 }
 
 .categories li {
-  padding: 16px 0;
+  padding: 6px 0;
   border-bottom: 1px solid var(--bs-border-color);
 }
 .categories li:first-child {
@@ -64894,6 +65021,41 @@ transition: all 0.4s ease 0s;
   }
 }
 
+/* Header Solutions dropdown icons: remove this block and the solutionLinks icon data to revert. */
+.main-menu ul.sub-menu.solution-sub-menu a,
+.header-style3 .main-wrapper .main-menu ul.sub-menu.solution-sub-menu a,
+.mobile-menu ul.sub-menu.solution-sub-menu a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.main-menu ul.sub-menu.solution-sub-menu a .panzer-dropdown-icon,
+.header-style3 .main-wrapper .main-menu ul.sub-menu.solution-sub-menu a .panzer-dropdown-icon,
+.mobile-menu ul.sub-menu.solution-sub-menu a .panzer-dropdown-icon {
+  flex: 0 0 20px;
+  width: 20px;
+  color: #1053f3;
+  font-size: 15px;
+  line-height: 1;
+  text-align: center;
+}
+
+.main-menu ul.sub-menu.solution-sub-menu a span,
+.header-style3 .main-wrapper .main-menu ul.sub-menu.solution-sub-menu a span,
+.mobile-menu ul.sub-menu.solution-sub-menu a span {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  position: static;
+  top: auto;
+}
+
 /* Keep the default arrow cursor across the whole website. */
 *,
 *::before,
@@ -67251,7 +67413,7 @@ button *,
                     }
 
                     .panzer-page-home .panzer-cyber-actions {
-                        justify-content: center;
+                        justify-content: left;
                     }
 
                     .panzer-page-home .panzer-cyber-visual {
@@ -69576,6 +69738,36 @@ button *,
                   }
               }
 
+.panzer-page-blog-details .blog-list-card.style-2 > .image {
+  max-height: 360px;
+}
+
+.panzer-page-blog-details .blog-list-card.style-2 > .image img {
+  width: 100% !important;
+  height: 360px !important;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .panzer-page-blog-details .blog-list-card.style-2 > .image {
+    max-height: 300px;
+  }
+
+  .panzer-page-blog-details .blog-list-card.style-2 > .image img {
+    height: 300px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .panzer-page-blog-details .blog-list-card.style-2 > .image {
+    max-height: 220px;
+  }
+
+  .panzer-page-blog-details .blog-list-card.style-2 > .image img {
+    height: 220px !important;
+  }
+}
+
 /* src/app/blog-grid/page.tsx block 1 */
 .panzer-page-blog-grid .loading-screen {
                   position: fixed;
@@ -69760,7 +69952,7 @@ button *,
                     justify-content: center;
                     margin-bottom: 22px;
                     border-radius: 16px;
-                    background: rgba(231, 35, 39, 0.08);
+                    background: rgba(212 15 19);
                 }
 
                 .panzer-page-brand .panzer-brand-page .panzer-presentation-icon img {
@@ -72613,21 +72805,41 @@ button *,
 }
 
 .panzer-page-home .tv-service-section.style-4 > .tv-service-inner.space {
-  background: #4a78ea !important;
+  background: #eef4ff !important;
   padding-top: clamp(72px, 6vw, 104px) !important;
   padding-bottom: clamp(72px, 6vw, 104px) !important;
 }
 
 .panzer-page-home .tv-service-section.style-4.bg-light {
-  background: #4a78ea !important;
+  background: #eef4ff !important;
 }
 
 .panzer-page-home .tv-service-section.style-4 > .tv-service-inner::before {
-  background: #4a78ea !important;
+  background: #eef4ff !important;
 }
 
 .panzer-page-home .tv-service-section.style-4 > .tv-service-inner::after {
-  opacity: 0.18;
+  opacity: 0;
+}
+
+.panzer-page-home .tv-service-section.style-4 .sub-title-2.text-white.two {
+  border-color: rgba(16, 83, 243, 0.22);
+  background: rgba(255, 255, 255, 0.58);
+  color: #1053f3 !important;
+}
+
+.panzer-page-home .tv-service-section.style-4 .panzer-static-sec-title.text-white {
+  color: #061153 !important;
+}
+
+.panzer-page-home .tv-service-section.style-4 .panzer-static-service-btn {
+  background: #1053f3 !important;
+  color: #ffffff !important;
+  box-shadow: 0 16px 32px rgba(16, 83, 243, 0.18);
+}
+
+.panzer-page-home .tv-service-section.style-4 .panzer-static-service-btn .arrow-all {
+  background: #ffffff;
 }
 
 @media (max-width: 991px) {
@@ -75435,8 +75647,64 @@ button *,
 }
 
 .footer-section.panzer-compact-footer.panzer-image-footer .footer-bottom {
+  padding-top: 23px;
   padding-bottom: 23px;
   border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+/* Footer social links placed beside location */
+.footer-section.panzer-compact-footer.panzer-image-footer .footer-brand.col-lg-12 .contact-info,
+.panzer-page-home .footer-section.panzer-compact-footer.panzer-image-footer .footer-brand.col-lg-12 .contact-info {
+  grid-template-columns: minmax(180px, 220px) minmax(170px, 210px) minmax(430px, 560px) minmax(150px, 180px);
+  justify-content: start;
+}
+
+.footer-section.panzer-compact-footer.panzer-image-footer .panzer-footer-social-item .social-links,
+.panzer-page-home .footer-section.panzer-compact-footer.panzer-image-footer .panzer-footer-social-item .social-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start !important;
+  gap: 8px;
+  padding-top: 2px;
+}
+
+.footer-section.panzer-compact-footer.panzer-image-footer .panzer-footer-social-item .social-links a,
+.panzer-page-home .footer-section.panzer-compact-footer.panzer-image-footer .panzer-footer-social-item .social-links a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 36px;
+  height: 36px;
+  max-width: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  line-height: 1 !important;
+  text-align: center !important;
+}
+
+.footer-section.panzer-compact-footer.panzer-image-footer .panzer-footer-social-item .social-links a + a,
+.panzer-page-home .footer-section.panzer-compact-footer.panzer-image-footer .panzer-footer-social-item .social-links a + a {
+  margin-left: 0 !important;
+}
+
+.footer-section.panzer-compact-footer.panzer-image-footer .panzer-footer-social-item .social-links a i,
+.panzer-page-home .footer-section.panzer-compact-footer.panzer-image-footer .panzer-footer-social-item .social-links a i {
+  display: block;
+  margin: 0 !important;
+  font-size: 16px;
+  line-height: 1;
+}
+
+@media (max-width: 991px) {
+  .footer-section.panzer-compact-footer.panzer-image-footer .footer-brand.col-lg-12 .contact-info,
+  .panzer-page-home .footer-section.panzer-compact-footer.panzer-image-footer .footer-brand.col-lg-12 .contact-info {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-section.panzer-compact-footer.panzer-image-footer .panzer-footer-social-item .social-links,
+  .panzer-page-home .footer-section.panzer-compact-footer.panzer-image-footer .panzer-footer-social-item .social-links {
+    justify-content: flex-start !important;
+  }
 }
 
 /* Compact brand partners strip */
@@ -75683,7 +75951,6 @@ button *,
 .panzer-page-brand-detail .panzer-brand-detail-hero,
 .panzer-page-brand-detail .panzer-brand-detail-summary,
 .panzer-page-brand-detail .panzer-brand-detail-capabilities,
-.panzer-page-brand-detail .panzer-brand-detail-card,
 .panzer-page-brand-detail .panzer-brand-detail-faq {
   border: 1px solid rgba(6, 17, 118, 0.08);
   border-radius: 18px;
@@ -75771,8 +76038,7 @@ button *,
   line-height: 1.55;
 }
 
-.panzer-page-brand-detail .panzer-brand-detail-help a,
-.panzer-page-brand-detail .panzer-brand-detail-card a {
+.panzer-page-brand-detail .panzer-brand-detail-help a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -75829,7 +76095,6 @@ button *,
 
 .panzer-page-brand-detail .panzer-brand-detail-hero p,
 .panzer-page-brand-detail .panzer-brand-detail-capabilities p,
-.panzer-page-brand-detail .panzer-brand-detail-card p,
 .panzer-page-brand-detail .panzer-brand-detail-faq details p {
   margin: 0;
   color: #4d5b78;
@@ -75915,59 +76180,6 @@ button *,
   color: #1053f3;
 }
 
-.panzer-page-brand-detail .panzer-brand-detail-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
-}
-
-.panzer-page-brand-detail .panzer-brand-detail-card {
-  scroll-margin-top: 120px;
-  display: flex;
-  min-height: 100%;
-  flex-direction: column;
-  padding: 22px;
-}
-
-.panzer-page-brand-detail .panzer-brand-detail-logo-box {
-  display: flex;
-  height: 86px;
-  align-items: center;
-  justify-content: center;
-  padding: 16px;
-  border: 1px solid rgba(6, 17, 118, 0.08);
-  border-radius: 14px;
-  background: #ffffff;
-}
-
-.panzer-page-brand-detail .panzer-brand-detail-logo-box img {
-  width: auto;
-  max-width: 100%;
-  height: auto;
-  max-height: 58px;
-  object-fit: contain;
-}
-
-.panzer-page-brand-detail .panzer-brand-detail-card h3 {
-  margin: 20px 0 10px;
-  color: #061238;
-  font-size: 20px;
-  line-height: 1.24;
-  font-weight: 850;
-}
-
-.panzer-page-brand-detail .panzer-brand-detail-card p {
-  flex: 1 1 auto;
-  font-size: 14px;
-  line-height: 1.55;
-}
-
-.panzer-page-brand-detail .panzer-brand-detail-card a {
-  margin-top: 20px;
-  color: #ffffff;
-  background: #1053f3;
-}
-
 .panzer-page-brand-detail .panzer-brand-detail-faq {
   display: grid;
   gap: 14px;
@@ -76036,10 +76248,6 @@ button *,
     grid-template-columns: 1fr;
   }
 
-  .panzer-page-brand-detail .panzer-brand-detail-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .panzer-page-brand-detail .panzer-brand-detail-side-card nav {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -76054,13 +76262,11 @@ button *,
   .panzer-page-brand-detail .panzer-brand-detail-help,
   .panzer-page-brand-detail .panzer-brand-detail-hero,
   .panzer-page-brand-detail .panzer-brand-detail-capabilities,
-  .panzer-page-brand-detail .panzer-brand-detail-card,
   .panzer-page-brand-detail .panzer-brand-detail-faq {
     border-radius: 14px;
   }
 
   .panzer-page-brand-detail .panzer-brand-detail-side-card nav,
-  .panzer-page-brand-detail .panzer-brand-detail-grid,
   .panzer-page-brand-detail .panzer-brand-detail-summary {
     grid-template-columns: 1fr;
   }
@@ -76091,8 +76297,15 @@ button *,
 }
 
 .panzer-page-solution-details .panzer-solution-detail-sidebar {
+  align-self: start;
+}
+
+.panzer-page-solution-details .panzer-solution-detail-sidebar-inner {
   position: sticky;
-  top: 110px;
+  top: 96px;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
   display: grid;
   gap: 22px;
 }
@@ -76439,24 +76652,22 @@ button *,
 }
 
 @media (max-width: 1199px) {
-  .panzer-page-solution-details .panzer-solution-detail-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .panzer-page-solution-details .panzer-solution-detail-sidebar {
-    position: static;
-  }
-
-  .panzer-page-solution-details .panzer-solution-detail-side-card nav {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .panzer-page-solution-details .panzer-solution-detail-highlights {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 991px) {
+  .panzer-page-solution-details .panzer-solution-detail-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .panzer-page-solution-details .panzer-solution-detail-sidebar-inner {
+    position: static;
+    max-height: none;
+    overflow: visible;
+  }
+
   .panzer-page-solution-details .panzer-solution-detail-hero,
   .panzer-page-solution-details .panzer-solution-detail-overview {
     grid-template-columns: 1fr;

@@ -22,7 +22,7 @@ export default function Page() {
                                 <div className="col-lg-12 text-center">
                                     <div className="title-wrap two white" data-wow-duration="2s" data-wow-delay=".0s">
                                         <div className="sub-title-2">Solutions</div>
-                                        <h2 className="sec-title text-dark no-title-animation">Security, Backup and Data Protection <br />Solutions from Panzer IT</h2>
+                                        <h2 className="sec-title text-dark no-title-animation">Security, Backup and Data Protection <br />Solutions </h2>
                                     </div>
                                 </div>
                             </div>
@@ -155,8 +155,8 @@ export default function Page() {
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
-                                    <div className="contact-left-thumb wow img-anim-right data-item-hover overflow-hidden">
-                                        <figure className="panzer-static-img" data-style="01" data-intensity="0.2" data-speedin="1" data-speedout="1">
+                                    <div className="contact-left-thumb overflow-hidden">
+                                        <figure className="panzer-static-img">
                                             <Image src="/assets/images/hero/deal.png" alt="Business deal discussion" width={1254} height={1254} sizes="100vw" style={{ width: "100%", height: "auto" }} />
                                         </figure>
                                     </div>
