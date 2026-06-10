@@ -386,43 +386,137 @@ export default function Page() {
                     </div>
                 </section>
                 {/* brand */}
-                  
-                <div className="tv-marquee-section bg-light position-relative">
-                    <div className="tv-marquee-inner mx-20 ml-mx-0 position-relative">
-                        <div className="container-fluid p-0 overflow-hidden">
-                            <div className="slider__marquee clearfix br-0 marquee-wrap style-2">
-                                <div className="panzer-next-marquee-track">
-                                <ul className="marquee__group">
-                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
-                                        Endpoint Security</li>
-                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
-                                        Backup & Disaster Recovery</li>
-                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
-                                        Data Loss Prevention (DLP)</li>
-                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
-                                        Vulnerability Assessment & VAPT</li>
-                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
-                                        IAM, PAM & Network Security</li>
-                                </ul>
-                                <ul className="marquee__group" aria-hidden="true">
-                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
-                                        Endpoint Security</li>
-                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
-                                        Backup & Disaster Recovery</li>
-                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
-                                        Data Loss Prevention (DLP)</li>
-                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
-                                        Vulnerability Assessment & VAPT</li>
-                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
-                                        IAM, PAM & Network Security</li>
-                                </ul>
+              
+                  <section className="panzer-brand-partners-section">
+                <div className="panzer-cyber-brand-strip">
+                        
+                        <div className="tv-brands-section style-3 position-relative z-3">
+                            <div className="container">
+                                <div className="row">
+                                    <div className="col-lg-12">
+                                        <div className="sponsors-outer brand-outher panzer-cyber-brand-panel">
+                                            <div className="trusted-partners d-flex align-items-center mb-60">
+                                                <div className="title text-white">BRAND PARTNERS</div>
+                                            </div>
+                                            <div className="brands-slider-three swiper">
+                                                <div className="swiper-wrapper">
+                                                    <div className="swiper-slide">
+                                                        <div className="brand-item">
+                                                            <Link className="image" href="#">
+                                                                <Image src="/assets/images/brands/01.png" alt="Brand 01" width={190} height={40} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                                <Image src="/assets/images/brands/01.png" alt="Brand 01" width={190} height={40} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                            </Link>
+                                                        </div>
+                                                    </div>
+                                                    <div className="swiper-slide">
+                                                        <div className="brand-item">
+                                                            <Link className="image" href="#">
+                                                                <Image src="/assets/images/brands/02.png" alt="Brand 02" width={300} height={81} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                                <Image src="/assets/images/brands/02.png" alt="Brand 02" width={300} height={81} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                            </Link>
+                                                        </div>
+                                                    </div>
+                                                    <div className="swiper-slide">
+                                                        <div className="brand-item">
+                                                            <Link className="image" href="#">
+                                                                <Image src="/assets/images/brands/03.webp?v=2" alt="Brand 03" width={258} height={45} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                                <Image src="/assets/images/brands/03.webp?v=2" alt="Brand 03" width={258} height={45} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                            </Link>
+                                                        </div>
+                                                    </div>
+                                                    <div className="swiper-slide">
+                                                        <div className="brand-item">
+                                                            <Link className="image" href="#">
+                                                                <Image src="/assets/images/brands/04.webp" alt="Brand 04" width={300} height={63} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                                <Image src="/assets/images/brands/04.webp" alt="Brand 04" width={300} height={63} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                            </Link>
+                                                        </div>
+                                                    </div>
+                                                    <div className="swiper-slide">
+                                                        <div className="brand-item">
+                                                            <Link className="image" href="#">
+                                                                <Image src="/assets/images/brands/05.png" alt="Brand 05" width={200} height={35} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                                <Image src="/assets/images/brands/05.png" alt="Brand 05" width={200} height={35} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                            </Link>
+                                                        </div>
+                                                    </div>
+                                                    <div className="swiper-slide">
+                                                        <div className="brand-item">
+                                                            <Link className="image" href="#">
+                                                                <Image src="/assets/images/brands/06.png" alt="Brand 06" width={159} height={104} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                                <Image src="/assets/images/brands/06.png" alt="Brand 06" width={159} height={104} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                            </Link>
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="swiper-slide">
+                                                        <div className="brand-item">
+                                                            <Link className="image" href="#">
+                                                                <Image src="/assets/images/brands/07.png" alt="Brand 02" width={301} height={89} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                                <Image src="/assets/images/brands/07.png" alt="Brand 02" width={301} height={89} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                            </Link>
+                                                        </div>
+                                                    </div>
+                                                    <div className="swiper-slide">
+                                                        <div className="brand-item">
+                                                            <Link className="image" href="#">
+                                                                <Image src="/assets/images/brands/08.png" alt="Brand 03" width={300} height={64} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                                <Image src="/assets/images/brands/08.png" alt="Brand 03" width={300} height={64} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                            </Link>
+                                                        </div>
+                                                    </div>
+                                                    <div className="swiper-slide">
+                                                        <div className="brand-item">
+                                                            <Link className="image" href="#">
+                                                                <Image src="/assets/images/brands/09.png" alt="Brand 03" width={190} height={36} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                                <Image src="/assets/images/brands/09.png" alt="Brand 03" width={190} height={36} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                            </Link>
+                                                        </div>
+                                                    </div>
+                                                    <div className="swiper-slide">
+                                                        <div className="brand-item">
+                                                            <Link className="image" href="#">
+                                                                <Image src="/assets/images/brands/10.png" alt="Brand 03" width={300} height={105} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                                <Image src="/assets/images/brands/10.png" alt="Brand 03" width={300} height={105} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                            </Link>
+                                                        </div>
+                                                    </div>
+                                                    <div className="swiper-slide">
+                                                        <div className="brand-item">
+                                                            <Link className="image" href="#">
+                                                                <Image src="/assets/images/brands/11.png" alt="Brand 03" width={150} height={40} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                                <Image src="/assets/images/brands/11.png" alt="Brand 03" width={150} height={40} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                            </Link>
+                                                        </div>
+                                                    </div>
+                                                    <div className="swiper-slide">
+                                                        <div className="brand-item">
+                                                            <Link className="image" href="#">
+                                                                <Image src="/assets/images/brands/12.webp" alt="Brand 12" width={233} height={75} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                                <Image src="/assets/images/brands/12.webp" alt="Brand 12" width={233} height={75} sizes="100vw" style={{ width: "100%", height: "auto" }} />
+                                                            </Link>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div className="panzer-brand-nav" aria-label="Brand partners slider controls">
+                                                <button className="panzer-brand-prev" type="button" aria-label="Previous brand">
+                                                    <i className="fa-light fa-arrow-left-long"></i>
+                                                </button>
+                                                <button className="panzer-brand-next" type="button" aria-label="Next brand">
+                                                    <i className="fa-light fa-arrow-right-long"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+        </section>
+              
 
-               
 
                    
                 <section className="tv-about-section style-4 space bg-light panzer-home-about-section">
@@ -536,128 +630,7 @@ export default function Page() {
 
 
 
-        <section className="panzer-brand-partners-section">
-                <div className="panzer-cyber-brand-strip">
-                        
-                        <div className="tv-brands-section style-3 position-relative z-3">
-                            <div className="container">
-                                <div className="row">
-                                    <div className="col-lg-12">
-                                        <div className="sponsors-outer brand-outher panzer-cyber-brand-panel">
-                                            <div className="trusted-partners d-flex align-items-center mb-60">
-                                                <div className="title text-white">BRAND PARTNERS</div>
-                                            </div>
-                                            <div className="brands-slider-three swiper">
-                                                <div className="swiper-wrapper">
-                                                    <div className="swiper-slide">
-                                                        <div className="brand-item">
-                                                            <Link className="image" href="#">
-                                                                <Image src="/assets/images/brands/01.png" alt="Brand 01" width={190} height={40} sizes="100vw" style={{ width: "100%", height: "auto" }} />
-                                                                <Image src="/assets/images/brands/01.png" alt="Brand 01" width={190} height={40} sizes="100vw" style={{ width: "100%", height: "auto" }} />
-                                                            </Link>
-                                                        </div>
-                                                    </div>
-                                                    <div className="swiper-slide">
-                                                        <div className="brand-item">
-                                                            <Link className="image" href="#">
-                                                                <Image src="/assets/images/brands/02.png" alt="Brand 02" width={300} height={81} sizes="100vw" style={{ width: "100%", height: "auto" }} />
-                                                                <Image src="/assets/images/brands/02.png" alt="Brand 02" width={300} height={81} sizes="100vw" style={{ width: "100%", height: "auto" }} />
-                                                            </Link>
-                                                        </div>
-                                                    </div>
-                                                    <div className="swiper-slide">
-                                                        <div className="brand-item">
-                                                            <Link className="image" href="#">
-                                                                <Image src="/assets/images/brands/03.webp" alt="Brand 03" width={258} height={45} sizes="100vw" style={{ width: "100%", height: "auto" }} />
-                                                                <Image src="/assets/images/brands/03.webp" alt="Brand 03" width={258} height={45} sizes="100vw" style={{ width: "100%", height: "auto" }} />
-                                                            </Link>
-                                                        </div>
-                                                    </div>
-                                                    <div className="swiper-slide">
-                                                        <div className="brand-item">
-                                                            <Link className="image" href="#">
-                                                                <Image src="/assets/images/brands/04.webp" alt="Brand 04" width={300} height={63} sizes="100vw" style={{ width: "100%", height: "auto" }} />
-                                                                <Image src="/assets/images/brands/04.webp" alt="Brand 04" width={300} height={63} sizes="100vw" style={{ width: "100%", height: "auto" }} />
-                                                            </Link>
-                                                        </div>
-                                                    </div>
-                                                    <div className="swiper-slide">
-                                                        <div className="brand-item">
-                                                            <Link className="image" href="#">
-                                                                <Image src="/assets/images/brands/05.png" alt="Brand 05" width={200} height={35} sizes="100vw" style={{ width: "100%", height: "auto" }} />
-                                                                <Image src="/assets/images/brands/05.png" alt="Brand 05" width={200} height={35} sizes="100vw" style={{ width: "100%", height: "auto" }} />
-                                                            </Link>
-                                                        </div>
-                                                    </div>
-                                                    <div className="swiper-slide">
-                                                        <div className="brand-item">
-                                                            <Link className="image" href="#">
-                                                                <Image src="/assets/images/brands/06.png" alt="Brand 06" width={159} height={104} sizes="100vw" style={{ width: "100%", height: "auto" }} />
-                                                                <Image src="/assets/images/brands/06.png" alt="Brand 06" width={159} height={104} sizes="100vw" style={{ width: "100%", height: "auto" }} />
-                                                            </Link>
-                                                        </div>
-                                                    </div>
-
-                                                    <div className="swiper-slide">
-                                                        <div className="brand-item">
-                                                            <Link className="image" href="#">
-                                                                <Image src="/assets/images/brands/07.png" alt="Brand 02" width={301} height={89} sizes="100vw" style={{ width: "100%", height: "auto" }} />
-                                                                <Image src="/assets/images/brands/07.png" alt="Brand 02" width={301} height={89} sizes="100vw" style={{ width: "100%", height: "auto" }} />
-                                                            </Link>
-                                                        </div>
-                                                    </div>
-                                                    <div className="swiper-slide">
-                                                        <div className="brand-item">
-                                                            <Link className="image" href="#">
-                                                                <Image src="/assets/images/brands/08.png" alt="Brand 03" width={300} height={64} sizes="100vw" style={{ width: "100%", height: "auto" }} />
-                                                                <Image src="/assets/images/brands/08.png" alt="Brand 03" width={300} height={64} sizes="100vw" style={{ width: "100%", height: "auto" }} />
-                                                            </Link>
-                                                        </div>
-                                                    </div>
-                                                    <div className="swiper-slide">
-                                                        <div className="brand-item">
-                                                            <Link className="image" href="#">
-                                                                <Image src="/assets/images/brands/09.png" alt="Brand 03" width={190} height={36} sizes="100vw" style={{ width: "100%", height: "auto" }} />
-                                                                <Image src="/assets/images/brands/09.png" alt="Brand 03" width={190} height={36} sizes="100vw" style={{ width: "100%", height: "auto" }} />
-                                                            </Link>
-                                                        </div>
-                                                    </div>
-                                                    <div className="swiper-slide">
-                                                        <div className="brand-item">
-                                                            <Link className="image" href="#">
-                                                                <Image src="/assets/images/brands/10.png" alt="Brand 03" width={300} height={105} sizes="100vw" style={{ width: "100%", height: "auto" }} />
-                                                                <Image src="/assets/images/brands/10.png" alt="Brand 03" width={300} height={105} sizes="100vw" style={{ width: "100%", height: "auto" }} />
-                                                            </Link>
-                                                        </div>
-                                                    </div>
-                                                    <div className="swiper-slide">
-                                                        <div className="brand-item">
-                                                            <Link className="image" href="#">
-                                                                <Image src="/assets/images/brands/11.png" alt="Brand 03" width={150} height={40} sizes="100vw" style={{ width: "100%", height: "auto" }} />
-                                                                <Image src="/assets/images/brands/11.png" alt="Brand 03" width={150} height={40} sizes="100vw" style={{ width: "100%", height: "auto" }} />
-                                                            </Link>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div className="panzer-brand-nav" aria-label="Brand partners slider controls">
-                                                <button className="panzer-brand-prev" type="button" aria-label="Previous brand">
-                                                    <i className="fa-light fa-arrow-left-long"></i>
-                                                </button>
-                                                <button className="panzer-brand-next" type="button" aria-label="Next brand">
-                                                    <i className="fa-light fa-arrow-right-long"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        </section>
-              
-
+     
     
               <section className="tv-choose-section style-6 space bg-dark position-relative resource-page-choose">
                   <div className="bg image"><Image src="/assets/images/choose/hm8-bg01.webp" alt="" width={1920} height={886} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
@@ -712,6 +685,8 @@ export default function Page() {
                       </div>
                   </div>
               </section>
+
+              
          
                 <section className="tv-contact-section style-4 z-1">
                     <div className="tv-contact-inner space position-relative overflow-hidden bg-light2 mx-20 ml-mx-0">
@@ -773,7 +748,42 @@ export default function Page() {
 
 
 
-              
+                  
+                <div className="tv-marquee-section bg-light position-relative">
+                    <div className="tv-marquee-inner mx-20 ml-mx-0 position-relative">
+                        <div className="container-fluid p-0 overflow-hidden">
+                            <div className="slider__marquee clearfix br-0 marquee-wrap style-2">
+                                <div className="panzer-next-marquee-track">
+                                <ul className="marquee__group">
+                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
+                                        Endpoint Security</li>
+                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
+                                        Backup & Disaster Recovery</li>
+                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
+                                        Data Loss Prevention (DLP)</li>
+                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
+                                        Vulnerability Assessment & VAPT</li>
+                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
+                                        IAM, PAM & Network Security</li>
+                                </ul>
+                                <ul className="marquee__group" aria-hidden="true">
+                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
+                                        Endpoint Security</li>
+                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
+                                        Backup & Disaster Recovery</li>
+                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
+                                        Data Loss Prevention (DLP)</li>
+                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
+                                        Vulnerability Assessment & VAPT</li>
+                                    <li className="item m-item"><Image width={1098} height={960} className="icon" src="/assets/images/icons/icone2.png" alt="" />
+                                        IAM, PAM & Network Security</li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
               
 
 
@@ -830,7 +840,7 @@ export default function Page() {
                                                 <div className="border dark"></div>
                                             </div>
                                             <div className="blog-meta">
-                                                <Link href="#" className="continue-reading">Explore More</Link>
+                                                <Link href="#" className="continue-reading">Read More</Link>
                                                 <div className="blog-details__social-list">
                                                   <span>Share:</span>
                                                   <Link href="https://www.facebook.com/"><i className="fa-brands fa-facebook-f"></i></Link>
@@ -855,7 +865,7 @@ export default function Page() {
                                                 <div className="border dark"></div>
                                             </div>
                                             <div className="blog-meta">
-                                                <Link href="#" className="continue-reading">Explore More</Link>
+                                                <Link href="#" className="continue-reading">Read More</Link>
                                                  <div className="blog-details__social-list">
                                                   <span>Share:</span>
                                                   <Link href="https://www.facebook.com/"><i className="fa-brands fa-facebook-f"></i></Link>
@@ -909,7 +919,7 @@ export default function Page() {
                                                 <div className="border dark"></div>
                                             </div>
                                             <div className="blog-meta">
-                                                <Link href="#" className="continue-reading">Explore More</Link>
+                                                <Link href="#" className="continue-reading">Read More</Link>
                                                 <div className="blog-details__social-list">
                                                   <span>Share:</span>
                                                   <Link href="https://www.facebook.com/"><i className="fa-brands fa-facebook-f"></i></Link>
@@ -934,7 +944,7 @@ export default function Page() {
                                                 <div className="border dark"></div>
                                             </div>
                                             <div className="blog-meta">
-                                                <Link href="#" className="continue-reading">Explore More</Link>
+                                                <Link href="#" className="continue-reading">Read More</Link>
                                                  <div className="blog-details__social-list">
                                                   <span>Share:</span>
                                                   <Link href="https://www.facebook.com/"><i className="fa-brands fa-facebook-f"></i></Link>

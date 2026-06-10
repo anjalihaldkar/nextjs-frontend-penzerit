@@ -1,4 +1,5 @@
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { SolutionDetailSticky } from "@/components/SolutionDetailSticky";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -70,6 +71,7 @@ const faqs = [
 export default function Page() {
   return (
     <>
+      <SolutionDetailSticky />
       <Breadcrumb title="Solution Details" paths={[{ name: "Solutions", url: "/solution" }, { name: "Solution Details" }]} />
 
       <section className="panzer-solution-detail-section bg-light">
@@ -108,10 +110,6 @@ export default function Page() {
                 <div className="panzer-solution-detail-copy">
                   
                   <h2>Security, Backup And Data Protection Built Around Your Data</h2>
-                  <p>
-                    Panzer IT helps organizations secure sensitive data, control user access, prevent advanced threats and keep business systems
-                    recoverable with a practical mix of proven security technologies.
-                  </p>
                   {/* <div className="panzer-solution-detail-actions">
                     <Link href="/contact">
                       <span>Discuss Requirement</span>
@@ -131,6 +129,10 @@ export default function Page() {
                     sizes="(max-width: 991px) 100vw, 43vw"
                   />
                 </div>
+                <p className="panzer-solution-detail-hero-text">
+                  Panzer IT helps organizations secure sensitive data, control user access, prevent advanced threats and keep business systems
+                  recoverable with a practical mix of proven security technologies.
+                </p>
               </div>
 
               <div className="panzer-solution-detail-highlights">

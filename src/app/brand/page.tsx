@@ -35,14 +35,14 @@ export default function Page() {
                                         </div>
                                         <h3 className="title text-dark">Panzer IT Presentation</h3>
                                         <p className="text mb-20">Explore Panzer IT&apos;s brand portfolio across data leak prevention, employee monitoring, vulnerability assessment, endpoint security, secure remote access and backup solutions.</p>
-                                        <p className="text mb-30"><strong>File Name:</strong> PIT_Presentation.pptx</p>
-                                        {/* <Link href="https://panzerit.com/brands/" target="_blank" className="theme-btn panzer-static-read-btn">
+                                     
+                                        <Link href="/resources" className="theme-btn panzer-static-read-btn">
                                             <span className="link-effect">
                                                 <span className="effect-1">VIEW RESOURCE</span>
                                                 <span className="effect-1">VIEW RESOURCE</span>
                                             </span>
                                             <i className="fa-solid fa-arrow-up-right"></i>
-                                        </Link> */}
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="col-lg-7">
@@ -105,7 +105,7 @@ export default function Page() {
                                         <div className="inner-box">
                                             <div className="solution-card-image panzer-brand-logo"><Image src="/assets/images/brands/03.webp" alt="FalconGaze SecureTower UBA" width={258} height={45} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
                                             <h4 className="title">FalconGaze SecureTower - UBA</h4>
-                                            <p className="text pb-25">User behavior analytics, insider threat visibility and governance support for data security teams.</p>
+                                            <p className="text pb-25">User behavior analytics, insider threat visibility, and governance support for data security teams, enabling proactive risk detection and response.</p>
                                             <Link href="/brand-detail#falcongaze" className="theme-btn w-100 mt-40 panzer-static-read-btn">
                                                 <span className="link-effect">
                                                     <span className="effect-1">READ MORE</span>
@@ -153,7 +153,7 @@ export default function Page() {
                                         <div className="inner-box">
                                             <div className="solution-card-image panzer-brand-logo"><Image src="/assets/images/brands/06.png" alt="Netop Secure Remote Access" width={159} height={104} sizes="100vw" style={{ width: "100%", height: "auto" }} /></div>
                                             <h4 className="title">Netop Secure Remote Access</h4>
-                                            <p className="text pb-25">Secure remote control and remote access tools for support teams and distributed IT environments.</p>
+                                            <p className="text pb-25">Secure remote control and remote access tools for support teams and distributed IT environments, ensuring secure connectivity.</p>
                                             <Link href="/brand-detail#netop" className="theme-btn w-100 mt-40 panzer-static-read-btn">
                                                 <span className="link-effect">
                                                     <span className="effect-1">READ MORE</span>

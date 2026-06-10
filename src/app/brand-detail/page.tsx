@@ -1,4 +1,5 @@
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { BrandDetailSticky } from "@/components/SolutionDetailSticky";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -107,34 +108,37 @@ const faqs = [
 export default function Page() {
   return (
     <>
+      <BrandDetailSticky />
       <Breadcrumb title="Brand Details" paths={[{ name: "Brands", url: "/brand" }, { name: "Brand Details" }]} />
 
       <section className="panzer-brand-detail-section bg-light">
         <div className="container">
           <div className="panzer-brand-detail-layout">
             <aside className="panzer-brand-detail-sidebar" aria-label="Brand navigation">
-              <div className="panzer-brand-detail-side-card">
-                <h2>Brands</h2>
-                <nav>
-                  {brands.map((brand) => (
-                    <Link href={`#${brand.id}`} key={brand.id}>
-                      <span>{brand.title}</span>
-                      <i className="fa-solid fa-arrow-right"></i>
-                    </Link>
-                  ))}
-                </nav>
-              </div>
+              <div className="panzer-brand-detail-sidebar-inner">
+                <div className="panzer-brand-detail-side-card">
+                  <h2>Brands</h2>
+                  <nav>
+                    {brands.map((brand) => (
+                      <Link href={`#${brand.id}`} key={brand.id}>
+                        <span>{brand.title}</span>
+                        <i className="fa-solid fa-arrow-right"></i>
+                      </Link>
+                    ))}
+                  </nav>
+                </div>
 
-              <div className="panzer-brand-detail-help">
-                <span className="panzer-brand-detail-help-icon">
-                  <i className="fa-solid fa-headset"></i>
-                </span>
-                <h3>Need Brand Guidance?</h3>
-                <p>Talk to Panzer IT for the right security, backup and data protection brand fit.</p>
-                <Link href="/contact">
-                  <span>Contact Us</span>
-                  <i className="fa-solid fa-arrow-right"></i>
-                </Link>
+                <div className="panzer-brand-detail-help">
+                  <span className="panzer-brand-detail-help-icon">
+                    <i className="fa-solid fa-headset"></i>
+                  </span>
+                  <h3>Need Brand Guidance?</h3>
+                  <p>Talk to Panzer IT for the right security, backup and data protection brand fit.</p>
+                  <Link href="/contact">
+                    <span>Contact Us</span>
+                    <i className="fa-solid fa-arrow-right"></i>
+                  </Link>
+                </div>
               </div>
             </aside>
 
@@ -143,14 +147,14 @@ export default function Page() {
                 <div className="panzer-brand-detail-hero-copy">
                   <div className="panzer-brand-detail-pill">Panzer IT Portfolio</div>
                   <h2>Security, Backup And Data Protection Brands</h2>
-                  <p>
-                    Panzer IT brings together specialist brands for identity and privileged access management, employee monitoring,
-                    data leak prevention, user behavior analytics, vulnerability assessment, secure remote access, anti-malware and backup protection.
-                  </p>
                 </div>
                 <div className="panzer-brand-detail-hero-image">
                   <Image src="/assets/images/about/cyber.webp" alt="Panzer IT security brands" width={612} height={408} sizes="(max-width: 991px) 100vw, 46vw" />
                 </div>
+                <p className="panzer-brand-detail-hero-text" style={{ gridColumn: "1 / -1", width: "100%", maxWidth: "none", margin: 0 }}>
+                  Panzer IT helps organizations secure sensitive data, control user access, prevent advanced threats and keep business systems
+                  recoverable with a practical mix of proven security technologies.
+                </p>
               </div>
 
           
